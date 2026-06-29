@@ -77,210 +77,105 @@
 <div class="pull-quote">Vat-grown human-based replicant, Spacer Kung-Fu melee monster, No social graces, On the run from his maker</div>
 <div class="tab-bar">
   <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="combat" onclick="switchTab('combat')">Combat</button>
   <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
   <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<div class="gurps-sheet"><div class="gurps-combat-bar"><div class="combat-stat"><span class="combat-stat-value">13</span><span class="combat-stat-label">HP</span></div>
-<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">FP</span></div>
-<div class="combat-stat"><span class="combat-stat-value">6.50</span><span class="combat-stat-label">Speed</span></div>
-<div class="combat-stat"><span class="combat-stat-value">9 / 6</span><span class="combat-stat-label">Move</span></div>
-<div class="combat-stat"><span class="combat-stat-value">9</span><span class="combat-stat-label">Dodge</span></div>
-<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">Parry (axe)</span></div>
-<div class="combat-stat"><span class="combat-stat-value">11</span><span class="combat-stat-label">Parry (Karate)</span></div>
-<div class="combat-stat"><span class="combat-stat-value">11</span><span class="combat-stat-label">Parry (Judo)</span></div>
-<div class="combat-stat"><span class="combat-stat-value">Beam Weapons (Pistol)-15</span><span class="combat-stat-label">Ranged</span></div>
-<div class="combat-stat"><span class="combat-stat-value">Axe/Mace-17</span><span class="combat-stat-label">Melee</span></div></div></div>
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
-<a href="#background">Background</a>
-<a href="#advantages-perks">Advantages &amp; Perks</a>
-<a href="#disadvantages-quirks">Disadvantages &amp; Quirks</a>
-<a href="#skills">Skills</a>
-<a href="#techniques">Techniques</a>
-<a href="#languages">Languages</a>
-<a href="#cultural-familiarities">Cultural Familiarities</a>
-<a href="#active-defenses">Active Defenses</a>
-<a href="#dr-by-hit-location">DR by Hit Location</a>
-<a href="#combat-action-chains">Combat Action Chains</a>
-<a href="#multi-action-combat-skill-chains">Multi-Action Combat Skill Chains</a>
-<a href="#points-summary">Points Summary</a>
-<a href="#current-status">Current Status</a>
+<div class="status"><span class="condition">Alive, uninjured (HP 13 / FP 12 full).</span><span class="location"><span class="status-label">Location:</span> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</span><span class="carrying"><span class="status-label">Carrying:</span> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit.</span></div><div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">13</div><div class="l">ST</div><div class="p">[30]</div></div><div class="a"><div class="v">14</div><div class="l">DX</div><div class="p">[80]</div></div><div class="a"><div class="v">10</div><div class="l">IQ</div><div class="p">[0]</div></div><div class="a"><div class="v">12</div><div class="l">HT</div><div class="p">[20]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">13</div><div class="l">HP</div></div><div class="a"><div class="v">10</div><div class="l">Will</div></div><div class="a"><div class="v">12</div><div class="l">Per</div></div><div class="a"><div class="v">12</div><div class="l">FP</div></div><div class="a"><div class="v">6.50</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v">12 (Will 10 +2 Combat Reflexes)</div><div class="l">Fright Check</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 34 lbs</span><span><span class="der-label">Thr</span> 1d</span><span><span class="der-label">Sw</span> 2d-1</span><span><span class="der-label">SM</span> 0</span></div></section>
+<section class="blk cat-attr"><h2>Lifting Feats</h2><table class="lift-feats"><thead><tr><th>Feat</th><th class="num">Weight</th></tr></thead><tbody><tr><td>One-Handed Lift</td><td class="num">68 lb</td></tr>
+<tr><td>Two-Handed Lift</td><td class="num">272 lb</td></tr>
+<tr><td>Shove &amp; Knock Over</td><td class="num">408 lb</td></tr>
+<tr><td>Carry on Back</td><td class="num">510 lb</td></tr>
+<tr><td>Shift Slightly</td><td class="num">1700 lb</td></tr></tbody></table></section>
+<section class="blk cat-attr"><h2>Slam</h2><div class="slam-row"><div class="slam-cell"><div class="slam-v">1d-3</div><div class="slam-l">v=1</div></div><div class="slam-cell"><div class="slam-v">1d-2</div><div class="slam-l">v=2</div></div><div class="slam-cell"><div class="slam-v">1d-1</div><div class="slam-l">v=4</div></div></div><div class="slam-note">Crushing damage at Basic Move up to 6</div></section>
+<section class="blk cat-attr"><h2>Senses &amp; Checks</h2><table><tbody><tr><td class="nm">Age</td><td class="num">32 apparent (~4 since decant)</td></tr>
+<tr><td class="nm">Gender</td><td class="num">Male (vat-grown, male-presenting)</td></tr>
+<tr><td class="nm">Birthday</td><td class="num">None — decant date, vat-batch 06</td></tr>
+<tr><td class="nm">Religion</td><td class="num">None</td></tr>
+<tr><td class="nm">Height</td><td class="num">6’2&amp;quot;</td></tr>
+<tr><td class="nm">Weight</td><td class="num">215 lb</td></tr>
+<tr><td class="nm">Build</td><td class="num">Densely built (grown to spec)</td></tr>
+<tr><td class="nm">Hair</td><td class="num">Black, buzzed short</td></tr>
+<tr><td class="nm">Eyes</td><td class="num">Pale grey</td></tr>
+<tr><td class="nm">Skin</td><td class="num">Olive, even-toned (engineered)</td></tr>
+<tr><td class="nm">Handedness</td><td class="num">Right (off-hand trained)</td></tr>
+<tr><td class="nm">Appearance</td><td class="num">Average</td></tr>
+<tr><td class="nm">Status</td><td class="num">0</td></tr>
+<tr><td class="nm">Reputation</td><td class="num">None (by design)</td></tr>
+<tr><td class="nm">Reaction Modifiers</td><td class="num">See Disadvantages — Clueless, Callous, Social Stigma (Valuable Property)</td></tr>
+<tr><td class="nm">TL</td><td class="num">11</td></tr></tbody></table></section>
+<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 9</span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
+<tr><td>Face</td><td class="num">60</td></tr>
+<tr><td>Neck</td><td class="num">60</td></tr>
+<tr><td>Torso</td><td class="num">100</td></tr>
+<tr><td>Arms</td><td class="num">60</td></tr>
+<tr><td>Hands</td><td class="num">60</td></tr>
+<tr><td>Legs</td><td class="num">60</td></tr>
+<tr><td>Feet</td><td class="num">60</td></tr></tbody></table></section>
+<section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0"><td>None (0)</td><td class="num">≤34 lbs</td><td class="num">6</td><td class="num">10</td></tr>
+<tr class="e1"><td>Light (1)</td><td class="num">≤68 lbs</td><td class="num">4</td><td class="num">9</td></tr>
+<tr class="e2"><td>Medium (2)</td><td class="num">≤102 lbs</td><td class="num">3</td><td class="num">8</td></tr>
+<tr class="e3"><td>Heavy (3)</td><td class="num">≤204 lbs</td><td class="num">2</td><td class="num">7</td></tr>
+<tr class="e4"><td>X-Heavy (4)</td><td class="num">≤340 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table></section>
+<section class="blk cat-social"><h2>Cultural Familiarities</h2><table><tbody><tr><td class="nm">Spacer</td><td class="num"><span class="cost">0</span></td></tr></tbody></table></section>
+<section class="blk cat-social"><h2>Languages</h2><table><thead><tr><th>Language</th><th>Spoken</th><th>Written</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Federal Standard</td><td>Native</td><td>Native</td><td class="num"><span class="cost">0</span></td></tr></tbody></table></section>
+<section class="blk cat-trait"><h2>Advantages</h2><table><tbody><tr><td class="nm">Trained by a Master</td><td class="num"><span class="cost">30</span></td></tr>
+<tr><td class="nm">Combat Reflexes</td><td class="num"><span class="cost">15</span></td></tr>
+<tr><td class="nm">High Pain Threshold</td><td class="num"><span class="cost">10</span></td></tr>
+<tr><td class="nm">Vacuum Support</td><td class="num"><span class="cost">5</span></td></tr>
+<tr><td class="nm">Signature Gear</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Off-Hand Weapon Training (Vibro-Axe)</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Standard Operating Procedure ×2 (Always Armored; Helmet to Hand)</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Armor Familiarity ×2 (Karate, Judo)</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Weapon Bond (vibro-axe)</td><td class="num"><span class="cost">1</span></td></tr></tbody></table></section>
+<section class="blk cat-trait"><h2>Disadvantages</h2><table><tbody><tr><td class="nm">Dead Broke</td><td class="num"><span class="cost">−25</span></td></tr>
+<tr><td class="nm">Secret (escaped/stolen, bounty on his head)</td><td class="num"><span class="cost">−20</span></td></tr>
+<tr><td class="nm">Social Stigma (Valuable Property)</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Clueless</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Code of Honor (Professional — “the Doctrine”)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Callous</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Quirk: Quietly loyal to P.E.T.A., the kids who freed him</td><td class="num"><span class="cost">−1</span></td></tr>
+<tr><td class="nm">Quirk: Eats every meal like it’s his last</td><td class="num"><span class="cost">−1</span></td></tr>
+<tr><td class="nm">Quirk: Uncomfortable being treated as a person</td><td class="num"><span class="cost">−1</span></td></tr>
+<tr><td class="nm">Quirk: Hates being cold</td><td class="num"><span class="cost">−1</span></td></tr>
+<tr><td class="nm">Quirk: Painfully literal</td><td class="num"><span class="cost">−1</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Acrobatics</td><td class="num">13</td><td class="num rel">DX-1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Axe/Mace</td><td class="num">16</td><td class="num rel">DX+2</td><td class="num"><span class="cost">8</span></td></tr>
+<tr><td class="nm">Beam Weapons (Pistol)</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Climbing</td><td class="num">13</td><td class="num rel">DX-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Computer Operation</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Operation (Security)</td><td class="num">9</td><td class="num rel">IQ-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Fast-Draw (Axe)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Fast-Draw (Pistol)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">First Aid/TL</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Forced Entry</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Free Fall</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr><td class="nm">Judo<div class="subline">Parry: 11</div></td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">4</span></td></tr>
+<tr><td class="nm">Karate<div class="subline">Parry: 11</div></td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">8</span></td></tr>
+<tr><td class="nm">Observation</td><td class="num">11</td><td class="num rel">Per-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Spacer</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Stealth</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Vacc Suit</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Techniques</h2><table><thead><tr><th>Name</th><th>Default</th><th class="num">Lvl</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Choke Hold</td><td class="nm">Judo-2</td><td class="num">14</td><td class="num"><span class="cost">3</span></td></tr>
+<tr><td class="nm">Kicking</td><td class="nm">Karate-2</td><td class="num">15</td><td class="num"><span class="cost">3</span></td></tr></tbody></table></section>
+<section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Attributes</td><td class="num">130</td></tr>
+<tr><td class="nm">Secondary Characteristics</td><td class="num">10</td></tr>
+<tr><td class="nm">Advantages &amp;amp; Perks</td><td class="num">67</td></tr>
+<tr><td class="nm">Disadvantages</td><td class="num">−75</td></tr>
+<tr><td class="nm">Quirks</td><td class="num">−5</td></tr>
+<tr><td class="nm">Skills</td><td class="num">42</td></tr>
+<tr><td class="nm">Techniques</td><td class="num">6</td></tr>
+<tr class="total"><td class="nm">Total</td><td class="num">175</td></tr></tbody></table></section></div><div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Karate punch</td><td class="num">Karate-15</td><td class="num">11</td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Karate kick</td><td class="num">Karate-15</td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-14</td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-14</td><td class="num">11</td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Blaster pistol (Fine)</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div></div>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
 <a href="#notes">Notes</a></nav>
-
-<div class="accordion" id="stat-sheet">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
-  <div class="accordion-body">
-    <h3>Primary Attributes</h3>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Score</th>
-<th>Modifier</th>
-<th>Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ST</td>
-<td>13</td>
-<td>—</td>
-<td>30</td>
-</tr>
-<tr>
-<td>DX</td>
-<td>14</td>
-<td>—</td>
-<td>80</td>
-</tr>
-<tr>
-<td>IQ</td>
-<td>10</td>
-<td>—</td>
-<td>0</td>
-</tr>
-<tr>
-<td>HT</td>
-<td>12</td>
-<td>—</td>
-<td>20</td>
-</tr>
-</tbody>
-</table>
-<h3>Secondary Characteristics</h3>
-<table>
-<thead>
-<tr>
-<th>Characteristic</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HP</td>
-<td>13</td>
-</tr>
-<tr>
-<td>Will</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Per</td>
-<td>12</td>
-</tr>
-<tr>
-<td>FP</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Basic Speed</td>
-<td>6.50</td>
-</tr>
-<tr>
-<td>Basic Move</td>
-<td>6</td>
-</tr>
-<tr>
-<td>Basic Lift</td>
-<td>34 lbs</td>
-</tr>
-<tr>
-<td>Damage (Thr)</td>
-<td>1d</td>
-</tr>
-<tr>
-<td>Damage (Sw)</td>
-<td>2d-1</td>
-</tr>
-<tr>
-<td>Size Modifier</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Fright Check</td>
-<td>12 (Will 10 +2 Combat Reflexes)</td>
-</tr>
-</tbody>
-</table>
-<h3>Appearance &amp; Social</h3>
-<table>
-<thead>
-<tr>
-<th>Trait</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Age</td>
-<td>32 apparent (~4 since decant)</td>
-</tr>
-<tr>
-<td>Gender</td>
-<td>Male (vat-grown, male-presenting)</td>
-</tr>
-<tr>
-<td>Birthday</td>
-<td>None — decant date, vat-batch 06</td>
-</tr>
-<tr>
-<td>Religion</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Height</td>
-<td>6’2&quot;</td>
-</tr>
-<tr>
-<td>Weight</td>
-<td>215 lb</td>
-</tr>
-<tr>
-<td>Build</td>
-<td>Densely built (grown to spec)</td>
-</tr>
-<tr>
-<td>Hair</td>
-<td>Black, buzzed short</td>
-</tr>
-<tr>
-<td>Eyes</td>
-<td>Pale grey</td>
-</tr>
-<tr>
-<td>Skin</td>
-<td>Olive, even-toned (engineered)</td>
-</tr>
-<tr>
-<td>Handedness</td>
-<td>Right (off-hand trained)</td>
-</tr>
-<tr>
-<td>Appearance</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Status</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Reputation</td>
-<td>None (by design)</td>
-</tr>
-<tr>
-<td>Reaction Modifiers</td>
-<td>See Disadvantages — Clueless, Callous, Social Stigma (Valuable Property)</td>
-</tr>
-<tr>
-<td>TL</td>
-<td>11</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
 
 <div class="accordion" id="background">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
@@ -295,516 +190,45 @@
   </div>
 </div>
 
-<div class="accordion" id="advantages-perks">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Advantages &amp; Perks</button>
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
   <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cost</th>
-<th>Page Ref</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Trained by a Master</td>
-<td>30</td>
-<td>B93</td>
-<td>Tim-approved, flavored as combat conditioning preloaded via software. Halves Rapid Strike to −3 for all muscle-powered attacks (unarmed and vibro-axe); unlocks cinematic martial-arts skills.</td>
-</tr>
-<tr>
-<td>Combat Reflexes</td>
-<td>15</td>
-<td>B43</td>
-<td>+1 all defenses, +6 vs surprise, never freeze, +2 Fright Checks.</td>
-</tr>
-<tr>
-<td>High Pain Threshold</td>
-<td>10</td>
-<td>B59</td>
-<td>No shock penalties; +3 vs stun/KO.</td>
-</tr>
-<tr>
-<td>Vacuum Support</td>
-<td>5</td>
-<td>B96</td>
-<td>Immune to vacuum/decompression trauma. Supplies no air — he still holds his breath until he reseals.</td>
-</tr>
-<tr>
-<td>Signature Gear</td>
-<td>1</td>
-<td>B85</td>
-<td>Disguised Space Armor + helmet + chameleon + full loadout (glance-disguise). See Equipment.</td>
-</tr>
-<tr>
-<td>Off-Hand Weapon Training (Vibro-Axe)</td>
-<td>1</td>
-<td>MA</td>
-<td>No −4 in the off hand.</td>
-</tr>
-<tr>
-<td>Standard Operating Procedure ×2 (Always Armored; Helmet to Hand)</td>
-<td>2</td>
-<td>PU2:15</td>
-<td>Two separate SOPs (Tim-ruled). Always Armored: never out of his combat suit (sleeps in it). Helmet to Hand: helmet always clipped within reach, donned in one action.</td>
-</tr>
-<tr>
-<td>Armor Familiarity ×2 (Karate, Judo)</td>
-<td>2</td>
-<td>MA210</td>
-<td>Style perks of his Freefighting style. Each negates the −1 encumbrance penalty on its skill’s attack &amp; parry while armored → Karate strikes 15 / Parry 11; Judo grapples/throws 14, Choke Hold 14, Parry 11.</td>
-</tr>
-<tr>
-<td>Weapon Bond (vibro-axe)</td>
-<td>1</td>
-<td>MA250</td>
-<td>+1 to effective Axe/Mace and all axe techniques with this specific bonded axe → to-hit 16 → <strong>17</strong>, Rapid Strike 14 each (Parry unchanged at 12). Lost if the axe is — protected as Signature Gear.</td>
-</tr>
-</tbody>
-</table>
+    <p>Fish-out-of-water hook: <strong>fluent in ships (Spacer), hopeless with people (Clueless/Callous).</strong> Will 10 + no Fearlessness is intentional — he doesn’t process social fear, but the genuinely <em>unknown</em> can still unnerve him. It’s a <em>tuned</em> soft spot, not a hole: Combat Reflexes gives him Fright Check 12, he never freezes, and recovers fast from mental stun — but still no Fearlessness, still mortal to the genuinely wrong. His martial mastery (Trained by a Master) is <strong>loaded combat software</strong> — which is <em>why</em> he fights like a master yet has no social graces: the combat package was installed; the social one never was.</p>
+<p><strong>Status model:</strong> synthetic “assets” are an <em>openly recognized</em> property underclass (the class P.E.T.A. fights for). So Six’s <strong>Valuable Property</strong> stigma is his latent legal reality on exposure; he physically passes in a crowd, but records/scans/the batch-brand drop him into it. His <strong>Secret</strong> is the sharper danger on top: that he’s <em>escaped/stolen</em> property with a live bounty.</p>
+<p>The <strong>Always-Armored / Helmet-to-Hand SOPs</strong> mean he’s <em>always</em> visibly in armor — which makes the <strong>chameleon work-suit disguise</strong> load-bearing, not optional: it’s the only thing keeping “guy who never takes his combat rig off” from screaming <em>threat</em> everywhere he goes. Combined with <strong>Vacuum Support</strong>, a sudden hull breach won’t kill him: the decompression can’t hurt him, he holds his breath, and the helmet’s already to hand to slap on.</p>
 
   </div>
 </div>
-
-<div class="accordion" id="disadvantages-quirks">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Disadvantages &amp; Quirks</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cost</th>
-<th>Self-Control</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dead Broke</td>
-<td>−25</td>
-<td>—</td>
-<td>Owns nothing but his Signature Gear.</td>
-</tr>
-<tr>
-<td>Secret (escaped/stolen, bounty on his head)</td>
-<td>−20</td>
-<td>—</td>
-<td>The specific lethal layer beyond his open property status: unregistered, escaped Castellan property with an active recovery bounty. Exposure → reclaimed or sold.</td>
-</tr>
-<tr>
-<td>Social Stigma (Valuable Property)</td>
-<td>−10</td>
-<td>—</td>
-<td>An owned bio-engineered asset — no rights, but worth recovering. Bites on exposure (records check, bio-scan, batch-brand); physically passes in a crowd. (Tim-approved swap from Second-Class Citizen.)</td>
-</tr>
-<tr>
-<td>Clueless</td>
-<td>−10</td>
-<td>—</td>
-<td>No grasp of social cues — never lived in society.</td>
-</tr>
-<tr>
-<td>Code of Honor (Professional — “the Doctrine”)</td>
-<td>−5</td>
-<td>—</td>
-<td>Complete the objective by the most efficient means and leave no loose ends — finish what you start, clean. Lethal vs. non-lethal is a pure efficiency call, no hesitation or preference either way. The constraint: won’t abandon a job half-done or leave it sloppy even when cutting and running would be safer. Not mercy, not bloodlust. (Replaced Bloodlust.)</td>
-</tr>
-<tr>
-<td>Callous</td>
-<td>−5</td>
-<td>—</td>
-<td>No empathy installed.</td>
-</tr>
-<tr>
-<td>Quirk: Quietly loyal to P.E.T.A., the kids who freed him</td>
-<td>−1</td>
-<td>—</td>
-<td></td>
-</tr>
-<tr>
-<td>Quirk: Eats every meal like it’s his last</td>
-<td>−1</td>
-<td>—</td>
-<td>Cryo-starvation imprint.</td>
-</tr>
-<tr>
-<td>Quirk: Uncomfortable being <em>treated</em> as a person</td>
-<td>−1</td>
-<td>—</td>
-<td>Thanks, kindness, or being called by name leaves him flat-footed; he deflects or goes blank.</td>
-</tr>
-<tr>
-<td>Quirk: Hates being cold</td>
-<td>−1</td>
-<td>—</td>
-<td>Cryo-rack flashback.</td>
-</tr>
-<tr>
-<td>Quirk: Painfully literal</td>
-<td>−1</td>
-<td>—</td>
-<td>Sarcasm sails past him.</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="skills">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Difficulty</th>
-<th>Relative Level</th>
-<th>Points</th>
-<th>Effective</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Acrobatics</td>
-<td>DX/H</td>
-<td>DX-1</td>
-<td>2</td>
-<td>13</td>
-</tr>
-<tr>
-<td>Axe/Mace</td>
-<td>DX/A</td>
-<td>DX+2</td>
-<td>8</td>
-<td>16</td>
-</tr>
-<tr>
-<td>Beam Weapons (Pistol)</td>
-<td>DX/E</td>
-<td>DX+1</td>
-<td>2</td>
-<td>15</td>
-</tr>
-<tr>
-<td>Climbing</td>
-<td>DX/A</td>
-<td>DX-1</td>
-<td>1</td>
-<td>13</td>
-</tr>
-<tr>
-<td>Computer Operation</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>1</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Electronics Operation (Security)</td>
-<td>IQ/A</td>
-<td>IQ-1</td>
-<td>1</td>
-<td>9</td>
-</tr>
-<tr>
-<td>Fast-Draw (Axe)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>1</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Fast-Draw (Pistol)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>1</td>
-<td>14</td>
-</tr>
-<tr>
-<td>First Aid/TL</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>1</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Forced Entry</td>
-<td>DX/E</td>
-<td>DX+1</td>
-<td>2</td>
-<td>15</td>
-</tr>
-<tr>
-<td>Free Fall</td>
-<td>DX/A</td>
-<td>DX+1</td>
-<td>4</td>
-<td>15</td>
-</tr>
-<tr>
-<td>Judo</td>
-<td>DX/H</td>
-<td>DX+0</td>
-<td>4</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Karate</td>
-<td>DX/H</td>
-<td>DX+1</td>
-<td>8</td>
-<td>15</td>
-</tr>
-<tr>
-<td>Observation</td>
-<td>Per/A</td>
-<td>Per-1</td>
-<td>1</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Spacer</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>1</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Stealth</td>
-<td>DX/A</td>
-<td>DX+0</td>
-<td>2</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Vacc Suit</td>
-<td>DX/A</td>
-<td>DX+0</td>
-<td>2</td>
-<td>14</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Axe/Mace wields his vibro-axe; Beam Weapons covers the blaster and electrolaser; the two Fast-Draws cover their draws.</li>
-<li>Karate, Judo, Free Fall, Vacc Suit, and Acrobatics form his “Spacer Kung-Fu” — the canonical <strong>Freefighting</strong> style (his name for it; a zero-G art of disarm-and-subdue). Core = Karate (for Brawling) + Judo + Free Fall + Vacc Suit; Acrobatics for momentum, Free Fall for re-orientation; Armor Familiarity is its signature suit-fighting trick. Techniques to add later: Sweeping Kick, Disarming (Judo), Arm Lock, Targeted Attack (Axe/Neck).</li>
-<li>Forced Entry = breaching; Climbing = hull clambering; Spacer = ship-fluent but people-clueless.</li>
-<li><strong>Computer Operation + Electronics Operation (Security)</strong> are his electronic-breach / ship-systems software — read, run, and defeat a target ship’s consoles, alarms, surveillance, and access control (the finesse complement to Forced Entry’s brute breach). Operating/understanding installed systems needs no personal kit; cold-defeating an external electronic lock would want an electronic lockpick kit ($1,500).</li>
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took the only job left to him — MacMillian 'security' at the dead-end of known space.</li>
+<li><strong class="rel-label">Hunted by</strong> <a href="../../locations/federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; Legally non-human property; exposure means reclamation or bounty.</li>
+<li><strong class="rel-label">Liberated by</strong> P.E.T.A. &mdash; The android-rights militants who thawed him; he owes them a quiet, wordless debt.</li>
 </ul>
-
-  </div>
 </div>
-
-<div class="accordion" id="techniques">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Techniques</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Default</th>
-<th>Points</th>
-<th>Effective</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Choke Hold</td>
-<td>Judo-2</td>
-<td>3</td>
-<td>14</td>
-</tr>
-<tr>
-<td>Kicking</td>
-<td>Karate-2</td>
-<td>3</td>
-<td>15</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Choke Hold: carotid “blood” choke = FP damage → unconsciousness (non-lethal takedown); bought off the full −2 default.</li>
-<li>Kicking: buys off the full −2 kick penalty → kick at full Karate; kick = 1d+2 cr, reach C–1.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="languages">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Languages</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Language</th>
-<th>Spoken</th>
-<th>Written</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Federal Standard</td>
-<td>Native</td>
-<td>Native</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>His free native language; <strong>literate.</strong> Loaded with his operational software package, not learned in childhood. Rename if the setting’s lingua franca is canonically something else — cost is 0 either way.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="cultural-familiarities">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Cultural Familiarities</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Culture</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Spacer</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>His free native culture — the one he was decanted into and operates within; pairs with his Spacer skill. In ship/station settings he takes only the Clueless penalty; in mainstream Federal Republic society he also lacks the relevant familiarity, so he’s doubly out of place — intentional.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="active-defenses">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Active Defenses</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Defense</th>
-<th>Value</th>
-<th>Source</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dodge</td>
-<td>9</td>
-<td>Basic Speed 6.5 → 9 base, +1 Combat Reflexes, −1 Light encumbrance (operational); 10 unencumbered</td>
-</tr>
-<tr>
-<td>Parry (axe)</td>
-<td>12</td>
-<td>Axe/Mace 16, +1 Combat Reflexes (0U — can’t parry the turn it attacks)</td>
-</tr>
-<tr>
-<td>Parry (Karate)</td>
-<td>11</td>
-<td>Karate 15, +1 Combat Reflexes; Armor Familiarity negates encumbrance</td>
-</tr>
-<tr>
-<td>Parry (Judo)</td>
-<td>11</td>
-<td>Judo 14, +1 Combat Reflexes; Armor Familiarity negates encumbrance</td>
-</tr>
-<tr>
-<td>Block</td>
-<td>—</td>
-<td>No shield</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="dr-by-hit-location">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">DR by Hit Location</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Location</th>
-<th>DR</th>
-<th>Source</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Skull</td>
-<td>80</td>
-<td>Space Armor helmet</td>
-</tr>
-<tr>
-<td>Face</td>
-<td>60</td>
-<td>Space Armor helmet</td>
-</tr>
-<tr>
-<td>Neck</td>
-<td>60</td>
-<td>Space Armor suit</td>
-</tr>
-<tr>
-<td>Torso</td>
-<td>100</td>
-<td>Space Armor suit</td>
-</tr>
-<tr>
-<td>Arms</td>
-<td>60</td>
-<td>Space Armor suit</td>
-</tr>
-<tr>
-<td>Hands</td>
-<td>60</td>
-<td>Space Armor suit</td>
-</tr>
-<tr>
-<td>Legs</td>
-<td>60</td>
-<td>Space Armor suit</td>
-</tr>
-<tr>
-<td>Feet</td>
-<td>60</td>
-<td>Space Armor suit</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="combat-action-chains">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat Action Chains</button>
-  <div class="accordion-body">
-    <ol>
-<li><strong>Axe Rapid Strike:</strong> Trained by a Master → two vibro-axe swings at 17−3 = <strong>14 each</strong> → armor-divisor (3) guts most DR (two mooks down in a second vs Cannon Fodder).</li>
-<li><strong>Subdue, front:</strong> Judo grapple (14) → Takedown (prone) → re-grip neck → Choke Hold (14) → unconscious in ~3 seconds.</li>
-<li><strong>Counter-choke (defense → choke):</strong> foe attacks → <strong>Judo Parry 11</strong> (+3 retreating; a successful bare-hand Judo parry is a legal grapple entry, B371) → next turn step in → <strong>Choke Hold 14</strong> (−1 front) → choke out. Turns their swing into their nap.</li>
-<li><strong>Silent kill-switch, behind:</strong> Stealth (14) / after a throw → Choke Hold, no defense allowed → carotid choke out.</li>
-<li><strong>Aimed precision shot:</strong> Aim 1 turn (brace if able) → Attack at 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = <strong>effective ~22–23</strong> before range → at shipboard range, buy a hit location (−7 skull / −5 vitals); 3d(5) burn, armor-divisor 5, vacuum-safe.</li>
-<li><strong>Snap shot / drop:</strong> Fast-Draw (Pistol)-14 free draw → blaster (Beam Weapons-15, 3d(5) burn, vacuum-safe) for a kill, or holdout electrolaser (HT-2 stun, atmosphere only) for a live capture.</li>
-</ol>
-
-  </div>
-</div>
-
-<div class="accordion" id="multi-action-combat-skill-chains">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Multi-Action Combat Skill Chains</button>
-  <div class="accordion-body">
-    <blockquote>
+<div class="tab-panel" id="tab-combat">
+<div class="gurps-combat"><div class="status"><span class="condition">Alive, uninjured (HP 13 / FP 12 full).</span><span class="location"><span class="status-label">Location:</span> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</span><span class="carrying"><span class="status-label">Carrying:</span> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit.</span></div>
+<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 9</span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
+<tr><td>Face</td><td class="num">60</td></tr>
+<tr><td>Neck</td><td class="num">60</td></tr>
+<tr><td>Torso</td><td class="num">100</td></tr>
+<tr><td>Arms</td><td class="num">60</td></tr>
+<tr><td>Hands</td><td class="num">60</td></tr>
+<tr><td>Legs</td><td class="num">60</td></tr>
+<tr><td>Feet</td><td class="num">60</td></tr></tbody></table></section>
+<div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Karate punch</td><td class="num">Karate-15</td><td class="num">11</td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Karate kick</td><td class="num">Karate-15</td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-14</td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-14</td><td class="num">11</td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Blaster pistol (Fine)</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div>
+<section class="blk cat-chain"><h2>Combat Action Chains</h2><div class="chain-group"><h3>Melee</h3><div class="chain-entry"><div class="chain-name">Axe Rapid Strike</div><div class="chain-steps"><span class="chain-step">Trained by a Master</span> <span class="chain-arrow">→</span> <span class="chain-step">two vibro-axe swings at 17−3 = 14 each</span> <span class="chain-arrow">→</span> <span class="chain-step">armor-divisor (3) guts most DR (two mooks down in a second vs Cannon Fodder).</span></div></div>
+<div class="chain-entry"><div class="chain-name">Subdue, front</div><div class="chain-steps"><span class="chain-step">Judo grapple (14)</span> <span class="chain-arrow">→</span> <span class="chain-step">Takedown (prone)</span> <span class="chain-arrow">→</span> <span class="chain-step">re-grip neck</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold (14)</span> <span class="chain-arrow">→</span> <span class="chain-step">unconscious in ~3 seconds.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Silent kill-switch, behind</div><div class="chain-steps"><span class="chain-step">Stealth (14) / after a throw</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold, no defense allowed</span> <span class="chain-arrow">→</span> <span class="chain-step">carotid choke out.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Aimed precision shot</div><div class="chain-steps"><span class="chain-step">Aim 1 turn (brace if able)</span> <span class="chain-arrow">→</span> <span class="chain-step">Attack at 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = effective ~22–23 before range</span> <span class="chain-arrow">→</span> <span class="chain-step">at shipboard range, buy a hit location (−7 skull / −5 vitals); 3d(5) burn, armor-divisor 5, vacuum-safe.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Snap shot / drop</div><div class="chain-steps"><span class="chain-step">Fast-Draw (Pistol)-14 free draw</span> <span class="chain-arrow">→</span> <span class="chain-step">blaster (Beam Weapons-15, 3d(5) burn, vacuum-safe) for a kill, or holdout electrolaser (HT-2 stun, atmosphere only) for a live capture.</span></div></div></div></section>
+<section class="blk cat-skill"><h2>Multi-Action Combat Skill Chains</h2><blockquote>
 <p>Operational state throughout: in armor, Light encumbrance (Move 4, Dodge 9). Both Karate and Judo run at full skill suited (Armor Familiarity ×2). Combat Reflexes is baked in.</p>
 </blockquote>
 <h3>Lethal options — when a kill is the cleaner, faster answer</h3>
@@ -850,300 +274,62 @@
 <li>He’s the <strong>breach point</strong> — cut in (Forced Entry 15), clear the compartment, control it.</li>
 </ul>
 <p>!697</p>
+</section><details class="rules-ref">
+<summary>Rules Reference</summary>
+<div class="rules-ref-body">
 
-  </div>
-</div>
-
-<div class="accordion" id="points-summary">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Points Summary</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Attributes</td>
-<td>130</td>
-</tr>
-<tr>
-<td>Secondary Characteristics</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Advantages &amp; Perks</td>
-<td>67</td>
-</tr>
-<tr>
-<td>Disadvantages</td>
-<td>−75</td>
-</tr>
-<tr>
-<td>Quirks</td>
-<td>−5</td>
-</tr>
-<tr>
-<td>Skills</td>
-<td>42</td>
-</tr>
-<tr>
-<td>Techniques</td>
-<td>6</td>
-</tr>
-<tr>
-<td><strong>Total</strong></td>
-<td><strong>175</strong></td>
-</tr>
-</tbody>
+<table class="ref-table">
+  <caption>Humanoid Hit Location</caption>
+  <thead><tr><th>Roll</th><th>Location</th><th class="num">Mod</th></tr></thead>
+  <tbody><tr><td>3–4</td><td>Skull</td><td class="num">–7</td></tr>
+<tr><td>5</td><td>Face</td><td class="num">–5</td></tr>
+<tr><td>6–7</td><td>Right Leg</td><td class="num">–2</td></tr>
+<tr><td>8</td><td>Right Arm</td><td class="num">–2</td></tr>
+<tr><td>9–10</td><td>Torso</td><td class="num">—</td></tr>
+<tr><td>11</td><td>Groin</td><td class="num">–3</td></tr>
+<tr><td>12</td><td>Left Arm</td><td class="num">–2</td></tr>
+<tr><td>13–14</td><td>Left Leg</td><td class="num">–2</td></tr>
+<tr><td>15</td><td>Hand</td><td class="num">–4</td></tr>
+<tr><td>16</td><td>Foot</td><td class="num">–4</td></tr>
+<tr><td>17–18</td><td>Neck</td><td class="num">–5</td></tr>
+<tr><td>—</td><td>Vitals</td><td class="num">–3</td></tr>
+<tr><td>—</td><td>Eye</td><td class="num">–9</td></tr></tbody>
 </table>
+<p class="cite">Source: GURPS Basic Set 4e, p. B552</p>
 
-  </div>
+<table class="ref-table">
+  <caption>Size &amp; Speed/Range</caption>
+  <thead><tr><th class="num">Speed/Range</th><th class="num">Size</th><th>Linear Measure</th></tr></thead>
+  <tbody><tr><td class="num">0</td><td class="num">0</td><td>2 yd</td></tr>
+<tr><td class="num">-1/+1</td><td class="num">±1</td><td>3 yd</td></tr>
+<tr><td class="num">-2/+2</td><td class="num">±2</td><td>5 yd</td></tr>
+<tr><td class="num">-3/+3</td><td class="num">±3</td><td>7 yd</td></tr>
+<tr><td class="num">-4/+4</td><td class="num">±4</td><td>10 yd</td></tr>
+<tr><td class="num">-5/+5</td><td class="num">±5</td><td>15 yd</td></tr>
+<tr><td class="num">-6/+6</td><td class="num">±6</td><td>20 yd</td></tr>
+<tr><td class="num">-7/+7</td><td class="num">±7</td><td>30 yd</td></tr>
+<tr><td class="num">-8/+8</td><td class="num">±8</td><td>50 yd</td></tr>
+<tr><td class="num">-9/+9</td><td class="num">±9</td><td>70 yd</td></tr>
+<tr><td class="num">-10/+10</td><td class="num">±10</td><td>100 yd</td></tr>
+<tr><td class="num">-11/+11</td><td class="num">±11</td><td>150 yd</td></tr>
+<tr><td class="num">-12/+12</td><td class="num">±12</td><td>200 yd</td></tr>
+<tr><td class="num">-13/+13</td><td class="num">±13</td><td>300 yd</td></tr>
+<tr><td class="num">-14/+14</td><td class="num">±14</td><td>500 yd</td></tr>
+<tr><td class="num">-15/+15</td><td class="num">±15</td><td>700 yd</td></tr></tbody>
+</table>
+<p class="cite">Source: GURPS Basic Set 4e, p. B550</p>
 </div>
-
-<div class="accordion" id="current-status">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
-  <div class="accordion-body">
-    <ul>
-<li><strong>Location:</strong> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</li>
-<li><strong>Condition:</strong> Alive, uninjured (HP 13 / FP 12 full).</li>
-<li><strong>Carrying:</strong> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit.</li>
-<li><strong>Open threads:</strong> Hunted by <a href="../../locations/federal-republic-of-worlds.html">Federal Republic of Worlds</a> / Castellan Biodynamics recovery bounty (his Secret); the batch-brand is a physical tell; a quiet, wordless debt to P.E.T.A. / Kumari Profeta.</li>
-</ul>
-
-  </div>
-</div>
-
-<div class="accordion" id="notes">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
-  <div class="accordion-body">
-    <p>Fish-out-of-water hook: <strong>fluent in ships (Spacer), hopeless with people (Clueless/Callous).</strong> Will 10 + no Fearlessness is intentional — he doesn’t process social fear, but the genuinely <em>unknown</em> can still unnerve him. It’s a <em>tuned</em> soft spot, not a hole: Combat Reflexes gives him Fright Check 12, he never freezes, and recovers fast from mental stun — but still no Fearlessness, still mortal to the genuinely wrong. His martial mastery (Trained by a Master) is <strong>loaded combat software</strong> — which is <em>why</em> he fights like a master yet has no social graces: the combat package was installed; the social one never was.</p>
-<p><strong>Status model:</strong> synthetic “assets” are an <em>openly recognized</em> property underclass (the class P.E.T.A. fights for). So Six’s <strong>Valuable Property</strong> stigma is his latent legal reality on exposure; he physically passes in a crowd, but records/scans/the batch-brand drop him into it. His <strong>Secret</strong> is the sharper danger on top: that he’s <em>escaped/stolen</em> property with a live bounty.</p>
-<p>The <strong>Always-Armored / Helmet-to-Hand SOPs</strong> mean he’s <em>always</em> visibly in armor — which makes the <strong>chameleon work-suit disguise</strong> load-bearing, not optional: it’s the only thing keeping “guy who never takes his combat rig off” from screaming <em>threat</em> everywhere he goes. Combined with <strong>Vacuum Support</strong>, a sudden hull breach won’t kill him: the decompression can’t hurt him, he holds his breath, and the helmet’s already to hand to slap on.</p>
-
-  </div>
-</div>
-<h2>Relationships</h2>
-<ul class="relationship-list">
-<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took the only job left to him — MacMillian 'security' at the dead-end of known space.</li>
-<li><strong class="rel-label">Hunted by</strong> <a href="../../locations/federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; Legally non-human property; exposure means reclamation or bounty.</li>
-<li><strong class="rel-label">Liberated by</strong> P.E.T.A. &mdash; The android-rights militants who thawed him; he owes them a quiet, wordless debt.</li>
-</ul>
+</details></div>
 </div>
 <div class="tab-panel" id="tab-equipment">
-<h3>Melee Weapons</h3>
-<table>
-<thead>
-<tr>
-<th>Weapon</th>
-<th>Skill</th>
-<th>Damage</th>
-<th>Reach</th>
-<th>Parry</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vibro-axe</td>
-<td>Axe/Mace-17</td>
-<td>3d+2 (3) cut</td>
-<td>1</td>
-<td>12 (0U)</td>
-</tr>
-<tr>
-<td>Karate punch</td>
-<td>Karate-15</td>
-<td>1d+1 cr</td>
-<td>C</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Karate kick</td>
-<td>Karate-15</td>
-<td>1d+2 cr</td>
-<td>C, 1</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Choke Hold (carotid)</td>
-<td>Choke Hold-14</td>
-<td>FP → unconscious</td>
-<td>C (grapple)</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Judo grapple / throw / Takedown</td>
-<td>Judo-14</td>
-<td>— / slam</td>
-<td>C</td>
-<td>11</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Vibro-axe to-hit <strong>17</strong> includes <strong>Weapon Bond (+1)</strong>; base Axe/Mace skill is 16.</li>
-</ul>
-
-<h3>Ranged Weapons</h3>
-<table>
-<thead>
-<tr>
-<th>Weapon</th>
-<th>Skill</th>
-<th>Damage</th>
-<th>Acc</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Shots</th>
-<th>Bulk</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Blaster pistol (Fine)</td>
-<td>Beam Weapons (Pistol)-15</td>
-<td>3d (5) burn</td>
-<td>6</td>
-<td>300/900</td>
-<td>3</td>
-<td>200(3)</td>
-<td>-2</td>
-</tr>
-<tr>
-<td>Holdout electrolaser</td>
-<td>Beam Weapons (Pistol)-15</td>
-<td>HT-2 (2) stun + 1d-3 burn</td>
-<td>2</td>
-<td>10/20</td>
-<td>3</td>
-<td>22(3)</td>
-<td>-1</td>
-</tr>
-</tbody>
-</table>
-
-<h3>Equipment</h3>
-<blockquote>
-<p>📄 Full per-item stat sheets: Vibro-Axe (MACE-06) · Blaster Pistol (Fine) · Holdout Electrolaser · Hand Thruster · Disguised Space Armor · Six — Field Sundries &amp; Reloads.</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Weight</th>
-<th>Cost</th>
-<th>Location</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vibro-axe</td>
-<td>4 lbs</td>
-<td>$500</td>
-<td>Hand / belt</td>
-<td>3d+2 (3) cut; C cell, 75 sec/cell</td>
-</tr>
-<tr>
-<td>Blaster pistol (Fine)</td>
-<td>1.6 lbs</td>
-<td>$4,400</td>
-<td>Holster</td>
-<td>3d(5) burn, Acc 6, smartgun + HUD link; vacuum-safe</td>
-</tr>
-<tr>
-<td>Holdout electrolaser</td>
-<td>0.3 lbs</td>
-<td>$250</td>
-<td>Concealed</td>
-<td>HT-2 (2) stun; atmosphere only</td>
-</tr>
-<tr>
-<td>Tactical light</td>
-<td>0.5 lbs</td>
-<td>$100</td>
-<td>Suit</td>
-<td>For dark compartments</td>
-</tr>
-<tr>
-<td>First Aid Kit (TL9)</td>
-<td>2 lbs</td>
-<td>$50</td>
-<td>On person</td>
-<td>+1 First Aid (+2 for bleeding via bandage spray — TL11 seals &amp; restores 1 HP in 3 sec). Sprays are a finite stock (not Infinite-Ammo).</td>
-</tr>
-<tr>
-<td>Hand thruster</td>
-<td>4 lbs</td>
-<td>$50</td>
-<td>Stowed (EVA transit)</td>
-<td>Cold-gas; operated on Free Fall 15</td>
-</tr>
-<tr>
-<td>Reload kit (one spare per consumable)</td>
-<td>~2.1 lbs</td>
-<td>$35</td>
-<td>On person</td>
-<td>Seed spares for Infinite Ammunition</td>
-</tr>
-<tr>
-<td>Disguised Space Armor (suit + helmet + Chameleon Surface)</td>
-<td>56 lbs</td>
-<td>$31,000</td>
-<td>Worn</td>
-<td>DR 100/60 (suit) &amp; 80/60 (helmet); sealed, Vacuum Support; chameleon work-suit livery</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Signature Gear (Dead Broke = $0 cash; all gear is points).</strong> 1 SG point = $37,500 of gear at TL11. His glance-disguise loadout (everything above) totals <strong>$36,385 = 1 pt</strong> ($1,115 unused). A full-disguise upgrade (+“Disguised” tailoring, suit $20k→$100k, helmet $3k→$15k) would be $123,500 = 4 pts — <strong>declined</strong>; staying at the 1-pt glance-disguise.</p>
-<p><strong>Disguise layers (all campaign-legal):</strong> (1) <strong>Chameleon Surface</strong> (Dynamic Multispectral; $8,000, 4 lbs) repaints the suit into MacMillian work-suit livery and doubles as active camo (+Stealth); (2) <strong>EVA logos &amp; decals</strong> (cosmetic, ≈free) sell the corp-work-gear read; (3) <strong>“Disguised” tailoring</strong> (+4 CF, ×5 cost) declined.</p>
-<h3>Encumbrance</h3>
-<table>
-<thead>
-<tr>
-<th>Level</th>
-<th>Max Weight</th>
-<th>Move</th>
-<th>Dodge</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>None (0)</td>
-<td>≤34 lbs</td>
-<td>6</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Light (1)</td>
-<td>≤68 lbs</td>
-<td>4</td>
-<td>9</td>
-</tr>
-<tr>
-<td>Medium (2)</td>
-<td>≤102 lbs</td>
-<td>3</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Heavy (3)</td>
-<td>≤204 lbs</td>
-<td>2</td>
-<td>7</td>
-</tr>
-<tr>
-<td>X-Heavy (4)</td>
-<td>≤340 lbs</td>
-<td>1</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-<p>Carried weights: armor 56 + vibro-axe 4 + blaster 1.6 + electrolaser 0.3 + tac light 0.5 + First Aid Kit 2 + reload cells ~1.1 = <strong>≈65.5 lbs → Light</strong> (combat loadout; Move 4, Dodge 9). Adding the hand thruster (4) + spare cylinder (1) = <strong>≈70.5 lbs → just into Medium</strong> (Move 3, Dodge 8). The hand thruster is transit gear: he burns across the gap, then doffs/clips it before he breaches, so he <strong>fights at Light</strong> (~2.5 lbs under the 68-lb cap). The only time he carries the full ≈70.5 lbs is mid-crossing in zero-G, where ground Move is moot.</p>
-
+<div class="gurps-equipment"><div class="wide cat-table"><h2>Equipment</h2><table class="equip-table"><thead><tr><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th><th>Location</th><th>Notes</th></tr></thead><tbody><tr><td class="num">1</td><td>Vibro-axe</td><td class="num">$500</td><td class="num">4 lbs</td><td>Hand / belt</td><td>3d+2 (3) cut; C cell, 75 sec/cell</td></tr>
+<tr><td class="num">1</td><td>Blaster pistol (Fine)</td><td class="num">$4,400</td><td class="num">1.6 lbs</td><td>Holster</td><td>3d(5) burn, Acc 6, smartgun + HUD link; vacuum-safe</td></tr>
+<tr><td class="num">1</td><td>Holdout electrolaser</td><td class="num">$250</td><td class="num">0.3 lbs</td><td>Concealed</td><td>HT-2 (2) stun; atmosphere only</td></tr>
+<tr><td class="num">1</td><td>Tactical light</td><td class="num">$100</td><td class="num">0.5 lbs</td><td>Suit</td><td>For dark compartments</td></tr>
+<tr><td class="num">1</td><td>First Aid Kit (TL9)</td><td class="num">$50</td><td class="num">2 lbs</td><td>On person</td><td>+1 First Aid (+2 for bleeding via bandage spray — TL11 seals &amp;amp; restores 1 HP in 3 sec). Sprays are a finite stock (not Infinite-Ammo).</td></tr>
+<tr><td class="num">1</td><td>Hand thruster</td><td class="num">$50</td><td class="num">4 lbs</td><td>Stowed (EVA transit)</td><td>Cold-gas; operated on Free Fall 15</td></tr>
+<tr><td class="num">1</td><td>Reload kit (one spare per consumable)</td><td class="num">$35</td><td class="num">~2.1 lbs</td><td>On person</td><td>Seed spares for Infinite Ammunition</td></tr>
+<tr><td class="num">1</td><td>Disguised Space Armor (suit + helmet + Chameleon Surface)</td><td class="num">$31,000</td><td class="num">56 lbs</td><td>Worn</td><td>DR 100/60 (suit) &amp;amp; 80/60 (helmet); sealed, Vacuum Support; chameleon work-suit livery</td></tr></tbody></table></div></div>
 </div>
 <div class="tab-panel" id="tab-story">
   <div class="story-prose">
@@ -1227,7 +413,7 @@ document.addEventListener('click', function(e) {
 });
 (function() {
   var hash = location.hash.slice(1);
-  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  if (['sheet', 'combat', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
   else if (hash) openAccordion(hash);
 })();
 </script>

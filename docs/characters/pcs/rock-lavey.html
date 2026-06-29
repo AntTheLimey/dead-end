@@ -75,209 +75,126 @@
 <div class="pull-quote">Brilliant trauma surgeon, Lost his own child on the table, Wanted on planet Wu negligent-homicide charges — a portable bounty closing on Thides, Cannot refuse a request for medical aid, The crew's sharp eye</div>
 <div class="tab-bar">
   <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="combat" onclick="switchTab('combat')">Combat</button>
   <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
   <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<div class="gurps-sheet"><div class="gurps-combat-bar"><div class="combat-stat"><span class="combat-stat-value">10</span><span class="combat-stat-label">HP</span></div>
-<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">FP</span></div>
-<div class="combat-stat"><span class="combat-stat-value">5.50</span><span class="combat-stat-label">Speed</span></div>
-<div class="combat-stat"><span class="combat-stat-value">5</span><span class="combat-stat-label">Move</span></div>
-<div class="combat-stat"><span class="combat-stat-value">8</span><span class="combat-stat-label">Dodge</span></div>
-<div class="combat-stat"><span class="combat-stat-value">8</span><span class="combat-stat-label">Parry (Parry)</span></div>
-<div class="combat-stat"><span class="combat-stat-value">7</span><span class="combat-stat-label">Parry (Judo)</span></div>
-<div class="combat-stat"><span class="combat-stat-value">7</span><span class="combat-stat-label">Parry (Wrestling)</span></div></div></div>
-<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
-<a href="#background">Background</a>
-<a href="#advantages-perks">Advantages &amp; Perks</a>
-<a href="#disadvantages-quirks">Disadvantages &amp; Quirks</a>
-<a href="#skills">Skills</a>
-<a href="#techniques">Techniques</a>
+<div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">10</div><div class="l">ST</div><div class="p">[0]</div></div><div class="a"><div class="v">10</div><div class="l">DX</div><div class="p">[0]</div></div><div class="a"><div class="v">14</div><div class="l">IQ</div><div class="p">[80]</div></div><div class="a"><div class="v">12</div><div class="l">HT</div><div class="p">[20]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">10</div><div class="l">HP</div></div><div class="a"><div class="v">14</div><div class="l">Will</div></div><div class="a"><div class="v">14</div><div class="l">Per</div></div><div class="a"><div class="v">12</div><div class="l">FP</div></div><div class="a"><div class="v">5.50</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">5</div><div class="l">Basic Move</div></div><div class="a"><div class="v">13</div><div class="l">Death Check</div></div><div class="a"><div class="v">13</div><div class="l">Consciousness Check</div></div><div class="a"><div class="v">14</div><div class="l">Fright Check</div></div><div class="a"><div class="v">14 / 14 / 14 / 14</div><div class="l">Vision / Hearing / Touch / Taste-Smell</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 20 lbs</span><span><span class="der-label">Thr</span> 1d-2</span><span><span class="der-label">Sw</span> 1d</span><span><span class="der-label">SM</span> +0</span></div></section>
+<section class="blk cat-attr"><h2>Lifting Feats</h2><table class="lift-feats"><thead><tr><th>Feat</th><th class="num">Weight</th></tr></thead><tbody><tr><td>One-Handed Lift</td><td class="num">40 lb</td></tr>
+<tr><td>Two-Handed Lift</td><td class="num">160 lb</td></tr>
+<tr><td>Shove &amp; Knock Over</td><td class="num">240 lb</td></tr>
+<tr><td>Carry on Back</td><td class="num">300 lb</td></tr>
+<tr><td>Shift Slightly</td><td class="num">1000 lb</td></tr></tbody></table></section>
+<section class="blk cat-attr"><h2>Slam</h2><div class="slam-row"><div class="slam-cell"><div class="slam-v">1d-3</div><div class="slam-l">v=1</div></div><div class="slam-cell"><div class="slam-v">1d-2</div><div class="slam-l">v=3</div></div></div><div class="slam-note">Crushing damage at Basic Move up to 5</div></section>
+<section class="blk cat-attr"><h2>Senses &amp; Checks</h2><table><tbody><tr><td class="nm">Race</td><td class="num">Human</td></tr>
+<tr><td class="nm">Age</td><td class="num">~40s</td></tr>
+<tr><td class="nm">Gender</td><td class="num">Male</td></tr>
+<tr><td class="nm">Height / Weight</td><td class="num">Average build</td></tr>
+<tr><td class="nm">TL</td><td class="num">11</td></tr>
+<tr><td class="nm">Status</td><td class="num">0</td></tr>
+<tr><td class="nm">Appearance</td><td class="num">Average</td></tr>
+<tr><td class="nm">Reaction Modifiers</td><td class="num">+2 from Healer with patients (past &amp;amp; present); −1 Social Stigma (license revoked); ±1 Workaholic (situational)</td></tr></tbody></table></section>
+<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry</span> 8</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 7</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 7</span><span class="def-chip"><span class="def-chip-label">Block</span> 6</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 8</span></div></section>
+<section class="blk cat-trait"><h2>Advantages</h2><table><tbody><tr><td class="nm">Healer 2</td><td class="num"><span class="cost">20</span></td></tr>
+<tr><td class="nm">Intuition</td><td class="num"><span class="cost">15</span></td></tr>
+<tr><td class="nm">Photographic Memory</td><td class="num"><span class="cost">10</span></td></tr>
+<tr><td class="nm">Higher Purpose 1 (Never lose another patient)</td><td class="num"><span class="cost">5</span></td></tr>
+<tr><td class="nm">Fit</td><td class="num"><span class="cost">5</span></td></tr>
+<tr><td class="nm">Sensitive</td><td class="num"><span class="cost">5</span></td></tr>
+<tr><td class="nm">Signature Gear 5 (medical gear)</td><td class="num"><span class="cost">5</span></td></tr>
+<tr><td class="nm">Single-Minded</td><td class="num"><span class="cost">5</span></td></tr></tbody></table></section>
+<section class="blk cat-trait"><h2>Disadvantages</h2><table><tbody><tr><td class="nm">Wealth (Dead Broke)</td><td class="num"><span class="cost">−25</span></td></tr>
+<tr><td class="nm">Secret (fled negligent-homicide charge on planet Wu; Utter Rejection)</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Flashbacks (Mild)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Guilt Complex</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Nightmares (12 or less)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Social Stigma −1 (license revoked)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Vow (heal anyone in need; Minor)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Workaholic</td><td class="num"><span class="cost">−5</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Acting</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Administration</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Area Knowledge (planet Wu)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Armoury/TL11 (Small Arms)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Beam Weapons/TL11 (Pistol)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Bicycling</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Bioengineering/TL11 (Biogadgets)</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Body Language (Human)</td><td class="num">13</td><td class="num rel">Per−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Brawling</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Carousing</td><td class="num">12</td><td class="num rel">HT+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Chemistry/TL11</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Climbing</td><td class="num">9</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Computer Operation/TL11</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Connoisseur (Music)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Cooking</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Current Affairs/TL11 (Headline News)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Dancing</td><td class="num">9</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Danger Sense</td><td class="num">12</td><td class="num rel">Per−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Detect Lies</td><td class="num">13<sup class="fn">*</sup></td><td class="num rel">Per−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Diagnosis/TL11</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Diplomacy</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Driving/TL11 (Automobile)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Economics</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Operation/TL11</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Operation/TL11 (Medical)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Electronics Repair/TL11</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Repair/TL11 (Medical)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Environmental Suit/TL11 (Vacc Suit)</td><td class="num">9</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Fast-Draw (Pistol)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Fast-Talk</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Finance</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">First Aid/TL11</td><td class="num">17<sup class="fn">†</sup></td><td class="num rel">IQ+3</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Fishing</td><td class="num">14</td><td class="num rel">Per+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Forgery/TL11</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Gambling</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Games (GURPS)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Gesture</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Gunner/TL11 (Machine Gun)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Guns/TL11 (Light Machine Gun)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Guns/TL11 (Pistol)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Guns/TL11 (Rifle)</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Heraldry</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Hiking</td><td class="num">11</td><td class="num rel">HT−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Intelligence Analysis/TL11</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Judo<div class="subline">Parry: 7</div></td><td class="num">8</td><td class="num rel">DX−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Leadership</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Mathematics/TL11</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Navigation/TL11</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Packing</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Pharmacy/TL11 (Synthetic)</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Physician/TL11</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Physiology/TL11 (Human)</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Poisons/TL11</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Politics</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Running</td><td class="num">11</td><td class="num rel">HT−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Savoir-Faire</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Scrounging</td><td class="num">14</td><td class="num rel">Per+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Sewing/TL11</td><td class="num">10</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Skill</td><td class="num">Level</td><td class="num rel">Relative</td><td class="num"><span class="cost">Points</span></td></tr>
+<tr><td class="nm">Skill</td><td class="num">Level</td><td class="num rel">Relative</td><td class="num"><span class="cost">Points</span></td></tr>
+<tr><td class="nm">Skill</td><td class="num">Level</td><td class="num rel">Relative</td><td class="num"><span class="cost">Points</span></td></tr>
+<tr><td class="nm">Skill</td><td class="num">Level</td><td class="num rel">Relative</td><td class="num"><span class="cost">Points</span></td></tr>
+<tr><td class="nm">Skill</td><td class="num">Level</td><td class="num rel">Relative</td><td class="num"><span class="cost">Points</span></td></tr>
+<tr><td class="nm">Soldier/TL11</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Streetwise</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Surgery/TL11 (Human)</td><td class="num">14<sup class="fn">†</sup></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Survival (Woodlands)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Typing</td><td class="num">11</td><td class="num rel">DX+1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Vacc Suit/TL11</td><td class="num">9</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Wrestling<div class="subline">Parry: 7</div></td><td class="num">9</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Techniques</h2><table><thead><tr><th>Name</th><th>Default</th><th class="num">Lvl</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Arm Lock (Judo)</td><td class="nm">def+0</td><td class="num"></td><td class="num"><span class="cost">0</span></td></tr>
+<tr><td class="nm">Combat Driving (Automobile)</td><td class="nm">def+0</td><td class="num"></td><td class="num"><span class="cost">0</span></td></tr></tbody></table></section>
+<section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Basic Attributes &amp;amp; Secondary Characteristics</td><td class="num">100</td></tr>
+<tr><td class="nm">Advantages &amp;amp; Perks</td><td class="num">70</td></tr>
+<tr><td class="nm">Disadvantages &amp;amp; Quirks</td><td class="num">−70</td></tr>
+<tr><td class="nm">Skills &amp;amp; Techniques</td><td class="num">74</td></tr>
+<tr class="total"><td class="nm">Total Spent</td><td class="num">174</td></tr>
+<tr class="unspent"><td class="nm">Unspent</td><td class="num">1</td></tr></tbody></table></section></div></div>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
 <a href="#imbuements">Imbuements</a>
 <a href="#melee-attacks">Melee Attacks</a>
-<a href="#active-defenses">Active Defenses</a>
-<a href="#combat-summary">Combat Summary</a>
-<a href="#points-summary">Points Summary</a>
 <a href="#notes">Notes</a></nav>
-
-<div class="accordion" id="stat-sheet">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
-  <div class="accordion-body">
-    <p><em>(GURPS 4e — 175-pt build / −75 disadvantages, TL11. Source: GCA export.)</em></p>
-<h3>Concept</h3>
-<p>A genuinely brilliant trauma surgeon — the doctor you wanted in the room on the worst night of your
-life, who has since picked up some rough combat skills out of sheer work conditions. Then it was <em>his</em>
-worst night: his own child on the table, a detail missed under pressure, and a death he spent and then
-<strong>borrowed past everything</strong> trying to prevent. The child died anyway. Struck off, bankrupt, and hunted
-by the people he owes, he ran to the dead-end of the charted lanes — the one place that doesn’t check a
-license or a ledger. Now he keeps strangers alive with uncanny skill and <strong>cannot refuse anyone who is
-hurt</strong>, because he failed the one who mattered.</p>
-<h3>Primary Attributes</h3>
-<table>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Score</th>
-<th>Cost</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ST</td>
-<td>10</td>
-<td>0</td>
-<td></td>
-</tr>
-<tr>
-<td>DX</td>
-<td>10</td>
-<td>0</td>
-<td></td>
-</tr>
-<tr>
-<td>IQ</td>
-<td>14</td>
-<td>80</td>
-<td>The engine of the whole build.</td>
-</tr>
-<tr>
-<td>HT</td>
-<td>12</td>
-<td>20</td>
-<td>+1 conditional from <strong>Fit</strong>.</td>
-</tr>
-</tbody>
-</table>
-<h3>Secondary Characteristics</h3>
-<table>
-<thead>
-<tr>
-<th>Characteristic</th>
-<th>Value</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HP</td>
-<td>10</td>
-<td>Track: 3 / 0 / −10 / −20 / −30 / −40 / −50</td>
-</tr>
-<tr>
-<td>Will</td>
-<td>14</td>
-<td></td>
-</tr>
-<tr>
-<td>Per</td>
-<td>14</td>
-<td>The diagnostician’s eye.</td>
-</tr>
-<tr>
-<td>FP</td>
-<td>12</td>
-<td>Track: 3 / 0 / −12</td>
-</tr>
-<tr>
-<td>Basic Speed</td>
-<td>5.50</td>
-<td></td>
-</tr>
-<tr>
-<td>Basic Move</td>
-<td>5</td>
-<td></td>
-</tr>
-<tr>
-<td>Basic Lift</td>
-<td>20 lbs</td>
-<td></td>
-</tr>
-<tr>
-<td>Damage (Thr)</td>
-<td>1d-2</td>
-<td></td>
-</tr>
-<tr>
-<td>Damage (Sw)</td>
-<td>1d</td>
-<td></td>
-</tr>
-<tr>
-<td>Size Modifier</td>
-<td>+0</td>
-<td></td>
-</tr>
-<tr>
-<td>Death Check</td>
-<td>13</td>
-<td>includes +1 from Fit</td>
-</tr>
-<tr>
-<td>Consciousness Check</td>
-<td>13</td>
-<td>includes +1 from Fit</td>
-</tr>
-<tr>
-<td>Fright Check</td>
-<td>14</td>
-<td></td>
-</tr>
-<tr>
-<td>Vision / Hearing / Touch / Taste-Smell</td>
-<td>14 / 14 / 14 / 14</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3>Appearance &amp; Social</h3>
-<table>
-<thead>
-<tr>
-<th>Trait</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Race</td>
-<td>Human</td>
-</tr>
-<tr>
-<td>Age</td>
-<td>~40s</td>
-</tr>
-<tr>
-<td>Gender</td>
-<td>Male</td>
-</tr>
-<tr>
-<td>Height / Weight</td>
-<td>Average build</td>
-</tr>
-<tr>
-<td>TL</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Status</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Appearance</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Reaction Modifiers</td>
-<td>+2 from <strong>Healer</strong> with patients (past &amp; present); −1 <strong>Social Stigma</strong> (license revoked); ±1 <strong>Workaholic</strong> (situational)</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
 
 <div class="accordion" id="background">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
@@ -295,728 +212,6 @@ tax lanes, to the frayed end of the charted dark, to the <strong><a href="../../
 hires any warm body with no questions and nobody runs a records check on the new “security” hire.
 MacMillian is the bottom of the barrel, which is exactly why it’s the only door open to him. <em>This is
 his last option.</em></p>
-
-  </div>
-</div>
-
-<div class="accordion" id="advantages-perks">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Advantages &amp; Perks</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cost</th>
-<th>Page Ref</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Healer 2</strong></td>
-<td>20</td>
-<td>B90</td>
-<td>+2 to Diagnosis, First Aid, Pharmacy, Physician, Physiology, Surgery. The engine of the build — turns IQ-14 medicine into elite work. Also +2 reactions from patients.</td>
-</tr>
-<tr>
-<td><strong>Intuition</strong></td>
-<td>15</td>
-<td>B63</td>
-<td>The diagnostician’s hunch made mechanical — the “sharp eye.” Roll vs IQ 14 to guess correctly.</td>
-</tr>
-<tr>
-<td><strong>Photographic Memory</strong></td>
-<td>10</td>
-<td>B51</td>
-<td>Perfect recall of charts, faces, doses. Roll vs IQ 14 to recall.</td>
-</tr>
-<tr>
-<td><strong>Higher Purpose 1</strong> (Never lose another patient)</td>
-<td>5</td>
-<td>B59</td>
-<td>+1 to all rolls actively trying to save a life.</td>
-</tr>
-<tr>
-<td><strong>Fit</strong></td>
-<td>5</td>
-<td>B55</td>
-<td>+1 to HT rolls, 2× FP recovery; folds into HT 12 and the Death/Consciousness checks.</td>
-</tr>
-<tr>
-<td><strong>Sensitive</strong></td>
-<td>5</td>
-<td>B51</td>
-<td>+1 to sense others’ feelings; included in Detect Lies. Bedside read.</td>
-</tr>
-<tr>
-<td><strong>Signature Gear 5</strong> (medical gear)</td>
-<td>5</td>
-<td>B85</td>
-<td>His own kept medical kit — survives Dead Broke (gear bought with points, not cash). See Equipment.</td>
-</tr>
-<tr>
-<td><strong>Single-Minded</strong></td>
-<td>5</td>
-<td>B85</td>
-<td>+3 on long focused tasks — a three-hour surgery, or an obsession he can’t put down.</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="disadvantages-quirks">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Disadvantages &amp; Quirks</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cost</th>
-<th>Page Ref</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Wealth (Dead Broke)</strong></td>
-<td>−25</td>
-<td>B25</td>
-<td>Wiped out — everything went to the treatment and the people he owes. Owns nothing but his Signature Gear medical kit.</td>
-</tr>
-<tr>
-<td><strong>Secret</strong> (fled negligent-homicide charge on planet Wu; <em>Utter Rejection</em>)</td>
-<td>−10</td>
-<td>B152</td>
-<td>The charge is <strong>planetary, not federal</strong> — the Thides Federal Marshal has no cause over another world’s warrant. The danger is the <strong>portable bounty</strong>: when word reaches the dead end, freelance bounty hunters / skip-tracers come to grab him. <em>Why he hides here.</em></td>
-</tr>
-<tr>
-<td><strong>Flashbacks (Mild)</strong></td>
-<td>−5</td>
-<td>B135</td>
-<td>A wound that looks like his kid’s, under stress, sends him <em>back.</em></td>
-</tr>
-<tr>
-<td><strong>Guilt Complex</strong></td>
-<td>−5</td>
-<td>B136</td>
-<td>Takes the blame for everything that goes wrong near him.</td>
-</tr>
-<tr>
-<td><strong>Nightmares</strong> (12 or less)</td>
-<td>−5</td>
-<td>B144</td>
-<td>Relives the night he missed it; roll each morning or lose FP.</td>
-</tr>
-<tr>
-<td><strong>Social Stigma −1</strong> (license revoked)</td>
-<td>−5</td>
-<td>B155</td>
-<td>Struck off — can’t legally practice, which is exactly why frontier “security” is the only door open.</td>
-</tr>
-<tr>
-<td><strong>Vow</strong> (heal anyone in need; <em>Minor</em>)</td>
-<td>−5</td>
-<td>B160</td>
-<td>Cannot turn away anyone hurt. It’s how he atones — and a magnificent way to drag the crew into trouble.</td>
-</tr>
-<tr>
-<td><strong>Workaholic</strong></td>
-<td>−5</td>
-<td>B162</td>
-<td>Can’t stop, can’t rest. Work is the only thing that quiets the empty chair.</td>
-</tr>
-</tbody>
-</table>
-<h3>Quirks [−5]</h3>
-<ol>
-<li>Flinches at “Doctor”; won’t give his old title.</li>
-<li>Keeps his son’s favourite toy — can neither look at it nor throw it away.</li>
-<li>Only drinks to sleep, never to celebrate.</li>
-<li>Over-explains medical risks to people who never asked.</li>
-<li>Tracks others’ vitals by rote — watches breathing, finds pulse points.</li>
-</ol>
-
-  </div>
-</div>
-
-<div class="accordion" id="skills">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
-  <div class="accordion-body">
-    <blockquote>
-<p>Effective levels include <strong>Healer +2</strong> (marked †) and <strong>Sensitive +1</strong> (marked *).</p>
-</blockquote>
-<h3>Medicine [16]</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>First Aid/TL11</td>
-<td>IQ/E</td>
-<td>IQ+3</td>
-<td><strong>17 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Diagnosis/TL11</td>
-<td>IQ/H</td>
-<td>IQ+1</td>
-<td><strong>15 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Pharmacy/TL11 (Synthetic)</td>
-<td>IQ/H</td>
-<td>IQ+1</td>
-<td><strong>15 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Physician/TL11</td>
-<td>IQ/H</td>
-<td>IQ+1</td>
-<td><strong>15 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Physiology/TL11 (Human)</td>
-<td>IQ/H</td>
-<td>IQ+1</td>
-<td><strong>15 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Surgery/TL11 (Human)</td>
-<td>IQ/VH</td>
-<td>IQ+0</td>
-<td><strong>14 †</strong></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Poisons/TL11</td>
-<td>IQ/H</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Electronics Operation/TL11 (Medical)</td>
-<td>IQ/A</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<h3>Science &amp; Technical</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bioengineering/TL11 (Biogadgets)</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Chemistry/TL11</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Mathematics/TL11</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Electronics Operation/TL11</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Electronics Repair/TL11</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Electronics Repair/TL11 (Medical)</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Computer Operation/TL11</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Armoury/TL11 (Small Arms)</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3>Perception &amp; Social</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Detect Lies</td>
-<td>Per/H</td>
-<td>Per−1</td>
-<td>13 *</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Body Language (Human)</td>
-<td>Per/A</td>
-<td>Per−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Danger Sense</td>
-<td>Per</td>
-<td>Per−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Fishing</td>
-<td>Per/A</td>
-<td>Per+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Acting</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Diplomacy</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Fast-Talk</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Savoir-Faire</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Streetwise</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Leadership</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Carousing</td>
-<td>HT/E</td>
-<td>HT+0</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Gambling</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Scrounging</td>
-<td>Per/E</td>
-<td>Per+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Connoisseur (Music)</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Gesture</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3>Knowledge &amp; Administration</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Area Knowledge (planet Wu)</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Current Affairs/TL11 (Headline News)</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Administration</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Economics</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Finance</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Intelligence Analysis/TL11</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Politics</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Heraldry</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Forgery/TL11</td>
-<td>IQ/H</td>
-<td>IQ−2</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Games (GURPS)</td>
-<td>IQ/E</td>
-<td>IQ+0</td>
-<td>14</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3>Combat &amp; Security</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Brawling</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Beam Weapons/TL11 (Pistol)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Guns/TL11 (Pistol)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Guns/TL11 (Rifle)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Guns/TL11 (Light Machine Gun)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Gunner/TL11 (Machine Gun)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Fast-Draw (Pistol)</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Judo</td>
-<td>DX/H</td>
-<td>DX−2</td>
-<td>8</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Wrestling</td>
-<td>DX/A</td>
-<td>DX−1</td>
-<td>9</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Soldier/TL11</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3>Outdoors, Travel &amp; Everyday</h3>
-<table>
-<thead>
-<tr>
-<th>Skill</th>
-<th>Diff.</th>
-<th>Relative</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Navigation/TL11</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Packing</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Survival (Woodlands)</td>
-<td>Per/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Hiking</td>
-<td>HT/A</td>
-<td>HT−1</td>
-<td>11</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Running</td>
-<td>HT/A</td>
-<td>HT−1</td>
-<td>11</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Climbing</td>
-<td>DX/A</td>
-<td>DX−1</td>
-<td>9</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Driving/TL11 (Automobile)</td>
-<td>DX/A</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Bicycling</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Dancing</td>
-<td>DX/A</td>
-<td>DX−1</td>
-<td>9</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Environmental Suit/TL11 (Vacc Suit)</td>
-<td>DX/A</td>
-<td>DX−1</td>
-<td>9</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Vacc Suit/TL11</td>
-<td>DX/A</td>
-<td>DX−1</td>
-<td>9</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Cooking</td>
-<td>IQ/A</td>
-<td>IQ−1</td>
-<td>13</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Sewing/TL11</td>
-<td>DX/E</td>
-<td>DX+0</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Typing</td>
-<td>DX/E</td>
-<td>DX+1</td>
-<td>11</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="techniques">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Techniques</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Default</th>
-<th>Level</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Arm Lock (Judo)</td>
-<td>def+0</td>
-<td>8</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Combat Driving (Automobile)</td>
-<td>def+0</td>
-<td>10</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
 
   </div>
 </div>
@@ -1089,107 +284,6 @@ his last option.</em></p>
   </div>
 </div>
 
-<div class="accordion" id="active-defenses">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Active Defenses</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Defense</th>
-<th>Value</th>
-<th>Source</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dodge</td>
-<td>8</td>
-<td>Basic Speed 5.5, no encumbrance</td>
-</tr>
-<tr>
-<td>Parry</td>
-<td>8</td>
-<td>DX / Brawling</td>
-</tr>
-<tr>
-<td>Parry (Judo)</td>
-<td>7</td>
-<td>Judo 8</td>
-</tr>
-<tr>
-<td>Parry (Wrestling)</td>
-<td>7</td>
-<td>Wrestling 9</td>
-</tr>
-<tr>
-<td>Block</td>
-<td>6</td>
-<td>DX</td>
-</tr>
-<tr>
-<td>DR</td>
-<td>0</td>
-<td>Torso (no armor)</td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
-<div class="accordion" id="combat-summary">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat Summary</button>
-  <div class="accordion-body">
-    <p>A non-combatant who survives by <em>defense and distance.</em> <strong>Dodge 8</strong>, <strong>Brawling/Punch 10</strong> (Parry 8,
-1d-3 cr), basic competence with sidearms and beam pistols at skill 10 — broad but shallow, the
-“rough combat skills picked up from work conditions.” His real weapon is <strong>First Aid 17 / Diagnosis,
-Physician, Pharmacy, Physiology 15 / Surgery 14</strong>, all already including <strong>Healer 2</strong> and boosted by
-<strong>Higher Purpose</strong> in a life-saving clutch. He keeps the crew <em>alive</em>; he does not win firefights.</p>
-
-  </div>
-</div>
-
-<div class="accordion" id="points-summary">
-  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Points Summary</button>
-  <div class="accordion-body">
-    <table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Basic Attributes &amp; Secondary Characteristics</td>
-<td>100</td>
-</tr>
-<tr>
-<td>Advantages &amp; Perks</td>
-<td>70</td>
-</tr>
-<tr>
-<td>Disadvantages &amp; Quirks</td>
-<td>−70</td>
-</tr>
-<tr>
-<td>Skills &amp; Techniques</td>
-<td>74</td>
-</tr>
-<tr>
-<td><strong>Total Spent</strong></td>
-<td><strong>174</strong></td>
-</tr>
-<tr>
-<td><strong>Unspent</strong></td>
-<td><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-
-  </div>
-</div>
-
 <div class="accordion" id="notes">
   <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
   <div class="accordion-body">
@@ -1226,6 +320,60 @@ stop feeling safe.</p>
 <li><strong class="rel-label">Employed by</strong> <a href="../../factions/macmillian-mining-and-extraction-corporation.html" class="entity-link">MacMillian Mining and Extraction Corporation</a> &mdash; Nominal 'security'; in practice the crew's medic, running on his own kept medical gear and the station infirmary.</li>
 <li><strong class="rel-label">Allied with</strong> <a href="six.html" class="entity-link">Six</a> &mdash; Scanned Six, learned what he is — and said nothing. The doctor who chose mercy over the bounty; Six owes him a wordless debt.</li>
 </ul>
+</div>
+<div class="tab-panel" id="tab-combat">
+<div class="gurps-combat"><section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry</span> 8</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 7</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 7</span><span class="def-chip"><span class="def-chip-label">Block</span> 6</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 8</span></div></section>
+<section class="blk cat-skill"><h2>Combat Summary</h2><p>A non-combatant who survives by <em>defense and distance.</em> <strong>Dodge 8</strong>, <strong>Brawling/Punch 10</strong> (Parry 8,
+1d-3 cr), basic competence with sidearms and beam pistols at skill 10 — broad but shallow, the
+“rough combat skills picked up from work conditions.” His real weapon is <strong>First Aid 17 / Diagnosis,
+Physician, Pharmacy, Physiology 15 / Surgery 14</strong>, all already including <strong>Healer 2</strong> and boosted by
+<strong>Higher Purpose</strong> in a life-saving clutch. He keeps the crew <em>alive</em>; he does not win firefights.</p>
+</section><details class="rules-ref">
+<summary>Rules Reference</summary>
+<div class="rules-ref-body">
+
+<table class="ref-table">
+  <caption>Humanoid Hit Location</caption>
+  <thead><tr><th>Roll</th><th>Location</th><th class="num">Mod</th></tr></thead>
+  <tbody><tr><td>3–4</td><td>Skull</td><td class="num">–7</td></tr>
+<tr><td>5</td><td>Face</td><td class="num">–5</td></tr>
+<tr><td>6–7</td><td>Right Leg</td><td class="num">–2</td></tr>
+<tr><td>8</td><td>Right Arm</td><td class="num">–2</td></tr>
+<tr><td>9–10</td><td>Torso</td><td class="num">—</td></tr>
+<tr><td>11</td><td>Groin</td><td class="num">–3</td></tr>
+<tr><td>12</td><td>Left Arm</td><td class="num">–2</td></tr>
+<tr><td>13–14</td><td>Left Leg</td><td class="num">–2</td></tr>
+<tr><td>15</td><td>Hand</td><td class="num">–4</td></tr>
+<tr><td>16</td><td>Foot</td><td class="num">–4</td></tr>
+<tr><td>17–18</td><td>Neck</td><td class="num">–5</td></tr>
+<tr><td>—</td><td>Vitals</td><td class="num">–3</td></tr>
+<tr><td>—</td><td>Eye</td><td class="num">–9</td></tr></tbody>
+</table>
+<p class="cite">Source: GURPS Basic Set 4e, p. B552</p>
+
+<table class="ref-table">
+  <caption>Size &amp; Speed/Range</caption>
+  <thead><tr><th class="num">Speed/Range</th><th class="num">Size</th><th>Linear Measure</th></tr></thead>
+  <tbody><tr><td class="num">0</td><td class="num">0</td><td>2 yd</td></tr>
+<tr><td class="num">-1/+1</td><td class="num">±1</td><td>3 yd</td></tr>
+<tr><td class="num">-2/+2</td><td class="num">±2</td><td>5 yd</td></tr>
+<tr><td class="num">-3/+3</td><td class="num">±3</td><td>7 yd</td></tr>
+<tr><td class="num">-4/+4</td><td class="num">±4</td><td>10 yd</td></tr>
+<tr><td class="num">-5/+5</td><td class="num">±5</td><td>15 yd</td></tr>
+<tr><td class="num">-6/+6</td><td class="num">±6</td><td>20 yd</td></tr>
+<tr><td class="num">-7/+7</td><td class="num">±7</td><td>30 yd</td></tr>
+<tr><td class="num">-8/+8</td><td class="num">±8</td><td>50 yd</td></tr>
+<tr><td class="num">-9/+9</td><td class="num">±9</td><td>70 yd</td></tr>
+<tr><td class="num">-10/+10</td><td class="num">±10</td><td>100 yd</td></tr>
+<tr><td class="num">-11/+11</td><td class="num">±11</td><td>150 yd</td></tr>
+<tr><td class="num">-12/+12</td><td class="num">±12</td><td>200 yd</td></tr>
+<tr><td class="num">-13/+13</td><td class="num">±13</td><td>300 yd</td></tr>
+<tr><td class="num">-14/+14</td><td class="num">±14</td><td>500 yd</td></tr>
+<tr><td class="num">-15/+15</td><td class="num">±15</td><td>700 yd</td></tr></tbody>
+</table>
+<p class="cite">Source: GURPS Basic Set 4e, p. B550</p>
+</div>
+</details></div>
 </div>
 <div class="tab-panel" id="tab-equipment">
 <h3>Equipment</h3>
@@ -1314,7 +462,7 @@ document.addEventListener('click', function(e) {
 });
 (function() {
   var hash = location.hash.slice(1);
-  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  if (['sheet', 'combat', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
   else if (hash) openAccordion(hash);
 })();
 </script>
