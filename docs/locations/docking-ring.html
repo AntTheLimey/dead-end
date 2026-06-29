@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docking Ring — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Locations</a><span class="sep">&rsaquo;</span>Docking Ring</nav>
+<div class="hero-banner hero-banner-no-img">
+  <h1>Docking Ring</h1>
+  <div class="meta"></div>
+</div>
+<div class="pull-quote">Overview
+The outermost ring of the station, the docking ring is where most of the ships arrive at the station. Smaller ships can fit into the hangers that allow the area around them to be pressurized.</div>
+<h2>Overview</h2>
+<p>The outermost ring of the station, the docking ring is where most of the ships arrive at the station. Smaller ships can fit into the hangers that allow the area around them to be pressurized. Larger ships need to attach to docking rings, and look to drones or lurkers to hook service them. The ring is broken into two parts, the public section that is accessible to the public, and the corporate section that is limited to company personal. The public section is less active, mostly being used by people operating their own ships in the system. There is limited inter-system traffic, mostly supply ships delivering items not able to be produced in system, and a few daily transports offering passage in/out of the system.The corporate system is mostly built around the processing and shipping of the extracted resources from the system. These are loaded onto large transport trains, and sent out to their pre-planned destinations. While much of the dock’s operations are automated, the age of the station and equipment leads to many breakdowns, and a need for a much larger human staff than normal</p>
+<h2>Points of Interest</h2>
+<h2>Source References</h2>
+<ul>
+<li>mobRPG ‘Space’ world (Tim) — API import</li>
+</ul>
+<blockquote>
+<p>[!info] Reconstruction Note
+Imported from mobRPG (canon).</p>
+</blockquote>
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

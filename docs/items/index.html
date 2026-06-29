@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items &amp; Artifacts — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span>Items</nav>
+
+<div class="index-header">
+  <h1 class="page-title">Armory & Acquisitions</h1>
+  <span class="index-count">9 items catalogued</span>
+</div>
+<div class="armory"><section class="armory-section">
+  <h2 class="armory-section-title">Vehicle</h2>
+  <div class="armory-list"><div class="armory-item">
+  <span class="armory-item-name"><a href="beacon.html">Beacon</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="diamon-mark-xii-servicing-tug.html">Diamon Mark XII Servicing Tug</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="gate.html">Gate</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="horizon-aerospace-st-160.html">Horizon Aerospace ST-160</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="orion-class-salvage-ship.html">Orion Class Salvage Ship</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="sentinel-class-corvette.html">Sentinel Class Corvette</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="steiger-bulk-cargo-hauler-tug.html">Steiger Bulk Cargo Hauler Tug</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="strider-class-transport-ship.html">Strider Class Transport Ship</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div>
+<div class="armory-item">
+  <span class="armory-item-name"><a href="vortex-engine.html">Vortex Engine</a></span>
+  <span class="armory-item-type">Vehicle</span>
+  
+</div></div>
+</section></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/filters.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

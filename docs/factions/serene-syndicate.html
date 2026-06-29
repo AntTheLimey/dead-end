@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serene Syndicate — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Factions</a><span class="sep">&rsaquo;</span>Serene Syndicate</nav>
+
+<div class="char-header">
+  
+  <h1>Serene Syndicate</h1>
+</div>
+
+
+
+<div class="goals"><h3>Goals</h3><ul></ul></div>
+<div class="members"><h3>Members</h3><ul><li><a href="../characters/npcs/opeyemi-tich.html">Opeyemi Tichá</a></li></ul></div>
+<h2>Overview</h2>
+<p>An Inter-steller criminal loosely affiliated organization. Their name is given to them by the Marshal service due to their quiet and unassuming nature as there is no recorded structure or knowledge of membership. Members know of who inducted them and any one else they know of. To meet a member they don’t personally know, they need to be introduced by a member that knows both them and the new party. This rule has made it difficult for the Marshals to break their influence, as it’s hard to get informants into the organization. Even those that do manage, don’t often come into contact with more than a few members.</p>
+<p>The organization is divided up into many independent operating groups that have little or no contact with one another. Each group usually controls a territory. These territories can be entires systems, or just a city block. They depend on the size of the group, and the boss’s influence. Each group is lead by a boss. That boss usually has a number of underlings. These underlings usually lead a crew. Sometimes the boss leads a crew, but this usually only occurs if the boss’s group is only a few members. Often a boss will not know all the members of the group, they usually just know the underlings. At the bottom the crew members will only know their leader, who they assume is the boss. If their leader is actually an underling, they don’t often know who the boss is. Groups names are often labeled by some feature of the territory they control.</p>
+<p>Disputes between Syndicate members can be hard to resolve. First, most time those in dispute don’t know the other is a member. Second, that often they don’t have a shared member that they trust to resolve this disputes. Because wars between groups are bad for business, many of the more powerful bosses take care to get introductions to anyone in neighboring groups and their bosses. In additon there are many symbols the Syndicate uses to mark out a territory is occupied by another group.</p>
+<h2>Goals &amp; Methods</h2>
+<h2>Resources</h2>
+<h2>History</h2>
+<blockquote>
+<p>[!info] Reconstruction Note
+Imported from mobRPG (canon). factionType from mobRPG organization-type.</p>
+</blockquote>
+
+
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

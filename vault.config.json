@@ -1,0 +1,24 @@
+{
+  "siteTitle": "Dead End",
+  "landingTagline": "A space-noir GURPS campaign at the frayed dead-end of charted space — where four nobodies stumble onto the biggest secret in human history.",
+  "siteUrl": "https://antthelimey.github.io/dead-end/",
+  "vaultPath": "/Users/antonypegg/Documents/space_game",
+  "outputDir": "./docs",
+  "attachmentsDir": "_attachments",
+  "folderMap": {
+    "Characters/PCs": "characters/pcs",
+    "Characters/NPCs": "characters/npcs",
+    "Locations": "locations",
+    "Factions & Organizations": "factions",
+    "Items & Artifacts": "items",
+    "Creatures": "creatures",
+    "Heritages": "heritages",
+    "Events": "events",
+    "Documents": "documents",
+    "Clues": "clues",
+    "_World": "world",
+    "_Campaign": "campaign"
+  },
+  "excludeDirs": ["_meta", "_Templates", "_midwife", "_inbox", "_QA"],
+  "excludeSections": ["GM Notes", "DM Notes", "Player Notes", "Source References"]
+}

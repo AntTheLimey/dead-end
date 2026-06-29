@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 720" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="720" fill="#fdfdfb"/>
+  <text x="520" y="18" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Six — Melee Decision Flow (what to roll at each step)</text>
+
+  <!-- START -->
+  <rect x="420" y="30" width="200" height="40" rx="8" fill="#dcdcdc" stroke="#888"/>
+  <text x="520" y="55" text-anchor="middle" font-size="13" font-weight="bold">MELEE — Six engages</text>
+  <line x1="520" y1="70" x2="520" y2="90" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- D1 -->
+  <rect x="388" y="92" width="264" height="44" rx="8" fill="#f4d58d" stroke="#c9a44e"/>
+  <text x="520" y="119" text-anchor="middle" font-size="13" font-weight="bold">Is a foe ATTACKING Six this turn?</text>
+
+  <!-- D1 -> DEFEND (left) -->
+  <path d="M 388 118 L 205 198" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="262" y="150" text-anchor="middle" font-size="11.5" font-style="italic" fill="#555">YES — defend</text>
+  <!-- D1 -> D2 (right) -->
+  <path d="M 652 118 L 712 202" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="700" y="150" text-anchor="middle" font-size="11.5" font-style="italic" fill="#555">NO — Six acts first</text>
+
+  <!-- DEFEND box -->
+  <rect x="40" y="200" width="330" height="150" rx="8" fill="#aecce6" stroke="#5d86ab"/>
+  <text x="55" y="222" font-size="12.5" font-weight="bold">WHEN ATTACKED — pick a defense</text>
+  <text x="55" y="240" font-size="11.5">(Combat Reflexes +1 already included):</text>
+  <text x="55" y="262" font-size="11.5">• Judo Parry 10 — twice/turn,</text>
+  <text x="68" y="278" font-size="11.5">no −3 vs weapons; +3 on a Retreat</text>
+  <text x="55" y="300" font-size="11.5">• Dodge 9 — +3 if you Retreat</text>
+  <text x="55" y="322" font-size="11.5">• Vibro-axe Parry 12 (0U: once,</text>
+  <text x="68" y="338" font-size="11.5">not on the turn it attacks)</text>
+
+  <!-- DEFEND -> PARRY -->
+  <line x1="205" y1="350" x2="205" y2="372" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="318" y="366" text-anchor="middle" font-size="11" font-style="italic" fill="#555">Judo Parry lands</text>
+
+  <!-- PARRY box -->
+  <rect x="55" y="372" width="300" height="110" rx="8" fill="#aecce6" stroke="#5d86ab"/>
+  <text x="70" y="394" font-size="12.5" font-weight="bold">JUDO-PARRY → CHOKE (parry landed)</text>
+  <text x="70" y="414" font-size="11.5">Your NEXT turn: step into close combat,</text>
+  <text x="70" y="432" font-size="11.5">roll Choke Hold 14 (−1 from the front)</text>
+  <text x="70" y="450" font-size="11.5">to clamp the neck. Foe gets a defense.</text>
+  <text x="70" y="470" font-size="11.5" font-weight="bold">Success → neck grappled ↓</text>
+
+  <!-- PARRY -> CHOKE -->
+  <line x1="205" y1="482" x2="205" y2="558" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- D2 -->
+  <rect x="560" y="202" width="300" height="46" rx="8" fill="#f4d58d" stroke="#c9a44e"/>
+  <text x="710" y="223" text-anchor="middle" font-size="12.5" font-weight="bold">Lethal authorized?</text>
+  <text x="710" y="240" text-anchor="middle" font-size="11" font-style="italic" fill="#555">Doctrine: default NO</text>
+
+  <!-- D2 -> NEUT -->
+  <path d="M 640 248 L 590 286" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="556" y="272" text-anchor="middle" font-size="11" font-style="italic" fill="#555">NO → neutralize</text>
+  <!-- D2 -> LETH -->
+  <path d="M 820 248 L 885 286" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="880" y="272" text-anchor="middle" font-size="11" font-style="italic" fill="#555">YES → axe</text>
+
+  <!-- NEUT box -->
+  <rect x="440" y="288" width="305" height="168" rx="8" fill="#abd6ab" stroke="#5e955e"/>
+  <text x="455" y="310" font-size="12.5" font-weight="bold">NEUTRALIZE — Doctrine default</text>
+  <text x="455" y="332" font-size="11.5">• Behind (Stealth 14): Choke Hold 14 —</text>
+  <text x="468" y="348" font-size="11.5">they get NO defense → neck grappled</text>
+  <text x="455" y="372" font-size="11.5">• Front: Judo 14 grapple → next turn</text>
+  <text x="468" y="388" font-size="11.5">Takedown (Quick Contest) → prone →</text>
+  <text x="468" y="404" font-size="11.5">re-grip neck → Choke Hold 14</text>
+  <text x="455" y="428" font-size="11.5">• Tap-out: Karate kick 14 (1d+2 cr);</text>
+  <text x="468" y="444" font-size="11.5">Cannon Fodder drops a mook past DR —</text>
+  <text x="481" y="460" font-size="11.5" font-style="italic">declare it non-lethal</text>
+
+  <!-- NEUT -> CHOKE -->
+  <line x1="592" y1="456" x2="592" y2="558" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LETH box -->
+  <rect x="775" y="288" width="250" height="168" rx="8" fill="#e6abab" stroke="#a85d5d"/>
+  <text x="790" y="310" font-size="12.5" font-weight="bold">LETHAL — vibro-axe</text>
+  <text x="790" y="330" font-size="11.5">Axe/Mace 16 → 3d+2 (3) cut, Reach 1:</text>
+  <text x="790" y="354" font-size="11.5">• Rapid Strike (TbaM): 2× @ 13</text>
+  <text x="790" y="374" font-size="11.5">• All-Out Atk (Strong): 3d+4 (3)</text>
+  <text x="790" y="394" font-size="11.5">• Targeted Attack (Neck) [future]</text>
+  <text x="790" y="420" font-size="11.5">Cannon Fodder: any wound past</text>
+  <text x="790" y="436" font-size="11.5">DR = that mook is OUT.</text>
+
+  <!-- CHOKE box -->
+  <rect x="120" y="560" width="600" height="128" rx="8" fill="#cbb3e6" stroke="#7d5da8"/>
+  <text x="140" y="584" font-size="13" font-weight="bold">CHOKE-OUT — carotid &#8220;blood&#8221; choke, every turn:</text>
+  <text x="140" y="606" font-size="12">Quick Contest: your ST 16 (13 +3 hold) vs foe&#8217;s higher of ST or HT.</text>
+  <text x="140" y="626" font-size="12">Win → foe loses FP = your margin of victory.</text>
+  <text x="140" y="646" font-size="12">Their Break Free attempts: you&#8217;re at +5 (two hands on the hold).</text>
+  <text x="140" y="668" font-size="12" font-weight="bold">Foe at 0 FP → Will roll or UNCONSCIOUS (~3 turns).  Non-lethal ✓</text>
+
+  <!-- Legend -->
+  <rect x="760" y="495" width="265" height="150" rx="6" fill="#ffffff" stroke="#bbb"/>
+  <text x="772" y="514" font-size="11.5" font-weight="bold">Legend</text>
+  <rect x="772" y="522" width="14" height="14" fill="#f4d58d" stroke="#c9a44e"/><text x="794" y="533" font-size="11">Decision (what to roll)</text>
+  <rect x="772" y="544" width="14" height="14" fill="#aecce6" stroke="#5d86ab"/><text x="794" y="555" font-size="11">Defense</text>
+  <rect x="772" y="566" width="14" height="14" fill="#abd6ab" stroke="#5e955e"/><text x="794" y="577" font-size="11">Neutralize (non-lethal)</text>
+  <rect x="772" y="588" width="14" height="14" fill="#e6abab" stroke="#a85d5d"/><text x="794" y="599" font-size="11">Lethal (vibro-axe)</text>
+  <rect x="772" y="610" width="14" height="14" fill="#cbb3e6" stroke="#7d5da8"/><text x="794" y="621" font-size="11">Choke-out endpoint</text>
+</svg>

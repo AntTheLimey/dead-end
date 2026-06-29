@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Lavey — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Rock Lavey</nav>
+<div class="hero-cinematic hero-cinematic-no-img">
+  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">RL</div>
+  <h1>Rock Lavey</h1>
+  <div class="meta">
+    <span><span class="label">Player</span> Jay</span>
+    <span><span class="label">Point Total</span> 175</span>
+    <span><span class="label">Age</span> ~40s</span>
+    <span><span class="label">Status</span> alive</span>
+  </div>
+</div>
+<div class="pull-quote">Brilliant trauma surgeon, Lost his own child on the table, Wanted on planet Wu negligent-homicide charges — a portable bounty closing on Thides, Cannot refuse a request for medical aid, The crew's sharp eye</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<div class="gurps-sheet"><div class="gurps-combat-bar"><div class="combat-stat"><span class="combat-stat-value">10</span><span class="combat-stat-label">HP</span></div>
+<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">FP</span></div>
+<div class="combat-stat"><span class="combat-stat-value">5.50</span><span class="combat-stat-label">Speed</span></div>
+<div class="combat-stat"><span class="combat-stat-value">5</span><span class="combat-stat-label">Move</span></div>
+<div class="combat-stat"><span class="combat-stat-value">8</span><span class="combat-stat-label">Dodge</span></div>
+<div class="combat-stat"><span class="combat-stat-value">8</span><span class="combat-stat-label">Parry (Parry)</span></div>
+<div class="combat-stat"><span class="combat-stat-value">7</span><span class="combat-stat-label">Parry (Judo)</span></div>
+<div class="combat-stat"><span class="combat-stat-value">7</span><span class="combat-stat-label">Parry (Wrestling)</span></div></div></div>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
+<a href="#advantages-perks">Advantages &amp; Perks</a>
+<a href="#disadvantages-quirks">Disadvantages &amp; Quirks</a>
+<a href="#skills">Skills</a>
+<a href="#techniques">Techniques</a>
+<a href="#imbuements">Imbuements</a>
+<a href="#melee-attacks">Melee Attacks</a>
+<a href="#active-defenses">Active Defenses</a>
+<a href="#combat-summary">Combat Summary</a>
+<a href="#points-summary">Points Summary</a>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <p><em>(GURPS 4e — 175-pt build / −75 disadvantages, TL11. Source: GCA export.)</em></p>
+<h3>Concept</h3>
+<p>A genuinely brilliant trauma surgeon — the doctor you wanted in the room on the worst night of your
+life, who has since picked up some rough combat skills out of sheer work conditions. Then it was <em>his</em>
+worst night: his own child on the table, a detail missed under pressure, and a death he spent and then
+<strong>borrowed past everything</strong> trying to prevent. The child died anyway. Struck off, bankrupt, and hunted
+by the people he owes, he ran to the dead-end of the charted lanes — the one place that doesn’t check a
+license or a ledger. Now he keeps strangers alive with uncanny skill and <strong>cannot refuse anyone who is
+hurt</strong>, because he failed the one who mattered.</p>
+<h3>Primary Attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Score</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ST</td>
+<td>10</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>DX</td>
+<td>10</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>IQ</td>
+<td>14</td>
+<td>80</td>
+<td>The engine of the whole build.</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>12</td>
+<td>20</td>
+<td>+1 conditional from <strong>Fit</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3>Secondary Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>10</td>
+<td>Track: 3 / 0 / −10 / −20 / −30 / −40 / −50</td>
+</tr>
+<tr>
+<td>Will</td>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td>Per</td>
+<td>14</td>
+<td>The diagnostician’s eye.</td>
+</tr>
+<tr>
+<td>FP</td>
+<td>12</td>
+<td>Track: 3 / 0 / −12</td>
+</tr>
+<tr>
+<td>Basic Speed</td>
+<td>5.50</td>
+<td></td>
+</tr>
+<tr>
+<td>Basic Move</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>Basic Lift</td>
+<td>20 lbs</td>
+<td></td>
+</tr>
+<tr>
+<td>Damage (Thr)</td>
+<td>1d-2</td>
+<td></td>
+</tr>
+<tr>
+<td>Damage (Sw)</td>
+<td>1d</td>
+<td></td>
+</tr>
+<tr>
+<td>Size Modifier</td>
+<td>+0</td>
+<td></td>
+</tr>
+<tr>
+<td>Death Check</td>
+<td>13</td>
+<td>includes +1 from Fit</td>
+</tr>
+<tr>
+<td>Consciousness Check</td>
+<td>13</td>
+<td>includes +1 from Fit</td>
+</tr>
+<tr>
+<td>Fright Check</td>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td>Vision / Hearing / Touch / Taste-Smell</td>
+<td>14 / 14 / 14 / 14</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Appearance &amp; Social</h3>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Race</td>
+<td>Human</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>~40s</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Height / Weight</td>
+<td>Average build</td>
+</tr>
+<tr>
+<td>TL</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Appearance</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Reaction Modifiers</td>
+<td>+2 from <strong>Healer</strong> with patients (past &amp; present); −1 <strong>Social Stigma</strong> (license revoked); ±1 <strong>Workaholic</strong> (situational)</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="background">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
+  <div class="accordion-body">
+    <p>Rock Lavey carries himself like a man holding very still so nothing spills. Steady hands, a flat
+clinical calm that only cracks when someone young is bleeding — then something behind the eyes goes
+very far away for a half-second before the training takes back over. He watches everyone’s breathing
+without meaning to. He answers to “Lavey,” “Rock,” or nothing at all, and visibly dislikes “Doctor.”</p>
+<p>He was the surgeon other surgeons called. Then his own child got sick — or hurt — and he was the one
+holding the chart. Under pressure, exhausted, <em>certain</em>, he <strong>missed something</strong>. To fix it he spent
+his savings, then his practice, then borrowed far past anything he could repay. The child died anyway.</p>
+<p>What came after took the rest: a negligence finding on <strong>planet Wu</strong>, a revoked license, creditors who
+don’t forgive, and a marriage that didn’t survive the empty chair. He ran — out past the gates and the
+tax lanes, to the frayed end of the charted dark, to the <strong><a href="../../locations/thides-system.html">Thides System</a></strong>, where the only employer
+hires any warm body with no questions and nobody runs a records check on the new “security” hire.
+MacMillian is the bottom of the barrel, which is exactly why it’s the only door open to him. <em>This is
+his last option.</em></p>
+
+  </div>
+</div>
+
+<div class="accordion" id="advantages-perks">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Advantages &amp; Perks</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Page Ref</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Healer 2</strong></td>
+<td>20</td>
+<td>B90</td>
+<td>+2 to Diagnosis, First Aid, Pharmacy, Physician, Physiology, Surgery. The engine of the build — turns IQ-14 medicine into elite work. Also +2 reactions from patients.</td>
+</tr>
+<tr>
+<td><strong>Intuition</strong></td>
+<td>15</td>
+<td>B63</td>
+<td>The diagnostician’s hunch made mechanical — the “sharp eye.” Roll vs IQ 14 to guess correctly.</td>
+</tr>
+<tr>
+<td><strong>Photographic Memory</strong></td>
+<td>10</td>
+<td>B51</td>
+<td>Perfect recall of charts, faces, doses. Roll vs IQ 14 to recall.</td>
+</tr>
+<tr>
+<td><strong>Higher Purpose 1</strong> (Never lose another patient)</td>
+<td>5</td>
+<td>B59</td>
+<td>+1 to all rolls actively trying to save a life.</td>
+</tr>
+<tr>
+<td><strong>Fit</strong></td>
+<td>5</td>
+<td>B55</td>
+<td>+1 to HT rolls, 2× FP recovery; folds into HT 12 and the Death/Consciousness checks.</td>
+</tr>
+<tr>
+<td><strong>Sensitive</strong></td>
+<td>5</td>
+<td>B51</td>
+<td>+1 to sense others’ feelings; included in Detect Lies. Bedside read.</td>
+</tr>
+<tr>
+<td><strong>Signature Gear 5</strong> (medical gear)</td>
+<td>5</td>
+<td>B85</td>
+<td>His own kept medical kit — survives Dead Broke (gear bought with points, not cash). See Equipment.</td>
+</tr>
+<tr>
+<td><strong>Single-Minded</strong></td>
+<td>5</td>
+<td>B85</td>
+<td>+3 on long focused tasks — a three-hour surgery, or an obsession he can’t put down.</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="disadvantages-quirks">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Disadvantages &amp; Quirks</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Page Ref</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wealth (Dead Broke)</strong></td>
+<td>−25</td>
+<td>B25</td>
+<td>Wiped out — everything went to the treatment and the people he owes. Owns nothing but his Signature Gear medical kit.</td>
+</tr>
+<tr>
+<td><strong>Secret</strong> (fled negligent-homicide charge on planet Wu; <em>Utter Rejection</em>)</td>
+<td>−10</td>
+<td>B152</td>
+<td>The charge is <strong>planetary, not federal</strong> — the Thides Federal Marshal has no cause over another world’s warrant. The danger is the <strong>portable bounty</strong>: when word reaches the dead end, freelance bounty hunters / skip-tracers come to grab him. <em>Why he hides here.</em></td>
+</tr>
+<tr>
+<td><strong>Flashbacks (Mild)</strong></td>
+<td>−5</td>
+<td>B135</td>
+<td>A wound that looks like his kid’s, under stress, sends him <em>back.</em></td>
+</tr>
+<tr>
+<td><strong>Guilt Complex</strong></td>
+<td>−5</td>
+<td>B136</td>
+<td>Takes the blame for everything that goes wrong near him.</td>
+</tr>
+<tr>
+<td><strong>Nightmares</strong> (12 or less)</td>
+<td>−5</td>
+<td>B144</td>
+<td>Relives the night he missed it; roll each morning or lose FP.</td>
+</tr>
+<tr>
+<td><strong>Social Stigma −1</strong> (license revoked)</td>
+<td>−5</td>
+<td>B155</td>
+<td>Struck off — can’t legally practice, which is exactly why frontier “security” is the only door open.</td>
+</tr>
+<tr>
+<td><strong>Vow</strong> (heal anyone in need; <em>Minor</em>)</td>
+<td>−5</td>
+<td>B160</td>
+<td>Cannot turn away anyone hurt. It’s how he atones — and a magnificent way to drag the crew into trouble.</td>
+</tr>
+<tr>
+<td><strong>Workaholic</strong></td>
+<td>−5</td>
+<td>B162</td>
+<td>Can’t stop, can’t rest. Work is the only thing that quiets the empty chair.</td>
+</tr>
+</tbody>
+</table>
+<h3>Quirks [−5]</h3>
+<ol>
+<li>Flinches at “Doctor”; won’t give his old title.</li>
+<li>Keeps his son’s favourite toy — can neither look at it nor throw it away.</li>
+<li>Only drinks to sleep, never to celebrate.</li>
+<li>Over-explains medical risks to people who never asked.</li>
+<li>Tracks others’ vitals by rote — watches breathing, finds pulse points.</li>
+</ol>
+
+  </div>
+</div>
+
+<div class="accordion" id="skills">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
+  <div class="accordion-body">
+    <blockquote>
+<p>Effective levels include <strong>Healer +2</strong> (marked †) and <strong>Sensitive +1</strong> (marked *).</p>
+</blockquote>
+<h3>Medicine [16]</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Aid/TL11</td>
+<td>IQ/E</td>
+<td>IQ+3</td>
+<td><strong>17 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Diagnosis/TL11</td>
+<td>IQ/H</td>
+<td>IQ+1</td>
+<td><strong>15 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Pharmacy/TL11 (Synthetic)</td>
+<td>IQ/H</td>
+<td>IQ+1</td>
+<td><strong>15 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Physician/TL11</td>
+<td>IQ/H</td>
+<td>IQ+1</td>
+<td><strong>15 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Physiology/TL11 (Human)</td>
+<td>IQ/H</td>
+<td>IQ+1</td>
+<td><strong>15 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Surgery/TL11 (Human)</td>
+<td>IQ/VH</td>
+<td>IQ+0</td>
+<td><strong>14 †</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Poisons/TL11</td>
+<td>IQ/H</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Electronics Operation/TL11 (Medical)</td>
+<td>IQ/A</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3>Science &amp; Technical</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bioengineering/TL11 (Biogadgets)</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Chemistry/TL11</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Mathematics/TL11</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Electronics Operation/TL11</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Electronics Repair/TL11</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Electronics Repair/TL11 (Medical)</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Computer Operation/TL11</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Armoury/TL11 (Small Arms)</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3>Perception &amp; Social</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detect Lies</td>
+<td>Per/H</td>
+<td>Per−1</td>
+<td>13 *</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Body Language (Human)</td>
+<td>Per/A</td>
+<td>Per−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Danger Sense</td>
+<td>Per</td>
+<td>Per−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Fishing</td>
+<td>Per/A</td>
+<td>Per+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Acting</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Diplomacy</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Fast-Talk</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Savoir-Faire</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Streetwise</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Leadership</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Carousing</td>
+<td>HT/E</td>
+<td>HT+0</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gambling</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Scrounging</td>
+<td>Per/E</td>
+<td>Per+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Connoisseur (Music)</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gesture</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3>Knowledge &amp; Administration</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Area Knowledge (planet Wu)</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Current Affairs/TL11 (Headline News)</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Administration</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Economics</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Intelligence Analysis/TL11</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Politics</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Heraldry</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Forgery/TL11</td>
+<td>IQ/H</td>
+<td>IQ−2</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Games (GURPS)</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>14</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3>Combat &amp; Security</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brawling</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Beam Weapons/TL11 (Pistol)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Guns/TL11 (Pistol)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Guns/TL11 (Rifle)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Guns/TL11 (Light Machine Gun)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gunner/TL11 (Machine Gun)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Fast-Draw (Pistol)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Judo</td>
+<td>DX/H</td>
+<td>DX−2</td>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Wrestling</td>
+<td>DX/A</td>
+<td>DX−1</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Soldier/TL11</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3>Outdoors, Travel &amp; Everyday</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Navigation/TL11</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Packing</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Survival (Woodlands)</td>
+<td>Per/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Hiking</td>
+<td>HT/A</td>
+<td>HT−1</td>
+<td>11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Running</td>
+<td>HT/A</td>
+<td>HT−1</td>
+<td>11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Climbing</td>
+<td>DX/A</td>
+<td>DX−1</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Driving/TL11 (Automobile)</td>
+<td>DX/A</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bicycling</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Dancing</td>
+<td>DX/A</td>
+<td>DX−1</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Environmental Suit/TL11 (Vacc Suit)</td>
+<td>DX/A</td>
+<td>DX−1</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vacc Suit/TL11</td>
+<td>DX/A</td>
+<td>DX−1</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cooking</td>
+<td>IQ/A</td>
+<td>IQ−1</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sewing/TL11</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Typing</td>
+<td>DX/E</td>
+<td>DX+1</td>
+<td>11</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="techniques">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Techniques</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arm Lock (Judo)</td>
+<td>def+0</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Combat Driving (Automobile)</td>
+<td>def+0</td>
+<td>10</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="imbuements">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Imbuements</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Diff.</th>
+<th>Relative</th>
+<th>Level</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electric Weapon (Beam Weapons (Pistol))</td>
+<td>DX/—</td>
+<td>DX−3</td>
+<td>7</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="melee-attacks">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Melee Attacks</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Attack</th>
+<th>Skill</th>
+<th>Parry</th>
+<th>Damage</th>
+<th>Reach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Punch / Brawling: Punch</td>
+<td>10</td>
+<td>8</td>
+<td>1d-3 cr</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Kick / Brawling: Kick</td>
+<td>8</td>
+<td>—</td>
+<td>1d-2 cr</td>
+<td>C, 1</td>
+</tr>
+<tr>
+<td>Bite / Brawling: Bite</td>
+<td>8–10</td>
+<td>—</td>
+<td>1d-3 cr</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="active-defenses">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Active Defenses</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Defense</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dodge</td>
+<td>8</td>
+<td>Basic Speed 5.5, no encumbrance</td>
+</tr>
+<tr>
+<td>Parry</td>
+<td>8</td>
+<td>DX / Brawling</td>
+</tr>
+<tr>
+<td>Parry (Judo)</td>
+<td>7</td>
+<td>Judo 8</td>
+</tr>
+<tr>
+<td>Parry (Wrestling)</td>
+<td>7</td>
+<td>Wrestling 9</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>6</td>
+<td>DX</td>
+</tr>
+<tr>
+<td>DR</td>
+<td>0</td>
+<td>Torso (no armor)</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat-summary">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat Summary</button>
+  <div class="accordion-body">
+    <p>A non-combatant who survives by <em>defense and distance.</em> <strong>Dodge 8</strong>, <strong>Brawling/Punch 10</strong> (Parry 8,
+1d-3 cr), basic competence with sidearms and beam pistols at skill 10 — broad but shallow, the
+“rough combat skills picked up from work conditions.” His real weapon is <strong>First Aid 17 / Diagnosis,
+Physician, Pharmacy, Physiology 15 / Surgery 14</strong>, all already including <strong>Healer 2</strong> and boosted by
+<strong>Higher Purpose</strong> in a life-saving clutch. He keeps the crew <em>alive</em>; he does not win firefights.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="points-summary">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Points Summary</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic Attributes &amp; Secondary Characteristics</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Advantages &amp; Perks</td>
+<td>70</td>
+</tr>
+<tr>
+<td>Disadvantages &amp; Quirks</td>
+<td>−70</td>
+</tr>
+<tr>
+<td>Skills &amp; Techniques</td>
+<td>74</td>
+</tr>
+<tr>
+<td><strong>Total Spent</strong></td>
+<td><strong>174</strong></td>
+</tr>
+<tr>
+<td><strong>Unspent</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
+  <div class="accordion-body">
+    <p><strong>Crew connection to <a href="six.html">Six</a>:</strong> Lavey is the one person who scanned Six, learned what he is — and
+<strong>said nothing.</strong> The doctor who could have turned him in for the bounty and chose mercy instead,
+because mercy is the only thing he has left to give. Six owes him a wordless debt; Lavey owes Six
+nothing and helps anyway. The campaign’s two debtors, bound by a kept secret.</p>
+<p><strong>The “sharp eye.”</strong> Mechanically this is <strong>Intuition</strong> (the diagnostic hunch), <strong>Photographic
+Memory</strong> (perfect recall of faces/charts/doses), <strong>Sensitive + Detect Lies 13</strong> and <strong>Body Language
+13</strong> (reads people), and <strong>Danger Sense</strong> — not a dedicated Observation/Search stack. He notices what’s
+<em>wrong</em> the way a clinician notices a wrong vital.</p>
+<p><strong>Two separate threats</strong> (don’t conflate them):</p>
+<ul>
+<li><strong>The debt</strong> (modeled by <em>Dead Broke</em>) — the money he borrowed and lost trying to save the child.
+The creditors are <em>back home</em>; they explain why he owns nothing, not who walks onto the station.</li>
+<li><strong>The charge</strong> (modeled by <em>Secret</em>) — a <strong>planetary</strong> negligent-homicide warrant from <strong>planet
+Wu</strong>. As a Republic <strong>citizen</strong>, the Thides Federal Marshal won’t extradite him on another world’s
+charge. But the <strong>bounty is portable</strong>, and the dead end is not as far away as he hoped: <strong>the
+ticking clock is word of it reaching Thides</strong>, after which freelance bounty hunters can come to take
+him in. Player-facing upside — it’s <em>freelancers</em>, not the law, so the crew can fight, bribe, hide,
+or outrun the threat.</li>
+</ul>
+<p><strong>Why he fits <em>Dead End</em>:</strong> he <em>is</em> the campaign’s thesis before the plot starts — a man who knows a
+truth (his own failure) he can never set right, who will recognize the station’s slow death because he
+already failed to stop one. The <strong>Vow</strong>-driven wiring guarantees he gets pulled into other people’s
+trouble, and the bounty clock is a personal subplot Tim can light whenever he wants the dead end to
+stop feeling safe.</p>
+
+  </div>
+</div>
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took 'security' work at the dead-end of the charted lanes — the one place that doesn't check a license or a ledger.</li>
+<li><strong class="rel-label">Employed by</strong> <a href="../../factions/macmillian-mining-and-extraction-corporation.html" class="entity-link">MacMillian Mining and Extraction Corporation</a> &mdash; Nominal 'security'; in practice the crew's medic, running on his own kept medical gear and the station infirmary.</li>
+<li><strong class="rel-label">Allied with</strong> <a href="six.html" class="entity-link">Six</a> &mdash; Scanned Six, learned what he is — and said nothing. The doctor who chose mercy over the bounty; Six owes him a wordless debt.</li>
+</ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Equipment</h3>
+<p><strong>Signature Gear 5 (medical gear) [5 pts].</strong> Even though <em>Dead Broke</em> leaves him with <strong>$0 cash</strong>, his
+points-bought medical kit is his — it cannot simply be confiscated as company property the way a loaner
+crash kit could. A serious mobile trauma/medic suite (Healer + Diagnosis/Surgery delivery system); the
+exact manifest is the GM’s to set within the Signature Gear budget (≈$187k of TL11 medical gear at the
+campaign’s 1 pt = $37,500 rate). He still leans on the station infirmary’s autodoc for anything beyond
+field scope.</p>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <p class="text-muted">No story content available.</p>
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="420" y1="200" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="rock-lavey.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../../factions/macmillian-mining-and-extraction-corporation.html"><g opacity="1">
+    <polygon points="437.3205080756888,190 437.3205080756888,210 420,220 402.6794919243112,210 402.6794919243112,190 420,180" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
+  </g></a>
+  <a href="six.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+  </g></a>
+  <a href="../../campaign/player-characters.html"><g opacity="1">
+    <circle cx="180" cy="200.00000000000003" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../../locations/thides-system.html"><g opacity="0.5">
+    <rect x="413.27922061357856" y="58.720779386421455" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides System</text>
+  </g></a>
+  <a href="../../locations/federal-republic-of-worlds.html"><g opacity="0.5">
+    <rect x="332.5874281184538" y="359.8666487320323" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="126.1333512679677" cy="153.41257188154634" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+  </g>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

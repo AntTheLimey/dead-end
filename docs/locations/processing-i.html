@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processing I — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Locations</a><span class="sep">&rsaquo;</span>Processing I</nav>
+<div class="hero-banner hero-banner-no-img">
+  <h1>Processing I</h1>
+  <div class="meta"></div>
+</div>
+<div class="pull-quote">Overview
+First of the four processing plants located in the lower section of the station. This plant is the first to go online during the station’s construction. After the almost literal collapse of m</div>
+<h2>Overview</h2>
+<p>First of the four processing plants located in the lower section of the station. This plant is the first to go online during the station’s construction. After the almost literal collapse of mining operations on Thides I, the company decided to mothball the plant as the other newer processing plants could keep up with demand.</p>
+<p>Overtime, some of the more industrious and desperate manages to break in. At first they planned only to salvage and steal any thing of value in the plant to sell on the black market. Eventually a few more desperate people began to reside in the remains of the plant. This led to the creation of it’s own social framework.</p>
+<p>Station operations and security largely ignores it, as the location is useful to keep out the poor and forgotten out of the main parts of the station, and the option to ignore the demands of supporting this underclass. Operations will only bother with the area if one of the locals causes some issue. Such as illegally tapping into station system for access to power or coms. Security does occasional sweeps, but mostly limits their involvement. Occasionally security is required to escort an operations team or hunt down a wanted criminal.</p>
+<p>The area has built up its only society and economy mostly from blackmarket dealings. People find it easier to conduct clandestine and illegal endeavors here, out of the direct view. This means anyone looking for something less than legal is likely to find it here. The population is a mix of crashed out old timers, people with legitimate jobs looking for less expensive accommodation, drug addicts, street criminals, destitute, etc. It is very similar to the slums you might find on any large planetary city.</p>
+<h2>Points of Interest</h2>
+<h2>Source References</h2>
+<ul>
+<li>mobRPG ‘Space’ world (Tim) — API import</li>
+</ul>
+<blockquote>
+<p>[!info] Reconstruction Note
+Imported from mobRPG (canon).</p>
+</blockquote>
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

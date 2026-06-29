@@ -1,0 +1,12 @@
+{
+  "name": "dead-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "gm-apprentice-publish build",
+    "watch": "gm-apprentice-publish build --watch"
+  },
+  "dependencies": {
+    "gm-apprentice-publish": "file:/Users/antonypegg/.claude/plugins/cache/gm-apprentice/gm-apprentice/1.7.0/tools/publish"
+  }
+}

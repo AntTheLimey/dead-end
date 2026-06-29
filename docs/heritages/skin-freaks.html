@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Freaks — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Heritages</a><span class="sep">&rsaquo;</span>Skin Freaks</nav>
+<div class="content-with-sidebar"><div class="main">
+<div class="char-header">
+  <img src="../images/heritages/Skin Freaks.png" alt="Skin Freak" class="portrait">
+  <h1>Skin Freaks <span class="badge badge-draft">Draft</span></h1>
+  <dl class="heritage-stats"><dt>Height</dt><dd>Human-typical</dd></dl>
+</div>
+<div class="metadata-badges"><span class="metadata-badge">Bio-engineered modifications</span>
+<span class="metadata-badge">Often invisible to passive detection</span>
+<span class="metadata-badge">Modifications can mimic normal human appearance</span></div>
+<h2>Overview</h2>
+<p>![Skin Freaks](…/images/heritages/Skin Freaks.png)</p>
+<p>Bio-hackers and flesh architects, Skin Freaks use bio-engineering to modify the very essence of
+life in unimaginable ways. Many changes are simple — cat-like eyes for style and night vision, a
+new tint to the skin, a set of gills, or an extra pair of hands. Some are necessary, like a
+replacement for a limb lost in an industrial accident. A few go to extreme measures.</p>
+<h2>Biology &amp; Culture</h2>
+<p>The extremes live out on the edges of society. Not quite human any more, but also not quite
+something fully unique, they operate in the shadows, quietly looking for the next evolution. Some
+have gone far enough that their DNA is no longer recognized as fully human by the
+<a href="../locations/federal-republic-of-worlds.html">Federal Republic of Worlds</a> — questions of their legality and their rights under the law remain
+open.</p>
+<h2>Notable Traits</h2>
+<p>Many offer skills to employers beyond those of normal humans. A gilled-up person is a cheaper
+option for underwater work than a full diver once the equipment costs are counted. Some offer
+unique abilities that appeal to the more criminal elements.</p>
+<p>Their key advantage is concealment: many passive detection systems cannot pick up these
+modifications, giving the Skin Freak an edge over other modified individuals — especially when the
+modifications are designed to mimic a normal human appearance.</p>
+
+
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="skin-freaks.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Skin Freaks</text>
+  </g></a>
+  <a href="chrome-jockey.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chrome Jockey</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Mentioned In</h3>
+<ul><li><a href="chrome-jockey.html">Chrome Jockey</a> <span class="sidebar-badge">heritage</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

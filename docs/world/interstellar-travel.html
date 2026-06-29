@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interstellar Travel — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">World</a><span class="sep">&rsaquo;</span>Interstellar Travel</nav>
+<div class="content-with-sidebar"><div class="main"><h1>Interstellar Travel <span class="badge badge-draft">Draft</span></h1><p class="world-domain-summary">Passenger travel between systems is priced by what you can pay — from working passage on a hauler to a luxury yacht. PCs each start with a free 3rd-class ticket to Thides they may take, upgrade, or trade down for cash.</p>
+<h2>Overview</h2>
+<p>Passenger travel between systems takes many forms, mostly decided by the <strong>credits you’re willing to
+offer</strong>. At the low end you hitch a ride as a working hand — say, maintenance crew on a cargo hauler;
+at the high end, a luxury yacht. In between sit the common options: <strong>3rd-class passage</strong> on a
+transport, or an arranged job as <strong>merchant marine</strong> aboard a cargo cruiser.</p>
+<h2>Details</h2>
+<ul>
+<li><strong>Working passage</strong> — trade labor for a berth (maintenance hand, deckhand). Cheapest; least comfort.</li>
+<li><strong>3rd-class passage</strong> — the standard cheap ticket on a transport. The default PC fare.</li>
+<li><strong>Merchant-marine berth</strong> — an arranged job aboard a cargo cruiser; passage in exchange for service.</li>
+<li><strong>Luxury</strong> — chartered or yacht travel for those with the credits to spend.</li>
+</ul>
+<h2>Arrival Decision (Player-Facing)</h2>
+<blockquote>
+<p>[!note] Player Choice — Getting to Thides
+As part of your hire, <strong>every character is given a free 3rd-class ticket to the <a href="../locations/thides-system.html">Thides System</a>.</strong>
+It’s up to you whether your character:</p>
+<ul>
+<li><strong>Takes it straight</strong> — ride 3rd class, no fuss.</li>
+<li><strong>Leverages it</strong> — put it toward <strong>better</strong> accommodations on the way in.</li>
+<li><strong>Trades it down</strong> — swap for a <strong>worse</strong> form of transport and pocket the difference as extra cash.</li>
+</ul>
+</blockquote>
+<h2>Cross-Domain Links</h2>
+<ul>
+<li><a href="federal-credits.html">Federal Credits</a> — passage is priced in credits; what form of money you carry shapes what you
+can buy en route.</li>
+<li>FTL and Hyperspace — the gates and lanes these passengers actually ride.</li>
+<li><a href="../locations/thides-system.html">Thides System</a> — the destination, and (per MacMillian’s grip) a system whose traffic in and out
+is tightly controlled.</li>
+</ul>
+</div><aside class="world-rules-sidebar"><h3>World Rules</h3><ul><li>Inter-system passenger travel takes many forms, priced by what the traveler will pay: working passage (e.g. maintenance hand on a cargo hauler), 3rd-class passage on a transport, an arranged berth as merchant marine on a cargo cruiser, up through luxury yacht travel.</li>
+<li>Every PC is offered, as part of their hire, a free 3rd-class ticket to the Thides system. Each player chooses: take it straight, leverage it toward better accommodations, or trade it down to a worse form of transport to pocket some extra cash.</li></ul></aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

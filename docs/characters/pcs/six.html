@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Six</nav>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/Six.png" alt="Six">
+  <div class="hero-cinematic-overlay">
+    <h1>Six</h1>
+    <div class="meta">
+      <span><span class="label">Player</span> Ant</span>
+      <span><span class="label">Point Total</span> 175</span>
+    <span><span class="label">Age</span> 32 apparent / ~4 since decant</span>
+      <span><span class="label">Status</span> alive</span>
+    </div>
+  </div>
+</div>
+<div class="pull-quote">Vat-grown human-based replicant, Spacer Kung-Fu melee monster, No social graces, On the run from his maker</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<div class="gurps-sheet"><div class="gurps-combat-bar"><div class="combat-stat"><span class="combat-stat-value">13</span><span class="combat-stat-label">HP</span></div>
+<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">FP</span></div>
+<div class="combat-stat"><span class="combat-stat-value">6.50</span><span class="combat-stat-label">Speed</span></div>
+<div class="combat-stat"><span class="combat-stat-value">9 / 6</span><span class="combat-stat-label">Move</span></div>
+<div class="combat-stat"><span class="combat-stat-value">9</span><span class="combat-stat-label">Dodge</span></div>
+<div class="combat-stat"><span class="combat-stat-value">12</span><span class="combat-stat-label">Parry (axe)</span></div>
+<div class="combat-stat"><span class="combat-stat-value">11</span><span class="combat-stat-label">Parry (Karate)</span></div>
+<div class="combat-stat"><span class="combat-stat-value">11</span><span class="combat-stat-label">Parry (Judo)</span></div>
+<div class="combat-stat"><span class="combat-stat-value">Beam Weapons (Pistol)-15</span><span class="combat-stat-label">Ranged</span></div>
+<div class="combat-stat"><span class="combat-stat-value">Axe/Mace-17</span><span class="combat-stat-label">Melee</span></div></div></div>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#stat-sheet">Stat Sheet</a>
+<a href="#background">Background</a>
+<a href="#advantages-perks">Advantages &amp; Perks</a>
+<a href="#disadvantages-quirks">Disadvantages &amp; Quirks</a>
+<a href="#skills">Skills</a>
+<a href="#techniques">Techniques</a>
+<a href="#languages">Languages</a>
+<a href="#cultural-familiarities">Cultural Familiarities</a>
+<a href="#active-defenses">Active Defenses</a>
+<a href="#dr-by-hit-location">DR by Hit Location</a>
+<a href="#combat-action-chains">Combat Action Chains</a>
+<a href="#multi-action-combat-skill-chains">Multi-Action Combat Skill Chains</a>
+<a href="#points-summary">Points Summary</a>
+<a href="#current-status">Current Status</a>
+<a href="#notes">Notes</a></nav>
+
+<div class="accordion" id="stat-sheet">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Stat Sheet</button>
+  <div class="accordion-body">
+    <h3>Primary Attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Score</th>
+<th>Modifier</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ST</td>
+<td>13</td>
+<td>—</td>
+<td>30</td>
+</tr>
+<tr>
+<td>DX</td>
+<td>14</td>
+<td>—</td>
+<td>80</td>
+</tr>
+<tr>
+<td>IQ</td>
+<td>10</td>
+<td>—</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>12</td>
+<td>—</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h3>Secondary Characteristics</h3>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Will</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Per</td>
+<td>12</td>
+</tr>
+<tr>
+<td>FP</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Basic Speed</td>
+<td>6.50</td>
+</tr>
+<tr>
+<td>Basic Move</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Basic Lift</td>
+<td>34 lbs</td>
+</tr>
+<tr>
+<td>Damage (Thr)</td>
+<td>1d</td>
+</tr>
+<tr>
+<td>Damage (Sw)</td>
+<td>2d-1</td>
+</tr>
+<tr>
+<td>Size Modifier</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Fright Check</td>
+<td>12 (Will 10 +2 Combat Reflexes)</td>
+</tr>
+</tbody>
+</table>
+<h3>Appearance &amp; Social</h3>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>32 apparent (~4 since decant)</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Male (vat-grown, male-presenting)</td>
+</tr>
+<tr>
+<td>Birthday</td>
+<td>None — decant date, vat-batch 06</td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>6’2&quot;</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>215 lb</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Densely built (grown to spec)</td>
+</tr>
+<tr>
+<td>Hair</td>
+<td>Black, buzzed short</td>
+</tr>
+<tr>
+<td>Eyes</td>
+<td>Pale grey</td>
+</tr>
+<tr>
+<td>Skin</td>
+<td>Olive, even-toned (engineered)</td>
+</tr>
+<tr>
+<td>Handedness</td>
+<td>Right (off-hand trained)</td>
+</tr>
+<tr>
+<td>Appearance</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Reputation</td>
+<td>None (by design)</td>
+</tr>
+<tr>
+<td>Reaction Modifiers</td>
+<td>See Disadvantages — Clueless, Callous, Social Stigma (Valuable Property)</td>
+</tr>
+<tr>
+<td>TL</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="background">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Background</button>
+  <div class="accordion-body">
+    <p>!Six.png</p>
+<p>A vat-grown, <strong>human-based replicant</strong> engineered as a hull-breacher: cross the dark between ships, cut through the hull, and <strong>clear the crew</strong> — by whatever means is most efficient. Kill or subdue is a cold tool-selection, never a moral one: he kills the instant killing is the cleanest path to the objective, with zero hesitation, and subdues when subduing is — he neither avoids nor seeks killing, and feels nothing either way. Between contracts he was racked in cryostasis — so his whole conscious life is <em>fight, freeze, fight</em>. Passes for human on sight; only a deep bio-scan or records pull reveals what he is. Legally he isn’t a person — he’s inventory.</p>
+<p>Six reads as a big, hard-used man in his early thirties — six-two and densely built, the muscle laid on with the even, purposeful symmetry of something <strong>grown to spec</strong> rather than earned in a gym. Olive, flawlessly even skin — until you find the old breach-work scars: burns, a puckered seam where a bulkhead bit him. Black hair buzzed to nothing; pale grey eyes that track movement with a flat, patient economy and almost never blink first. He moves with the stillness of a thing that is only ever <em>waiting to fight</em>, and talks — when he talks — too literally and a beat too late, like a man reading a language he learned but never lived in.</p>
+<p>He is <strong>never out of his rig</strong>: a bulky, work-scuffed EVA hardsuit in faded MacMillian livery (it is not a work suit), helmet clipped at his hip, the vibro-axe never far from his hand. Somewhere not easily seen — inside a forearm, the nape under the hairline — is a small etched maker’s mark and batch code: <strong>CASTELLAN // MACE-06</strong>. It’s the one part of him that tells the truth — and a physical tell that could blow his Secret on a close search.</p>
+<p>His maker stamped him <strong>MACE-pattern Boarding Asset, vat-batch 06</strong> — so the kids who thawed him called him <strong>“Six.”</strong> It stuck. He was grown and conditioned by <strong>Castellan Biodynamics</strong>, a military bio-contractor out of the <strong>Meridian</strong> system, for one job: board and clear ships. Between contracts: cryostasis.</p>
+<p><strong>P.E.T.A.</strong> (People for the Ethical Treatment of Androids) — militant android-rights youth led by the firebrand <strong>Kumari Profeta</strong> — cracked a Castellan Biodynamics cryo-vault and “liberated” a handful of assets, Six among them. The raid went loud; most of the kids scattered or were caught. Six walked into a society he has no manual for — no citizenship, no papers, no money, no idea how any of it works beyond violence. Castellan wants its property back and there’s a quiet recovery bounty. Anywhere with real infrastructure means scanners and questions he can’t survive, so he ran to the one place at the end of the charted lanes where nobody checks papers and the only employer hires any warm body with no questions: the <strong><a href="../../locations/thides-system.html">Thides System</a></strong>. MacMillian “security” is the bottom of the barrel — which is exactly why it’s the only door open to him. <em>This is his last option.</em></p>
+
+  </div>
+</div>
+
+<div class="accordion" id="advantages-perks">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Advantages &amp; Perks</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Page Ref</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trained by a Master</td>
+<td>30</td>
+<td>B93</td>
+<td>Tim-approved, flavored as combat conditioning preloaded via software. Halves Rapid Strike to −3 for all muscle-powered attacks (unarmed and vibro-axe); unlocks cinematic martial-arts skills.</td>
+</tr>
+<tr>
+<td>Combat Reflexes</td>
+<td>15</td>
+<td>B43</td>
+<td>+1 all defenses, +6 vs surprise, never freeze, +2 Fright Checks.</td>
+</tr>
+<tr>
+<td>High Pain Threshold</td>
+<td>10</td>
+<td>B59</td>
+<td>No shock penalties; +3 vs stun/KO.</td>
+</tr>
+<tr>
+<td>Vacuum Support</td>
+<td>5</td>
+<td>B96</td>
+<td>Immune to vacuum/decompression trauma. Supplies no air — he still holds his breath until he reseals.</td>
+</tr>
+<tr>
+<td>Signature Gear</td>
+<td>1</td>
+<td>B85</td>
+<td>Disguised Space Armor + helmet + chameleon + full loadout (glance-disguise). See Equipment.</td>
+</tr>
+<tr>
+<td>Off-Hand Weapon Training (Vibro-Axe)</td>
+<td>1</td>
+<td>MA</td>
+<td>No −4 in the off hand.</td>
+</tr>
+<tr>
+<td>Standard Operating Procedure ×2 (Always Armored; Helmet to Hand)</td>
+<td>2</td>
+<td>PU2:15</td>
+<td>Two separate SOPs (Tim-ruled). Always Armored: never out of his combat suit (sleeps in it). Helmet to Hand: helmet always clipped within reach, donned in one action.</td>
+</tr>
+<tr>
+<td>Armor Familiarity ×2 (Karate, Judo)</td>
+<td>2</td>
+<td>MA210</td>
+<td>Style perks of his Freefighting style. Each negates the −1 encumbrance penalty on its skill’s attack &amp; parry while armored → Karate strikes 15 / Parry 11; Judo grapples/throws 14, Choke Hold 14, Parry 11.</td>
+</tr>
+<tr>
+<td>Weapon Bond (vibro-axe)</td>
+<td>1</td>
+<td>MA250</td>
+<td>+1 to effective Axe/Mace and all axe techniques with this specific bonded axe → to-hit 16 → <strong>17</strong>, Rapid Strike 14 each (Parry unchanged at 12). Lost if the axe is — protected as Signature Gear.</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="disadvantages-quirks">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Disadvantages &amp; Quirks</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Self-Control</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dead Broke</td>
+<td>−25</td>
+<td>—</td>
+<td>Owns nothing but his Signature Gear.</td>
+</tr>
+<tr>
+<td>Secret (escaped/stolen, bounty on his head)</td>
+<td>−20</td>
+<td>—</td>
+<td>The specific lethal layer beyond his open property status: unregistered, escaped Castellan property with an active recovery bounty. Exposure → reclaimed or sold.</td>
+</tr>
+<tr>
+<td>Social Stigma (Valuable Property)</td>
+<td>−10</td>
+<td>—</td>
+<td>An owned bio-engineered asset — no rights, but worth recovering. Bites on exposure (records check, bio-scan, batch-brand); physically passes in a crowd. (Tim-approved swap from Second-Class Citizen.)</td>
+</tr>
+<tr>
+<td>Clueless</td>
+<td>−10</td>
+<td>—</td>
+<td>No grasp of social cues — never lived in society.</td>
+</tr>
+<tr>
+<td>Code of Honor (Professional — “the Doctrine”)</td>
+<td>−5</td>
+<td>—</td>
+<td>Complete the objective by the most efficient means and leave no loose ends — finish what you start, clean. Lethal vs. non-lethal is a pure efficiency call, no hesitation or preference either way. The constraint: won’t abandon a job half-done or leave it sloppy even when cutting and running would be safer. Not mercy, not bloodlust. (Replaced Bloodlust.)</td>
+</tr>
+<tr>
+<td>Callous</td>
+<td>−5</td>
+<td>—</td>
+<td>No empathy installed.</td>
+</tr>
+<tr>
+<td>Quirk: Quietly loyal to P.E.T.A., the kids who freed him</td>
+<td>−1</td>
+<td>—</td>
+<td></td>
+</tr>
+<tr>
+<td>Quirk: Eats every meal like it’s his last</td>
+<td>−1</td>
+<td>—</td>
+<td>Cryo-starvation imprint.</td>
+</tr>
+<tr>
+<td>Quirk: Uncomfortable being <em>treated</em> as a person</td>
+<td>−1</td>
+<td>—</td>
+<td>Thanks, kindness, or being called by name leaves him flat-footed; he deflects or goes blank.</td>
+</tr>
+<tr>
+<td>Quirk: Hates being cold</td>
+<td>−1</td>
+<td>—</td>
+<td>Cryo-rack flashback.</td>
+</tr>
+<tr>
+<td>Quirk: Painfully literal</td>
+<td>−1</td>
+<td>—</td>
+<td>Sarcasm sails past him.</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="skills">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Skills</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Difficulty</th>
+<th>Relative Level</th>
+<th>Points</th>
+<th>Effective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acrobatics</td>
+<td>DX/H</td>
+<td>DX-1</td>
+<td>2</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Axe/Mace</td>
+<td>DX/A</td>
+<td>DX+2</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Beam Weapons (Pistol)</td>
+<td>DX/E</td>
+<td>DX+1</td>
+<td>2</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Climbing</td>
+<td>DX/A</td>
+<td>DX-1</td>
+<td>1</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Computer Operation</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Electronics Operation (Security)</td>
+<td>IQ/A</td>
+<td>IQ-1</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Fast-Draw (Axe)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>1</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Fast-Draw (Pistol)</td>
+<td>DX/E</td>
+<td>DX+0</td>
+<td>1</td>
+<td>14</td>
+</tr>
+<tr>
+<td>First Aid/TL</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Forced Entry</td>
+<td>DX/E</td>
+<td>DX+1</td>
+<td>2</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Free Fall</td>
+<td>DX/A</td>
+<td>DX+1</td>
+<td>4</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Judo</td>
+<td>DX/H</td>
+<td>DX+0</td>
+<td>4</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Karate</td>
+<td>DX/H</td>
+<td>DX+1</td>
+<td>8</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Observation</td>
+<td>Per/A</td>
+<td>Per-1</td>
+<td>1</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Spacer</td>
+<td>IQ/E</td>
+<td>IQ+0</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Stealth</td>
+<td>DX/A</td>
+<td>DX+0</td>
+<td>2</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Vacc Suit</td>
+<td>DX/A</td>
+<td>DX+0</td>
+<td>2</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Axe/Mace wields his vibro-axe; Beam Weapons covers the blaster and electrolaser; the two Fast-Draws cover their draws.</li>
+<li>Karate, Judo, Free Fall, Vacc Suit, and Acrobatics form his “Spacer Kung-Fu” — the canonical <strong>Freefighting</strong> style (his name for it; a zero-G art of disarm-and-subdue). Core = Karate (for Brawling) + Judo + Free Fall + Vacc Suit; Acrobatics for momentum, Free Fall for re-orientation; Armor Familiarity is its signature suit-fighting trick. Techniques to add later: Sweeping Kick, Disarming (Judo), Arm Lock, Targeted Attack (Axe/Neck).</li>
+<li>Forced Entry = breaching; Climbing = hull clambering; Spacer = ship-fluent but people-clueless.</li>
+<li><strong>Computer Operation + Electronics Operation (Security)</strong> are his electronic-breach / ship-systems software — read, run, and defeat a target ship’s consoles, alarms, surveillance, and access control (the finesse complement to Forced Entry’s brute breach). Operating/understanding installed systems needs no personal kit; cold-defeating an external electronic lock would want an electronic lockpick kit ($1,500).</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="techniques">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Techniques</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Points</th>
+<th>Effective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Choke Hold</td>
+<td>Judo-2</td>
+<td>3</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Kicking</td>
+<td>Karate-2</td>
+<td>3</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Choke Hold: carotid “blood” choke = FP damage → unconsciousness (non-lethal takedown); bought off the full −2 default.</li>
+<li>Kicking: buys off the full −2 kick penalty → kick at full Karate; kick = 1d+2 cr, reach C–1.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="languages">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Languages</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Spoken</th>
+<th>Written</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Federal Standard</td>
+<td>Native</td>
+<td>Native</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>His free native language; <strong>literate.</strong> Loaded with his operational software package, not learned in childhood. Rename if the setting’s lingua franca is canonically something else — cost is 0 either way.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="cultural-familiarities">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Cultural Familiarities</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Culture</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spacer</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>His free native culture — the one he was decanted into and operates within; pairs with his Spacer skill. In ship/station settings he takes only the Clueless penalty; in mainstream Federal Republic society he also lacks the relevant familiarity, so he’s doubly out of place — intentional.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="active-defenses">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Active Defenses</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Defense</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dodge</td>
+<td>9</td>
+<td>Basic Speed 6.5 → 9 base, +1 Combat Reflexes, −1 Light encumbrance (operational); 10 unencumbered</td>
+</tr>
+<tr>
+<td>Parry (axe)</td>
+<td>12</td>
+<td>Axe/Mace 16, +1 Combat Reflexes (0U — can’t parry the turn it attacks)</td>
+</tr>
+<tr>
+<td>Parry (Karate)</td>
+<td>11</td>
+<td>Karate 15, +1 Combat Reflexes; Armor Familiarity negates encumbrance</td>
+</tr>
+<tr>
+<td>Parry (Judo)</td>
+<td>11</td>
+<td>Judo 14, +1 Combat Reflexes; Armor Familiarity negates encumbrance</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>—</td>
+<td>No shield</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="dr-by-hit-location">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">DR by Hit Location</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Location</th>
+<th>DR</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skull</td>
+<td>80</td>
+<td>Space Armor helmet</td>
+</tr>
+<tr>
+<td>Face</td>
+<td>60</td>
+<td>Space Armor helmet</td>
+</tr>
+<tr>
+<td>Neck</td>
+<td>60</td>
+<td>Space Armor suit</td>
+</tr>
+<tr>
+<td>Torso</td>
+<td>100</td>
+<td>Space Armor suit</td>
+</tr>
+<tr>
+<td>Arms</td>
+<td>60</td>
+<td>Space Armor suit</td>
+</tr>
+<tr>
+<td>Hands</td>
+<td>60</td>
+<td>Space Armor suit</td>
+</tr>
+<tr>
+<td>Legs</td>
+<td>60</td>
+<td>Space Armor suit</td>
+</tr>
+<tr>
+<td>Feet</td>
+<td>60</td>
+<td>Space Armor suit</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="combat-action-chains">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Combat Action Chains</button>
+  <div class="accordion-body">
+    <ol>
+<li><strong>Axe Rapid Strike:</strong> Trained by a Master → two vibro-axe swings at 17−3 = <strong>14 each</strong> → armor-divisor (3) guts most DR (two mooks down in a second vs Cannon Fodder).</li>
+<li><strong>Subdue, front:</strong> Judo grapple (14) → Takedown (prone) → re-grip neck → Choke Hold (14) → unconscious in ~3 seconds.</li>
+<li><strong>Counter-choke (defense → choke):</strong> foe attacks → <strong>Judo Parry 11</strong> (+3 retreating; a successful bare-hand Judo parry is a legal grapple entry, B371) → next turn step in → <strong>Choke Hold 14</strong> (−1 front) → choke out. Turns their swing into their nap.</li>
+<li><strong>Silent kill-switch, behind:</strong> Stealth (14) / after a throw → Choke Hold, no defense allowed → carotid choke out.</li>
+<li><strong>Aimed precision shot:</strong> Aim 1 turn (brace if able) → Attack at 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = <strong>effective ~22–23</strong> before range → at shipboard range, buy a hit location (−7 skull / −5 vitals); 3d(5) burn, armor-divisor 5, vacuum-safe.</li>
+<li><strong>Snap shot / drop:</strong> Fast-Draw (Pistol)-14 free draw → blaster (Beam Weapons-15, 3d(5) burn, vacuum-safe) for a kill, or holdout electrolaser (HT-2 stun, atmosphere only) for a live capture.</li>
+</ol>
+
+  </div>
+</div>
+
+<div class="accordion" id="multi-action-combat-skill-chains">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Multi-Action Combat Skill Chains</button>
+  <div class="accordion-body">
+    <blockquote>
+<p>Operational state throughout: in armor, Light encumbrance (Move 4, Dodge 9). Both Karate and Judo run at full skill suited (Armor Familiarity ×2). Combat Reflexes is baked in.</p>
+</blockquote>
+<h3>Lethal options — when a kill is the cleaner, faster answer</h3>
+<ol>
+<li><strong>Axe Rapid Strike</strong> (Trained by a Master halves the penalty): two swings at 17−3 = <strong>14 each</strong>. Armor-divisor (3) guts most DR; with Cannon Fodder, potentially two mooks down in one second.</li>
+<li><strong>All-Out Attack (Strong), axe:</strong> <strong>3d+4 (3) cut</strong> — the finisher / breach-through-a-body.</li>
+<li><strong>Targeted Attack (Axe/Neck)</strong> — <em>next purchase when points free up</em>; turns a hit into a kill.</li>
+<li><strong>Blaster pistol</strong> (Beam Weapons-15): <strong>3d(5) burn</strong> at range, armor-divisor 5 — works in vacuum. Ranged lethal option when he can’t or won’t close.</li>
+</ol>
+<h3>Non-lethal options — when alive-and-quiet is the cleaner objective</h3>
+<ol>
+<li><strong>From behind</strong> (Stealth 14 / after a throw): <strong>Choke Hold, no defense allowed</strong> → carotid choke, ~3 seconds to unconscious.</li>
+<li><strong>Front of a fight:</strong> <strong>Judo grapple → Takedown</strong> (they fall prone) → re-grip neck → <strong>Choke Hold.</strong> Prone + grappled = no realistic escape.</li>
+<li><strong>Cannon-Fodder tap-out:</strong> a single Karate <strong>kick (1d+2)</strong> past DR drops a mook — <em>declare it non-lethal.</em> Faster than the choke when speed beats control.</li>
+<li><strong>Counter-choke (punish a parry):</strong> foe attacks → <strong>Judo Parry 11</strong> (+3 on a Retreat) → next turn step into close combat and <strong>Choke Hold 14</strong> (−1 front) to the neck → choke out. <em>(A successful barehanded Judo parry is a legal entry into the grapple.)</em></li>
+<li><strong>Ranged stun:</strong> <strong>Holdout electrolaser</strong> (Beam Weapons 15) → <strong>HT-2 (2) affliction</strong> at 10/20 — non-lethal drop at range. <em>Atmosphere only (no stun in vacuum).</em></li>
+</ol>
+<h3>Ranged options — the “ranged axe” when he can’t or won’t close</h3>
+<ol>
+<li><strong>Aimed precision shot:</strong> Aim 1 turn (brace if he can) → Attack: 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = <strong>effective ~22–23</strong> before range penalty. At shipboard ranges (~0 penalty) that easily affords a called shot — −7 skull, −5 vitals/eye — and <strong>3d(5) burn, armor-divisor 5</strong> punches through most DR. Works in vacuum.</li>
+<li><strong>Fast-Draw snap shot:</strong> <strong>Fast-Draw (Pistol)-14</strong> readies the blaster as a free action → Attack same turn at <strong>15</strong> (no Aim). The reaction shot when a threat appears before he’s drawn.</li>
+<li><strong>Burst (RoF 3):</strong> at close range his effective skill clears <strong>Rcl 1</strong> by enough to land multiple of the blaster’s 3 shots — up to <strong>triple 3d(5) burn</strong> on one target.</li>
+<li><strong>Zero-G snipe:</strong> beam weapons are <strong>exempt from the Free Fall cap</strong>, so he fires at full <strong>15</strong> while drifting — untrained foes are stuck at Free Fall default (~9) for their own attacks. He out-shoots them in his own element.</li>
+<li><strong>Kite / break-off:</strong> when a foe is behind cover, too armored to grapple, or closing is a bad trade, back to range and use the blaster — <strong>AD 5 actually beats the axe’s AD 3</strong> against heavy DR. Electrolaser is the atmosphere-only non-lethal version (HT-2 stun, 10/20).</li>
+</ol>
+<h3>Defense &amp; survival</h3>
+<ul>
+<li><strong>Dodge 9, retreat to 12;</strong> Karate <strong>Parry 11</strong> twice a turn (weapons unpenalized). He rarely gets hit.</li>
+<li><strong>High Pain Threshold</strong> ignores shock and resists stun/KO; <strong>DR 100</strong> shrugs off small arms; <strong>Vacuum Support + helmet-to-hand</strong> means a hull breach won’t kill him.</li>
+<li><strong>Fright Check 12</strong>, <strong>never freezes</strong>, +6 to shake off mental stun. No Fearlessness — the <em>genuinely unknown</em> is his one soft spot.</li>
+<li>⚠️ <strong>The choke ties up both hands</strong> — <em>no parry while choking</em>, and he’s committed to one target. Great 1-on-1; <strong>bad when outnumbered.</strong></li>
+</ul>
+<h3>Zero-G (Spacer Kung-Fu)</h3>
+<ul>
+<li><strong>Free Fall 15 is the key:</strong> nothing of his is penalized except the vibro-axe (17→15); Karate/Judo/Choke/Kicking are all ≤15, and the blaster is exempt. Most enemies fight at Free Fall default (~9) — <strong>zero-G is his turf.</strong> Free Fall 15 keeps him oriented through a tumble; Acrobatics 13 for flips.</li>
+<li><strong>Brace off a bulkhead</strong> to strike at full power; <strong>Judo throws redirect momentum into walls</strong> — devastating where there’s no “down.”</li>
+<li><strong>EVA mobility:</strong> the <strong>hand thruster</strong> lets him cross open space ship-to-ship under his own power — point-and-burst on Free Fall 15, 30 bursts (≈30 yd/s of Δv) per cylinder.</li>
+</ul>
+<h3>Doctrine / target priority</h3>
+<ul>
+<li><strong>Pick the mode that closes the job fastest and cleanest</strong> — throw → choke (or a pulled strike) when alive-and-quiet matters; the axe or blaster when a kill is the faster, cleaner answer. No hesitation, no preference — pure efficiency.</li>
+<li><strong>Outnumbered:</strong> throw several prone (−4 to everything they do), then choke or axe the one that matters.</li>
+<li>He’s the <strong>breach point</strong> — cut in (Forced Entry 15), clear the compartment, control it.</li>
+</ul>
+<p>!697</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="points-summary">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Points Summary</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attributes</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Secondary Characteristics</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Advantages &amp; Perks</td>
+<td>67</td>
+</tr>
+<tr>
+<td>Disadvantages</td>
+<td>−75</td>
+</tr>
+<tr>
+<td>Quirks</td>
+<td>−5</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>42</td>
+</tr>
+<tr>
+<td>Techniques</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>175</strong></td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="accordion" id="current-status">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Current Status</button>
+  <div class="accordion-body">
+    <ul>
+<li><strong>Location:</strong> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</li>
+<li><strong>Condition:</strong> Alive, uninjured (HP 13 / FP 12 full).</li>
+<li><strong>Carrying:</strong> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit.</li>
+<li><strong>Open threads:</strong> Hunted by <a href="../../locations/federal-republic-of-worlds.html">Federal Republic of Worlds</a> / Castellan Biodynamics recovery bounty (his Secret); the batch-brand is a physical tell; a quiet, wordless debt to P.E.T.A. / Kumari Profeta.</li>
+</ul>
+
+  </div>
+</div>
+
+<div class="accordion" id="notes">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Notes</button>
+  <div class="accordion-body">
+    <p>Fish-out-of-water hook: <strong>fluent in ships (Spacer), hopeless with people (Clueless/Callous).</strong> Will 10 + no Fearlessness is intentional — he doesn’t process social fear, but the genuinely <em>unknown</em> can still unnerve him. It’s a <em>tuned</em> soft spot, not a hole: Combat Reflexes gives him Fright Check 12, he never freezes, and recovers fast from mental stun — but still no Fearlessness, still mortal to the genuinely wrong. His martial mastery (Trained by a Master) is <strong>loaded combat software</strong> — which is <em>why</em> he fights like a master yet has no social graces: the combat package was installed; the social one never was.</p>
+<p><strong>Status model:</strong> synthetic “assets” are an <em>openly recognized</em> property underclass (the class P.E.T.A. fights for). So Six’s <strong>Valuable Property</strong> stigma is his latent legal reality on exposure; he physically passes in a crowd, but records/scans/the batch-brand drop him into it. His <strong>Secret</strong> is the sharper danger on top: that he’s <em>escaped/stolen</em> property with a live bounty.</p>
+<p>The <strong>Always-Armored / Helmet-to-Hand SOPs</strong> mean he’s <em>always</em> visibly in armor — which makes the <strong>chameleon work-suit disguise</strong> load-bearing, not optional: it’s the only thing keeping “guy who never takes his combat rig off” from screaming <em>threat</em> everywhere he goes. Combined with <strong>Vacuum Support</strong>, a sudden hull breach won’t kill him: the decompression can’t hurt him, he holds his breath, and the helmet’s already to hand to slap on.</p>
+
+  </div>
+</div>
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took the only job left to him — MacMillian 'security' at the dead-end of known space.</li>
+<li><strong class="rel-label">Hunted by</strong> <a href="../../locations/federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; Legally non-human property; exposure means reclamation or bounty.</li>
+<li><strong class="rel-label">Liberated by</strong> P.E.T.A. &mdash; The android-rights militants who thawed him; he owes them a quiet, wordless debt.</li>
+</ul>
+</div>
+<div class="tab-panel" id="tab-equipment">
+<h3>Melee Weapons</h3>
+<table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill</th>
+<th>Damage</th>
+<th>Reach</th>
+<th>Parry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vibro-axe</td>
+<td>Axe/Mace-17</td>
+<td>3d+2 (3) cut</td>
+<td>1</td>
+<td>12 (0U)</td>
+</tr>
+<tr>
+<td>Karate punch</td>
+<td>Karate-15</td>
+<td>1d+1 cr</td>
+<td>C</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Karate kick</td>
+<td>Karate-15</td>
+<td>1d+2 cr</td>
+<td>C, 1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Choke Hold (carotid)</td>
+<td>Choke Hold-14</td>
+<td>FP → unconscious</td>
+<td>C (grapple)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Judo grapple / throw / Takedown</td>
+<td>Judo-14</td>
+<td>— / slam</td>
+<td>C</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Vibro-axe to-hit <strong>17</strong> includes <strong>Weapon Bond (+1)</strong>; base Axe/Mace skill is 16.</li>
+</ul>
+
+<h3>Ranged Weapons</h3>
+<table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Skill</th>
+<th>Damage</th>
+<th>Acc</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Shots</th>
+<th>Bulk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blaster pistol (Fine)</td>
+<td>Beam Weapons (Pistol)-15</td>
+<td>3d (5) burn</td>
+<td>6</td>
+<td>300/900</td>
+<td>3</td>
+<td>200(3)</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>Holdout electrolaser</td>
+<td>Beam Weapons (Pistol)-15</td>
+<td>HT-2 (2) stun + 1d-3 burn</td>
+<td>2</td>
+<td>10/20</td>
+<td>3</td>
+<td>22(3)</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Equipment</h3>
+<blockquote>
+<p>📄 Full per-item stat sheets: Vibro-Axe (MACE-06) · Blaster Pistol (Fine) · Holdout Electrolaser · Hand Thruster · Disguised Space Armor · Six — Field Sundries &amp; Reloads.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Weight</th>
+<th>Cost</th>
+<th>Location</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vibro-axe</td>
+<td>4 lbs</td>
+<td>$500</td>
+<td>Hand / belt</td>
+<td>3d+2 (3) cut; C cell, 75 sec/cell</td>
+</tr>
+<tr>
+<td>Blaster pistol (Fine)</td>
+<td>1.6 lbs</td>
+<td>$4,400</td>
+<td>Holster</td>
+<td>3d(5) burn, Acc 6, smartgun + HUD link; vacuum-safe</td>
+</tr>
+<tr>
+<td>Holdout electrolaser</td>
+<td>0.3 lbs</td>
+<td>$250</td>
+<td>Concealed</td>
+<td>HT-2 (2) stun; atmosphere only</td>
+</tr>
+<tr>
+<td>Tactical light</td>
+<td>0.5 lbs</td>
+<td>$100</td>
+<td>Suit</td>
+<td>For dark compartments</td>
+</tr>
+<tr>
+<td>First Aid Kit (TL9)</td>
+<td>2 lbs</td>
+<td>$50</td>
+<td>On person</td>
+<td>+1 First Aid (+2 for bleeding via bandage spray — TL11 seals &amp; restores 1 HP in 3 sec). Sprays are a finite stock (not Infinite-Ammo).</td>
+</tr>
+<tr>
+<td>Hand thruster</td>
+<td>4 lbs</td>
+<td>$50</td>
+<td>Stowed (EVA transit)</td>
+<td>Cold-gas; operated on Free Fall 15</td>
+</tr>
+<tr>
+<td>Reload kit (one spare per consumable)</td>
+<td>~2.1 lbs</td>
+<td>$35</td>
+<td>On person</td>
+<td>Seed spares for Infinite Ammunition</td>
+</tr>
+<tr>
+<td>Disguised Space Armor (suit + helmet + Chameleon Surface)</td>
+<td>56 lbs</td>
+<td>$31,000</td>
+<td>Worn</td>
+<td>DR 100/60 (suit) &amp; 80/60 (helmet); sealed, Vacuum Support; chameleon work-suit livery</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Signature Gear (Dead Broke = $0 cash; all gear is points).</strong> 1 SG point = $37,500 of gear at TL11. His glance-disguise loadout (everything above) totals <strong>$36,385 = 1 pt</strong> ($1,115 unused). A full-disguise upgrade (+“Disguised” tailoring, suit $20k→$100k, helmet $3k→$15k) would be $123,500 = 4 pts — <strong>declined</strong>; staying at the 1-pt glance-disguise.</p>
+<p><strong>Disguise layers (all campaign-legal):</strong> (1) <strong>Chameleon Surface</strong> (Dynamic Multispectral; $8,000, 4 lbs) repaints the suit into MacMillian work-suit livery and doubles as active camo (+Stealth); (2) <strong>EVA logos &amp; decals</strong> (cosmetic, ≈free) sell the corp-work-gear read; (3) <strong>“Disguised” tailoring</strong> (+4 CF, ×5 cost) declined.</p>
+<h3>Encumbrance</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Max Weight</th>
+<th>Move</th>
+<th>Dodge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None (0)</td>
+<td>≤34 lbs</td>
+<td>6</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Light (1)</td>
+<td>≤68 lbs</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Medium (2)</td>
+<td>≤102 lbs</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Heavy (3)</td>
+<td>≤204 lbs</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>X-Heavy (4)</td>
+<td>≤340 lbs</td>
+<td>1</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>Carried weights: armor 56 + vibro-axe 4 + blaster 1.6 + electrolaser 0.3 + tac light 0.5 + First Aid Kit 2 + reload cells ~1.1 = <strong>≈65.5 lbs → Light</strong> (combat loadout; Move 4, Dodge 9). Adding the hand thruster (4) + spare cylinder (1) = <strong>≈70.5 lbs → just into Medium</strong> (Move 3, Dodge 8). The hand thruster is transit gear: he burns across the gap, then doffs/clips it before he breaches, so he <strong>fights at Light</strong> (~2.5 lbs under the 68-lb cap). The only time he carries the full ≈70.5 lbs is mid-crossing in zero-G, where ground Move is moot.</p>
+
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <p class="text-muted">No story content available.</p>
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<h2>Connections</h2>
+<div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="414.12678195541844" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="370.5342302750968" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="229.46576972490323" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="185.87321804458156" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="414.12678195541844" y1="162.91796067500633" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="414.12678195541844" y1="162.91796067500633" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="229.46576972490323" y1="297.08203932499373" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="six.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../../locations/federal-republic-of-worlds.html"><g opacity="1">
+    <rect x="394.12678195541844" y="142.91796067500633" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="414.12678195541844" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="370.5342302750968" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="370.5342302750968" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+  </g>
+  <a href="rock-lavey.html"><g opacity="1">
+    <circle cx="229.46576972490323" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="229.46576972490323" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+  <a href="../../campaign/player-characters.html"><g opacity="1">
+    <circle cx="185.87321804458156" cy="162.91796067500633" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="185.87321804458156" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../../world/federal-credits.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Credits</text>
+  </g></a>
+  <a href="../../heritages/skin-freaks.html"><g opacity="0.5">
+    <circle cx="346.5874281184538" cy="373.8666487320323" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Skin Freaks</text>
+  </g></a>
+  <a href="../../factions/macmillian-mining-and-extraction-corporation.html"><g opacity="0.5">
+    <polygon points="138.25770692094983,146.41257188154634 138.25770692094983,160.41257188154634 126.1333512679677,167.41257188154634 114.00899561498555,160.41257188154634 114.00899561498555,146.41257188154634 126.13335126796768,139.41257188154634" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
+  </g></a>
+</svg></div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

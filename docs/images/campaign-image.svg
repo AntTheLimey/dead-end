@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Dead End — a dim amber star over a rust-lit frontier station at the end of the charted lanes">
+  <defs>
+    <radialGradient id="void" cx="68%" cy="32%" r="95%">
+      <stop offset="0%" stop-color="#1c1712"/>
+      <stop offset="45%" stop-color="#100d0c"/>
+      <stop offset="100%" stop-color="#060506"/>
+    </radialGradient>
+    <radialGradient id="star" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd591"/>
+      <stop offset="30%" stop-color="#f0a23a"/>
+      <stop offset="70%" stop-color="#9c5a1c"/>
+      <stop offset="100%" stop-color="#9c5a1c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3fd0d8" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#3fd0d8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3fd0d8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3a26"/>
+      <stop offset="100%" stop-color="#1a120d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#void)"/>
+
+  <!-- scattered cold stars -->
+  <g fill="#cfe9ec">
+    <circle cx="120" cy="90" r="1.4" opacity="0.7"/>
+    <circle cx="240" cy="160" r="1" opacity="0.5"/>
+    <circle cx="420" cy="70" r="1.6" opacity="0.8"/>
+    <circle cx="560" cy="200" r="1" opacity="0.4"/>
+    <circle cx="980" cy="520" r="1.2" opacity="0.5"/>
+    <circle cx="1080" cy="120" r="1" opacity="0.5"/>
+    <circle cx="320" cy="430" r="1.2" opacity="0.5"/>
+    <circle cx="150" cy="520" r="1" opacity="0.4"/>
+    <circle cx="700" cy="540" r="1.4" opacity="0.6"/>
+  </g>
+
+  <!-- dim amber K-type star -->
+  <circle cx="820" cy="200" r="300" fill="url(#star)" opacity="0.85"/>
+  <circle cx="820" cy="200" r="46" fill="#ffe2b0"/>
+
+  <!-- the charted lane that runs out: a beacon track fading to nothing -->
+  <g>
+    <rect x="0" y="392" width="1200" height="3" fill="url(#lane)"/>
+    <g fill="#3fd0d8">
+      <circle cx="120" cy="393" r="3.5" opacity="0.8"/>
+      <circle cx="300" cy="393" r="3" opacity="0.65"/>
+      <circle cx="470" cy="393" r="2.6" opacity="0.5"/>
+      <circle cx="615" cy="393" r="2.2" opacity="0.35"/>
+      <circle cx="735" cy="393" r="1.8" opacity="0.22"/>
+    </g>
+  </g>
+
+  <!-- dead-end station silhouette: half refinery, half vice-den, all rust -->
+  <g transform="translate(150,300)">
+    <!-- central spindle -->
+    <rect x="118" y="-10" width="44" height="300" fill="url(#rust)"/>
+    <!-- habitation ring -->
+    <ellipse cx="140" cy="120" rx="150" ry="40" fill="none" stroke="#6b4326" stroke-width="14"/>
+    <ellipse cx="140" cy="120" rx="150" ry="40" fill="none" stroke="#2a1b11" stroke-width="3"/>
+    <!-- refinery stacks -->
+    <rect x="70" y="40" width="22" height="120" fill="url(#rust)"/>
+    <rect x="190" y="20" width="26" height="140" fill="url(#rust)"/>
+    <rect x="40" y="80" width="16" height="90" fill="url(#rust)"/>
+    <!-- docking arm -->
+    <rect x="160" y="230" width="120" height="10" fill="#4a2f1d"/>
+    <!-- warm vice-den windows -->
+    <g fill="#f0a23a">
+      <rect x="126" y="30" width="6" height="6" opacity="0.9"/>
+      <rect x="138" y="48" width="6" height="6" opacity="0.7"/>
+      <rect x="150" y="30" width="6" height="6" opacity="0.85"/>
+      <rect x="126" y="70" width="6" height="6" opacity="0.6"/>
+      <rect x="150" y="88" width="6" height="6" opacity="0.8"/>
+      <rect x="196" y="60" width="6" height="6" opacity="0.7"/>
+      <rect x="196" y="90" width="6" height="6" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- "the lanes end here" terminator bar -->
+  <rect x="760" y="380" width="6" height="26" fill="#b9433a" opacity="0.8"/>
+
+  <!-- vignette -->
+  <rect width="1200" height="630" fill="#000" opacity="0.18"/>
+</svg>
