@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Vasil PC (Draft) — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Jay Vasil Pc Draft</nav>
+<div class="hero-cinematic hero-cinematic-no-img">
+  <div class="pc-portrait" style="width:5rem;height:5rem;font-size:2rem;margin-bottom:1rem">JV</div>
+  <h1>Jay Vasil PC (Draft)</h1>
+  <div class="meta">
+    <span><span class="label">Player</span> Jay Vasil</span>
+    <span><span class="label">Point Total</span> 178</span>
+    <span><span class="label">Status</span> alive</span>
+  </div>
+</div>
+<div class="pull-quote">Brilliant tinkerer (Gadgeteer), Lives to make the GREAT discovery in unknown space, Broad frontier generalist — pilot, sensor-tech, prospector, Owes a corporate/criminal debt and is hunted by 'X Corp', Curious to a fault; overconfident; too trusting</div>
+<div class="tab-bar">
+  <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
+  <button class="pc-tab" data-tab="equipment" onclick="switchTab('equipment')">Equipment</button>
+  <button class="pc-tab" data-tab="story" onclick="switchTab('story')">Story</button>
+  <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
+</div>
+<div class="tab-panel active" id="tab-sheet">
+<div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">11</div><div class="l">ST</div><div class="p">[10]</div></div><div class="a"><div class="v">14</div><div class="l">DX</div><div class="p">[80]</div></div><div class="a"><div class="v">14</div><div class="l">IQ</div><div class="p">[80]</div></div><div class="a"><div class="v">11</div><div class="l">HT</div><div class="p">[10]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">11</div><div class="l">HP</div></div><div class="a"><div class="v">14</div><div class="l">Will</div></div><div class="a"><div class="v">14</div><div class="l">Per</div></div><div class="a"><div class="v">11</div><div class="l">FP</div></div><div class="a"><div class="v">6.25</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v">9</div><div class="l">Dodge</div></div><div class="a"><div class="v">14</div><div class="l">Fright Check</div></div><div class="a"><div class="v">14 / 14 / 14 / 14</div><div class="l">Vision / Hearing / Taste-Smell / Touch</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 24 lbs</span><span><span class="der-label">Thr</span> 1d−1</span><span><span class="der-label">Sw</span> 1d+1</span><span><span class="der-label">SM</span> +0</span></div></section>
+<section class="blk cat-attr"><h2>Lifting Feats</h2><table class="lift-feats"><thead><tr><th>Feat</th><th class="num">Weight</th></tr></thead><tbody><tr><td>One-Handed Lift</td><td class="num">48 lb</td></tr>
+<tr><td>Two-Handed Lift</td><td class="num">192 lb</td></tr>
+<tr><td>Shove &amp; Knock Over</td><td class="num">288 lb</td></tr>
+<tr><td>Carry on Back</td><td class="num">360 lb</td></tr>
+<tr><td>Shift Slightly</td><td class="num">1200 lb</td></tr></tbody></table></section>
+<section class="blk cat-attr"><h2>Slam</h2><div class="slam-row"><div class="slam-cell"><div class="slam-v">1d-3</div><div class="slam-l">v=1</div></div><div class="slam-cell"><div class="slam-v">1d-2</div><div class="slam-l">v=3</div></div><div class="slam-cell"><div class="slam-v">1d-1</div><div class="slam-l">v=5</div></div></div><div class="slam-note">Crushing damage at Basic Move up to 6</div></section>
+<section class="blk cat-attr"><h2>Senses &amp; Checks</h2><table><tbody><tr><td class="nm">Race</td><td class="num">Human</td></tr>
+<tr><td class="nm">TL</td><td class="num">11 (campaign TL; GCA export currently reads 3 — see Audit #2)</td></tr>
+<tr><td class="nm">Status</td><td class="num">0</td></tr>
+<tr><td class="nm">Appearance</td><td class="num">Average (unset)</td></tr>
+<tr><td class="nm">Reaction Modifiers</td><td class="num">Conditional: +2 from Overconfidence / Megalomania toward young or naïve NPCs; −2 from each toward experienced NPCs.</td></tr></tbody></table></section>
+<section class="blk cat-trait"><h2>Advantages</h2><table><tbody><tr><td class="nm">Gadgeteer</td><td class="num"><span class="cost">25</span></td></tr>
+<tr><td class="nm">Lightning Calculator</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Less Sleep 1</td><td class="num"><span class="cost">2</span></td></tr></tbody></table></section>
+<section class="blk cat-trait"><h2>Disadvantages</h2><table><tbody><tr><td class="nm">Debt (15 levels)</td><td class="num"><span class="cost">−15</span></td></tr>
+<tr><td class="nm">Enemy (“X Corp”) — medium group w/ some formidable/superhuman members; appears 6 or less</td><td class="num"><span class="cost">−15</span></td></tr>
+<tr><td class="nm">Gullibility (12 or less)</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Megalomania (make a GREAT discovery in unknown space)</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Unluckiness</td><td class="num"><span class="cost">−10</span></td></tr>
+<tr><td class="nm">Curious (12 or less)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Overconfidence (12 or less)</td><td class="num"><span class="cost">−5</span></td></tr>
+<tr><td class="nm">Phobia (Number 13 — Triskaidekaphobia) (12 or less)</td><td class="num"><span class="cost">−5</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Archaeology</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">4</span></td></tr>
+<tr><td class="nm">Beam Weapons/TL11 (Pistol)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Beam Weapons/TL11 (Rifle)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Brawling</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Computer Operation/TL11</td><td class="num">16</td><td class="num rel">IQ+2</td><td class="num"><span class="cost">4</span></td></tr>
+<tr><td class="nm">Diplomacy</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Operation/TL11 (Communications)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Operation/TL11 (Electronic Warfare)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Electronics Operation/TL11 (Sensors)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Electronics Repair/TL11 (Communications)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Electronics Repair/TL11 (Computers)</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr><td class="nm">Electronics Repair/TL11 (Sensors)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Free Fall</td><td class="num">13</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Gambling</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Geology/TL11 (Earthlike)</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Geology/TL11 (Rock Worlds)</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Gunner/TL11 (Beams)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Guns/TL11 (Pistol)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Guns/TL11 (Rifle)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Knife</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Leadership</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Navigation/TL11 (Hyperspace)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Navigation/TL11 (Land)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Navigation/TL11 (Space)</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Piloting/TL11 (Aerospace)</td><td class="num">13</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Piloting/TL11 (High-Performance Spacecraft)</td><td class="num">13</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Piloting/TL11 (Low-Performance Spacecraft)</td><td class="num">13</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Shiphandling/TL11 (Spaceship)</td><td class="num">12</td><td class="num rel">IQ−2</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Smuggling</td><td class="num">13</td><td class="num rel">IQ−1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Spacer/TL11</td><td class="num">14</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr><td class="nm">Survival (Woodlands)</td><td class="num">15</td><td class="num rel">Per+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr><td class="nm">Vacc Suit/TL11</td><td class="num">13</td><td class="num rel">DX−1</td><td class="num"><span class="cost">1</span></td></tr></tbody></table></section>
+<section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Primary Attributes</td><td class="num">180</td></tr>
+<tr><td class="nm">Secondary Characteristics</td><td class="num">0</td></tr>
+<tr><td class="nm">Advantages</td><td class="num">29</td></tr>
+<tr><td class="nm">Disadvantages</td><td class="num">−75</td></tr>
+<tr><td class="nm">Skills</td><td class="num">44</td></tr>
+<tr class="total"><td class="nm">Total Spent</td><td class="num">178</td></tr>
+<tr><td class="nm">Budget</td><td class="num">175</td></tr>
+<tr><td class="nm">Over budget</td><td class="num">−3</td></tr></tbody></table></section></div></div>
+<nav class="section-nav" aria-label="Sheet sections"><a href="#concept-as-the-sheet-implies">Concept (as the sheet implies)</a>
+<a href="#advantages">Advantages</a>
+<a href="#disadvantages">Disadvantages</a>
+<a href="#active-defenses-combat-line">Active Defenses &amp; Combat Line</a>
+<a href="#must-fix-legality">Must-fix (legality)</a>
+<a href="#build-effectiveness-suggestions-all-optional">Build effectiveness (suggestions, all optional)</a>
+<a href="#setting-ties-talk-to-tim">Setting ties (talk to Tim)</a></nav>
+
+<div class="accordion" id="concept-as-the-sheet-implies">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Concept (as the sheet implies)</button>
+  <div class="accordion-body">
+    <p><em>Nothing below is invented backstory — it’s only what the traits point at. Name, history, and voice
+are Jay’s to write.</em></p>
+<p>A sharp, restless frontier generalist wired to <strong>find things nobody else has</strong> — an inveterate
+tinkerer (<strong>Gadgeteer</strong>) with a prospector’s eye (<strong>Archaeology, Geology, Survival</strong>), the hands to
+fly the ship and work its sensors (<strong>Piloting, Navigation, Electronics Operation</strong>), and a head that
+does the math in real time (<strong>Lightning Calculator, Less Sleep</strong>). He is driven — to the point of
+<strong>Megalomania</strong> — by the conviction that he will make <em>the</em> great discovery out in unknown space, and
+he is <strong>Curious, Overconfident, and Gullible</strong> enough to walk straight into whatever that takes. He
+carries a <strong>Debt</strong> and an <strong>Enemy (“X Corp”)</strong> out of his past. In <em>Dead End</em>’s terms, he is a man
+built to not let a mystery lie — exactly the kind of loose end the dead system makes of people.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="advantages">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Advantages</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Page Ref</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gadgeteer</strong></td>
+<td>25</td>
+<td>B56</td>
+<td>Invent and jury-rig gadgets. The signature trait — but it needs <em>making</em> skills to shine (see Audit #5). Standard (non-Quick) version: invention takes normal, long time.</td>
+</tr>
+<tr>
+<td><strong>Lightning Calculator</strong></td>
+<td>2</td>
+<td>B66</td>
+<td>Instant, perfect mental arithmetic — ranges, vectors, yields.</td>
+</tr>
+<tr>
+<td><strong>Less Sleep 1</strong></td>
+<td>2</td>
+<td>B65</td>
+<td>Needs one hour less sleep per level; more hours to tinker.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Advantages total: 29</strong></p>
+
+  </div>
+</div>
+
+<div class="accordion" id="disadvantages">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Disadvantages</button>
+  <div class="accordion-body">
+    <p><em>Sum = <strong>−75</strong>, exactly the campaign cap. Every cost verified (GURPS RAG, B-cites below).</em></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Page Ref</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Debt</strong> (15 levels)</td>
+<td>−15</td>
+<td>B137</td>
+<td>−1/level (max 20). Monthly payment = <strong>15% of starting wealth</strong>, deducted from job income first. Owes money — bank, creditor, or worse.</td>
+</tr>
+<tr>
+<td><strong>Enemy (“X Corp”)</strong> — medium group w/ some formidable/superhuman members; appears 6 or less</td>
+<td>−15</td>
+<td>B135</td>
+<td>Cost verified: −30 base × ½ (6-or-less) × 1 (harmful intent) = <strong>−15</strong>. <em>Who “X Corp” is → for Tim (see Audit #10).</em></td>
+</tr>
+<tr>
+<td><strong>Gullibility</strong> (12 or less)</td>
+<td>−10</td>
+<td>B137</td>
+<td>Believes what he’s told; must roll to <em>doubt</em> an obvious lie.</td>
+</tr>
+<tr>
+<td><strong>Megalomania</strong> (make a GREAT discovery in unknown space)</td>
+<td>−10</td>
+<td>B137</td>
+<td>The engine of his choices — grand, driving ambition.</td>
+</tr>
+<tr>
+<td><strong>Unluckiness</strong></td>
+<td>−10</td>
+<td>B160</td>
+<td>Once per session the GM can make his worst roll happen.</td>
+</tr>
+<tr>
+<td><strong>Curious</strong> (12 or less)</td>
+<td>−5</td>
+<td>B129</td>
+<td>Must roll to <em>not</em> investigate the interesting thing.</td>
+</tr>
+<tr>
+<td><strong>Overconfidence</strong> (12 or less)</td>
+<td>−5</td>
+<td>B148</td>
+<td>Certain he’ll succeed; must roll to be cautious.</td>
+</tr>
+<tr>
+<td><strong>Phobia (Number 13 — Triskaidekaphobia)</strong> (12 or less)</td>
+<td>−5</td>
+<td>B148</td>
+<td>Fear of the number 13.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Disadvantages total: −75</strong> · <strong>Quirks: 0</strong> (see Audit #1 — take up to 5)</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="active-defenses-combat-line">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Active Defenses &amp; Combat Line</button>
+  <div class="accordion-body">
+    <table>
+<thead>
+<tr>
+<th>Defense</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dodge</td>
+<td>9</td>
+<td>Basic Speed 6.25, no encumbrance</td>
+</tr>
+<tr>
+<td>Parry (Brawling / Knife)</td>
+<td>10</td>
+<td>(skill 14 ÷ 2) + 3</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>—</td>
+<td>No Shield/Cloak skill</td>
+</tr>
+</tbody>
+</table>
+<p>A capable-but-not-hardened fighter: <strong>Beam Weapons 14 / Guns 14</strong> (a solid shot with any personal
+weapon), <strong>Brawling / Knife 14</strong> up close, <strong>Dodge 9</strong>. No armor and <strong>HT 11 / HP 11</strong>, so he wins by
+shooting first and taking cover — the Equipment loadout below is what keeps him alive.</p>
+<hr>
+<h1>AUDIT — for Jay Vasil</h1>
+<blockquote>
+<p>Player-to-player notes, not a GM ruling. Ordered: must-fix (legality) → build effectiveness →
+setting ties. All rules costs verified against the GURPS RAG server (book/page cited).</p>
+</blockquote>
+
+  </div>
+</div>
+
+<div class="accordion" id="must-fix-legality">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Must-fix (legality)</button>
+  <div class="accordion-body">
+    <p><strong>1. You’re 3 points over the 175 cap (GCA “Unspent −3”).</strong>
+The build costs 178. Cleanest fix: <strong>take quirks.</strong> You currently have <strong>zero</strong>, and GURPS lets you
+take <strong>up to 5 quirks (−1 each) on top of the −75 disadvantage cap</strong> (B100). Three quirks → exactly
+175; five quirks → 175 with <strong>+2 to spend</strong>. Quirks are also free characterisation — e.g. <em>“never
+throws away a broken gadget,” “narrates his own plans out loud,” “won’t fly on the 13th”</em> (leans into
+the Triskaidekaphobia). This is the recommended route since your <strong>disadvantages are already maxed at
+−75</strong> — quirks are the only lever left to reclaim points.</p>
+<p><strong>2. Your Tech Level is set to TL3 — the campaign is TL11.</strong>
+Every <code>/TL</code> skill on the export prints <code>/TL3</code>: <em>Beam Weapons/TL3, Vacc Suit/TL3, Spacer/TL3,
+Piloting/TL3, Electronics…/TL3.</em> None of those things exist at TL3 (that’s crossbows-and-galleons
+tech — no beam weapons, spacecraft, vacc suits, or computers). It’s a GCA default that never got
+switched to 11. <strong>Fix: set the character’s TL to 11</strong> and every <code>/TL</code> skill retags to <code>/TL11</code>. <strong>No
+point change</strong> — TL-tagged skills cost the same at any TL. This draft already shows the corrected tags.</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="build-effectiveness-suggestions-all-optional">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Build effectiveness (suggestions, all optional)</button>
+  <div class="accordion-body">
+    <p><strong>3. Very broad, very shallow.</strong> ~30 skills, most at 1 point, a lot sitting at <strong>IQ−1/−2 or DX−1</strong> —
+<em>Diplomacy 12, Geology 12, Shiphandling 12, the Pilotings 13, the Navigations 13.</em> That’s
+barely-competent across a huge spread. Consider <strong>concentrating</strong>: pick the 4–6 skills that <em>are</em> the
+character and raise them, and let the truly marginal ones go to default. Your deep skills right now are
+Archaeology 14, <strong>Computer Operation 16</strong>, and Survival 15 — good anchors.</p>
+<p><strong>4. Gadgeteer without the <em>making</em> skills.</strong> Gadgeteer [25] is your headline trait, but to invent or
+modify gear you roll against a <strong>building skill</strong> — Engineer, Machinist, Armoury, etc. You have
+<strong>Electronics Repair (Computers/Comms/Sensors)</strong>, which covers electronic gadgets nicely, but there’s
+<strong>no Engineer (any)</strong>. Adding <strong>Engineer (Electronics)</strong> — even at 1–2 points — is what turns Gadgeteer
+from “flavour” into “builds the thing that saves the session.” Strongly worth a couple of points if you
+trim elsewhere.</p>
+<p><strong>5. Weapon-skill redundancy — ~5 points you could tighten.</strong> You have <strong>Beam Weapons (Pistol + Rifle)
+<em>and</em> Guns (Pistol + Rifle) <em>and</em> Gunner (Beams)</strong>, all at DX+0. In a TL11 energy-weapon setting,
+<strong>Beam Weapons is the one that matters</strong>; slug-thrower Guns may rarely come up. Dropping Guns to
+default (you still roll DX−4 = 10 in a pinch) reclaims <strong>2 points</strong> toward Engineer or a quirk buy-back.
+Keep Gunner (Beams) if you expect to man ship/vehicle weapons.</p>
+<p><strong>6. Survival (Woodlands) is your deepest outdoor skill — but you’re a <em>space</em> prospector.</strong> 4 points
+in <em>Woodlands</em> is odd next to Geology (Rock Worlds). If Tim’s frontier runs to barren/rock/ice worlds,
+retarget those 4 points to a <strong>matching Survival specialty</strong> (Mountain, Desert, or a <em>Space</em> type) so
+the investment lands where you’ll actually be. (Survival specialties default to each other at −3, so
+it’s cheap to re-aim.)</p>
+<p><strong>7. Thin durability for the frontier.</strong> <strong>HT 11 / HP 11</strong>, no armor bought, Dodge 9. Not illegal —
+just fragile, and <strong>HT rolls</strong> (staying conscious, shrugging off disease/poison/vacuum exposure) are
+average. If you free up points from #3/#5, even <strong>HT 11→12 [+10]</strong> noticeably hardens survival. Failing
+that, the armor in the loadout below is doing the heavy lifting — wear it.</p>
+<p><strong>8. Heavy self-control load — know what you signed up for.</strong> <em>Curious (12), Overconfidence (12),
+Gullibility (12), Megalomania, Unluckiness, Phobia (13).</em> At <strong>self-control 12 you resist on a 12 or
+less</strong> — roughly a <strong>1-in-4 chance to give in</strong> each time you’re tempted, so expect these to fire
+<em>often</em>, and <strong>Gullibility + Overconfidence + Megalomania</strong> together is a combo that walks whole crews
+into trouble. Totally legal and great drama — just make sure that’s the intensity you want to play. (To
+soften one, raise its number toward 15, but that <em>reduces</em> the points you get, and you’re already at
+the cap — so it’s a play-feel choice, not a free one.)</p>
+
+  </div>
+</div>
+
+<div class="accordion" id="setting-ties-talk-to-tim">
+  <button class="accordion-header" aria-expanded="false" onclick="const o=this.parentElement.classList.toggle('open');this.setAttribute('aria-expanded',o)">Setting ties (talk to Tim)</button>
+  <div class="accordion-body">
+    <p><strong>9. “X Corp” (your Enemy) and the Debt are perfect hooks — give them a face.</strong> “X Corp” is a
+placeholder. The corporate powers you’d know in play are <strong>MacMillian Mining and Extraction
+Corporation</strong> (the crew’s employer). Ask Tim whether your Enemy and/or your creditor can be tied to a
+corporation or crew that reaches the <strong><a href="../../locations/thides-system.html">Thides System</a></strong> — a debt that <em>follows you to the dead end</em>
+is exactly the campaign’s flavour, and it hands Tim a ready lever.</p>
+<p><strong>10. Megalomania → the great discovery in unknown space</strong> is a strong fit for a frontier-mystery
+campaign like <em>Dead End</em>, and a gift of a plot handle: you’ve built a character who <em>cannot leave a
+mystery alone</em> and will chase the first real anomaly the moment it appears. Worth flagging to Tim so he
+can aim it.</p>
+<p><strong>11. Confirm Gadgeteer fits the tone.</strong> <em>Dead End</em> is TL11 with <strong>limited super-science</strong>. Standard
+Gadgeteer (not <em>Quick</em>) is the realistic version — inventions take real time — so it likely fits, but
+it’s worth a one-line check with Tim that a gadgeteer-inventor is in-genre.</p>
+<p><strong>12. Name + one-paragraph bio.</strong> The sheet is “Character 1.” He needs a name, and enough of a past to
+explain the <strong>Debt</strong> and <strong>X Corp</strong> — happy to draft options with you once you’ve got a direction.</p>
+<hr>
+<h1>SUGGESTED EQUIPMENT — TL11, budget $75,000</h1>
+<blockquote>
+<p>Built around what he can actually <em>use</em>: Beam Weapons, Vacc Suit, the Electronics cluster, and
+Gadgeteer. Prices/weights verified against <strong>GURPS Ultra-Tech</strong> (and Basic Set for tool kits) via the
+GURPS RAG server. Items marked <em>(confirm)</em> are standard gear whose exact TL11 line Tim should
+spot-check against his book.</p>
+</blockquote>
+<h3>Field kit — carried</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align:right">Cost</th>
+<th style="text-align:right">Wt (lb)</th>
+<th>Why</th>
+<th>Src</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Blaster pistol</strong> (3d(5) burn, sur)</td>
+<td style="text-align:right">$2,200</td>
+<td style="text-align:right">1.6</td>
+<td>Sidearm for <strong>Beam Weapons (Pistol) 14</strong>; (5) armor divisor + surge — great vs. armor/robots</td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Blaster carbine</strong> (5d(5) burn, sur)</td>
+<td style="text-align:right">$9,200</td>
+<td style="text-align:right">5.6</td>
+<td>Primary long arm for <strong>Beam Weapons (Rifle) 14</strong>; carbine = lighter/handier than the full rifle</td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Monocrys vest</strong> (DR 24/8*)</td>
+<td style="text-align:right">$300</td>
+<td style="text-align:right">2</td>
+<td>Flexible, concealable everyday torso armor</td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Vacc suit + vacc helmet</strong> (sealed, DR 6*)</td>
+<td style="text-align:right">$12,000</td>
+<td style="text-align:right">30</td>
+<td><strong>Vacc Suit 13</strong> — non-negotiable in this setting. <em>Upgrade:</em> the <strong>TL11 Monocrys Vacc Suit</strong> folds DR 24/8 into the suit — ask Tim for that line</td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Small radscanner</strong> (+2 skill at TL11)</td>
+<td style="text-align:right">$1,000</td>
+<td style="text-align:right">0.5</td>
+<td><strong>Electronics Op (Sensors/EW)</strong> — find power cells, signals, radiation; +2 bonus</td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Portable tool kit (Electronics Repair)</strong></td>
+<td style="text-align:right">$1,200</td>
+<td style="text-align:right">10</td>
+<td>Field repairs for his Electronics Repair skills + Gadgeteer</td>
+<td>B/UT</td>
+</tr>
+<tr>
+<td><strong>Portable tool kit (Mechanic/general)</strong></td>
+<td style="text-align:right">$600</td>
+<td style="text-align:right">20</td>
+<td>Broad jury-rigging for Gadgeteer</td>
+<td>B/UT</td>
+</tr>
+<tr>
+<td><strong>Personal communicator</strong> (small)</td>
+<td style="text-align:right">~$500</td>
+<td style="text-align:right">0.5</td>
+<td>Comms; pairs Electronics Op (Comms) <em>(confirm)</em></td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Personal computer</strong> (tiny, Complexity 5–6)</td>
+<td style="text-align:right">~$1,100</td>
+<td style="text-align:right">0.5</td>
+<td><strong>Computer Operation 16</strong> — analysis, astrogation, gadget control <em>(confirm)</em></td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Survival kit (fine) + personal basics</strong></td>
+<td style="text-align:right">~$300</td>
+<td style="text-align:right">3</td>
+<td><strong>Survival 15</strong> off the ship</td>
+<td>B/UT</td>
+</tr>
+<tr>
+<td><strong>Spare power cells</strong> (C / 2C, several)</td>
+<td style="text-align:right">~$300</td>
+<td style="text-align:right">1</td>
+<td>Reloads for pistol &amp; carbine <em>(confirm)</em></td>
+<td>UT</td>
+</tr>
+<tr>
+<td><strong>Field subtotal</strong></td>
+<td style="text-align:right"><strong>≈ $28,700</strong></td>
+<td style="text-align:right">~75</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Ship / base workshop — the Gadgeteer multiplier</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align:right">Cost</th>
+<th style="text-align:right">Wt (lb)</th>
+<th>Why</th>
+<th>Src</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shop tool kit (Electronics Repair)</strong> — <strong>+2 to skill</strong></td>
+<td style="text-align:right">$30,000</td>
+<td style="text-align:right">500</td>
+<td>Turns Gadgeteer into a real inventing bench (+2 to every Electronics Repair roll). Stationary — lives on the ship</td>
+<td>B/UT</td>
+</tr>
+<tr>
+<td><strong>Workshop subtotal</strong></td>
+<td style="text-align:right"><strong>≈ $30,000</strong></td>
+<td style="text-align:right">500</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Running total ≈ <strong>$58,700</strong> · reserve ≈ <strong>$16,300</strong></h3>
+<p><strong>Spend the reserve (pick with Tim):</strong></p>
+<ul>
+<li><strong>Upgrade carbine → blaster rifle</strong> (6d(5), +$8,800) for more punch</li>
+<li><strong>Reflec suit</strong> (DR 40/0* vs. lasers, $3,000) — cheap dedicated energy defence layer</li>
+<li><strong>Light clamshell</strong> (DR 60 torso, $600) as a hard layer under/over the vest</li>
+<li>A <strong>terahertz / ground-penetrating scanner</strong> for Archaeology digs <em>(confirm UT line)</em></li>
+<li><strong>Personal medkit</strong>, EVA tethers, climbing rig, or a small <strong>utility drone</strong></li>
+<li><strong>Bank it</strong> against those <strong>Debt</strong> payments (15% of wealth every month adds up fast)</li>
+</ul>
+<blockquote>
+<p>[!note] Copyright
+Item names, prices, weights, and one-line notes only (SJG Online Policy). Full stat blocks and rules
+text live in <em>GURPS Ultra-Tech</em> — cite the page, don’t reproduce.</p>
+</blockquote>
+
+  </div>
+</div>
+
+</div>
+<div class="tab-panel" id="tab-equipment">
+<p class="text-muted">No equipment data available.</p>
+</div>
+<div class="tab-panel" id="tab-story">
+  <div class="story-prose">
+    <p class="text-muted">No story content available.</p>
+  </div>
+</div>
+<div class="tab-panel" id="tab-journey">
+<p class="text-muted">Journey data builds as the campaign progresses.</p>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.pc-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('[data-tab="' + tab + '"]').classList.add('active');
+  history.replaceState(null, '', '#' + tab);
+}
+function openAccordion(id) {
+  var el = document.getElementById(id);
+  if (el && el.classList.contains('accordion')) {
+    el.classList.add('open');
+    var btn = el.querySelector('.accordion-header');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.section-nav a');
+  if (link) {
+    e.preventDefault();
+    var id = link.getAttribute('href').slice(1);
+    openAccordion(id);
+  }
+});
+(function() {
+  var hash = location.hash.slice(1);
+  if (['sheet', 'combat', 'equipment', 'story', 'journey'].includes(hash)) switchTab(hash);
+  else if (hash) openAccordion(hash);
+})();
+</script>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>
