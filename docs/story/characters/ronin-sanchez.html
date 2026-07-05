@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronin Sanchez — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../../story.html">Story</a></div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../../story.html">Story</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+
+
+    <article class="story-prose">
+      <h1 class="page-title">Ronin Sanchez</h1>
+      <p class="story-sheet-link"><a href="../../characters/pcs/ronin-sanchez.html">View character sheet &rarr;</a></p>
+      <h2>Session 1 — The Ragged Edge of Space</h2>
+<p>Ronin Sanchez arrived late and unbothered, which is its own kind of resume. He came through the gate after the others, declared every weapon on him rather than gamble on a scan finding them first, and walked into the middle of <a href="../../characters/npcs/holger-graeme.html">Holger Graeme</a>’s briefing with the easy confidence of a man who has been late to funerals. Four arms, two guns, and a body that technically belongs to the management that dismissed him. He does not advertise that last part. The repo-men already know where to look.</p>
+<p>He is the crew’s social engine, and the night out was his doing. Ninety percent chance of a good time, he announced, like a man reading odds off a board, and then he set about making the number true. He took <a href="../../characters/pcs/six.html">Six</a> in hand and taught him to drink, told him to slow down and sip, and watched the big property-grown killer discover warmth and lobster and, God help everyone in earshot, fun. There was something close to pride in it. Ronin has spent his life guarding other people’s bodies. Guarding this one through its first good night was almost a pleasure.</p>
+<p>He is not subtle, and it cost the crew once. When <a href="../../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a> was three seconds from lifting <a href="../../characters/npcs/leocadia-zavia.html">Leocadia Zavia</a>’s coordinates through a hijacked bot, it was Ronin who shouted the bot away, blind to the operation running right past his elbow. He bet the underdog kid in the <a href="../../locations/nova-nexus.html">Nova Nexus</a> pit too, on principle or on hope, and the veteran put the kid down in the third. Ronin cashed out ahead anyway, because the house wanted the new security to win. He took the money. A man in his position does not turn down a rigged win. He just files who rigged it, and why, for later.</p>
+
+    </article>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

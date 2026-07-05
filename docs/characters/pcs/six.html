@@ -12,6 +12,7 @@
 <header class="top-nav">
   <a href="../../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../../story.html">Story</a></div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -41,6 +42,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../../story.html">Story</a></li>
+  </ul>
   <h3>Characters</h3>
   <ul>
     <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
@@ -115,7 +119,7 @@
 <tr><td>Legs</td><td class="num">60</td></tr>
 <tr><td>Feet</td><td class="num">60</td></tr></tbody></table></section>
 <section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0"><td>None (0)</td><td class="num">≤34 lbs</td><td class="num">6</td><td class="num">10</td></tr>
-<tr class="e1"><td>Light (1)</td><td class="num">≤68 lbs</td><td class="num">4</td><td class="num">9</td></tr>
+<tr class="e1 cur"><td>Light (1)</td><td class="num">≤68 lbs</td><td class="num">4</td><td class="num">9</td></tr>
 <tr class="e2"><td>Medium (2)</td><td class="num">≤102 lbs</td><td class="num">3</td><td class="num">8</td></tr>
 <tr class="e3"><td>Heavy (3)</td><td class="num">≤204 lbs</td><td class="num">2</td><td class="num">7</td></tr>
 <tr class="e4"><td>X-Heavy (4)</td><td class="num">≤340 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table></section>
@@ -167,7 +171,9 @@
 <tr><td class="nm">Quirks</td><td class="num">−5</td></tr>
 <tr><td class="nm">Skills</td><td class="num">42</td></tr>
 <tr><td class="nm">Techniques</td><td class="num">6</td></tr>
-<tr class="total"><td class="nm">Total</td><td class="num">175</td></tr></tbody></table></section></div><div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
+<tr class="total"><td class="nm">Total (spent)</td><td class="num">175</td></tr>
+<tr><td class="nm">Earned XP (Session 1)</td><td class="num">+5</td></tr>
+<tr class="unspent"><td class="nm">Available (unspent)</td><td class="num">5</td></tr></tbody></table></section></div><div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
 <tr><td class="nm">Karate punch</td><td class="num">Karate-15</td><td class="num">11</td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
 <tr><td class="nm">Karate kick</td><td class="num">Karate-15</td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
 <tr><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-14</td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
@@ -337,28 +343,31 @@
 </div>
 <div class="tab-panel" id="tab-story">
   <div class="story-prose">
-    <p class="text-muted">No story content available.</p>
+    <a class="story-read-link" href="../../story/characters/six.html">Read Six's story &rarr;</a>
   </div>
 </div>
 <div class="tab-panel" id="tab-journey">
 <h2>Connections</h2>
 <div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
   <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="341.04241719908026" y2="87.236885505691" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="377.13451316238474" y2="108.07466682572264" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="418.176930361465" y2="179.16221867996836" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.176930361465" y2="220.83778132003164" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="377.13451316238474" y2="291.92533317427734" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="341.04241719908026" y2="312.763114494309" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="258.95758280091974" y2="312.763114494309" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="222.86548683761532" y2="291.9253331742774" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.82306963853503" y2="220.83778132003164" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="181.82306963853503" y2="179.1622186799684" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.0769515458673" y2="140.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="200" x2="222.86548683761526" y2="108.07466682572266" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="377.13451316238474" y1="108.07466682572264" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="377.13451316238474" y1="108.07466682572264" x2="478.8681977807837" y2="220.1536056985954" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="403.92304845413264" y1="260" x2="395.76577377276055" y2="352.41035586109115" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="403.92304845413264" y1="260" x2="240.54976884806996" y2="369.89899945550616" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="181.82306963853503" y1="179.1622186799684" x2="130.10100054449384" y2="259.4502311519301" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="181.82306963853503" y1="179.1622186799684" x2="147.58964413890882" y2="104.23422622723943" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="222.86548683761526" y1="108.07466682572266" x2="279.84639430140453" y2="21.131802219216326" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="200" x2="258.9575828009198" y2="87.23688550569099" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="341.04241719908026" y1="87.236885505691" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <a href="six.html"><g opacity="1">
     <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
     <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
@@ -368,64 +377,76 @@
     <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Station</text>
   </g>
   <a href="../../locations/federal-republic-of-worlds.html"><g opacity="1">
-    <rect x="357.13451316238474" y="88.07466682572264" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="377.13451316238474" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+    <rect x="321.04241719908026" y="67.236885505691" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="341.04241719908026" y="122.236885505691" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
   </g></a>
   <g opacity="1">
-    <circle cx="418.176930361465" cy="179.16221867996836" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="418.176930361465" y="214.16221867996836" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+    <circle cx="377.13451316238474" cy="108.07466682572264" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="377.13451316238474" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
   </g>
+  <a href="../../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="1">
+    <circle cx="403.92304845413264" cy="140" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../npcs/clubber.html"><g opacity="1">
+    <circle cx="418.176930361465" cy="179.16221867996836" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.176930361465" y="214.16221867996836" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Clubber</text>
+  </g></a>
   <a href="rock-lavey.html"><g opacity="1">
-    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+    <circle cx="418.176930361465" cy="220.83778132003164" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.176930361465" y="255.83778132003164" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
   </g></a>
   <a href="ronin-sanchez.html"><g opacity="1">
-    <circle cx="341.04241719908026" cy="312.763114494309" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="341.04241719908026" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
+    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
   </g></a>
   <a href="../../factions/sable-reclamation.html"><g opacity="1">
-    <polygon points="276.27809087660853,302.763114494309 276.27809087660853,322.763114494309 258.95758280091974,332.763114494309 241.63707472523097,322.763114494309 241.63707472523095,302.763114494309 258.95758280091974,292.763114494309" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="258.95758280091974" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sable Reclama…</text>
+    <polygon points="394.4550212380735,281.92533317427734 394.4550212380735,301.92533317427734 377.13451316238474,311.92533317427734 359.81400508669594,301.92533317427734 359.81400508669594,281.92533317427734 377.13451316238474,271.92533317427734" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="377.13451316238474" y="326.92533317427734" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sable Reclama…</text>
+  </g></a>
+  <a href="../../items/law-machine.html"><g opacity="1">
+    <polygon points="341.04241719908026,292.763114494309 361.04241719908026,312.763114494309 341.04241719908026,332.763114494309 321.04241719908026,312.763114494309" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="341.04241719908026" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
+  </g></a>
+  <a href="../../locations/macmillian-station-security-office.html"><g opacity="1">
+    <rect x="280" y="300" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="../../campaign/player-characters.html"><g opacity="1">
+    <circle cx="258.95758280091974" cy="312.763114494309" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="258.95758280091974" y="347.763114494309" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="222.86548683761532" cy="291.9253331742774" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="222.86548683761532" y="326.9253331742774" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../npcs/holger-graeme.html"><g opacity="1">
     <circle cx="196.0769515458674" cy="260.00000000000006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holger Graeme</text>
+  </g></a>
+  <a href="../npcs/solveig-kaufer.html"><g opacity="1">
+    <circle cx="181.82306963853503" cy="220.83778132003164" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.82306963853503" y="255.83778132003164" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
+  </g></a>
+  <a href="../../locations/docking-ring.html"><g opacity="1">
+    <rect x="161.82306963853503" y="159.1622186799684" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.82306963853503" y="214.1622186799684" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Ring</text>
+  </g></a>
+  <a href="../../locations/macmillian-station-iv.html"><g opacity="1">
+    <rect x="176.0769515458673" y="120.00000000000006" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.0769515458673" y="175.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="../../locations/meridian-iv.html"><g opacity="1">
-    <rect x="161.82306963853503" y="159.1622186799684" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="181.82306963853503" y="214.1622186799684" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian IV</text>
+    <rect x="202.86548683761526" y="88.07466682572266" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="222.86548683761526" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian IV</text>
   </g></a>
   <a href="../../locations/the-charter-gate.html"><g opacity="1">
-    <rect x="202.86548683761526" y="88.07466682572266" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="222.86548683761526" y="143.07466682572266" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Charter G…</text>
+    <rect x="238.9575828009198" y="67.23688550569099" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="258.9575828009198" y="122.23688550569099" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Charter G…</text>
   </g></a>
   <a href="../../world/federal-credits.html"><g opacity="0.5">
     <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
     <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Credits</text>
-  </g></a>
-  <a href="../../heritages/skin-freaks.html"><g opacity="0.5">
-    <circle cx="478.8681977807837" cy="220.1536056985954" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="478.8681977807837" y="247.1536056985954" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Skin Freaks</text>
-  </g></a>
-  <a href="../../factions/macmillian-mining-and-extraction-corporation.html"><g opacity="0.5">
-    <polygon points="407.8901294257427,345.41035586109115 407.8901294257427,359.41035586109115 395.76577377276055,366.41035586109115 383.6414181197784,359.41035586109115 383.6414181197784,345.41035586109115 395.76577377276055,338.41035586109115" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="395.76577377276055" y="379.41035586109115" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
-  </g></a>
-  <a href="shackleton-magellan.html"><g opacity="0.5">
-    <circle cx="240.54976884806996" cy="369.89899945550616" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="240.54976884806996" y="396.89899945550616" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Shackleton Ma…</text>
-  </g></a>
-  <g opacity="0.5">
-    <circle cx="130.10100054449384" cy="259.4502311519301" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="130.10100054449384" y="286.4502311519301" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Meridian</text>
-  </g>
-  <g opacity="0.5">
-    <circle cx="147.58964413890882" cy="104.23422622723943" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="147.58964413890882" y="131.23422622723945" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Castellan Bio…</text>
-  </g>
-  <a href="../../locations/meridian-vi.html"><g opacity="0.5">
-    <rect x="265.84639430140453" y="7.1318022192163255" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="279.84639430140453" y="48.131802219216326" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Meridian VI</text>
   </g></a>
 </svg></div>
 </div>

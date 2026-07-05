@@ -12,6 +12,7 @@
 <header class="top-nav">
   <a href="../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -41,6 +42,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../story.html">Story</a></li>
+  </ul>
   <h3>Characters</h3>
   <ul>
     <li><a href="../campaign/player-characters.html">Player Characters</a></li>
@@ -62,7 +66,7 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Factions</a><span class="sep">&rsaquo;</span>Macmillian Security</nav>
-
+<div class="content-with-sidebar"><div class="main">
 <div class="char-header">
   
   <h1>MacMillian Security</h1>
@@ -83,7 +87,20 @@ Imported from mobRPG (canon). factionType from mobRPG organization-type.</p>
 </blockquote>
 
 
-
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <a href="macmillian-security.html"><g opacity="1">
+    <polygon points="324.24871130596426,186 324.24871130596426,214 300,228 275.75128869403574,214 275.75128869403574,186 299.99999999999994,172" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian Se…</text>
+  </g></a>
+  <a href="../campaign/timeline.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Mentioned In</h3>
+<ul><li><a href="../campaign/timeline.html">Timeline</a> <span class="sidebar-badge">timeline</span></li></ul>
+</aside></div>
 </main>
 
 

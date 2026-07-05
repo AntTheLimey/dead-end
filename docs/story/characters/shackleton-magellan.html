@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shackleton Magellan — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../../story.html">Story</a></div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../../story.html">Story</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+
+
+    <article class="story-prose">
+      <h1 class="page-title">Shackleton Magellan</h1>
+      <p class="story-sheet-link"><a href="../../characters/pcs/shackleton-magellan.html">View character sheet &rarr;</a></p>
+      <h2>Session 1 — The Ragged Edge of Space</h2>
+<p>Shackleton Magellan reads a room like a system diagram, looking for the input nobody is watching and the output nobody has secured. He came up out of cryo beside <a href="../../characters/pcs/rock-lavey.html">Rock Lavey</a> with the same cargo-class frost on him as everyone else, another broke man at the end of the lanes, except Shack is broke the specific way that comes from owing <a href="../../factions/corvid-financial.html">Corvid Financial</a> more than a life is worth and skipping the system before they could collect.</p>
+<p>He got to work the moment the tour ended. He cloned his company card onto his wrist computer, because a physical key is a leash, and he hacked the barracks environmental controls and locked the temperature at a civilized seventy-two, quietly overwriting the eighty degrees <a href="../../characters/pcs/six.html">Six</a> had set. It was the first negotiation the crew ever ran and nobody even noticed it happen. At the <a href="../../locations/the-comets-tail.html">Comet’s Tail</a> he steered a service bot across the floor and turned it into a microphone aimed at <a href="../../characters/npcs/leocadia-zavia.html">Leocadia Zavia</a>, and he had her coordinates almost in hand when <a href="../../characters/pcs/ronin-sanchez.html">Ronin Sanchez</a> bellowed at the bot to clear off and the whole thing died at the worst possible second. That is the job. You do everything right and someone loud undoes it for free.</p>
+<p>He sees more than he says. The <a href="../../locations/nova-nexus.html">Nova Nexus</a> roulette wheel was rigged in the crew’s favor, a clumsy little mechanism under the felt throwing the ball to black, and Shack watched it, understood it, and let it ride without a word. He would rather talk quantum physics with a hostess than accept the comp she was sent to offer, because underneath the debt and the running there is still the man who went out past the charted lanes to find something, and who came back owing everything except the belief that the finding was real. The <a href="../../locations/thides-system.html">dead-end system</a> is exactly the kind of nothing that hides a something. He can feel it in the dark the void is wrapped around.</p>
+
+    </article>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

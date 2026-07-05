@@ -17,8 +17,21 @@
     "Documents": "documents",
     "Clues": "clues",
     "_World": "world",
-    "_Campaign": "campaign"
+    "_Campaign": "campaign",
+    "Chapters": "chronicle",
+    "Chapters/Chapter 1 - The Far Dark/Sessions/Session 01": "chronicle"
   },
-  "excludeDirs": ["_meta", "_Templates", "_midwife", "_inbox", "_QA"],
-  "excludeSections": ["GM Notes", "DM Notes", "Player Notes", "Source References"]
+  "excludeDirs": [
+    "_meta",
+    "_Templates",
+    "_midwife",
+    "_inbox",
+    "_QA"
+  ],
+  "excludeSections": [
+    "GM Notes",
+    "DM Notes",
+    "Player Notes",
+    "Source References"
+  ]
 }

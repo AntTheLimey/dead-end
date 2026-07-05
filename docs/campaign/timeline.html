@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../story.html">Story</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Campaign</a><span class="sep">&rsaquo;</span>Timeline</nav>
+<h1 class="page-title">Timeline</h1>
+
+
+<p>In-world chronology of established events. In-game dates fill in as Tim pins them;
+until then, entries are ordered by session.</p>
+<h2>Chapter 1 — The Far Dark</h2>
+<ul>
+<li><strong>(in-game date TBD) — Session 1</strong> — Session 01 - The Ragged Edge of Space — The crew
+(<a href="../characters/pcs/six.html">Six</a>, <a href="../characters/pcs/rock-lavey.html">Rock Lavey</a>, <a href="../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a>, <a href="../characters/pcs/ronin-sanchez.html">Ronin Sanchez</a>) arrive at <a href="../locations/macmillian-station-iv.html">MacMillian Station IV</a>
+by separate routes and take the <a href="../factions/macmillian-security.html">MacMillian Security</a> job. Orientation under <a href="../characters/npcs/solveig-kaufer.html">Solveig Kaufer</a>,
+the real briefing from Chief <a href="../characters/npcs/holger-graeme.html">Holger Graeme</a>, a first gate shift, and a night through the
+<a href="../locations/entertainment-district.html">Entertainment District</a> (<a href="../locations/the-comets-tail.html">The Comets Tail</a>, <a href="../locations/the-silk-abbey.html">The Silk Abbey</a>, <a href="../locations/nova-nexus.html">Nova Nexus</a>). Over the
+following weeks the crew maps the station’s selective-enforcement corruption via the <a href="../items/law-machine.html">Law Machine</a>
+and clocks the local players: the <a href="../factions/rusted-blades.html">Rusted Blades</a> under <a href="../characters/npcs/leocadia-zavia.html">Leocadia Zavia</a>, the <a href="../factions/serene-syndicate.html">Serene Syndicate</a>
+around the Nova Nexus, and the redacted-record Marine <a href="../characters/npcs/daniela-akkermans.html">Daniela Akkermans</a>.</li>
+</ul>
+
+
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Machine — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../story.html">Story</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Items</a><span class="sep">&rsaquo;</span>Law Machine</nav>
+<div class="content-with-sidebar"><div class="main">
+<div class="char-header">
+  
+  <h1>Law Machine</h1>
+</div>
+<div class="metadata-badges"><span class="metadata-badge">tool</span></div>
+
+<p class="item-holder"><strong>Current Holder:</strong> <a href="../factions/macmillian-security.html">MacMillian Security</a></p>
+<p class="item-origin"><strong>Origin:</strong> MacMillian Station IV — station legal automation</p>
+<h2>Overview</h2>
+<p>The automated legal terminal in the <a href="../locations/macmillian-station-security-office.html">security office</a> that books suspects, sets fines, and issues deportation orders on <a href="../locations/macmillian-station-iv.html">MacMillian Station IV</a>. To the guards who use it, it is a convenience: feed in a charge, let the machine rule, collect the credits. Underneath, it is a black box that nobody visibly controls and nobody can openly question.</p>
+<h2>Properties</h2>
+<ul>
+<li>Processes arrests, fines, and deportation orders without human review.</li>
+<li>Deposits enforcement pay directly to security company cards on a successful charge.</li>
+<li>Selective in a way that is not written down anywhere: charges against connected individuals and protected businesses are quietly dismissed, while identical offenses committed by independent miners are penalized in full.</li>
+<li>The bias is invisible in any single case. It only surfaces across a large enough sample of charges.</li>
+</ul>
+<h2>Appearances</h2>
+<ul>
+<li><strong>Session 1 (Session 01 - The Ragged Edge of Space)</strong> — The crew booked minor Security Gate 1 violations through it during their first shift and were paid out. Over the settling-in weeks, <a href="../characters/pcs/six.html">Six</a> ran a deliberate ticketing experiment, filing charges for every infraction he could find, and the pattern emerged: the machine ate the charges against the connected and kept the ones against the poor. The crew’s first hard evidence that the station’s corruption is baked into its infrastructure, not just its culture.</li>
+</ul>
+
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Located at</strong> <a href="../locations/macmillian-station-security-office.html" class="entity-link">MacMillian Station Security Office</a> &mdash; The booking terminal security uses to process arrests and fines.</li>
+</ul>
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="468.0444767694963" y2="135.49376908184595" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="479.7533162558233" y2="209.4204721237299" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="460.3811743539062" y2="281.7182899531184" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="413.27767038897076" y2="339.88627306225476" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="271.84179629275843" y2="377.7839013071248" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="201.96497369729514" y2="350.96070223017637" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="149.0392977698237" y2="298.0350263027049" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="122.21609869287522" y2="228.15820370724157" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="160.11372693774516" y2="86.72232961102937" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="218.28171004688156" y2="39.618825646093796" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="290.57952787627016" y2="20.246683744176693" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="364.5062309181541" y2="31.955523230503672" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="law-machine.html"><g opacity="1">
+    <polygon points="300,172 328,200 300,228 272,200" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
+  </g></a>
+  <a href="../locations/macmillian-station-security-office.html"><g opacity="1">
+    <rect x="280" y="60" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../characters/pcs/rock-lavey.html"><g opacity="1">
+    <circle cx="420" cy="200" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+  <a href="../characters/pcs/six.html"><g opacity="1">
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+  </g></a>
+  <a href="../campaign/timeline.html"><g opacity="1">
+    <circle cx="180" cy="200.00000000000003" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../locations/macmillian-station-iv.html"><g opacity="0.5">
+    <rect x="413.27922061357856" y="58.720779386421455" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../characters/npcs/holger-graeme.html"><g opacity="0.5">
+    <circle cx="468.0444767694963" cy="135.49376908184595" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="468.0444767694963" y="162.49376908184595" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Holger Graeme</text>
+  </g></a>
+  <a href="../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="0.5">
+    <circle cx="479.7533162558233" cy="209.4204721237299" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="479.7533162558233" y="236.4204721237299" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../locations/marshals-office.html"><g opacity="0.5">
+    <rect x="446.3811743539062" y="267.7182899531184" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="460.3811743539062" y="308.7182899531184" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Marshal's Off…</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="413.27767038897076" cy="339.88627306225476" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="413.27767038897076" y="366.88627306225476" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../factions/macmillian-mining-and-extraction-corporation.html"><g opacity="0.5">
+    <polygon points="358.71178377143593,366.8666487320323 358.71178377143593,380.8666487320323 346.5874281184538,387.8666487320323 334.4630724654716,380.8666487320323 334.4630724654716,366.8666487320323 346.5874281184538,359.8666487320323" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
+  </g></a>
+  <a href="../characters/npcs/clubber.html"><g opacity="0.5">
+    <circle cx="271.84179629275843" cy="377.7839013071248" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="271.84179629275843" y="404.7839013071248" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Clubber</text>
+  </g></a>
+  <a href="../characters/pcs/shackleton-magellan.html"><g opacity="0.5">
+    <circle cx="201.96497369729514" cy="350.96070223017637" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="201.96497369729514" y="377.96070223017637" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Shackleton Ma…</text>
+  </g></a>
+  <a href="../locations/entertainment-district.html"><g opacity="0.5">
+    <rect x="135.0392977698237" y="284.0350263027049" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="149.0392977698237" y="325.0350263027049" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Entertainment…</text>
+  </g></a>
+  <a href="../campaign/player-characters.html"><g opacity="0.5">
+    <circle cx="122.21609869287522" cy="228.15820370724157" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="122.21609869287522" y="255.15820370724157" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../locations/docking-ring.html"><g opacity="0.5">
+    <rect x="112.1333512679677" y="139.41257188154634" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Docking Ring</text>
+  </g></a>
+  <a href="../locations/the-silk-abbey.html"><g opacity="0.5">
+    <rect x="146.11372693774516" y="72.72232961102937" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="160.11372693774516" y="113.72232961102937" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">The Silk Abbey</text>
+  </g></a>
+  <a href="../locations/federal-republic-of-worlds.html"><g opacity="0.5">
+    <rect x="204.28171004688156" y="25.618825646093796" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="218.28171004688156" y="66.6188256460938" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="290.57952787627016" cy="20.246683744176693" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="290.57952787627016" y="47.24668374417669" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+  </g>
+  <a href="../characters/pcs/ronin-sanchez.html"><g opacity="0.5">
+    <circle cx="364.5062309181541" cy="31.955523230503672" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="364.5062309181541" y="58.95552323050367" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Relationships</h3>
+<ul><li><a href="../locations/macmillian-station-security-office.html">MacMillian Station Security Office</a> <span class="sidebar-badge">located at</span></li></ul>
+<h3>Mentioned In</h3>
+<ul><li><a href="../characters/pcs/rock-lavey.html">Rock Lavey</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="../characters/pcs/six.html">Six</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="../campaign/timeline.html">Timeline</a> <span class="sidebar-badge">timeline</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

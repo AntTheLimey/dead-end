@@ -12,6 +12,7 @@
 <header class="top-nav">
   <a href="../../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../../story.html">Story</a></div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -41,6 +42,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../../story.html">Story</a></li>
+  </ul>
   <h3>Characters</h3>
   <ul>
     <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
@@ -65,13 +69,17 @@
 
 <div class="index-header">
   <h1 class="page-title">NPCs</h1>
-  <span class="index-count">Showing 28 of 28</span>
+  <span class="index-count">Showing 30 of 30</span>
   
 </div>
 
 <input class="name-filter" type="text" placeholder="Filter by name..." aria-label="Filter by name">
 
-<div class="npc-table-filters"></div>
+<div class="npc-table-filters"><select class="npc-filter" data-col="session" aria-label="Filter by session">
+  <option value="">All Sessions</option>
+  <option value="Session 1">Session 1</option>
+<option value="2026-07-05">2026-07-05</option>
+</select></div>
 <div class="npc-table-wrap">
 <table class="npc-table sortable-table">
 <thead>
@@ -109,20 +117,28 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Asher Bhattacharya" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Asher Bhattacharya" data-entity-status="alive" data-session="Session 1">
   <td><a href="asher-bhattacharya.html">Asher Bhattacharya</a></td>
   <td>Underling of Thides Serene Syndicate</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Daniela Akkermans" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Clubber" data-entity-status="alive" data-session="Session 1">
+  <td><a href="clubber.html">Clubber</a></td>
+  <td>Bare-knuckle boxing champion (Thides system)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Daniela Akkermans" data-entity-status="alive" data-session="Session 1">
   <td><a href="daniela-akkermans.html">Daniela Akkermans</a></td>
   <td>Leader of Akker Cartel</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Harsha Trent" data-entity-status="alive" data-session="">
@@ -133,12 +149,12 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Holger Graeme" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Holger Graeme" data-entity-status="alive" data-session="Session 1">
   <td><a href="holger-graeme.html">Holger Graeme</a></td>
-  <td>Leader of Station Security (MacMillian Station VI)</td>
+  <td>Leader of Station Security (MacMillian Station IV)</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Ihsan Soterios" data-entity-status="alive" data-session="">
@@ -173,12 +189,12 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Leocadia Zavia" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Leocadia Zavia" data-entity-status="alive" data-session="Session 1">
   <td><a href="leocadia-zavia.html">Leocadia Zavia</a></td>
   <td>Leader of Rusted Blades</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Marek Solano" data-entity-status="alive" data-session="2026-07-05">
@@ -221,6 +237,14 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
+<tr data-entity-type="npc" data-entity-name="Plen Hong" data-entity-status="alive" data-session="Session 1">
+  <td><a href="plen-hong.html">Plen Hong</a></td>
+  <td>Assassin (Serene Syndicate orbit)</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
 <tr data-entity-type="npc" data-entity-name="Puleng Huang" data-entity-status="alive" data-session="">
   <td><a href="puleng-huang.html">Puleng Huang</a></td>
   <td>Underling of Thides Serene Syndicate</td>
@@ -237,28 +261,28 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Roland Mohamed" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Roland Mohamed" data-entity-status="alive" data-session="Session 1">
   <td><a href="roland-mohamed.html">Roland Mohamed</a></td>
   <td>Owner of The Comet's Tail</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Samina Ventura" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Samina Ventura" data-entity-status="alive" data-session="Session 1">
   <td><a href="samina-ventura.html">Samina Ventura</a></td>
   <td>Owner of The Silk Abbey</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Solveig Kaufer" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Solveig Kaufer" data-entity-status="alive" data-session="Session 1">
   <td><a href="solveig-kaufer.html">Solveig Kaufer</a></td>
   <td>Member of MacMillian Mining and Extraction Corporation</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Surendra Antonescu" data-entity-status="alive" data-session="">
@@ -269,12 +293,12 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Thandeka Dahl" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Thandeka Dahl" data-entity-status="alive" data-session="Session 1">
   <td><a href="thandeka-dahl.html">Thandeka Dahl</a></td>
   <td>Owner of The Beloved Valley</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Vanadís Baumhauer" data-entity-status="alive" data-session="">
@@ -293,12 +317,12 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Wilton Agramunt" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Wilton Agramunt" data-entity-status="alive" data-session="Session 1">
   <td><a href="wilton-agramunt.html">Wilton Agramunt</a></td>
-  <td>Station Manager of MacMillian Station VI</td>
+  <td>Station Manager of MacMillian Station IV</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 01 - The Ragged Edge of Space</td>
+  <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Zigurds Sloan" data-entity-status="alive" data-session="">

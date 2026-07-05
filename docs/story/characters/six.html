@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group"><a class="nav-group-toggle" href="../../story.html">Story</a></div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="../../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <ul>
+    <li><a href="../../story.html">Story</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+
+
+    <article class="story-prose">
+      <h1 class="page-title">Six</h1>
+      <p class="story-sheet-link"><a href="../../characters/pcs/six.html">View character sheet &rarr;</a></p>
+      <h2>Session 1 — The Ragged Edge of Space</h2>
+<p>Six came to the <a href="../../locations/thides-system.html">Thides system</a> the way freight comes to anywhere, sealed in a crate, iced down, waiting for the motion to stop. His computer woke him when the crate did, and the first problem of his new life was that someone had shoved the crate against a wall over the bold “do not block” stencil on its face. He read that as a breach. He solved it like one, leaned into the door until it gave. Then he did the thing he was built to do and became someone else, a dock worker in chameleon livery, and walked past two bored guards who never once looked at what they were guarding.</p>
+<p>He reached the <a href="../../locations/macmillian-station-security-office.html">security office</a> before the men who arrived like people. On the way he catalogued every broken rule he passed, wrote them down with descriptions and last-known locations, and handed the list to <a href="../../characters/npcs/solveig-kaufer.html">Solveig Kaufer</a> like a man returning lost property. It was not malice and it was not zeal. It was the doctrine. Finish what you start, clean, leave no loose ends. That the <a href="../../locations/macmillian-station-iv.html">station</a> ran on the exact opposite principle was information he had not yet processed.</p>
+<p>Processing came later, at a table in the <a href="../../locations/the-comets-tail.html">Comet’s Tail</a>, where <a href="../../characters/pcs/ronin-sanchez.html">Ronin Sanchez</a> put a glass in his hand and told him to slow down. The drink went down like warmth, and Six likes warmth, because the cold is the one thing his body remembers hating from the rack. The lobster was an armored thing between him and the meat, so he took the armor off with his hands and ate like it was his last meal, because every meal is. And somewhere in the middle of it a joke landed and something came loose in him, and he heard himself say it out loud and much too loud. “This is fun. This is FUN. I AM HAVING FUN.” Nobody had ever installed a volume knob for joy. He did not have one yet.</p>
+<p>The weeks after taught him the shape of the place, and he learned it the only way he knows, by testing it. He wrote tickets for everything, every infraction, every night, and watched which charges turned into pay and which ones simply vanished. The station had a machine for justice and the machine was a liar. It ate the charges against the connected and kept the ones against the poor. Six is not built to be angry about that. He is built to notice it, file it, and wait to be told what the objective is. Nobody has told him yet.</p>
+
+    </article>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>
