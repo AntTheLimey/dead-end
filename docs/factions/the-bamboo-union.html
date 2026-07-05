@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bamboo Union — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Factions</a><span class="sep">&rsaquo;</span>The Bamboo Union</nav>
+
+<div class="char-header">
+  
+  <h1>The Bamboo Union</h1>
+</div>
+
+
+
+<div class="goals"><h3>Goals</h3><ul></ul></div>
+<div class="members"><h3>Members</h3><ul><li><a href="../characters/npcs/r-bert-jeanes.html">Róbert Jeanes</a></li></ul></div>
+<h2>Overview</h2>
+<p>A legal and criminal organization that owns and operates out of the Bamboo Lounge. It’s front is running the docker union out of the Aethel Startport. They enforce strict membership of any worker on the startport’s docks.</p>
+<p>While the union is formally a legal entity, it’s upper management along with some lower level officials, are known to participate in criminal activity. The union doesn’t have any formal criminal operations, but it is understood among members that any criminal activity among members needs to have funds kicked up to the fund.</p>
+<p>The union maintains a pension fund known as “the fund” by members. This is raw cash as well as any operations the union owns or invests in. The union invested some of the pension funds into the purchase of the Lounge to create alternate income sources for the union.  The union is a major client of Goodwin Investments.</p>
+<h2>Goals &amp; Methods</h2>
+<h2>Resources</h2>
+<h2>History</h2>
+<blockquote>
+<p>[!info] Reconstruction Note
+Imported from mobRPG (canon). factionType from mobRPG organization-type.</p>
+</blockquote>
+
+
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>
