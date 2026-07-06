@@ -12,7 +12,12 @@
 <header class="top-nav">
   <a href="../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
-      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -42,8 +47,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
   <ul>
-    <li><a href="../story.html">Story</a></li>
+    <li><a href="../timeline.html">Events</a></li>
   </ul>
   <h3>Characters</h3>
   <ul>
@@ -77,35 +83,36 @@
 
 <div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
   <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="324.94940289813115" y2="82.62228791194333" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="348.808397169096" y2="90.37454508288789" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="370.5342302750968" y2="102.9179606750063" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="389.17737905728734" y2="119.70432723693702" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="403.92304845413264" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="414.12678195541844" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="419.3426274441928" y2="187.4565844078816" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="419.3426274441928" y2="212.5434155921184" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="414.12678195541844" y2="237.08203932499367" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="389.17737905728734" y2="280.29567276306295" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="370.5342302750968" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="348.808397169096" y2="309.6254549171121" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="324.9494028981311" y2="317.3777120880567" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="300.00000000000006" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="275.0505971018689" y2="317.3777120880567" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="251.19160283090397" y2="309.6254549171121" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="229.46576972490323" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="210.82262094271272" y2="280.295672763063" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="185.87321804458156" y2="237.0820393249937" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="180.6573725558072" y2="212.5434155921185" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="180.65737255580717" y2="187.45658440788162" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="185.87321804458156" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="196.07695154586736" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="210.82262094271272" y2="119.70432723693698" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="229.46576972490323" y2="102.91796067500631" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="251.191602830904" y2="90.37454508288788" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="275.0505971018689" y2="82.62228791194332" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="324.1558224106392" y2="82.45640704970066" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="347.3227026135982" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="368.55218581137507" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="386.9751344674944" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="401.8373108993701" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="412.53025585764965" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="418.61619891937335" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.8459808605263" y2="206.07790026064552" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="416.1692542639445" y2="230.07830387104644" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.736544748489" y2="252.84729818691613" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="394.8930884325239" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="378.1646979266667" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="358.23623550372974" y2="304.9215939373498" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="335.92357475680296" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="312.14019863849194" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="287.8598013615082" y2="319.3843188070274" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="264.07642524319704" y2="314.49671076800587" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="241.7637644962703" y2="304.9215939373499" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="221.83530207333337" y2="291.0509747231349" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="205.10691156747617" y2="273.4527179057195" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.263455251511" y2="252.8472981869161" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="183.83074573605552" y2="230.07830387104656" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.1540191394737" y2="206.0779002606456" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="181.38380108062665" y2="181.8286666994508" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="187.46974414235035" y2="158.32336965862157" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="198.1626891006299" y2="136.52431876076452" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="213.0248655325056" y2="117.32396971091762" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="231.44781418862493" y2="101.50838705512685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="252.67729738640176" y2="89.72506260557233" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="275.8441775893607" y2="82.45640704970069" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <a href="session-01-the-ragged-edge-of-space.html"><g opacity="1">
     <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
     <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Session 01 - …</text>
@@ -115,126 +122,131 @@
     <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Clubber</text>
   </g></a>
   <a href="../characters/npcs/plen-hong.html"><g opacity="1">
-    <circle cx="324.94940289813115" cy="82.62228791194333" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="324.94940289813115" y="117.62228791194333" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Plen Hong</text>
+    <circle cx="324.1558224106392" cy="82.45640704970066" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="324.1558224106392" y="117.45640704970066" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Plen Hong</text>
+  </g></a>
+  <a href="../events/the-coordinate-shakedown.html"><g opacity="1">
+    <circle cx="347.3227026135982" cy="89.72506260557233" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="347.3227026135982" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Coordinat…</text>
   </g></a>
   <a href="../items/law-machine.html"><g opacity="1">
-    <polygon points="348.808397169096,70.37454508288789 368.808397169096,90.37454508288789 348.808397169096,110.37454508288789 328.808397169096,90.37454508288789" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="348.808397169096" y="125.37454508288789" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
+    <polygon points="368.55218581137507,81.50838705512685 388.55218581137507,101.50838705512685 368.55218581137507,121.50838705512685 348.55218581137507,101.50838705512685" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="368.55218581137507" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
   </g></a>
   <a href="../locations/entertainment-district.html"><g opacity="1">
-    <rect x="350.5342302750968" y="82.9179606750063" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="370.5342302750968" y="137.9179606750063" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Entertainment…</text>
+    <rect x="366.9751344674944" y="97.32396971091762" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="386.9751344674944" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Entertainment…</text>
   </g></a>
   <a href="../locations/macmillian-station-security-office.html"><g opacity="1">
-    <rect x="369.17737905728734" y="99.70432723693702" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="389.17737905728734" y="154.70432723693702" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+    <rect x="381.8373108993701" y="116.52431876076452" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="401.8373108993701" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="../locations/marshals-office.html"><g opacity="1">
-    <rect x="383.92304845413264" y="120" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="403.92304845413264" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Marshal's Off…</text>
+    <rect x="392.53025585764965" y="138.32336965862157" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="412.53025585764965" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Marshal's Off…</text>
   </g></a>
   <a href="../locations/sargasso-void.html"><g opacity="1">
-    <rect x="394.12678195541844" y="142.91796067500633" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="414.12678195541844" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sargasso Void</text>
+    <rect x="398.61619891937335" y="161.8286666994508" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="418.61619891937335" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sargasso Void</text>
   </g></a>
   <a href="../campaign/player-characters.html"><g opacity="1">
-    <circle cx="419.3426274441928" cy="187.4565844078816" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="419.3426274441928" y="222.4565844078816" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+    <circle cx="419.8459808605263" cy="206.07790026064552" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.8459808605263" y="241.07790026064552" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
   </g></a>
   <a href="../campaign/timeline.html"><g opacity="1">
-    <circle cx="419.3426274441928" cy="212.5434155921184" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="419.3426274441928" y="247.5434155921184" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+    <circle cx="416.1692542639445" cy="230.07830387104644" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="416.1692542639445" y="265.07830387104644" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
   </g></a>
   <a href="../characters/npcs/asher-bhattacharya.html"><g opacity="1">
-    <circle cx="414.12678195541844" cy="237.08203932499367" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="414.12678195541844" y="272.0820393249937" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Asher Bhattac…</text>
+    <circle cx="407.736544748489" cy="252.84729818691613" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.736544748489" y="287.84729818691613" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Asher Bhattac…</text>
   </g></a>
   <a href="../characters/npcs/daniela-akkermans.html"><g opacity="1">
-    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Daniela Akker…</text>
+    <circle cx="394.8930884325239" cy="273.4527179057195" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="394.8930884325239" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Daniela Akker…</text>
   </g></a>
   <a href="../characters/npcs/holger-graeme.html"><g opacity="1">
-    <circle cx="389.17737905728734" cy="280.29567276306295" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="389.17737905728734" y="315.29567276306295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holger Graeme</text>
+    <circle cx="378.1646979266667" cy="291.0509747231349" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="378.1646979266667" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holger Graeme</text>
   </g></a>
   <a href="../characters/npcs/leocadia-zavia.html"><g opacity="1">
-    <circle cx="370.5342302750968" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="370.5342302750968" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+    <circle cx="358.23623550372974" cy="304.9215939373498" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="358.23623550372974" y="339.9215939373498" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
   </g></a>
   <a href="../characters/npcs/roland-mohamed.html"><g opacity="1">
-    <circle cx="348.808397169096" cy="309.6254549171121" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="348.808397169096" y="344.6254549171121" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Roland Mohamed</text>
+    <circle cx="335.92357475680296" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="335.92357475680296" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Roland Mohamed</text>
   </g></a>
   <a href="../characters/npcs/samina-ventura.html"><g opacity="1">
-    <circle cx="324.9494028981311" cy="317.3777120880567" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="324.9494028981311" y="352.3777120880567" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Samina Ventura</text>
+    <circle cx="312.14019863849194" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="312.14019863849194" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Samina Ventura</text>
   </g></a>
   <a href="../characters/npcs/solveig-kaufer.html"><g opacity="1">
-    <circle cx="300.00000000000006" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="300.00000000000006" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
+    <circle cx="287.8598013615082" cy="319.3843188070274" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="287.8598013615082" y="354.3843188070274" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
   </g></a>
   <a href="../characters/npcs/thandeka-dahl.html"><g opacity="1">
-    <circle cx="275.0505971018689" cy="317.3777120880567" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="275.0505971018689" y="352.3777120880567" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thandeka Dahl</text>
+    <circle cx="264.07642524319704" cy="314.49671076800587" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="264.07642524319704" y="349.49671076800587" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thandeka Dahl</text>
   </g></a>
   <a href="../characters/npcs/wilton-agramunt.html"><g opacity="1">
-    <circle cx="251.19160283090397" cy="309.6254549171121" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="251.19160283090397" y="344.6254549171121" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Wilton Agramunt</text>
+    <circle cx="241.7637644962703" cy="304.9215939373499" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="241.7637644962703" y="339.9215939373499" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Wilton Agramunt</text>
   </g></a>
   <a href="../locations/docking-ring.html"><g opacity="1">
-    <rect x="209.46576972490323" y="277.08203932499373" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="229.46576972490323" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Ring</text>
+    <rect x="201.83530207333337" y="271.0509747231349" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="221.83530207333337" y="326.0509747231349" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Ring</text>
   </g></a>
   <a href="../locations/macmillian-station-iv.html"><g opacity="1">
-    <rect x="190.82262094271272" y="260.295672763063" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="210.82262094271272" y="315.295672763063" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+    <rect x="185.10691156747617" y="253.4527179057195" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="205.10691156747617" y="308.4527179057195" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="../locations/nova-nexus.html"><g opacity="1">
-    <rect x="176.0769515458674" y="240.00000000000006" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nova Nexus</text>
+    <rect x="172.263455251511" y="232.8472981869161" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.263455251511" y="287.8472981869161" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Nova Nexus</text>
   </g></a>
   <a href="../locations/processing-i.html"><g opacity="1">
-    <rect x="165.87321804458156" y="217.0820393249937" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="185.87321804458156" y="272.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Processing I</text>
+    <rect x="163.83074573605552" y="210.07830387104656" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="183.83074573605552" y="265.07830387104656" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Processing I</text>
   </g></a>
   <a href="../locations/sector-7-g.html"><g opacity="1">
-    <rect x="160.6573725558072" y="192.5434155921185" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="180.6573725558072" y="247.5434155921185" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sector 7-G</text>
+    <rect x="160.1540191394737" y="186.0779002606456" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.1540191394737" y="241.0779002606456" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Sector 7-G</text>
   </g></a>
   <a href="../locations/stamp-supply.html"><g opacity="1">
-    <rect x="160.65737255580717" y="167.45658440788162" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="180.65737255580717" y="222.45658440788162" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Stamp Supply</text>
+    <rect x="161.38380108062665" y="161.8286666994508" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="181.38380108062665" y="216.8286666994508" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Stamp Supply</text>
   </g></a>
   <a href="../locations/the-comets-tail.html"><g opacity="1">
-    <rect x="165.87321804458156" y="142.91796067500633" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="185.87321804458156" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Comets Tail</text>
+    <rect x="167.46974414235035" y="138.32336965862157" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="187.46974414235035" y="193.32336965862157" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Comets Tail</text>
   </g></a>
   <a href="../locations/the-silk-abbey.html"><g opacity="1">
-    <rect x="176.07695154586736" y="120" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="196.07695154586736" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Silk Abbey</text>
+    <rect x="178.1626891006299" y="116.52431876076452" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="198.1626891006299" y="171.52431876076452" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Silk Abbey</text>
   </g></a>
   <a href="../locations/thides-i.html"><g opacity="1">
-    <rect x="190.82262094271272" y="99.70432723693698" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="210.82262094271272" y="154.704327236937" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides I</text>
+    <rect x="193.0248655325056" y="97.32396971091762" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="213.0248655325056" y="152.32396971091762" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides I</text>
   </g></a>
   <a href="../locations/thides-ii.html"><g opacity="1">
-    <rect x="209.46576972490323" y="82.91796067500631" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="229.46576972490323" y="137.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides II</text>
+    <rect x="211.44781418862493" y="81.50838705512685" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="231.44781418862493" y="136.50838705512683" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides II</text>
   </g></a>
   <a href="../locations/thides-iii.html"><g opacity="1">
-    <rect x="231.191602830904" y="70.37454508288788" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="251.191602830904" y="125.37454508288788" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides III</text>
+    <rect x="232.67729738640176" y="69.72506260557233" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="252.67729738640176" y="124.72506260557233" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides III</text>
   </g></a>
   <a href="../locations/thidian-belt.html"><g opacity="1">
-    <rect x="255.0505971018689" y="62.62228791194332" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="275.0505971018689" y="117.62228791194332" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thidian Belt</text>
+    <rect x="255.8441775893607" y="62.45640704970069" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="275.8441775893607" y="117.45640704970069" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thidian Belt</text>
   </g></a>
 </svg></div>
 <div class="story-nav"><span></span><span></span></div></div><aside class="context-sidebar">
 <h3>Mentioned In</h3>
 <ul><li><a href="../characters/npcs/clubber.html">Clubber</a> <span class="sidebar-badge">npc</span></li>
 <li><a href="../characters/npcs/plen-hong.html">Plen Hong</a> <span class="sidebar-badge">npc</span></li>
+<li><a href="../events/the-coordinate-shakedown.html">The Coordinate Shakedown</a> <span class="sidebar-badge">event</span></li>
 <li><a href="../items/law-machine.html">Law Machine</a> <span class="sidebar-badge">item</span></li>
 <li><a href="../locations/entertainment-district.html">Entertainment District</a> <span class="sidebar-badge">location</span></li>
 <li><a href="../locations/macmillian-station-security-office.html">MacMillian Station Security Office</a> <span class="sidebar-badge">location</span></li>

@@ -12,7 +12,12 @@
 <header class="top-nav">
   <a href="index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
-      <div class="nav-group"><a class="nav-group-toggle" href="story.html">Story</a></div>
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="timeline.html">Events</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -42,8 +47,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="story.html">Story</a></h3>
   <ul>
-    <li><a href="story.html">Story</a></li>
+    <li><a href="timeline.html">Events</a></li>
   </ul>
   <h3>Characters</h3>
   <ul>
@@ -169,6 +175,11 @@
   <h4>Items</h4>
   <div class="card-flavour">Notable objects and equipment.</div>
   <div class="count">10 entries</div>
+</a>
+<a class="explore-card" href="events/index.html">
+  <h4>Events</h4>
+  <div class="card-flavour">Key moments and turning points.</div>
+  <div class="count">1 entry</div>
 </a></div>
 </div>
 </main>

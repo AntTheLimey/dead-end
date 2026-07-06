@@ -12,7 +12,12 @@
 <header class="top-nav">
   <a href="../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
-      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -42,8 +47,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
   <ul>
-    <li><a href="../story.html">Story</a></li>
+    <li><a href="../timeline.html">Events</a></li>
   </ul>
   <h3>Characters</h3>
   <ul>
@@ -88,23 +94,24 @@ First of the four processing plants located in the lower section of the station.
 
 <div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
   <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="414.12678195541844" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="370.5342302750968" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="229.46576972490323" y2="297.08203932499373" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="185.87321804458156" y2="162.91796067500633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.07695154586736" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="471.84975597153823" y2="146.44945030606345" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="477.05158325048586" y2="232.44590680650302" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="441.693026509629" y2="311.00939707313773" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="373.87430498149627" y2="364.1419722785762" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="289.1318704639885" y2="379.6715997601972" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="206.87919344802174" y2="354.04062901426056" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="145.95937098573947" y2="293.12080655197826" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="120.32840023980285" y2="210.86812953601154" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="135.85802772142378" y2="126.12569501850382" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="414.12678195541844" y1="162.91796067500633" x2="188.99060292686227" y2="58.30697349037095" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="370.5342302750968" y1="297.08203932499373" x2="267.5540931934968" y2="22.948416749514195" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="370.5342302750968" y1="297.08203932499373" x2="353.55054969393655" y2="28.1502440284618" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="471.84975597153823" y2="146.44945030606345" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="477.05158325048586" y2="232.44590680650302" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="441.693026509629" y2="311.00939707313773" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="373.87430498149627" y2="364.1419722785762" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="289.1318704639885" y2="379.6715997601972" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="206.87919344802174" y2="354.04062901426056" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="145.95937098573947" y2="293.12080655197826" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="120.32840023980285" y2="210.86812953601154" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="135.85802772142378" y2="126.12569501850382" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="403.92304845413264" y1="140" x2="188.99060292686227" y2="58.30697349037095" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="267.5540931934968" y2="22.948416749514195" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="320" x2="353.55054969393655" y2="28.1502440284618" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <a href="processing-i.html"><g opacity="1">
     <rect x="272" y="172" width="56" height="56" rx="4" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
     <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Processing I</text>
@@ -114,20 +121,24 @@ First of the four processing plants located in the lower section of the station.
     <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
   </g></a>
   <a href="../characters/pcs/shackleton-magellan.html"><g opacity="1">
-    <circle cx="414.12678195541844" cy="162.91796067500633" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="414.12678195541844" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Shackleton Ma…</text>
+    <circle cx="403.92304845413264" cy="140" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Shackleton Ma…</text>
+  </g></a>
+  <a href="../events/the-coordinate-shakedown.html"><g opacity="1">
+    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Coordinat…</text>
   </g></a>
   <a href="../characters/npcs/leocadia-zavia.html"><g opacity="1">
-    <circle cx="370.5342302750968" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="370.5342302750968" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+    <circle cx="300" cy="320" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
   </g></a>
   <a href="../characters/npcs/roland-mohamed.html"><g opacity="1">
-    <circle cx="229.46576972490323" cy="297.08203932499373" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="229.46576972490323" y="332.08203932499373" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Roland Mohamed</text>
+    <circle cx="196.0769515458674" cy="260.00000000000006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Roland Mohamed</text>
   </g></a>
   <a href="the-comets-tail.html"><g opacity="1">
-    <rect x="165.87321804458156" y="142.91796067500633" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="185.87321804458156" y="197.91796067500633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Comets Tail</text>
+    <rect x="176.07695154586736" y="120" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.07695154586736" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Comets Tail</text>
   </g></a>
   <a href="../chronicle/session-01-the-ragged-edge-of-space.html"><g opacity="0.5">
     <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
@@ -185,6 +196,7 @@ First of the four processing plants located in the lower section of the station.
 <h3>Mentioned In</h3>
 <ul><li><a href="../chronicle/chapter-01-session-01-wrap-up.html">Chapter 01 Session 01 Wrap Up</a> <span class="sidebar-badge">session_wrap</span></li>
 <li><a href="../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="../events/the-coordinate-shakedown.html">The Coordinate Shakedown</a> <span class="sidebar-badge">event</span></li>
 <li><a href="../characters/npcs/leocadia-zavia.html">Leocadia Zavia</a> <span class="sidebar-badge">npc</span></li>
 <li><a href="../characters/npcs/roland-mohamed.html">Roland Mohamed</a> <span class="sidebar-badge">npc</span></li>
 <li><a href="the-comets-tail.html">The Comets Tail</a> <span class="sidebar-badge">location</span></li></ul>

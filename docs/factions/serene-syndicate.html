@@ -12,7 +12,12 @@
 <header class="top-nav">
   <a href="../index.html" class="nav-brand">Dead End</a>
   <nav class="nav-groups">
-      <div class="nav-group"><a class="nav-group-toggle" href="../story.html">Story</a></div>
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
       <div class="nav-group">
         <button class="nav-group-toggle">Characters</button>
         <div class="nav-dropdown">
@@ -42,8 +47,9 @@
 </header>
 <div id="mobile-nav" class="mobile-nav-overlay">
   <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
   <ul>
-    <li><a href="../story.html">Story</a></li>
+    <li><a href="../timeline.html">Events</a></li>
   </ul>
   <h3>Characters</h3>
   <ul>
@@ -105,8 +111,8 @@ Imported from mobRPG (canon). factionType from mobRPG organization-type.</p>
   <line x1="416.9913494618188" y1="226.70251207475772" x2="253.41257188154626" y2="373.86664873203233" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <line x1="416.9913494618188" y1="226.70251207475772" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <line x1="416.9913494618188" y1="226.70251207475772" x2="126.13335126796773" y2="246.58742811845377" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="247.93395130589303" y1="308.11626414829027" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="183.00865053818117" y1="226.70251207475775" x2="172.7207793864214" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="416.9913494618188" y1="226.70251207475772" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="247.93395130589303" y1="308.11626414829027" x2="172.7207793864214" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <line x1="183.00865053818117" y1="226.70251207475775" x2="253.41257188154628" y2="26.133351267967697" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <line x1="183.00865053818117" y1="226.70251207475775" x2="346.58742811845366" y2="26.133351267967697" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
   <a href="serene-syndicate.html"><g opacity="1">
@@ -161,33 +167,33 @@ Imported from mobRPG (canon). factionType from mobRPG organization-type.</p>
     <circle cx="346.5874281184538" cy="373.8666487320323" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
     <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Six</text>
   </g></a>
-  <a href="../campaign/player-characters.html"><g opacity="0.5">
+  <a href="../events/the-coordinate-shakedown.html"><g opacity="0.5">
     <circle cx="253.41257188154626" cy="373.86664873203233" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="253.41257188154626" y="400.86664873203233" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Player Charac…</text>
+    <text x="253.41257188154626" y="400.86664873203233" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">The Coordinat…</text>
+  </g></a>
+  <a href="../campaign/player-characters.html"><g opacity="0.5">
+    <circle cx="172.72077938642144" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Player Charac…</text>
   </g></a>
   <a href="../characters/npcs/leocadia-zavia.html"><g opacity="0.5">
-    <circle cx="172.72077938642144" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+    <circle cx="126.13335126796773" cy="246.58742811845377" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.13335126796773" y="273.5874281184538" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
   </g></a>
   <a href="../locations/macmillian-station-iv.html"><g opacity="0.5">
-    <rect x="112.13335126796773" y="232.58742811845377" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="126.13335126796773" y="273.5874281184538" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+    <rect x="112.1333512679677" y="139.41257188154634" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="thides-serene-syndicate.html"><g opacity="0.5">
-    <polygon points="138.25770692094983,146.41257188154634 138.25770692094983,160.41257188154634 126.1333512679677,167.41257188154634 114.00899561498555,160.41257188154634 114.00899561498555,146.41257188154634 126.13335126796768,139.41257188154634" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Serene…</text>
+    <polygon points="184.84513503940354,65.72077938642146 184.84513503940354,79.72077938642146 172.7207793864214,86.72077938642146 160.59642373343928,79.72077938642146 160.59642373343928,65.72077938642146 172.72077938642138,58.720779386421455" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.7207793864214" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Serene…</text>
   </g></a>
   <a href="station-security-macmillian-station-iv.html"><g opacity="0.5">
-    <polygon points="184.84513503940354,65.72077938642146 184.84513503940354,79.72077938642146 172.7207793864214,86.72077938642146 160.59642373343928,79.72077938642146 160.59642373343928,65.72077938642146 172.72077938642138,58.720779386421455" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="172.7207793864214" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Station Secur…</text>
+    <polygon points="265.53692753452844,19.133351267967697 265.53692753452844,33.1333512679677 253.41257188154628,40.1333512679677 241.28821622856415,33.1333512679677 241.28821622856415,19.1333512679677 253.41257188154626,12.133351267967697" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="253.41257188154628" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Station Secur…</text>
   </g></a>
   <a href="../locations/macmillian-station-security-office.html"><g opacity="0.5">
-    <rect x="239.41257188154628" y="12.133351267967697" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="253.41257188154628" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
-  </g></a>
-  <a href="../characters/npcs/samina-ventura.html"><g opacity="0.5">
-    <circle cx="346.58742811845366" cy="26.133351267967697" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="346.58742811845366" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Samina Ventura</text>
+    <rect x="332.58742811845366" y="12.133351267967697" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.58742811845366" y="53.1333512679677" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
 </svg></div></div><aside class="context-sidebar">
 <h3>Mentioned In</h3>
