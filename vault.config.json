@@ -19,7 +19,8 @@
     "_World": "world",
     "_Campaign": "campaign",
     "Chapters": "chronicle",
-    "Chapters/Chapter 1 - The Far Dark/Sessions/Session 01": "chronicle"
+    "Chapters/Chapter 1 - The Far Dark/Sessions/Session 01": "chronicle",
+    "Chapters/Chapter 1 - The Far Dark": "chronicle"
   },
   "excludeDirs": [
     "_meta",
