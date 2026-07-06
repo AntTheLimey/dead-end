@@ -15,3 +15,54 @@
   --font-heading: 'Oswald', serif;
   --font-body: 'Inter', sans-serif;
 }
+
+
+/* == overrides.css (applied by apply-overrides.mjs) == */
+/*
+ * overrides.css — campaign-specific style customisations
+ *
+ * This file is loaded after the base gm-apprentice-publish stylesheet.
+ * Add rules here to override colours, fonts, layout, or any other styles
+ * without modifying the package's built-in CSS.
+ *
+ * Example:
+ *   :root { --accent: #8b0000; }
+ *   body  { font-family: 'Palatino Linotype', serif; }
+ */
+
+/* ── Encumbrance: make the current level row unmistakable ─────────────────────
+ * The base stylesheet marks the current row with a faint 2px inset outline
+ * (.enc .cur), which is hard to see. This replaces it with a bold, bordered,
+ * highlighted row that reads at a glance on the character sheet.
+ * --gc-attr is the GURPS attribute-block accent; #f0a23a (campaign amber) is
+ * the fallback for older browsers with no color-mix() support.
+ */
+.enc { border-collapse: separate; border-spacing: 0; }
+
+.enc tr.cur td {
+  font-weight: 700;
+  color: var(--text, inherit);
+  background: rgba(240, 162, 58, 0.26);
+  background: color-mix(in srgb, var(--gc-attr, #f0a23a) 26%, transparent);
+  border-top: 2px solid var(--gc-attr, #f0a23a);
+  border-bottom: 2px solid var(--gc-attr, #f0a23a);
+}
+.enc tr.cur td:first-child {
+  border-left: 4px solid var(--gc-attr, #f0a23a);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.enc tr.cur td:last-child {
+  border-right: 2px solid var(--gc-attr, #f0a23a);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* a small marker so the current level is obvious even in grayscale/print */
+.enc tr.cur td:first-child::after {
+  content: " \25C4";              /* ◄ */
+  color: var(--gc-attr, #f0a23a);
+  font-weight: 700;
+}
+/* neutralise the base inset outline so the new border reads cleanly */
+.enc .cur { outline: none; }
+
