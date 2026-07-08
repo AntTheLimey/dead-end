@@ -1,20 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap');
-
-:root {
-  --bg: #0d0b0a;
-  --text: #e6ddd2;
-  --accent: #3fd0d8;
-  --bg-header: #f0a23a;
-  --bg-hero: #f0a23a;
-  --bg-card: #191716;
-  --text-muted: #8f8982;
-  --border: #2a2827;
-  --accent-dim: rgba(63, 208, 216, 0.15);
-  --text-on-header: #1a1a1a;
-  --text-muted-on-header: #555;
-  --font-heading: 'Oswald', serif;
-  --font-body: 'Inter', sans-serif;
-}
+/* Genre preset active — no overrides */
 
 
 /* == overrides.css (applied by apply-overrides.mjs) == */
