@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freefighting (Spacer Kung-Fu) — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/themes/scifi.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="index.html">Documents</a>
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
+  <ul>
+    <li><a href="../timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="index.html">Documents</a></li>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Documents</a><span class="sep">&rsaquo;</span>Freefighting Spacer Kung Fu</nav>
+<div class="content-with-sidebar content-sidebar-sparse"><div class="main"><h1 class="page-title">Freefighting (Spacer Kung-Fu) <span class="badge badge-draft">Draft</span></h1>
+
+
+<blockquote>
+<p>A GURPS 4e Martial Arts style, TL11. Practised by <a href="../characters/pcs/six.html">Six</a>. Offered to Tim as
+part of Six’s background layer, to adopt, adapt, or replace.</p>
+</blockquote>
+<p><strong>In one line:</strong> a zero-G boarding art that anchors on the grapple, powers off
+the bulkhead, and kills the suit instead of the man.</p>
+<h2>What it is</h2>
+<p>Every ground art assumes three things you take for granted and never name: a
+floor to stand on, a down to fall toward, and a body that breaks when you hit it
+hard enough. Freefighting is what a fighting style looks like when you delete all
+three.</p>
+<p>Six never learned it in a room with mats. Castellan Biodynamics wrote the
+combat package straight into him, the same way they wrote everything else, and
+the package was built for one job: cross the dark between two ships, cut in, and
+clear whatever is waiting on the other side. Boarding work happens in vacuum, in
+free fall, in cramped steel with no up and no down and every surface a weapon if
+you know how to use it. So the art that came loaded in him is not really a
+striking style or a grappling style. It is a style about <em>momentum</em>, about the
+one thing that still behaves predictably when gravity stops answering the phone.</p>
+<p>The kids from P.E.T.A. who cracked his cryo-vault watched him move once and
+called it kung-fu, because that was the only word they had for a big man folding
+someone into a wall without ever seeming to push. Six calls it Freefighting. Flat
+and literal, the way he calls everything. It is not poetry to him. It is just the
+name of the thing his body already knew how to do when the calculators went dark
+and the job was all that was left.</p>
+<h2>The four pillars</h2>
+<p>Freefighting rests on four ideas. Each one is a place where zero-G breaks the
+assumptions a groundfighter never questions, and each one has a mechanical spine.</p>
+<h3>1. There is no down</h3>
+<p>On a floor you have a posture and a footing, and the rules punish you the moment
+you lose them. In free fall you have <em>no</em> footing, ever, so a groundfighter
+spends the whole engagement at the penalty for fighting off-balance while Six
+does not. <strong>Free Fall</strong> (B195) is the spine of the entire style. At Free Fall 15
+almost nothing of his is penalized, and most people he meets are flailing at
+their Free Fall default of around 9. Zero-G is not a hazard he tolerates. It is
+his floor, and everyone else is the one who slipped.</p>
+<p>The lever that closes the gap the rest of the way is <strong>Ground Fighting</strong> (Hard,
+Karate or Judo -4, MA / B231), the technique that buys off the penalty for
+attacking and defending without a stable base. It is the closest thing RAW gives
+to a “no footing” rule, and it turns the one situation that wrecks a normal
+fighter into a non-event for him. (How cleanly Ground Fighting maps onto true
+zero-G rather than merely lying prone is a GM call, and worth Tim’s ruling.)</p>
+<h3>2. The grapple is the anchor, the bulkhead is the engine</h3>
+<p>You cannot throw a man without something to brace against. Newton is very firm on
+this. So in Freefighting the <em>grapple itself</em> becomes the anchor, and the enemy’s
+own mass is the thing you redirect. You do not knock him down, because there is no
+down. You spin him off into open space, or fold him into a joint lock, or ride his
+momentum into the nearest wall and let the wall do the talking.</p>
+<p>The mechanical family here is <strong>Judo</strong> (B203) for the throws and entries, <strong>Arm
+Lock</strong> (Average, defaults to Judo, MA) for the leverage crank, and <strong>Sweeping
+Kick</strong> (Hard, the unarmed Sweep, Karate/Judo -3, MA) for turning his own rotation
+into a takedown. Power, when he wants real power, comes from bracing off a fixed
+surface, which at the cinematic tier is <strong>Power Blow</strong> (MA) and <strong>Push</strong> (MA),
+both unlocked by his <strong>Trained by a Master</strong> (B93). A Push in a gravity well
+staggers a man. A Push in vacuum sends him tumbling away with nothing to grab, out
+of the fight and out of the room.</p>
+<h3>3. Hole the suit, let the void finish it</h3>
+<p>This is the sharpest pillar and the most Six. In vacuum you do not have to defeat
+a hundred points of torso armor to end someone. You have to defeat a <em>seal</em>. A
+joint, a faceplate, a hose, the soft collar where helmet meets suit, breached
+past whatever the suit can self-mend, and the vacuum does the killing for you.
+Nobody holds their breath out there for long. Try it and your lungs tear for the
+trouble (B351), and suffocation is close behind (B436).</p>
+<p>The doctrine follows straight from his Code of Honor. A suit-kill is not gentler
+than a killing blow, it just costs less effort, so it is often the efficient
+answer and he takes it without preference or hesitation. The tool is <strong>Targeted
+Attack (Vibro-axe Swing / Neck)</strong> (Hard, -5 to the neck where the seal lives, MA),
+and the vibro-axe’s 3d+2 <strong>cut with armor divisor (3)</strong> means a seal does not
+survive contact. The word “non-lethal” does not really apply to a suit-breach.
+Out there, disabling the suit <em>is</em> the kill, and everyone in the compartment
+knows it the second the alarm starts screaming.</p>
+<h3>4. The unbalanced axe is a momentum engine</h3>
+<p>The vibro-axe is an <strong>Unbalanced weapon</strong> (B270). His sheet says so in the Parry
+line, <code>12 (0U)</code>. On a floor that is a straight tax: swing it and you are
+committed, you cannot parry with it that turn, the follow-through drags you off
+your line and leaves you open. Groundfighters treat unbalanced weapons as a
+trade, more damage for more risk.</p>
+<p>Take the floor away and the tax becomes a gift. That same committed
+follow-through is free angular momentum, and Free Fall 15 lets him <em>ride</em> it
+instead of eating it. The swing that would overbalance a man on the deck becomes
+a spin he chose, carrying him into a reorientation, a brace against the next
+surface, or straight into the arc of the next strike. What is a stumble in gravity
+is the next step of the dance in free fall. The weapon stays Unbalanced by the
+rules. The art is spending the recovery as a controlled Free Fall maneuver rather
+than paying for it.</p>
+<h2>The style block</h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Required skills</strong></td>
+<td>Judo (B203), Karate (B203), Free Fall (B195)</td>
+</tr>
+<tr>
+<td><strong>Secondary skills</strong></td>
+<td>Vacc Suit, Acrobatics, Forced Entry</td>
+</tr>
+<tr>
+<td><strong>Techniques</strong></td>
+<td>Arm Lock, Choke Hold, Kicking, Sweeping Kick, Ground Fighting, Disarming, Targeted Attack (Axe/Neck)</td>
+</tr>
+<tr>
+<td><strong>Cinematic skills</strong> <em>(needs Trained by a Master)</em></td>
+<td>Power Blow, Flying Leap, Push, Immovable Stance</td>
+</tr>
+<tr>
+<td><strong>Style perks</strong></td>
+<td>Armor Familiarity (Karate), Armor Familiarity (Judo), Suit Familiarity (Vacc Suit), Grip Mastery</td>
+</tr>
+<tr>
+<td><strong>Optional traits</strong></td>
+<td>Combat Reflexes, Trained by a Master, Perfect Balance, 3D Spatial Sense, Enhanced Move</td>
+</tr>
+</tbody>
+</table>
+<p>Six already owns the load-bearing half of this: Trained by a Master, Combat
+Reflexes, Judo/Karate/Free Fall/Vacc Suit/Acrobatics, both Armor Familiarity
+perks, and the Choke Hold and Kicking techniques bought to full skill. The rest
+is the menu he grows into, not a debt he owes.</p>
+<h2>No-lookup technique card</h2>
+<p>Every technique below is usable <strong>right now</strong> at its “Rolls at” number without
+spending a single point, because a technique defaults to its skill (minus a
+penalty for the hard ones). Read the number, make the roll, do not do arithmetic
+at the table. Buying a technique up later just raises the “Rolls at” value toward
+its cap.</p>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Diff</th>
+<th>Rolls at (now)</th>
+<th>Bought cap</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Choke Hold</td>
+<td>—</td>
+<td><strong>14</strong> <em>(bought)</em></td>
+<td>—</td>
+<td>FP choke to unconsciousness; no defense from behind (B370)</td>
+</tr>
+<tr>
+<td>Kicking</td>
+<td>—</td>
+<td><strong>15</strong> <em>(bought)</em></td>
+<td>—</td>
+<td>full-Karate kick, 1d+2 cr, reach C-1</td>
+</tr>
+<tr>
+<td>Arm Lock (Judo)</td>
+<td>Avg</td>
+<td><strong>14</strong></td>
+<td>18</td>
+<td>joint lock, +4 to keep him held; cranks crushing damage (MA)</td>
+</tr>
+<tr>
+<td>Sweeping Kick</td>
+<td>Hard</td>
+<td><strong>12</strong></td>
+<td>15</td>
+<td>momentum takedown, dumps him prone / spinning (MA)</td>
+</tr>
+<tr>
+<td>Ground Fighting (Karate)</td>
+<td>Hard</td>
+<td><strong>11</strong></td>
+<td>15</td>
+<td>buys off the no-footing -4 attack / -3 defense (B231)</td>
+</tr>
+<tr>
+<td>Disarming (Judo)</td>
+<td>Hard</td>
+<td><strong>14</strong></td>
+<td>19</td>
+<td>strip a weapon barehanded (B401); -2 if the target holds a weapon</td>
+</tr>
+<tr>
+<td>Targeted Attack (Axe Swing/Neck)</td>
+<td>Hard</td>
+<td><strong>12</strong></td>
+<td>15</td>
+<td>the suit-breach cut; neck seal at -5, vibro-axe AD (3) (MA)</td>
+</tr>
+</tbody>
+</table>
+<p>Numbers use Six’s current skills (Karate 15, Judo 14, Axe/Mace 17 with Weapon
+Bond) and Light encumbrance with both Armor Familiarity perks live. If DX rises to
+15, every “Rolls at” number here rises with it.</p>
+<h2>Advancement</h2>
+<p><strong>Current call: bank earned XP toward DX 14 to 15 [20].</strong> It is the single
+highest-value buy on the sheet, +1 to every DX skill and its parry at once, which
+lifts every number on the card above in one purchase (Judo 15, Karate 16, Axe 18,
+Free Fall 16, and free bumps to Kicking and Choke Hold). Roughly four sessions of
+XP at +5 a session. Do not dribble it into single techniques before then.</p>
+<p><strong>After DX 15, the technique priorities, in order of how much they change a
+fight:</strong></p>
+<ol>
+<li><strong>Targeted Attack (Axe/Neck) to cap [4]</strong> — makes the suit-breach a reliable
+called shot instead of a gamble. The purest expression of pillar 3.</li>
+<li><strong>Arm Lock (Judo) +2 to +4 [2 to 4]</strong> — turns a grapple into a fight-ender and
+a limb-cripple. Pillar 2.</li>
+<li><strong>Ground Fighting to +3 or cap [4 to 5]</strong> — erases the last of the no-footing
+tax so he is never off-balance in his own element. Pillar 1.</li>
+<li><strong>Suit Familiarity (Vacc Suit) [1 perk]</strong> — offsets the DX penalty of fighting
+in a hardsuit (MA). He is <em>always</em> armored, so this is quietly always-on value.</li>
+<li><strong>Sweeping Kick / Disarming</strong> as taste dictates.</li>
+</ol>
+<p>All of the above is post-approval advancement. The base build is GM-approved
+canon; this style writeup and its spending priorities are DRAFT, offered to Tim.</p>
+<h2>See also</h2>
+<ul>
+<li><a href="../characters/pcs/six.html">Six</a> — the character sheet (Skills, Techniques, Combat Action Chains)</li>
+<li>Vibro-Axe (MACE-06) — the bonded weapon at the heart of pillar 4</li>
+<li>Castellan Biodynamics — who wrote the package</li>
+<li>P.E.T.A. — who named the fighter</li>
+</ul>
+
+
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="463.135401666597" y2="123.9287128866741" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="479.3150456565142" y2="184.31196630542152" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="473.86664873203233" y2="246.58742811845372" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="447.4473679720185" y2="303.2437585431883" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="403.2437585431883" y2="347.4473679720185" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="346.5874281184538" y2="373.8666487320323" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="284.31196630542155" y2="379.3150456565142" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="223.92871288667413" y2="363.135401666597" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="136.86459833340302" y2="276.0712871133259" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="120.6849543434858" y2="215.68803369457856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="126.1333512679677" y2="153.41257188154634" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="152.55263202798147" y2="96.7562414568117" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="196.75624145681167" y2="52.5526320279815" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="253.4125718815461" y2="26.133351267967754" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="315.6880336945784" y2="20.6849543434858" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="376.0712871133259" y2="36.86459833340302" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="freefighting-spacer-kung-fu.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freefighting …</text>
+  </g></a>
+  <a href="../characters/pcs/six.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../locations/federal-republic-of-worlds.html"><g opacity="0.5">
+    <rect x="449.135401666597" y="109.9287128866741" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="463.135401666597" y="150.9287128866741" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="479.3150456565142" cy="184.31196630542152" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="479.3150456565142" y="211.31196630542152" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+  </g>
+  <a href="../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="0.5">
+    <circle cx="473.86664873203233" cy="246.58742811845372" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="473.86664873203233" y="273.5874281184537" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../characters/npcs/clubber.html"><g opacity="0.5">
+    <circle cx="447.4473679720185" cy="303.2437585431883" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="447.4473679720185" y="330.2437585431883" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Clubber</text>
+  </g></a>
+  <a href="../characters/pcs/rock-lavey.html"><g opacity="0.5">
+    <circle cx="403.2437585431883" cy="347.4473679720185" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.2437585431883" y="374.4473679720185" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+  <a href="../characters/pcs/ronin-sanchez.html"><g opacity="0.5">
+    <circle cx="346.5874281184538" cy="373.8666487320323" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="346.5874281184538" y="400.8666487320323" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
+  </g></a>
+  <a href="../factions/sable-reclamation.html"><g opacity="0.5">
+    <polygon points="296.4363219584037,372.3150456565142 296.4363219584037,386.3150456565142 284.31196630542155,393.3150456565142 272.1876106524394,386.3150456565142 272.1876106524394,372.3150456565142 284.31196630542155,365.3150456565142" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="284.31196630542155" y="406.3150456565142" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Sable Reclama…</text>
+  </g></a>
+  <a href="../items/law-machine.html"><g opacity="0.5">
+    <polygon points="223.92871288667413,349.135401666597 237.92871288667413,363.135401666597 223.92871288667413,377.135401666597 209.92871288667413,363.135401666597" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="223.92871288667413" y="390.135401666597" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Law Machine</text>
+  </g></a>
+  <a href="../locations/macmillian-station-security-office.html"><g opacity="0.5">
+    <rect x="158.72077938642144" y="313.27922061357856" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../campaign/player-characters.html"><g opacity="0.5">
+    <circle cx="136.86459833340302" cy="276.0712871133259" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="136.86459833340302" y="303.0712871133259" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../campaign/timeline.html"><g opacity="0.5">
+    <circle cx="120.6849543434858" cy="215.68803369457856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="120.6849543434858" y="242.68803369457856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../world/silicon-heaven.html"><g opacity="0.5">
+    <circle cx="126.1333512679677" cy="153.41257188154634" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="126.1333512679677" y="180.41257188154634" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Silicon Heaven</text>
+  </g></a>
+  <a href="../characters/npcs/holger-graeme.html"><g opacity="0.5">
+    <circle cx="152.55263202798147" cy="96.7562414568117" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="152.55263202798147" y="123.7562414568117" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Holger Graeme</text>
+  </g></a>
+  <a href="../characters/npcs/solveig-kaufer.html"><g opacity="0.5">
+    <circle cx="196.75624145681167" cy="52.5526320279815" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.75624145681167" y="79.5526320279815" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
+  </g></a>
+  <a href="../locations/docking-ring.html"><g opacity="0.5">
+    <rect x="239.4125718815461" y="12.133351267967754" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="253.4125718815461" y="53.133351267967754" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Docking Ring</text>
+  </g></a>
+  <a href="../locations/macmillian-station-iv.html"><g opacity="0.5">
+    <rect x="301.6880336945784" y="6.684954343485799" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="315.6880336945784" y="47.6849543434858" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../locations/meridian-iv.html"><g opacity="0.5">
+    <rect x="362.0712871133259" y="22.864598333403023" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="376.0712871133259" y="63.86459833340302" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Meridian IV</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Mentioned In</h3>
+<ul><li><a href="../characters/pcs/six.html">Six</a> <span class="sidebar-badge">pc</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>
