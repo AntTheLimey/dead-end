@@ -161,10 +161,9 @@
   border: 1px solid var(--border, #2e2620);
 }
 .loc-thumb-none {
-  border-style: dashed;
-  opacity: 0.18;
+  /* invisible spacer: keeps column alignment without a broken-looking box */
+  visibility: hidden;
 }
-.loc-crumb-text { }
 
 /* System-header thumbnail (star-system group headings) */
 .loc-region-title .loc-sys-thumb, .loc-panel-title .loc-sys-thumb {

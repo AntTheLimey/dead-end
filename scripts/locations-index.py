@@ -95,7 +95,9 @@ def render_items(children):
                 chain.append(node)
             last = chain[-1]
             crumb = SEP.join(link(n) for n in chain)
-            out.append(f'<li class="loc-leaf loc-crumb">{thumb(last)}'
+            # anchor the thumbnail to the FIRST node (matches the leftmost name);
+            # the last node's image is often missing and reads as the wrong entity
+            out.append(f'<li class="loc-leaf loc-crumb">{thumb(chain[0])}'
                        f'<span class="loc-crumb-text">{crumb}{badge(last["type"])}</span></li>')
             tail = pub_children(last)
             if len(tail) > 1:
