@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "gm-apprentice-publish build",
-    "postbuild": "node scripts/apply-overrides.mjs && node scripts/fix-locations-index.mjs && node scripts/optimize-images.mjs",
+    "postbuild": "node scripts/apply-overrides.mjs && node scripts/optimize-images.mjs",
     "watch": "gm-apprentice-publish build --watch"
   },
   "dependencies": {
