@@ -85,24 +85,13 @@ link = lambda n: f'<a href="{esc(n["slug"])}.html">{esc(n["name"])}</a>'
 SEP = ' <span class="crumb-sep">&rsaquo;</span> '
 
 def render_items(children):
+    # Every body is a first-class row with its own thumbnail; children nest
+    # beneath it (single-child chains included). Only the top scaffolding
+    # (Federal Republic › Sector) is collapsed, and that's the caption above.
     out = []
     for c in children:
         kids = pub_children(c)
-        if len(kids) == 1:
-            chain, node = [c], c
-            while len(pub_children(node)) == 1:
-                node = pub_children(node)[0]
-                chain.append(node)
-            last = chain[-1]
-            crumb = SEP.join(link(n) for n in chain)
-            # anchor the thumbnail to the FIRST node (matches the leftmost name);
-            # the last node's image is often missing and reads as the wrong entity
-            out.append(f'<li class="loc-leaf loc-crumb">{thumb(chain[0])}'
-                       f'<span class="loc-crumb-text">{crumb}{badge(last["type"])}</span></li>')
-            tail = pub_children(last)
-            if len(tail) > 1:
-                out.append(f'<li class="loc-branch"><ul class="loc-sub">{render_items(tail)}</ul></li>')
-        elif len(kids) > 1:
+        if kids:
             out.append(f'<li class="loc-branch">{thumb(c)}{link(c)}{badge(c["type"])}'
                        f'<ul class="loc-sub">{render_items(kids)}</ul></li>')
         else:
