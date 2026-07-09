@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 470" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7d6"/><stop offset="45%" stop-color="#ffe27a"/><stop offset="100%" stop-color="#f0a93c"/>
+    </radialGradient>
+    <radialGradient id="sunglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe27a" stop-opacity="0.5"/><stop offset="100%" stop-color="#ffe27a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screl" cx="38%" cy="36%" r="70%">
+      <stop offset="0%" stop-color="#ffb27a"/><stop offset="60%" stop-color="#d2552a"/><stop offset="100%" stop-color="#7e2c14"/>
+    </radialGradient>
+    <radialGradient id="son" cx="40%" cy="38%" r="64%">
+      <stop offset="0%" stop-color="#dff0f7"/><stop offset="55%" stop-color="#8fc6dd"/><stop offset="100%" stop-color="#3d6f8c"/>
+    </radialGradient>
+    <linearGradient id="rarerold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d2683a"/><stop offset="50%" stop-color="#b29a86"/><stop offset="100%" stop-color="#9fc0d2"/>
+    </linearGradient>
+    <clipPath id="ionClip"><circle cx="665" cy="215" r="17"/></clipPath>
+    <marker id="lane" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7fa8d0"/>
+    </marker>
+  </defs>
+
+  <rect width="1160" height="470" fill="#0b0e1a"/>
+  <text x="580" y="30" text-anchor="middle" font-size="21" font-weight="bold" fill="#eef2ff">The Meridian System</text>
+  <text x="580" y="50" text-anchor="middle" font-size="12.5" fill="#9aa7c7">Federal Republic chartered world · capital: Ionera</text>
+
+  <!-- orbits (cx=85, cy=215) -->
+  <g fill="none" stroke="#27304d" stroke-width="1.4">
+    <ellipse cx="85" cy="215" rx="150" ry="95"/>
+    <ellipse cx="85" cy="215" rx="290" ry="120"/>
+    <ellipse cx="85" cy="215" rx="430" ry="145"/>
+    <ellipse cx="85" cy="215" rx="580" ry="170"/>
+    <ellipse cx="85" cy="215" rx="750" ry="195"/>
+    <ellipse cx="85" cy="215" rx="930" ry="210"/>
+  </g>
+
+  <!-- star -->
+  <circle cx="85" cy="215" r="92" fill="url(#sunglow)"/>
+  <circle cx="85" cy="215" r="46" fill="url(#sun)"/>
+  <text x="92" y="138" font-size="12.5" font-weight="bold" fill="#ffe9a8">MERIDIAN</text>
+  <text x="92" y="153" font-size="10.5" fill="#c9b681">the system sun</text>
+
+  <!-- Screl (235) rocky furnace, fast orbit -->
+  <path d="M 214 200 q 10 -8 22 -2" fill="none" stroke="#cf6a3a" stroke-width="2" opacity="0.7"/>
+  <circle cx="235" cy="215" r="8" fill="url(#screl)"/>
+  <text x="235" y="300" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#eaa87f">Screl</text>
+  <text x="235" y="315" text-anchor="middle" font-size="10" fill="#9aa7c7">rocky furnace · fast orbit</text>
+  <text x="235" y="328" text-anchor="middle" font-size="10" fill="#7c879f">inner industry &amp; solar</text>
+
+  <!-- Desot (375) desert + LARGE ring -->
+  <g transform="rotate(-17 375 215)">
+    <ellipse cx="375" cy="215" rx="32" ry="9" fill="none" stroke="#cdab6e" stroke-width="3"/>
+  </g>
+  <circle cx="375" cy="215" r="13" fill="#d8b27a"/>
+  <g transform="rotate(-17 375 215)">
+    <path d="M 343 215 A 32 9 0 0 0 407 215" fill="none" stroke="#e7c98c" stroke-width="3"/>
+  </g>
+  <text x="375" y="300" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#e6cf9b">Desot</text>
+  <text x="375" y="315" text-anchor="middle" font-size="10" fill="#9aa7c7">desert · large ring</text>
+  <text x="375" y="328" text-anchor="middle" font-size="10" fill="#7c879f">ring-mining</text>
+
+  <!-- Bing (515) airless, damaged moon + slight ring -->
+  <ellipse cx="515" cy="215" rx="22" ry="6" fill="none" stroke="#5a6472" stroke-width="2" transform="rotate(-12 515 215)"/>
+  <circle cx="515" cy="215" r="11" fill="#9098a0"/>
+  <circle cx="540" cy="196" r="4.5" fill="#aab2bb"/>
+  <circle cx="542" cy="194" r="2" fill="#5d646d"/>
+  <text x="515" y="300" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#cdd2df">Bing</text>
+  <text x="515" y="315" text-anchor="middle" font-size="10" fill="#9aa7c7">airless · damaged moon</text>
+  <text x="515" y="328" text-anchor="middle" font-size="10" fill="#7c879f">shipyards &amp; vac-industry</text>
+
+  <!-- Ionera (665) capital, habitable, greenbelts, decaying orbit -->
+  <circle cx="665" cy="215" r="24" fill="none" stroke="#eaf3ff" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <circle cx="665" cy="215" r="17" fill="#9a8c66"/>
+  <g clip-path="url(#ionClip)">
+    <ellipse cx="665" cy="208" rx="17" ry="4.5" fill="#5fa86a"/>
+    <ellipse cx="665" cy="223" rx="17" ry="4.5" fill="#5fa86a"/>
+  </g>
+  <text x="665" y="298" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#bfe6ff">IONERA ✦</text>
+  <text x="665" y="313" text-anchor="middle" font-size="10.5" fill="#a6e0ad">CAPITAL · habitable (just)</text>
+  <text x="665" y="327" text-anchor="middle" font-size="10" fill="#9aa7c7">Concord seat · Castellan HQ</text>
+  <text x="665" y="341" text-anchor="middle" font-size="10" font-style="italic" fill="#8e9bbd">two greenbelts · decaying orbit</text>
+
+  <!-- Son (835) ice giant, LARGE ring + gate -->
+  <g transform="rotate(-14 835 215)">
+    <ellipse cx="835" cy="215" rx="54" ry="15" fill="none" stroke="#bcdcec" stroke-width="4"/>
+  </g>
+  <circle cx="835" cy="215" r="27" fill="url(#son)"/>
+  <g transform="rotate(-14 835 215)">
+    <path d="M 781 215 A 54 15 0 0 0 889 215" fill="none" stroke="#dff0f7" stroke-width="4"/>
+  </g>
+  <circle cx="892" cy="190" r="3.5" fill="#cdd2df"/>
+  <text x="835" y="300" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#cfeaf6">Son</text>
+  <text x="835" y="315" text-anchor="middle" font-size="10" fill="#9aa7c7">ice giant · large ring</text>
+  <text x="835" y="328" text-anchor="middle" font-size="10" fill="#7fa8d0">(main gate &amp; port anchor here)</text>
+
+  <!-- Rarerold (1015) extreme temps, tidally locked moon -->
+  <circle cx="1015" cy="215" r="13" fill="url(#rarerold)"/>
+  <circle cx="1037" cy="197" r="4" fill="#cdd2df"/>
+  <path d="M 1037 193 A 4 4 0 0 1 1037 201 Z" fill="#7c879f"/>
+  <text x="1015" y="300" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#e0c3b0">Rarerold</text>
+  <text x="1015" y="315" text-anchor="middle" font-size="10" fill="#9aa7c7">extreme temps · locked moon</text>
+  <text x="1015" y="328" text-anchor="middle" font-size="10" fill="#7c879f">remote Castellan black-site</text>
+
+  <!-- ===== Gates & main station ===== -->
+  <!-- main gate + Concord Station, anchored above Son -->
+  <line x1="833" y1="140" x2="836" y2="186" stroke="#5fd0e0" stroke-width="1.4" stroke-dasharray="4 3" opacity="0.8"/>
+  <ellipse cx="805" cy="120" rx="13" ry="18" fill="none" stroke="#5fd0e0" stroke-width="3"/>
+  <ellipse cx="805" cy="120" rx="6.5" ry="10" fill="none" stroke="#bdeef5" stroke-width="1.5" opacity="0.75"/>
+  <!-- Concord Station glyph -->
+  <rect x="852" y="112" width="10" height="16" rx="2" fill="#d7dee6"/>
+  <rect x="836" y="116" width="12" height="7" rx="1" fill="#7fa8d0"/>
+  <rect x="866" y="116" width="12" height="7" rx="1" fill="#7fa8d0"/>
+  <circle cx="857" cy="120" r="2" fill="#0b0e1a"/>
+  <text x="841" y="92" text-anchor="middle" font-size="11" font-weight="bold" fill="#bdeef5">MAIN GATE · Concord Station</text>
+  <text x="841" y="151" text-anchor="middle" font-size="9.5" fill="#7c879f">coreward artery · customs · jump-tax</text>
+
+  <!-- second gate: Charter Gate, outer dark past Rarerold -->
+  <line x1="1078" y1="138" x2="1024" y2="196" stroke="#9a8fd0" stroke-width="1.4" stroke-dasharray="4 3" opacity="0.7"/>
+  <ellipse cx="1088" cy="120" rx="10" ry="14" fill="none" stroke="#9a8fd0" stroke-width="2.5"/>
+  <ellipse cx="1088" cy="120" rx="5" ry="7.5" fill="none" stroke="#cbc3ee" stroke-width="1.3" opacity="0.7"/>
+  <text x="1088" y="92" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#cbc3ee">Charter Gate</text>
+  <text x="1088" y="151" text-anchor="middle" font-size="9.5" fill="#7c879f">corporate · quiet</text>
+
+  <text x="580" y="452" text-anchor="middle" font-size="10.5" fill="#727c99">Two gates: the public Concord Gate (port + customs) and the quiet Charter Gate. Nothing legitimate leaves without the Concord's leave (and tariff).</text>
+</svg>

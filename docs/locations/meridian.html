@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/themes/scifi.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../campaign/timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../documents/index.html">Documents</a>
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
+  <ul>
+    <li><a href="../campaign/timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../documents/index.html">Documents</a></li>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Locations</a><span class="sep">&rsaquo;</span><a href="federal-republic-of-worlds.html">Federal Republic of Worlds</a><span class="sep">&rsaquo;</span>Meridian</nav>
+<div class="content-with-sidebar"><div class="main"><div class="hero-banner">
+  <img class="hero-banner-img" src="../images/locations/Meridian.webp" alt="Meridian">
+  <div class="hero-banner-overlay">
+    <h1>Meridian <span class="badge badge-draft">Draft</span></h1>
+    <div class="meta"><span class="metadata-badge">star system</span><span class="metadata-badge">Corporate gleam and arcology spires over a quiet, engineered underclass — new money built on grown labor</span></div>
+  </div>
+</div>
+<div class="pull-quote">A wealthy, heavily-industrialized chartered corporate world in the Federal Republic's inner reaches — and pointedly not one of its ranking powers.</div>
+<h2>Overview</h2>
+<p>A wealthy, heavily-industrialized <strong>chartered corporate world</strong> in the Federal Republic’s inner
+reaches — and pointedly <strong>not</strong> one of its ranking powers. The Republic is tiered: the <strong>9 Core
+Worlds</strong> (the founding powers) at the top; beneath them the <strong>4 former rebel worlds</strong> — defeated in
+their war and folded into the core as a grudging <strong>second tier</strong> — and then <em>everyone else.</em> Meridian
+sits squarely among the <em>everyone else</em>: a chartered member, wealthy but <strong>junior</strong>, with no claim to
+either rank. It is <strong>new money</strong>: a frontier system <em>developed under corporate charter</em> a few
+generations back, and still <strong>governed by the very biotech houses that built it.</strong> Gleaming arcologies
+and vatworks sit atop a quiet, engineered underclass — and that contradiction is the whole story.</p>
+<p>It is the deliberate <strong>inverse of <a href="thides-system.html">Thides</a></strong>: central where Thides is a dead-end,
+rich where Thides is played-out, watched where Thides is unwatched. It is also where <strong><a href="../characters/pcs/six.html">Six</a></strong> was
+grown — and where the people hunting him give their orders.</p>
+<h2>The System</h2>
+<p><img src="../images/locations/Meridian-system-map.svg" alt="697"></p>
+<p>Six worlds around the Meridian sun — an <strong>A-type main-sequence star, blue-white</strong> (mobRPG canon).
+Planets carry Tim’s numbered names; the draft names survive as local aliases for when planet-level
+naming gets developed. Inner → outer:</p>
+<ul>
+<li><strong><a href="meridian-i.html">Meridian I</a></strong> (<em>Screl</em>) <strong>— rocky furnace.</strong> The scorched innermost world on a very fast orbit;
+ringed with orbital solar collectors and robotic heavy industry that beam power and refined
+feedstock up the well.</li>
+<li><strong><a href="meridian-ii.html">Meridian II</a></strong> (<em>Desot</em>) <strong>— desert world, large ring.</strong> Arid and water-poor; its big ring is
+industrially worked and the surface mined — an extraction-and-indenture world.</li>
+<li><strong><a href="meridian-iii.html">Meridian III</a></strong> (<em>Bing</em>) <strong>— airless rock.</strong> No atmosphere, a <strong>damaged moon</strong>, and a faint
+ring; the system’s vacuum heavy industry, fabrication, and orbital shipyards.</li>
+<li><strong><a href="meridian-iv.html">Meridian IV</a></strong> (<em>Ionera</em>) <strong>— the capital</strong> (large rocky, <em>habitable… for now</em>). Seat of the
+<strong>Meridian Concord</strong>, <strong>Castellan Biodynamics</strong> HQ, the arcology enclaves of the shareholding
+families, and the asset districts that run it all. Two <strong>greenbelt preserves</strong> straddle the 40°
+line — manicured green standing in for the lush flora the world <em>used</em> to have (or wants to be
+remembered for); Castellan’s <strong>Greenmarch foundries</strong> (where <strong><a href="../characters/pcs/six.html">Six</a></strong> was grown) sit against the
+northern belt. And the capital’s <strong>orbit is slowly decaying</strong> — a doom no one with a charter seat
+cares to discuss.</li>
+<li><strong><a href="meridian-v.html">Meridian V</a></strong> (<em>Son</em>) <strong>— ice giant, large ring.</strong> The system’s outer giant; its ring and moons
+anchor the <strong>main gate and the system’s port</strong> (below), plus volatiles-skimming and the defensive
+picket.</li>
+<li><strong><a href="meridian-vi.html">Meridian VI</a></strong> (<em>Rarerold</em>) <strong>— extreme-temperature rock.</strong> The far, hostile outer world with a
+tidally-locked moon — a remote Castellan <strong>black-site</strong>: hazard extraction, and where written-off
+assets and inconvenient things go to be forgotten.</li>
+</ul>
+<p><strong>Gates &amp; traffic.</strong> Meridian is a connected inner hub, not a dead-end — it has <strong>two charted gates</strong>:</p>
+<ul>
+<li><strong><a href="the-concord-gate.html">The Concord Gate</a></strong> — the <strong>main artery</strong>, anchored among <a href="meridian-v.html">Meridian V</a>’s moons: the heavily-taxed,
+heavily-watched coreward lane that carries all legitimate civilian and commercial traffic. Riding
+beside it is <strong><a href="concord-station.html">Concord Station</a></strong>, the system’s great orbital port — customs, jump-tax collection,
+drydocks, trade, and the public face of the Concord. <em>Nothing legitimate leaves the system without
+passing through it (and paying).</em></li>
+<li><strong><a href="the-charter-gate.html">The Charter Gate</a></strong> — the <strong>quiet one</strong>, out in the dark past <a href="meridian-vi.html">Meridian VI</a>: Concord- and
+Castellan-controlled, nominally for corporate bulk freight — and the door through which the
+<strong>deniable asset trade and the Republic’s quiet purchases</strong> actually move. Less watched, because the
+watchers own it. (How Six was shipped out the first time; how a recovery cargo would come back.)</li>
+</ul>
+<h2>Government — the Meridian Concord</h2>
+<p>A <strong>chartered corporate plutocracy.</strong> Real power is a <strong>Board of Charter-Holders</strong> — the founding
+biotech houses, <strong>Castellan Biodynamics</strong> chief among them — who govern under the Federal
+development charter. Beneath the Board sits a nominal <strong>Citizens’ Assembly</strong> (dominated by corporate
+voting blocs) and the day-to-day Concord bureaucracy.</p>
+<p>Society is a ladder:</p>
+<ul>
+<li><strong>Charter-aristocracy</strong> — the shareholding dynasties; the ruling class. (Their bored, guilty
+children are who <strong>P.E.T.A.</strong> recruits.)</li>
+<li><strong>Employee-citizens</strong> — the salaried managerial and technical class; “citizens” in the local,
+contractual sense.</li>
+<li><strong>Indentures &amp; assets</strong> — the workforce, including the <strong>vat-grown ‘asset’ underclass</strong> who are
+<em>property</em>, not persons.</li>
+</ul>
+<p>Within the Federal Republic, Meridian <strong>self-governs</strong> like any member world (the Republic only
+demands that members obey federal law, pay the gate <strong>jump-tax</strong>, and hold federal <strong>licenses</strong>) — its
+self-governance just happens to be corporate. The old Core Worlds regard Meridian as gauche
+<em>nouveau-riche</em>; Meridian regards the Core as fossils living off legacy.</p>
+<h2>The Charter — how Castellan got its writ</h2>
+<p>The Republic wanted two things it didn’t want to be <em>seen</em> doing: to expand into new systems without
+spending federal blood and treasure, and to field <strong>bio-engineered labor and military assets</strong> while
+keeping the moral and legal mess at arm’s length. Its answer was the <strong>development charter</strong> — license
+a corporate consortium to settle and run a frontier system, supply the Republic with assets, keep the
+profits (minus jump-tax), and own the consequences.</p>
+<p>The consortium chartered to develop <strong>Meridian</strong> included the founders of <strong>Castellan Biodynamics</strong>.
+From that, Castellan holds <strong>two intertwined writs</strong>:</p>
+<ol>
+<li>a <strong>seat on the Concord</strong> (a share of governing the world), and</li>
+<li>a <strong>Federal operating license</strong> for bio-engineering and <strong>asset production</strong>.</li>
+</ol>
+<p>The asset trade flourishes because three things line up: Meridian’s <strong>local law is permissive</strong> (a
+corporate world with minimal personhood/labor protection for non-citizens), the <strong>Federal Republic
+classifies assets as property</strong> (its citizen → resident → property legal ladder; see
+<a href="../world/politics-and-citizenship.html">Politics and Citizenship</a>), and the Republic is a <strong>willing, quiet customer</strong> for the military and
+labor assets it officially keeps at a distance. Castellan grows them; the Republic buys them; nobody’s
+hands are dirty. (Six is one such “product” — a MACE-pattern boarding asset, escaped.)</p>
+
+<h2>Relationships</h2>
+<ul class="relationship-list">
+<li><strong class="rel-label">Chartered member of</strong> <a href="federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; A wealthy junior member governed under a Federal development charter — among 'everyone else,' below both the 9 Core Worlds and the 4 ex-rebel second-tier worlds.</li>
+<li><strong class="rel-label">Governed in part by</strong> Castellan Biodynamics &mdash; Senior charter-house of the Meridian Concord; HQ and primary vat-foundries here.</li>
+<li><strong class="rel-label">Recruiting ground</strong> P.E.T.A. &mdash; Its corporate-aristocrat youth are P.E.T.A.'s core membership — rebelling against the family business.</li>
+</ul>
+<div class="sub-locations">
+  <h2>Places Within</h2>
+  <div class="card-grid"><a class="entity-card" href="concord-station.html">
+  <h4>Concord Station</h4>
+  <div class="card-excerpt">Meridian's great orbital port, riding The Concord Gate among Son's moons — and the deliberate inverse of Thides Station.</div>
+</a>
+<a class="entity-card" href="meridian-i.html">
+  <h4>Meridian I</h4>
+  <div class="card-excerpt">The scorched innermost world of the Meridian system, on a very fast orbit; ringed with orbital solar collectors and robotic heavy industry that beam power and refined feedstock up the well.</div>
+</a>
+<a class="entity-card" href="meridian-ii.html">
+  <h4>Meridian II</h4>
+  <div class="card-excerpt">An arid, water-poor desert world in the Meridian system with a large ring; the ring is industrially worked and the surface mined — an extraction-and-indenture world.</div>
+</a>
+<a class="entity-card" href="meridian-iii.html">
+  <h4>Meridian III</h4>
+  <div class="card-excerpt">An airless rock in the Meridian system with a damaged moon and a faint ring; the system's vacuum heavy industry, fabrication, and orbital shipyards.</div>
+</a>
+<a class="entity-card" href="meridian-iv.html">
+  <h4>Meridian IV</h4>
+  <div class="card-excerpt">The capital of the Meridian system — a large rocky world, habitable… for now.</div>
+</a>
+<a class="entity-card" href="meridian-v.html">
+  <h4>Meridian V</h4>
+  <div class="card-excerpt">The Meridian system's outer ice giant, with a large ring; its ring and moons anchor The Concord Gate — the system's main gate — and Concord Station, the system's great orbital port, plus…</div>
+</a>
+<a class="entity-card" href="meridian-vi.html">
+  <h4>Meridian VI</h4>
+  <div class="card-excerpt">The far, hostile outer world of the Meridian system — an extreme-temperature rock with a tidally-locked moon.</div>
+</a>
+<a class="entity-card" href="the-charter-gate.html">
+  <h4>The Charter Gate</h4>
+  <div class="card-excerpt">The quiet gate of the Meridian system, out in the dark past Rarerold: Concord- and Castellan-controlled, nominally for corporate bulk freight — and the door through which the deniable asset trade and the Republic’s quiet purchases actually move.</div>
+</a>
+<a class="entity-card" href="the-concord-gate.html">
+  <h4>The Concord Gate</h4>
+  <div class="card-excerpt">The main artery of the Meridian system, anchored among Son’s moons: the heavily-taxed, heavily-watched coreward lane that carries all legitimate civilian and commercial traffic.</div>
+</a></div>
+</div>
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="360" y2="96.07695154586736" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="360" y2="303.92304845413264" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="240.00000000000003" y2="303.92304845413264" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="196.07695154586736" y2="140" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="239.99999999999994" y2="96.07695154586739" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="478.8681977807837" y2="220.1536056985954" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="395.76577377276055" y2="352.41035586109115" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="240.54976884806996" y2="369.89899945550616" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="130.10100054449384" y2="259.4502311519301" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="147.58964413890882" y2="104.23422622723943" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="420" y1="200" x2="279.84639430140453" y2="21.131802219216326" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="meridian.html"><g opacity="1">
+    <rect x="272" y="172" width="56" height="56" rx="4" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian</text>
+  </g></a>
+  <a href="federal-republic-of-worlds.html"><g opacity="1">
+    <rect x="280" y="60" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="360" cy="96.07695154586736" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="360" y="131.07695154586736" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Castellan Bio…</text>
+  </g>
+  <g opacity="1">
+    <circle cx="403.92304845413264" cy="140" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
+  </g>
+  <a href="../characters/pcs/six.html"><g opacity="1">
+    <circle cx="420" cy="200" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+  </g></a>
+  <a href="meridian-i.html"><g opacity="1">
+    <rect x="383.92304845413264" y="240" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian I</text>
+  </g></a>
+  <a href="meridian-ii.html"><g opacity="1">
+    <rect x="340" y="283.92304845413264" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="360" y="338.92304845413264" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian II</text>
+  </g></a>
+  <a href="meridian-iii.html"><g opacity="1">
+    <rect x="280" y="300" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian III</text>
+  </g></a>
+  <a href="meridian-iv.html"><g opacity="1">
+    <rect x="220.00000000000003" y="283.92304845413264" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="240.00000000000003" y="338.92304845413264" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian IV</text>
+  </g></a>
+  <a href="meridian-v.html"><g opacity="1">
+    <rect x="176.0769515458674" y="240.00000000000006" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian V</text>
+  </g></a>
+  <a href="meridian-vi.html"><g opacity="1">
+    <rect x="160" y="180.00000000000003" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian VI</text>
+  </g></a>
+  <a href="the-charter-gate.html"><g opacity="1">
+    <rect x="176.07695154586736" y="120" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="196.07695154586736" y="175" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Charter G…</text>
+  </g></a>
+  <a href="the-concord-gate.html"><g opacity="1">
+    <rect x="219.99999999999994" y="76.07695154586739" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="239.99999999999994" y="131.0769515458674" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Concord G…</text>
+  </g></a>
+  <a href="../world/federal-credits.html"><g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Credits</text>
+  </g></a>
+  <a href="../world/politics-and-citizenship.html"><g opacity="0.5">
+    <circle cx="478.8681977807837" cy="220.1536056985954" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="478.8681977807837" y="247.1536056985954" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Politics and …</text>
+  </g></a>
+  <a href="../heritages/skin-freaks.html"><g opacity="0.5">
+    <circle cx="395.76577377276055" cy="352.41035586109115" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="395.76577377276055" y="379.41035586109115" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Skin Freaks</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="240.54976884806996" cy="369.89899945550616" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="240.54976884806996" y="396.89899945550616" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="0.5">
+    <circle cx="130.10100054449384" cy="259.4502311519301" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="130.10100054449384" y="286.4502311519301" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../characters/npcs/clubber.html"><g opacity="0.5">
+    <circle cx="147.58964413890882" cy="104.23422622723943" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="147.58964413890882" y="131.23422622723945" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Clubber</text>
+  </g></a>
+  <a href="../characters/pcs/rock-lavey.html"><g opacity="0.5">
+    <circle cx="279.84639430140453" cy="21.131802219216326" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="279.84639430140453" y="48.131802219216326" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Parent</h3>
+<p><a href="federal-republic-of-worlds.html">Federal Republic of Worlds</a></p>
+<h3>Relationships</h3>
+<ul><li><a href="federal-republic-of-worlds.html">Federal Republic of Worlds</a> <span class="sidebar-badge">chartered member of</span></li>
+<li>Castellan Biodynamics <span class="sidebar-badge">governed in part by</span></li>
+<li>P.E.T.A. <span class="sidebar-badge">recruiting ground</span></li></ul>
+<h3>Mentioned In</h3>
+<ul><li><a href="../characters/pcs/six.html">Six</a> <span class="sidebar-badge">pc</span></li>
+<li><a href="meridian-i.html">Meridian I</a> <span class="sidebar-badge">location</span></li>
+<li><a href="meridian-ii.html">Meridian II</a> <span class="sidebar-badge">location</span></li>
+<li><a href="meridian-iii.html">Meridian III</a> <span class="sidebar-badge">location</span></li>
+<li><a href="meridian-iv.html">Meridian IV</a> <span class="sidebar-badge">location</span></li>
+<li><a href="meridian-v.html">Meridian V</a> <span class="sidebar-badge">location</span></li>
+<li><a href="meridian-vi.html">Meridian VI</a> <span class="sidebar-badge">location</span></li>
+<li><a href="the-charter-gate.html">The Charter Gate</a> <span class="sidebar-badge">location</span></li>
+<li><a href="the-concord-gate.html">The Concord Gate</a> <span class="sidebar-badge">location</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

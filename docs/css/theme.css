@@ -50,3 +50,130 @@
 /* neutralise the base inset outline so the new border reads cleanly */
 .enc .cur { outline: none; }
 
+/* ── Locations index: deep-hierarchy tree readability ────────────────────────
+ * The native renderer indents deep location trees with per-item inline
+ * padding-left (depth × 1.5rem) and labels each type as plain muted text,
+ * turning a 5-level tree into a cramped, badly-wrapping wall. This restyles it
+ * into a clean guided tree: consistent gold badge pills (matching the root
+ * cards), vertical depth guides, and a tighter, controlled indent.
+ * Workaround for a native-rendering weakness — filed upstream as a
+ * gm-apprentice enhancement.
+ */
+
+/* Drive indentation from the nesting wrappers, not per-item inline padding.
+ * (Inline padding-left must be beaten with !important.) */
+.locations-page .location-tree-item { padding-left: 0 !important; }
+
+.locations-page .location-tree-children {
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+  /* faint gold spine so depth reads at a glance (theme --border is too dark
+   * against the near-black background to register) */
+  border-left: 1px solid rgba(240, 162, 58, 0.22);
+  border-left: 1px solid color-mix(in srgb, var(--accent, #f0a23a) 22%, transparent);
+}
+
+/* Row: name + type badge share one baseline; drop the busy per-row rule line */
+.locations-page .location-tree-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: none;
+}
+.locations-page .location-tree-item > a { flex: 0 1 auto; }
+
+/* Type badge — mirror the root cards' gold pill instead of plain gray text */
+.locations-page .location-tree-item .sidebar-badge {
+  flex: none;
+  margin-left: 0;
+  font-size: 0.62rem;
+  line-height: 1.5;
+  padding: 0.05rem 0.4rem;
+  color: var(--accent, #f0a23a);
+  background: color-mix(in srgb, var(--accent, #f0a23a) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent, #f0a23a) 28%, transparent);
+  border-radius: 0.2rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* ══ Locations index EXPERIMENT — system grouping + single-child flatten ═════
+ * Two candidate layouts rendered into _opt1-panels.html / _opt2-columns.html
+ * by scripts (preview only). Shared item styling first, then per-variant.
+ */
+.loc-context {
+  font-size: 0.75rem; letter-spacing: 0.04em; color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+.loc-context a { color: var(--text-muted); }
+.loc-context a:hover { color: var(--accent); }
+.crumb-sep { opacity: 0.5; margin: 0 0.15rem; }
+
+.loc-panel-list, .loc-sub, .loc-colflow { list-style: none; margin: 0; padding: 0; }
+.loc-panel-list li, .loc-colflow > li { padding: 0.22rem 0; line-height: 1.4; }
+.loc-panel-list a, .loc-colflow a, .loc-sub a { color: var(--text); font-weight: 500; }
+.loc-panel-list a:hover, .loc-colflow a:hover, .loc-sub a:hover { color: var(--accent); }
+.loc-branch > a { font-weight: 600; }
+
+/* nested branch: light gold spine, modest indent */
+.loc-sub {
+  margin: 0.15rem 0 0.35rem 0.35rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid color-mix(in srgb, var(--accent, #f0a23a) 22%, transparent);
+}
+.loc-sub li { padding: 0.15rem 0; }
+
+/* ── Variant 1: panels grid ────────────────────────────────────────────── */
+.loc-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+.loc-panel {
+  background: var(--bg-card, #171310);
+  border: 1px solid var(--border, #2e2620);
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem 1.15rem;
+}
+.loc-panel-title {
+  font-size: 0.95rem; margin: 0 0 0.6rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border, #2e2620);
+}
+.loc-panel-title a { color: var(--text); }
+.loc-panel-title a:hover { color: var(--accent); }
+
+/* ── Variant 2: sections + CSS columns ─────────────────────────────────── */
+.loc-sections { display: flex; flex-direction: column; gap: 1.75rem; }
+.loc-colflow {
+  column-width: 13rem; column-gap: 2rem; margin-top: 0.75rem;
+}
+.loc-colflow > li { break-inside: avoid; }
+.loc-colflow .loc-sub { break-inside: avoid; }
+
+/* Location thumbnails (inline avatars in the system lists) */
+.loc-thumb {
+  display: inline-block;
+  width: 1.5rem; height: 1.5rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  vertical-align: -0.35rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--border, #2e2620);
+}
+.loc-thumb-none {
+  border-style: dashed;
+  opacity: 0.18;
+}
+.loc-crumb-text { }
+
+/* System-header thumbnail (star-system group headings) */
+.loc-region-title .loc-sys-thumb, .loc-panel-title .loc-sys-thumb {
+  width: 1.7rem; height: 1.7rem; object-fit: cover; border-radius: 0.3rem;
+  vertical-align: -0.4rem; margin-right: 0.55rem;
+  border: 1px solid var(--border, #2e2620);
+}
+
