@@ -53,10 +53,21 @@ for (const file of walk(IMAGES)) {
 }
 
 if (converted.length) {
+  // The build tool URL-encodes image src paths (spaces → %20, non-ASCII → %XX),
+  // so match each converted path in both its raw and URL-encoded form. Without
+  // the encoded pass, every filename containing a space (most portraits) keeps
+  // its reference pointed at the now-deleted original and 404s on the site.
+  const pairs = [];
+  for (const [oldRel, newRel] of converted) {
+    pairs.push([oldRel, newRel]);
+    const encOld = encodeURI(oldRel);
+    const encNew = encodeURI(newRel);
+    if (encOld !== oldRel) pairs.push([encOld, encNew]);
+  }
   for (const html of walk(DOCS).filter((f) => f.endsWith(".html"))) {
     let text = readFileSync(html, "utf8");
     let changed = false;
-    for (const [oldRel, newRel] of converted) {
+    for (const [oldRel, newRel] of pairs) {
       if (text.includes(oldRel)) {
         text = text.split(oldRel).join(newRel);
         changed = true;
