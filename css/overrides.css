@@ -171,3 +171,8 @@
   vertical-align: -0.4rem; margin-right: 0.55rem;
   border: 1px solid var(--border, #2e2620);
 }
+
+/* Sector star-map at the top of the Star Charts page (hand-maintained SVG → WebP) */
+.sector-map{display:block;margin:0 0 2rem;border:1px solid var(--border,#2e2620);border-radius:.6rem;overflow:hidden;line-height:0;background:#04060c}
+.sector-map img{width:100%;height:auto;display:block}
+.sector-map:hover{border-color:color-mix(in srgb,var(--accent,#f0a23a) 45%,var(--border,#2e2620))}

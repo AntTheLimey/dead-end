@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="ui-monospace,Menlo,monospace">
+<!-- ============================================================================
+     SECTOR MAP — hand-maintained. Positions are curated (schematic), NOT
+     data-generated, until Tim builds out the Core Worlds + the full gate chain.
+
+     HOW TO EDIT
+       · Each system is one <a><circle .../><text>…</text></a> block below.
+         Move a system: change its circle cx/cy (the sun) AND its drop-line +
+         base-dot x (keep them equal to cx so the drop stays vertical) AND its
+         label x/y. base-dot cy = where it meets the plane.
+       · Plane is centred on the Core at (420,350); rings = distance from Core.
+       · Add a system: copy a <a> block, set cx/cy, add a drop-line + base dot,
+         and (if charted) a jump-lane <line> in the amber group + a label.
+       · After editing: re-render to WebP for the site
+         (open this file in a browser, screenshot at ~2.7x, cwebp → sector-map.webp).
+     Node coords: Core(420,350) Meridian(340,238) Corwin(564,356)
+                  Eris(335,466) Thides(690,414) Void(792,512)
+============================================================================ -->
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="42%" r="80%"><stop offset="0%" stop-color="#0b1224"/><stop offset="55%" stop-color="#060810"/><stop offset="100%" stop-color="#030407"/></radialGradient>
+    <filter id="s-glow" x="-140%" y="-140%" width="380%" height="380%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="lane-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <radialGradient id="core-halo" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#cfe0ff" stop-opacity=".45"/><stop offset="100%" stop-color="#cfe0ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="void" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000"/><stop offset="55%" stop-color="#0a0612"/><stop offset="100%" stop-color="#1a1230" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="900" height="680" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="34" y="42" fill="#cdd6e6" font-size="15" font-weight="700" font-family="-apple-system,Segoe UI,Roboto,sans-serif">THE FEDERAL REPUBLIC</text>
+  <text x="266" y="42" fill="#8a97ad" font-size="13" font-family="-apple-system,Segoe UI,Roboto,sans-serif">&#183; from the Core Worlds out to the Far Dark</text>
+
+  <!-- reference plane centred on the Core -->
+  <g fill="none" stroke="#3b5c93">
+    <ellipse cx="420" cy="350" rx="85"  ry="34"  opacity=".55"/><ellipse cx="420" cy="350" rx="170" ry="68"  opacity=".46"/>
+    <ellipse cx="420" cy="350" rx="255" ry="102" opacity=".38"/><ellipse cx="420" cy="350" rx="335" ry="134" opacity=".28"/>
+  </g>
+  <g stroke="#3b5c93" opacity=".5"><line x1="72" y1="350" x2="768" y2="350"/><line x1="420" y1="216" x2="420" y2="484"/></g>
+  <g fill="#6f88b6" font-size="11"><text x="774" y="354">0&#176;</text><text x="60" y="354" text-anchor="end">180&#176;</text><text x="420" y="210" text-anchor="middle">90&#176;</text><text x="452" y="500">270&#176;</text></g>
+
+  <!-- faint long-haul lanes coreward (uncharted) -->
+  <g stroke="#5a6a86" fill="none" opacity=".45" stroke-dasharray="2 6"><line x1="462" y1="352" x2="562" y2="357"/><line x1="398" y1="344" x2="348" y2="302"/></g>
+
+  <!-- charted jump-lanes -->
+  <g stroke="#f0a23a" fill="none">
+    <line x1="564" y1="356" x2="335" y2="466" stroke-width="2" filter="url(#lane-glow)" opacity=".35"/><line x1="564" y1="356" x2="335" y2="466" stroke-width="1.4"/>
+    <line x1="564" y1="356" x2="690" y2="414" stroke-width="2" filter="url(#lane-glow)" opacity=".35"/><line x1="564" y1="356" x2="690" y2="414" stroke-width="1.4"/>
+  </g>
+  <text x="446" y="418" fill="#c79654" font-size="10" transform="rotate(26 446 418)">Corwin&#8211;Eris Route</text>
+  <text x="600" y="374" fill="#c79654" font-size="10" transform="rotate(25 600 374)">Corwin&#8211;Thides Route</text>
+
+  <!-- drop-lines + base dots -->
+  <g stroke="#8fa4c8" stroke-dasharray="1.5 3.5" opacity=".8">
+    <line x1="340" y1="238" x2="340" y2="308"/><line x1="564" y1="356" x2="564" y2="394"/><line x1="335" y1="466" x2="335" y2="428"/><line x1="690" y1="414" x2="690" y2="458"/>
+  </g>
+  <g fill="#9fb2d6"><circle cx="340" cy="308" r="2.2"/><circle cx="564" cy="394" r="2.2"/><circle cx="335" cy="428" r="2.2"/><circle cx="690" cy="458" r="2.2"/></g>
+
+  <!-- CORE WORLDS (centre) -->
+  <circle cx="420" cy="350" r="32" fill="url(#core-halo)"/>
+  <g fill="#eaf1ff" filter="url(#s-glow)"><circle cx="420" cy="349" r="4"/><circle cx="410" cy="355" r="2.8"/><circle cx="430" cy="354" r="3"/><circle cx="414" cy="343" r="2.5"/><circle cx="427" cy="344" r="2.6"/><circle cx="420" cy="358" r="2.3"/></g>
+  <text x="420" y="326" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">CORE WORLDS</text>
+  <text x="420" y="312" text-anchor="middle" fill="#93a3c2" font-size="10">the Republic's heart &#183; 9 founding worlds</text>
+
+  <!-- MERIDIAN -->
+  <g stroke="#7fb2d8" fill="none" opacity=".8"><line x1="346" y1="250" x2="392" y2="300" stroke-width="1.5" stroke-dasharray="6 5"/><path d="M386 292l8 10-12-1" fill="#7fb2d8" stroke="none"/></g>
+  <text x="316" y="272" fill="#9cc4de" font-size="9" text-anchor="end">Concord Gate</text>
+  <a href="meridian.html"><circle cx="340" cy="238" r="6.5" fill="#bcd6f0" filter="url(#s-glow)"/><text x="356" y="234" fill="#fff" font-size="14" font-weight="700">Meridian</text><text x="356" y="248" fill="#9aa7bf" font-size="10">frontier world &#183; A-type</text></a>
+
+  <!-- frontier chain -->
+  <a href="corwin-system.html"><circle cx="564" cy="356" r="6" fill="#ffd27a" filter="url(#s-glow)"/><circle cx="574" cy="360" r="4" fill="#ffcf86" filter="url(#s-glow)"/><text x="586" y="350" fill="#fff" font-size="14" font-weight="700">Corwin</text><text x="586" y="364" fill="#9aa7bf" font-size="10">frontier hub &#183; binary</text></a>
+  <a href="eris-system.html"><circle cx="335" cy="466" r="6.5" fill="#fff2c0" filter="url(#s-glow)"/><text x="321" y="484" text-anchor="end" fill="#fff" font-size="14" font-weight="700">Eris</text><text x="321" y="498" text-anchor="end" fill="#9aa7bf" font-size="10">below plane</text></a>
+  <a href="thides-system.html"><circle cx="690" cy="414" r="6.5" fill="#ff8a4a" filter="url(#s-glow)"/><text x="706" y="410" fill="#fff" font-size="14" font-weight="700">Thides</text><text x="706" y="424" fill="#9aa7bf" font-size="10">dead-end &#183; K5</text></a>
+
+  <!-- SARGASSO VOID -->
+  <line x1="690" y1="458" x2="766" y2="506" stroke="#5a6a86" stroke-dasharray="1.5 4" opacity=".7"/>
+  <g transform="translate(792 512)">
+    <circle r="44" fill="url(#void)"/><g fill="none" stroke="#5b4a86" opacity=".5"><ellipse rx="30" ry="12" stroke-dasharray="3 5"/><ellipse rx="20" ry="8" stroke-dasharray="2 5"/></g>
+    <circle r="9" fill="#000" stroke="#3a2f57" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" fill="#b6a9d6" font-size="13" font-weight="700">Sargasso Void</text><text x="0" y="54" text-anchor="middle" fill="#8a7fae" font-size="10">gravitational anomaly</text>
+  </g>
+
+  <!-- scale + legend -->
+  <g stroke="#6f88b6" fill="#8894a8" font-size="10"><line x1="96" y1="612" x2="176" y2="612"/><line x1="96" y1="607" x2="96" y2="617"/><line x1="176" y1="607" x2="176" y2="617"/><text x="136" y="630" text-anchor="middle" stroke="none">&#8776; 5 light-years</text></g>
+  <text x="840" y="624" text-anchor="end" fill="#5f6f8c" font-size="10">schematic &#183; radial distance from the Core; topology exact</text>
+</svg>

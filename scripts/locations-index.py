@@ -11,13 +11,28 @@ must exist). Filed upstream as a gm-apprentice enhancement; remove when native.
 
 Runs LAST in the postbuild chain so images are already WebP-optimized on disk.
 """
-import re, os, glob, json, urllib.parse
+import re, os, glob, json, urllib.parse, shutil
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, "vault.config.json"), encoding="utf-8"))
 VAULT = os.path.join(CFG["vaultPath"], "Locations")
 DOCS = os.path.join(ROOT, "docs", "locations")
 IMGDIR = os.path.join(ROOT, "docs", "images", "locations")
+ASSETS = os.path.join(ROOT, "assets")
+
+# Hand-maintained sector map (assets/sector-map.svg + .webp). Copy both into
+# docs each build (survives a clean rebuild) and inject a clickable WebP at the
+# top of the page — the WebP displays, clicking opens the full-size SVG (crisp,
+# and its system nodes stay clickable). Re-render the .webp after editing the SVG.
+MAP_BLOCK = ""
+if os.path.exists(os.path.join(ASSETS, "sector-map.webp")):
+    os.makedirs(IMGDIR, exist_ok=True)
+    shutil.copy(os.path.join(ASSETS, "sector-map.webp"), os.path.join(IMGDIR, "sector-map.webp"))
+    if os.path.exists(os.path.join(ASSETS, "sector-map.svg")):
+        shutil.copy(os.path.join(ASSETS, "sector-map.svg"), os.path.join(DOCS, "sector-map.svg"))
+    MAP_BLOCK = ('<a class="sector-map" href="sector-map.svg" title="Open the full sector map">'
+                 '<img src="../images/locations/sector-map.webp" loading="lazy" '
+                 'alt="Sector map — the Federal Republic, from the Core Worlds out to the Far Dark"></a>')
 
 slugify = lambda t: re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
 esc = lambda s: s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -105,6 +120,8 @@ def group_head(n):
 
 def render():
     parts = []
+    if MAP_BLOCK:
+        parts.append(MAP_BLOCK)
     if top_crumb:
         parts.append(f'<div class="loc-context">{SEP.join(link(n) for n in top_crumb)}</div>')
     parts.append('<div class="loc-sections">')
