@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recon Rig Spec (Shackleton Magellan) — Dead End</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/themes/scifi.css">
+  <link rel="stylesheet" href="../css/theme.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../campaign/timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../campaign/player-characters.html">Player Characters</a>
+        <a href="../characters/npcs/index.html">NPCs</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../world/index.html">World Overview</a>
+        <a href="../heritages/index.html">Heritages</a>
+        <a href="../locations/index.html">Locations</a>
+        <a href="../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="index.html">Documents</a>
+        <a href="../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../story.html">Story</a></h3>
+  <ul>
+    <li><a href="../campaign/timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="../characters/npcs/index.html">NPCs</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../world/index.html">World Overview</a></li>
+    <li><a href="../heritages/index.html">Heritages</a></li>
+    <li><a href="../locations/index.html">Locations</a></li>
+    <li><a href="../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="index.html">Documents</a></li>
+    <li><a href="../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Documents</a><span class="sep">&rsaquo;</span>Recon Rig Spec Shackleton Magellan</nav>
+<div class="content-with-sidebar content-sidebar-sparse"><div class="main"><h1 class="page-title">Recon Rig Spec (Shackleton Magellan) <span class="badge badge-draft">Draft</span></h1>
+
+
+<blockquote>
+<p>A GURPS 4e no-lookup gear-and-skill card, TL11. Built, run, and repaired by
+<a href="../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a>. The analogue to Six’s <a href="freefighting-spacer-kung-fu.html">Freefighting</a>
+and vibro-axe writeups: the one signature system a character is
+built around, spelled out so it plays fast at the table. This is Shack’s whole edge in
+one place.</p>
+</blockquote>
+<p><strong>In one line:</strong> a nanotech swarm that oozes around the corner and into the dead ship
+and tells him what is there before he ever sticks his neck out, run by the best pair of
+sensor-hands at the dead end.</p>
+<h2>What it is</h2>
+<p>Six ends fights. Shack ends <em>ambushes</em>, by refusing to walk into the room blind. His
+<a href="../characters/pcs/shackleton-magellan.html">Signature Gear</a> is a recon rig of his own invention, the “better
+idea” he keeps turning over in his hands, and its point is simple: send the machine into
+the danger first. Nanomist for the spaces a body cannot fit, drop-bugs for the rooms he
+wants watched, a smart-rope sensor head for physical access the swarm cannot fly, all of
+it feeding a HUD in his eye. He is not the man who kicks the door. He is the man who
+already knows what is behind it.</p>
+<p>The rig is only half of it. The other half is the cluster of skills that <em>is</em> the
+invention, mechanically: he designed it (<strong>Engineer (Electronics)</strong>), builds and fixes
+it (<strong>Electronics Repair (Sensors)</strong>), and reads it better than anyone in the room
+(<strong>Electronics Operation (Sensors)</strong> at a crown-jewel <strong>18</strong>). Back that with <strong>Per 16</strong>,
+<strong>Eidetic Memory</strong> (B51) so he forgets no scan, and <strong>Lightning Calculator</strong> (B66) for
+instant ranges and vectors, and the man is a finding engine. The one thing Sable could
+not strip was the rig, because it was non-standard and his own, which is the whole reason
+he still has an edge to trade on.</p>
+<h2>The card — no lookup at the table</h2>
+<p>Numbers are off Shack’s current sheet, with gear bonuses noted where they apply.</p>
+<table>
+<thead>
+<tr>
+<th>Do this</th>
+<th>Skill</th>
+<th>Rolls at</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Read the room before entering it</strong></td>
+<td>Electronics Op (Sensors)</td>
+<td><strong>18</strong> (<strong>+2</strong> multiscanner = <strong>20</strong>)</td>
+<td>The crown skill. Run the swarm/scanner, relay A/V/IR from inside the hazard. This is what the whole build is <em>for</em>.</td>
+</tr>
+<tr>
+<td><strong>Send the mist in</strong></td>
+<td>Electronics Op (Sensors)</td>
+<td><strong>18</strong></td>
+<td>Nanomist oozes around corners, into cracks, into wrecks (baseline TL11, not super-science). Feeds his HUD.</td>
+</tr>
+<tr>
+<td><strong>Drop-and-watch</strong></td>
+<td>(deploy) + Sensors</td>
+<td><strong>18</strong></td>
+<td>Nanobugs seeded in a room, hard to spot (about −18 to notice them). Passive overwatch he checks later.</td>
+</tr>
+<tr>
+<td><strong>Fix it in the field</strong></td>
+<td>Electronics Repair (Sensors)</td>
+<td><strong>15</strong></td>
+<td>Keeps the rig alive off a portable kit, no ship workshop. The invention does not go down when it matters.</td>
+</tr>
+<tr>
+<td><strong>Improve/jury-rig it</strong></td>
+<td>Engineer (Electronics)</td>
+<td><strong>14</strong> (<strong>+1</strong> Versatile to improvise)</td>
+<td>He designed it, so he can bend it to a problem it was not built for.</td>
+</tr>
+<tr>
+<td><strong>Find the way / never lost</strong></td>
+<td>Navigation</td>
+<td><strong>15/14</strong> (<strong>+1</strong> Absolute Direction)</td>
+<td>Space and Hyperspace, plus he simply cannot be lost (B34). Prospecting <strong>14</strong>, Cartography <strong>14</strong>, Geology (Rock Worlds) <strong>13</strong>.</td>
+</tr>
+<tr>
+<td><strong>Know he’s the one being watched</strong></td>
+<td>(bug detector) + Search</td>
+<td><strong>15</strong></td>
+<td>The counter-surveillance half. Given who is hunting him, knowing when <em>he</em> is the target matters as much as scanning.</td>
+</tr>
+<tr>
+<td><strong>Pull out the thing he needs</strong></td>
+<td>Gizmo ×2</td>
+<td>—</td>
+<td>Twice a session, produce a small gadget he “could have been carrying” (B57). The rig’s flexibility as a trait: it cannot be searched, lost, or stolen ahead of time.</td>
+</tr>
+</tbody>
+</table>
+<p>If IQ ever rises to 15, the entire sensor-and-tech cluster climbs at once, which makes
+IQ his highest-value buy the way DX is Six’s and Ronin’s.</p>
+<h2>The signature play, spelled out</h2>
+<p><strong>Scout, then commit.</strong> Before the crew moves on a space, Shack seeds it: mist into the
+gaps, a bug or two for overwatch, scanner reading the structure, all of it on his HUD at
+Sensors 18-to-20. The crew walks in already knowing the count, the layout, and the traps.
+That is his <a href="freefighting-spacer-kung-fu.html">Freefighting-equivalent</a> contribution, not a
+blow he lands but an ambush he deletes. A GM should let a good Sensors roll <em>buy real
+information</em>, because that is the character’s entire reason to exist and the payoff for
+building narrow.</p>
+<h2>The hard limits (so the table plays him honest)</h2>
+<ul>
+<li><strong>He is not a fighter.</strong> One solid Beam Weapons (Rifle) 13 and cover, that is the whole
+of it. HP 12, HT 12, lightly armoured. He wins by scouting first and shooting from behind
+something, never by trading blows.</li>
+<li><strong>The rig is not a weapon.</strong> It finds, watches, and maps. It does not shoot, hack a
+hardened system on its own, or fight. Reconnaissance, not force.</li>
+<li><strong>Gullible, Curious, Overconfident.</strong> The same traits that make him chase the find make
+him walk his rig, and himself, into things a cautious man would leave alone. His
+<a href="../characters/pcs/shackleton-magellan.html">Unluckiness</a> means once a session his worst roll can be the one
+that matters. The edge is real and so is the way it gets him into trouble.</li>
+<li><strong>ST 11, tight encumbrance.</strong> Gear-heavy explorer on a thin frame, so the tool kit and
+survival kit are drop-items before a fast crawl or a fight. He manages loadout on purpose.</li>
+</ul>
+<h2>Advancement</h2>
+<p><strong>Current call: bank earned XP toward IQ 14 → 15 [20],</strong> which lifts Sensors to 19 (21 with
+the scanner), the whole tech cluster, Per, and Will together. The single best buy on the
+sheet.</p>
+<p>After IQ 15, in order of how much they change a scout:</p>
+<ol>
+<li><strong>Electronics Op (Sensors) toward 20 base</strong> if Tim would rather deepen the crown than
+raise IQ, though IQ is broader value.</li>
+<li><strong>A point into Vacc Suit / Free Fall</strong> (both at 11) so the man can go where his rig goes
+without fumbling the EVA.</li>
+<li><strong>Signature Gear expansion</strong> as the campaign gives him downtime and parts, more mist,
+better bugs, a hardened relay, all in-fiction upgrades to the one thing that is his.</li>
+</ol>
+<p>All post-approval. The rig, its coverage, and the nanotech-as-baseline ruling are open
+questions for Tim (see <a href="../characters/pcs/shackleton-magellan.html">the open rulings</a>).</p>
+<h2>See also</h2>
+<ul>
+<li><a href="../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a> — the character sheet (Skills, Advantages, Equipment)</li>
+<li><a href="freefighting-spacer-kung-fu.html">Freefighting (Spacer Kung-Fu)</a> — Six’s equivalent card, the model for this one</li>
+<li><a href="the-anomaly-log-shackleton-magellan.html">The Anomaly Log (Shackleton Magellan)</a> — what the rig found, the run that ruined him</li>
+<li><a href="sable-reclamation-salvage-manifest-magellan-claim.html">Sable Reclamation - Salvage Manifest (Magellan claim)</a> — why the rig is the one thing he kept</li>
+</ul>
+
+
+<div class="relationship-graph"><h2>Connections</h2><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
+  <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="80" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="469.89899945550616" y2="140.54976884806993" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="478.8681977807837" y2="220.1536056985954" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="452.41035586109115" y2="295.76577377276055" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="395.76577377276055" y2="352.41035586109115" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="320.1536056985954" y2="378.8681977807837" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="240.54976884806996" y2="369.89899945550616" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="130.10100054449384" y2="259.4502311519301" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="121.13180221921633" y2="179.84639430140462" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="147.58964413890882" y2="104.23422622723943" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="204.23422622723928" y2="47.589644138908966" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="279.84639430140453" y2="21.131802219216326" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="80" x2="359.4502311519302" y2="30.10100054449387" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <a href="recon-rig-spec-shackleton-magellan.html"><g opacity="1">
+    <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
+    <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Recon Rig Spe…</text>
+  </g></a>
+  <a href="../characters/pcs/shackleton-magellan.html"><g opacity="1">
+    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Shackleton Ma…</text>
+  </g></a>
+  <g opacity="0.5">
+    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides Station</text>
+  </g>
+  <a href="../factions/corvid-financial.html"><g opacity="0.5">
+    <polygon points="482.0233551084883,133.54976884806993 482.0233551084883,147.54976884806993 469.89899945550616,154.54976884806993 457.774643802524,147.54976884806993 457.774643802524,133.54976884806993 469.89899945550616,126.54976884806993" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="469.89899945550616" y="167.54976884806993" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Corvid Financ…</text>
+  </g></a>
+  <a href="../characters/npcs/marek-solano.html"><g opacity="0.5">
+    <circle cx="478.8681977807837" cy="220.1536056985954" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="478.8681977807837" y="247.1536056985954" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Marek Solano</text>
+  </g></a>
+  <a href="../factions/sable-reclamation.html"><g opacity="0.5">
+    <polygon points="464.5347115140733,288.76577377276055 464.5347115140733,302.76577377276055 452.41035586109115,309.76577377276055 440.286000208109,302.76577377276055 440.286000208109,288.76577377276055 452.41035586109115,281.76577377276055" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="452.41035586109115" y="322.76577377276055" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Sable Reclama…</text>
+  </g></a>
+  <a href="../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="0.5">
+    <circle cx="395.76577377276055" cy="352.41035586109115" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="395.76577377276055" y="379.41035586109115" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../events/the-coordinate-shakedown.html"><g opacity="0.5">
+    <circle cx="320.1536056985954" cy="378.8681977807837" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="320.1536056985954" y="405.8681977807837" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">The Coordinat…</text>
+  </g></a>
+  <a href="../locations/entertainment-district.html"><g opacity="0.5">
+    <rect x="226.54976884806996" y="355.89899945550616" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="240.54976884806996" y="396.89899945550616" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Entertainment…</text>
+  </g></a>
+  <a href="../campaign/player-characters.html"><g opacity="0.5">
+    <circle cx="172.72077938642144" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../campaign/timeline.html"><g opacity="0.5">
+    <circle cx="130.10100054449384" cy="259.4502311519301" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="130.10100054449384" y="286.4502311519301" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../characters/npcs/leocadia-zavia.html"><g opacity="0.5">
+    <circle cx="121.13180221921633" cy="179.84639430140462" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="121.13180221921633" y="206.84639430140462" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+  </g></a>
+  <a href="../locations/docking-ring.html"><g opacity="0.5">
+    <rect x="133.58964413890882" y="90.23422622723943" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="147.58964413890882" y="131.23422622723945" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Docking Ring</text>
+  </g></a>
+  <a href="../locations/macmillian-station-iv.html"><g opacity="0.5">
+    <rect x="190.23422622723928" y="33.589644138908966" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="204.23422622723928" y="74.58964413890897" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../locations/nova-nexus.html"><g opacity="0.5">
+    <rect x="265.84639430140453" y="7.1318022192163255" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="279.84639430140453" y="48.131802219216326" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Nova Nexus</text>
+  </g></a>
+  <a href="../locations/processing-i.html"><g opacity="0.5">
+    <rect x="345.4502311519302" y="16.10100054449387" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="359.4502311519302" y="57.10100054449387" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Processing I</text>
+  </g></a>
+</svg></div></div><aside class="context-sidebar">
+<h3>Mentioned In</h3>
+<ul><li><a href="../characters/pcs/shackleton-magellan.html">Shackleton Magellan</a> <span class="sidebar-badge">pc</span></li></ul>
+</aside></div>
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../js/nav.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>
