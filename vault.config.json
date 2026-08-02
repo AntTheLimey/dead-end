@@ -1,7 +1,7 @@
 {
   "siteTitle": "Dead End",
   "landingTagline": "A space-noir GURPS campaign at the frayed dead-end of charted space — where four nobodies stumble onto the biggest secret in human history.",
-  "siteUrl": "https://antthelimey.github.io/dead-end/",
+  "siteUrl": "https://dead-end.pages.dev",
   "vaultPath": "/Users/antonypegg/Documents/space_game",
   "outputDir": "./docs",
   "attachmentsDir": "_attachments",
@@ -27,12 +27,16 @@
     "_Templates",
     "_midwife",
     "_inbox",
-    "_QA"
+    "_QA",
+    "_archive"
   ],
   "excludeSections": [
     "GM Notes",
     "DM Notes",
     "Player Notes",
-    "Source References"
-  ]
+    "Source References",
+    "Reconciliation Context",
+    "Handoff to Reconcile"
+  ],
+  "host": "cloudflare-pages"
 }

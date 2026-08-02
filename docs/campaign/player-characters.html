@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/themes/scifi.css">
   <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/overrides.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
         <div class="nav-dropdown">
         <a href="player-characters.html">Player Characters</a>
         <a href="../characters/npcs/index.html">NPCs</a>
+        <a href="../creatures/index.html">Creatures</a>
         </div>
       </div>
       <div class="nav-group">
@@ -57,6 +59,7 @@
   <ul>
     <li><a href="player-characters.html">Player Characters</a></li>
     <li><a href="../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="../creatures/index.html">Creatures</a></li>
   </ul>
   <h3>World</h3>
   <ul>
@@ -75,11 +78,68 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span><a href="index.html">Campaign</a><span class="sep">&rsaquo;</span>Player Characters</nav>
+<section class="gl-party" aria-label="Live party status">
+  <div class="gl-party-head">
+    <h2>Party Status</h2>
+    <span class="gl-party-live"><span class="gl-party-dot"></span><span class="gl-party-live-time">live</span></span>
+  </div>
+  <div class="gl-party-scroll">
+  <table class="gl-party-table">
+    <thead><tr><th class="gl-pc">Character</th><th class="gl-col-speed">Speed</th><th>HP</th><th>FP</th><th>Move</th><th>Dodge</th><th class="gl-col-st">ST</th><th>Status</th></tr></thead>
+    <tbody>
+<tr class="gl-party-row " data-gl-party="six">
+  <td class="gl-pc"><a href="../characters/pcs/six.html"><span class="gl-av gl-av-img"><img src="../images/characters/Six.webp" alt="" loading="lazy"></span><span class="gl-pc-txt"><span class="gl-pc-name">Six</span><span class="gl-pc-sub" data-gl-party-field="enc"><span class="gl-enc-chip">Light</span></span></span></a></td>
+  <td class="gl-speed">6.75</td>
+  <td class="gl-vital" data-gl-party-field="hp"><span class="gl-vnum">13<span class="gl-max">/13</span></span><span class="gl-bar gl-bar-hp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-vital" data-gl-party-field="fp"><span class="gl-vnum">12<span class="gl-max">/12</span></span><span class="gl-bar gl-bar-fp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-stat" data-gl-party-field="move">4<span class="gl-of">/6</span></td>
+  <td class="gl-stat" data-gl-party-field="dodge">9</td>
+  <td class="gl-stat gl-col-st" data-gl-party-field="st">13</td>
+  <td class="gl-status" data-gl-party-field="status"><span class="gl-badge ok">Ready</span></td>
+</tr>
+<tr class="gl-party-row " data-gl-party="shackleton-magellan">
+  <td class="gl-pc"><a href="../characters/pcs/shackleton-magellan.html"><span class="gl-av gl-av-img"><img src="../images/characters/Shackleton%20Magellan.webp" alt="" loading="lazy"></span><span class="gl-pc-txt"><span class="gl-pc-name">Shackleton Magellan</span><span class="gl-pc-sub" data-gl-party-field="enc"><span class="gl-enc-chip">Light</span></span></span></a></td>
+  <td class="gl-speed">6.25</td>
+  <td class="gl-vital" data-gl-party-field="hp"><span class="gl-vnum">12<span class="gl-max">/12</span></span><span class="gl-bar gl-bar-hp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-vital" data-gl-party-field="fp"><span class="gl-vnum">12<span class="gl-max">/12</span></span><span class="gl-bar gl-bar-fp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-stat" data-gl-party-field="move">4<span class="gl-of">/6</span></td>
+  <td class="gl-stat" data-gl-party-field="dodge">8</td>
+  <td class="gl-stat gl-col-st" data-gl-party-field="st">11</td>
+  <td class="gl-status" data-gl-party-field="status"><span class="gl-badge ok">Ready</span></td>
+</tr>
+<tr class="gl-party-row " data-gl-party="ronin-sanchez">
+  <td class="gl-pc"><a href="../characters/pcs/ronin-sanchez.html"><span class="gl-av gl-av-img"><img src="../images/characters/Ronin%20Sanchez.webp" alt="" loading="lazy"></span><span class="gl-pc-txt"><span class="gl-pc-name">Ronin Sanchez</span><span class="gl-pc-sub" data-gl-party-field="enc"></span></span></a></td>
+  <td class="gl-speed">6.00</td>
+  <td class="gl-vital" data-gl-party-field="hp"><span class="gl-vnum">10<span class="gl-max">/10</span></span><span class="gl-bar gl-bar-hp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-vital" data-gl-party-field="fp"><span class="gl-vnum">11<span class="gl-max">/11</span></span><span class="gl-bar gl-bar-fp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-stat" data-gl-party-field="move">6<span class="gl-of">/6</span></td>
+  <td class="gl-stat" data-gl-party-field="dodge">10</td>
+  <td class="gl-stat gl-col-st" data-gl-party-field="st">10</td>
+  <td class="gl-status" data-gl-party-field="status"><span class="gl-badge ok">Ready</span></td>
+</tr>
+<tr class="gl-party-row " data-gl-party="rock-lavey">
+  <td class="gl-pc"><a href="../characters/pcs/rock-lavey.html"><span class="gl-av gl-av-img"><img src="../images/characters/Rock%20Lavey.webp" alt="" loading="lazy"></span><span class="gl-pc-txt"><span class="gl-pc-name">Rock Lavey</span><span class="gl-pc-sub" data-gl-party-field="enc"><span class="gl-enc-chip">Light</span></span></span></a></td>
+  <td class="gl-speed">5.50</td>
+  <td class="gl-vital" data-gl-party-field="hp"><span class="gl-vnum">11<span class="gl-max">/11</span></span><span class="gl-bar gl-bar-hp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-vital" data-gl-party-field="fp"><span class="gl-vnum">12<span class="gl-max">/12</span></span><span class="gl-bar gl-bar-fp"><i style="width:100%"></i><span class="gl-third"></span></span></td>
+  <td class="gl-stat" data-gl-party-field="move">4<span class="gl-of">/5</span></td>
+  <td class="gl-stat" data-gl-party-field="dodge">7</td>
+  <td class="gl-stat gl-col-st" data-gl-party-field="st">11</td>
+  <td class="gl-status" data-gl-party-field="status"><span class="gl-badge ok">Ready</span></td>
+</tr>
+    </tbody>
+  </table>
+  </div>
+</section>
 <h1 class="page-title">Player Characters <span class="badge badge-draft">Draft</span></h1>
 
 
 <blockquote>
-<p>PCs not yet created. Build in <strong>Session 0</strong>. This roster fills in as players make characters.</p>
+<p><strong>Four sessions played.</strong> The crew is active at the table; the roster below tracks each PC and the
+current state of their build approval. Sheets marked DRAFT ran on provisional builds and are still
+pending Tim’s final sign-off. Note: <strong>Sean has been absent for Sessions 3 and 4</strong> — <a href="../characters/pcs/ronin-sanchez.html">Ronin Sanchez</a>
+remains in the fiction (he flew the Session 3 getaway and docked the ship in Session 4) but has been
+off-screen for both investigations.</p>
 </blockquote>
 <h2>Build Parameters (GURPS 4e, Space)</h2>
 <ul>
@@ -151,7 +211,7 @@ and on his own. Suggested spread — the talker, the bruiser, the tech, the shar
 <h2>Crew Connections</h2>
 <blockquote>
 <p>One thread between each pair — even strangers thrown onto the same dead-end posting need a reason
-to trust the person beside them. Fill in during Session 0.</p>
+to trust the person beside them. Seeded below; deepen as play reveals them.</p>
 </blockquote>
 <ul>
 <li><strong><a href="../characters/pcs/six.html">Six</a> ↔ <a href="../characters/pcs/rock-lavey.html">Rock Lavey</a>:</strong> Lavey scanned Six, learned what he is — and said nothing. The doctor
@@ -165,6 +225,7 @@ the flat economy of the way they moved. A thread for Session 0, if Jay and Ant w
 
 
 
+<script type="application/json" id="gurps-party-data">{"campaignId":"dead-end","pcs":[{"pcSlug":"six","name":"Six","outputPath":"characters/pcs/six.html","portrait":"images/characters/Six.webp","buildVersion":"5d6a74a366cc","basicSpeed":6.75,"dx":15,"authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":34,"move":6,"dodge":10},{"name":"Light","num":1,"maxWeight":68,"move":4,"dodge":9},{"name":"Medium","num":2,"maxWeight":102,"move":3,"dodge":8},{"name":"Heavy","num":3,"maxWeight":204,"move":2,"dodge":7},{"name":"X-Heavy","num":4,"maxWeight":340,"move":1,"dodge":6}],"items":[{"key":"Vibro-axe","weight":4,"defaultCarried":true,"table":"main"},{"key":"Holdout electrolaser","weight":0.3,"defaultCarried":true,"table":"main"},{"key":"Grazer pistol (alien)","weight":1.5,"defaultCarried":true,"table":"main"},{"key":"Helmet lamp (integral to suit)","weight":0,"defaultCarried":true,"table":"main"},{"key":"Small Computer + Datapad (mini-comp / PDA / comm)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Trauma patches","weight":0.6,"defaultCarried":true,"table":"main"},{"key":"Hand thruster","weight":4,"defaultCarried":true,"table":"main"},{"key":"Reload spares (C cell + B cell)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Disguised Space Armor (suit + helmet + Chameleon Surface)","weight":56,"defaultCarried":true,"table":"main"},{"key":"Blaster pistol (Fine)","weight":1.6,"defaultCarried":false,"table":"loadout:The standing baseline carries none of them"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Owned — stowed by default (Signature Gear)"},{"key":"Sonic stun pistol (TL10)","weight":1.8,"defaultCarried":false,"table":"loadout:Owned — stowed by default (Signature Gear)"}],"vitals":{"hp":{"cur":13,"max":13},"fp":{"cur":12,"max":12},"st":13,"basicSpeed":6.75,"dx":15}},{"pcSlug":"shackleton-magellan","name":"Shackleton Magellan","outputPath":"characters/pcs/shackleton-magellan.html","portrait":"images/characters/Shackleton Magellan.webp","buildVersion":"1c19a6d78e90","basicSpeed":6.25,"dx":12,"authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":24,"move":6,"dodge":9},{"name":"Light","num":1,"maxWeight":48,"move":4,"dodge":8},{"name":"Medium","num":2,"maxWeight":72,"move":3,"dodge":7},{"name":"Heavy","num":3,"maxWeight":144,"move":2,"dodge":6},{"name":"X-Heavy","num":4,"maxWeight":240,"move":1,"dodge":5}],"items":[{"key":"Nanotech recon swarm (“nanomist”)","weight":0,"defaultCarried":true,"table":"main"},{"key":"Nanobugs ×several","weight":0,"defaultCarried":true,"table":"main"},{"key":"Nanoweave “smart rope” + sensor head","weight":1,"defaultCarried":true,"table":"main"},{"key":"MiniHUD + earpiece comm","weight":0,"defaultCarried":true,"table":"main"},{"key":"Multiscanner / small radscanner","weight":0.5,"defaultCarried":true,"table":"main"},{"key":"MicroNav","weight":0,"defaultCarried":true,"table":"main"},{"key":"Bug detector","weight":1,"defaultCarried":true,"table":"main"},{"key":"Portable tool kit (Electronics Repair)","weight":10,"defaultCarried":true,"table":"main"},{"key":"Personal computer (wrist/tiny, C5–6)","weight":0.5,"defaultCarried":true,"table":"main"},{"key":"Light vacc suit (sealed)","weight":10,"defaultCarried":true,"table":"main"},{"key":"Monocrys vest","weight":2,"defaultCarried":true,"table":"main"},{"key":"Blaster carbine","weight":5.6,"defaultCarried":true,"table":"main"},{"key":"Survival kit + personal basics","weight":3,"defaultCarried":true,"table":"main"},{"key":"Spare power cells","weight":1,"defaultCarried":true,"table":"main"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun rifle (TL10)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Nanoweave Tactical Vest + trauma plates (TL10)","weight":18,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Combat Infantry Helmet (TL11)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Fragment grenade (TL11) ×3","weight":1.5,"defaultCarried":false,"table":"loadout:Station Issue"}],"vitals":{"hp":{"cur":12,"max":12},"fp":{"cur":12,"max":12},"st":11,"basicSpeed":6.25,"dx":12}},{"pcSlug":"ronin-sanchez","name":"Ronin Sanchez","outputPath":"characters/pcs/ronin-sanchez.html","portrait":"images/characters/Ronin Sanchez.webp","buildVersion":"37ddebe55fdf","basicSpeed":6,"dx":13,"authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":20,"move":6,"dodge":10},{"name":"Light","num":1,"maxWeight":40,"move":4,"dodge":9},{"name":"Medium","num":2,"maxWeight":60,"move":3,"dodge":8},{"name":"Heavy","num":3,"maxWeight":120,"move":2,"dodge":7},{"name":"X-Heavy","num":4,"maxWeight":200,"move":1,"dodge":6}],"items":[{"key":"Matched blaster pistols ×2","weight":3.2,"defaultCarried":true,"table":"main"},{"key":"Shoulder rigs ×2 (concealed)","weight":1,"defaultCarried":true,"table":"main"},{"key":"Large knife","weight":1,"defaultCarried":true,"table":"main"},{"key":"The last bespoke suit (four sleeves)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Cheap cigars &amp; lighter","weight":0,"defaultCarried":true,"table":"main"},{"key":"Small Computer + Datapad (mini-comp / PDA / comm)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Unspent SG budget","weight":0,"defaultCarried":true,"table":"main"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun pistol (TL10)","weight":1.8,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun rifle (TL10)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Nanoweave Tactical Vest (TL10)","weight":9,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Combat Infantry Helmet (TL11)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"}],"vitals":{"hp":{"cur":10,"max":10},"fp":{"cur":11,"max":11},"st":10,"basicSpeed":6,"dx":13}},{"pcSlug":"rock-lavey","name":"Rock Lavey","outputPath":"characters/pcs/rock-lavey.html","portrait":"images/characters/Rock Lavey.webp","buildVersion":"56b2a39788a3","basicSpeed":5.5,"dx":10,"authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":24,"move":5,"dodge":8},{"name":"Light","num":1,"maxWeight":48,"move":4,"dodge":7},{"name":"Medium","num":2,"maxWeight":72,"move":3,"dodge":6},{"name":"Heavy","num":3,"maxWeight":144,"move":2,"dodge":5},{"name":"X-Heavy","num":4,"maxWeight":240,"move":1,"dodge":4}],"items":[{"key":"Surgical Instruments (TL var.)","weight":15,"defaultCarried":true,"table":"main"},{"key":"Crash Kit (TL var.)","weight":10,"defaultCarried":true,"table":"main"},{"key":"First Aid Kit (TL var.)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Bandages (TL var.)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Personal Basics (TL0)","weight":1,"defaultCarried":true,"table":"main"},{"key":"Saw (TL1)","weight":3,"defaultCarried":true,"table":"main"},{"key":"Ordinary Clothes (TL0)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Shoes (TL1)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Small Computer + Datapad (mini-comp / PDA / comm)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun rifle (TL10)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Nanoweave Tactical Vest + trauma plates (TL10)","weight":18,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Combat Infantry Helmet (TL11)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Omni blaster rifle (TL11)","weight":10,"defaultCarried":false,"table":"loadout:Station Issue"}],"vitals":{"hp":{"cur":11,"max":11},"fp":{"cur":12,"max":12},"st":11,"basicSpeed":5.5,"dx":10}}]}</script>
 </main>
 
 
@@ -174,6 +235,9 @@ the flat economy of the way they moved. A thread for Session 0, if Jay and Ant w
 <script src="../js/nav.js"></script>
 <script src="../js/lightbox.js"></script>
 <script src="../js/search.js"></script>
+<script src="../js/party-core.js"></script>
+<script src="../js/gurps-live.js"></script>
+<script src="../js/gurps-party.js"></script>
 <script>
 (function() {
   var btn = document.querySelector('.back-to-top');

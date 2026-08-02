@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/themes/scifi.css">
   <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="../../css/overrides.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
         <div class="nav-dropdown">
         <a href="../../campaign/player-characters.html">Player Characters</a>
         <a href="index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
         </div>
       </div>
       <div class="nav-group">
@@ -57,6 +59,7 @@
   <ul>
     <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
     <li><a href="index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
   </ul>
   <h3>World</h3>
   <ul>
@@ -78,13 +81,23 @@
 
 <div class="index-header">
   <h1 class="page-title">NPCs</h1>
-  <span class="index-count">Showing 30 of 30</span>
+  <span class="index-count">Showing 42 of 42</span>
   
 </div>
 
 <input class="name-filter" type="text" placeholder="Filter by name..." aria-label="Filter by name">
 
-<div class="npc-table-filters"></div>
+<div class="npc-table-filters"><select class="npc-filter" data-col="status" aria-label="Filter by status">
+  <option value="">All Statuses</option>
+  <option value="alive">Alive</option>
+<option value="missing">Missing</option>
+</select><select class="npc-filter" data-col="session" aria-label="Filter by session">
+  <option value="">All Sessions</option>
+  <option value="Session 1">Session 1</option>
+<option value="Session 02 - The MacMillian Anomaly">Session 02 - The MacMillian Anomaly</option>
+<option value="Session 3">Session 3</option>
+<option value="Session 4">Session 4</option>
+</select></div>
 <div class="npc-table-wrap">
 <table class="npc-table sortable-table">
 <thead>
@@ -106,20 +119,36 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Ajeet Siegel" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Agata Nicodemo" data-entity-status="alive" data-session="Session 02 - The MacMillian Anomaly">
+  <td data-sort="agata nicodemo"><a class="npc-row-link" href="agata-nicodemo.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">AN</span>Agata Nicodemo</a></td>
+  <td>Security shift leader, <a href="../../locations/the-main-line.html" class="entity-link">The Main Line</a></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 02 - The MacMillian Anomaly</td>
+  <td data-sort="2">Session 02 - The MacMillian Anomaly</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Ajeet Siegel" data-entity-status="alive" data-session="Session 4">
   <td data-sort="ajeet siegel"><a class="npc-row-link" href="ajeet-siegel.html"><span class="npc-row-avatar"><img src="../../images/characters/Ajeet%20Siegel.webp" alt="Ajeet Siegel" class="portrait"></span>Ajeet Siegel</a></td>
   <td>Leader of Ajeet Scanning </td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td></td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Alena González" data-entity-status="alive" data-session="">
+  <td data-sort="alena gonzález"><a class="npc-row-link" href="alena-gonza-lez.html"><span class="npc-row-avatar"><img src="../../images/characters/Alena%20Gonz%C3%A1lez.webp" alt="Alena González" class="portrait"></span>Alena González</a></td>
+  <td></td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Alena González" data-entity-status="alive" data-session="">
-  <td data-sort="alena gonzález"><a class="npc-row-link" href="alena-gonz-lez.html"><span class="npc-row-avatar"><img src="../../images/characters/Alena%20Gonz%C3%A1lez.webp" alt="Alena González" class="portrait"></span>Alena González</a></td>
-  <td></td>
+<tr data-entity-type="npc" data-entity-name="Alphonse" data-entity-status="alive" data-session="Session 02 - The MacMillian Anomaly">
+  <td data-sort="alphonse"><a class="npc-row-link" href="alphonse.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">A</span>Alphonse</a></td>
+  <td>Station 45 gang member</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 02 - The MacMillian Anomaly</td>
+  <td data-sort="2">Session 02 - The MacMillian Anomaly</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Asher Bhattacharya" data-entity-status="alive" data-session="Session 1">
@@ -130,6 +159,14 @@
   <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
+<tr data-entity-type="npc" data-entity-name="Brianna Melvin" data-entity-status="missing" data-session="Session 4">
+  <td data-sort="brianna melvin"><a class="npc-row-link" href="brianna-melvin.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">BM</span>Brianna Melvin</a></td>
+  <td>Registered courtesan, The Silk Abbey</td>
+  <td><span class="status-badge status-missing">Missing</span></td>
+  <td>Session 04 - The Case of the Missing Courtesan</td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
 <tr data-entity-type="npc" data-entity-name="Clubber" data-entity-status="alive" data-session="Session 1">
   <td data-sort="clubber"><a class="npc-row-link" href="clubber.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">C</span>Clubber</a></td>
   <td>Bare-knuckle boxing champion (Thides system)</td>
@@ -138,12 +175,28 @@
   <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Daniela Akkermans" data-entity-status="alive" data-session="Session 1">
+<tr data-entity-type="npc" data-entity-name="Daniela Akkermans" data-entity-status="alive" data-session="Session 4">
   <td data-sort="daniela akkermans"><a class="npc-row-link" href="daniela-akkermans.html"><span class="npc-row-avatar"><img src="../../images/characters/Daniela%20Akkermans.webp" alt="Daniela Akkermans" class="portrait"></span>Daniela Akkermans</a></td>
   <td>Leader of Akker Cartel</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td>Session 01 - The Ragged Edge of Space</td>
-  <td data-sort="1">Session 1</td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Fei-Hung" data-entity-status="alive" data-session="Session 02 - The MacMillian Anomaly">
+  <td data-sort="fei-hung"><a class="npc-row-link" href="fei-hung.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">F</span>Fei-Hung</a></td>
+  <td>Enforcer, <a href="../../locations/nova-nexus.html" class="entity-link">Nova Nexus</a></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 02 - The MacMillian Anomaly</td>
+  <td data-sort="2">Session 02 - The MacMillian Anomaly</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Gio" data-entity-status="alive" data-session="Session 02 - The MacMillian Anomaly">
+  <td data-sort="gio"><a class="npc-row-link" href="gio.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">G</span>Gio</a></td>
+  <td>Station 45 gang member</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 02 - The MacMillian Anomaly</td>
+  <td data-sort="2">Session 02 - The MacMillian Anomaly</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Harsha Trent" data-entity-status="alive" data-session="">
@@ -154,12 +207,20 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Holger Graeme" data-entity-status="alive" data-session="Session 1">
+<tr data-entity-type="npc" data-entity-name="Hildebrand Panza" data-entity-status="alive" data-session="Session 4">
+  <td data-sort="hildebrand panza"><a class="npc-row-link" href="hildebrand-panza.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">HP</span>Hildebrand Panza</a></td>
+  <td>Unknown — presented as hotel cleaning crew; military record redacted</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 04 - The Case of the Missing Courtesan</td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Holger Graeme" data-entity-status="alive" data-session="Session 4">
   <td data-sort="holger graeme"><a class="npc-row-link" href="holger-graeme.html"><span class="npc-row-avatar"><img src="../../images/characters/Holger%20Graeme.webp" alt="Holger Graeme" class="portrait"></span>Holger Graeme</a></td>
   <td>Leader of Station Security (MacMillian Station IV)</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td>Session 01 - The Ragged Edge of Space</td>
-  <td data-sort="1">Session 1</td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Ihsan Soterios" data-entity-status="alive" data-session="">
@@ -170,12 +231,20 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Julija Borja" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Jareth Brand" data-entity-status="alive" data-session="Session 3">
+  <td data-sort="jareth brand"><a class="npc-row-link" href="jareth-brand.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">JB</span>Jareth Brand</a></td>
+  <td>Maintenance technician — electronics &amp; sensors, MacMillian company</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 03 - Buckle Up Motherfuckers</td>
+  <td data-sort="3">Session 3</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Julija Borja" data-entity-status="alive" data-session="Session 4">
   <td data-sort="julija borja"><a class="npc-row-link" href="julija-borja.html"><span class="npc-row-avatar"><img src="../../images/characters/Julija%20Borja.webp" alt="Julija Borja" class="portrait"></span>Julija Borja</a></td>
   <td>Member of Marshal of the Federal Republic</td>
   <td><span class="status-badge status-alive">Alive</span></td>
-  <td></td>
-  <td data-sort="0"></td>
+  <td>Session 04 - The Case of the Missing Courtesan</td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Kasey Garnett" data-entity-status="alive" data-session="">
@@ -218,28 +287,52 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Opeyemi Tichá" data-entity-status="alive" data-session="">
-  <td data-sort="opeyemi tichá"><a class="npc-row-link" href="opeyemi-tich.html"><span class="npc-row-avatar"><img src="../../images/characters/Opeyemi%20Tich%C3%A1.webp" alt="Opeyemi Tichá" class="portrait"></span>Opeyemi Tichá</a></td>
+<tr data-entity-type="npc" data-entity-name="Marlo Petrak" data-entity-status="alive" data-session="Session 4">
+  <td data-sort="marlo petrak"><a class="npc-row-link" href="marlo-petrak.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">MP</span>Marlo Petrak</a></td>
+  <td>Technician, compound wiring for <a href="../../factions/kinetic-logistics.html" class="entity-link">Kinetic Logistics</a></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 03 - Buckle Up Motherfuckers</td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="McKenna" data-entity-status="alive" data-session="Session 4">
+  <td data-sort="mckenna"><a class="npc-row-link" href="mckenna.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">M</span>McKenna</a></td>
+  <td>Escort, The Silk Abbey</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 04 - The Case of the Missing Courtesan</td>
+  <td data-sort="4">Session 4</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Nathalie Paredes" data-entity-status="alive" data-session="">
+  <td data-sort="nathalie paredes"><a class="npc-row-link" href="nathalie-paredes.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">NP</span>Nathalie Paredes</a></td>
+  <td></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td></td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Opeyemi Tichá" data-entity-status="alive" data-session="">
+  <td data-sort="opeyemi tichá"><a class="npc-row-link" href="opeyemi-ticha.html"><span class="npc-row-avatar"><img src="../../images/characters/Opeyemi%20Tich%C3%A1.webp" alt="Opeyemi Tichá" class="portrait"></span>Opeyemi Tichá</a></td>
   <td>Owner of Nova Nexus</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Peter Goodwin" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Peter Goodwin" data-entity-status="alive" data-session="Session 4">
   <td data-sort="peter goodwin"><a class="npc-row-link" href="peter-goodwin.html"><span class="npc-row-avatar"><img src="../../images/characters/Peter%20Goodwin.webp" alt="Peter Goodwin" class="portrait"></span>Peter Goodwin</a></td>
   <td>Member of Goodwin Investments</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
-  <td data-sort="0"></td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Pia Kadyrov" data-entity-status="alive" data-session="">
+<tr data-entity-type="npc" data-entity-name="Pia Kadyrov" data-entity-status="alive" data-session="Session 4">
   <td data-sort="pia kadyrov"><a class="npc-row-link" href="pia-kadyrov.html"><span class="npc-row-avatar"><img src="../../images/characters/Pia%20Kadyrov.webp" alt="Pia Kadyrov" class="portrait"></span>Pia Kadyrov</a></td>
   <td>Leader of Thides Cast</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
-  <td data-sort="0"></td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Plen Hong" data-entity-status="alive" data-session="Session 1">
@@ -258,12 +351,12 @@
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Róbert Jeanes" data-entity-status="alive" data-session="">
-  <td data-sort="róbert jeanes"><a class="npc-row-link" href="r-bert-jeanes.html"><span class="npc-row-avatar"><img src="../../images/characters/R%C3%B3bert%20Jeanes.webp" alt="Róbert Jeanes" class="portrait"></span>Róbert Jeanes</a></td>
+<tr data-entity-type="npc" data-entity-name="Róbert Jeanes" data-entity-status="alive" data-session="Session 4">
+  <td data-sort="róbert jeanes"><a class="npc-row-link" href="ro-bert-jeanes.html"><span class="npc-row-avatar"><img src="../../images/characters/R%C3%B3bert%20Jeanes.webp" alt="Róbert Jeanes" class="portrait"></span>Róbert Jeanes</a></td>
   <td>Member of The Bamboo Union</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
-  <td data-sort="0"></td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Roland Mohamed" data-entity-status="alive" data-session="Session 1">
@@ -274,25 +367,33 @@
   <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Samina Ventura" data-entity-status="alive" data-session="Session 1">
+<tr data-entity-type="npc" data-entity-name="Samina Ventura" data-entity-status="alive" data-session="Session 4">
   <td data-sort="samina ventura"><a class="npc-row-link" href="samina-ventura.html"><span class="npc-row-avatar"><img src="../../images/characters/Samina%20Ventura.webp" alt="Samina Ventura" class="portrait"></span>Samina Ventura</a></td>
   <td>Owner of The Silk Abbey</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td>Session 01 - The Ragged Edge of Space</td>
-  <td data-sort="1">Session 1</td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Solveig Kaufer" data-entity-status="alive" data-session="Session 1">
+<tr data-entity-type="npc" data-entity-name="Solveig Kaufer" data-entity-status="alive" data-session="Session 4">
   <td data-sort="solveig kaufer"><a class="npc-row-link" href="solveig-kaufer.html"><span class="npc-row-avatar"><img src="../../images/characters/Solveig%20Kaufer.webp" alt="Solveig Kaufer" class="portrait"></span>Solveig Kaufer</a></td>
   <td>Member of MacMillian Mining and Extraction Corporation</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td>Session 01 - The Ragged Edge of Space</td>
-  <td data-sort="1">Session 1</td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Surendra Antonescu" data-entity-status="alive" data-session="">
   <td data-sort="surendra antonescu"><a class="npc-row-link" href="surendra-antonescu.html"><span class="npc-row-avatar"><img src="../../images/characters/Surendra%20Antonescu.webp" alt="Surendra Antonescu" class="portrait"></span>Surendra Antonescu</a></td>
   <td>Owner of Church of Saint Barbara</td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td></td>
+  <td data-sort="0"></td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Swithin De Jonker" data-entity-status="alive" data-session="">
+  <td data-sort="swithin de jonker"><a class="npc-row-link" href="swithin-de-jonker.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">SD</span>Swithin De Jonker</a></td>
+  <td>Leader of Jonker Logistics</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
   <td data-sort="0"></td>
@@ -306,28 +407,36 @@
   <td data-sort="1">Session 1</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Vanadís Baumhauer" data-entity-status="alive" data-session="">
-  <td data-sort="vanadís baumhauer"><a class="npc-row-link" href="vanad-s-baumhauer.html"><span class="npc-row-avatar"><img src="../../images/characters/Vanad%C3%ADs%20Baumhauer.webp" alt="Vanadís Baumhauer" class="portrait"></span>Vanadís Baumhauer</a></td>
+<tr data-entity-type="npc" data-entity-name="Toller Vance" data-entity-status="alive" data-session="Session 02 - The MacMillian Anomaly">
+  <td data-sort="toller vance"><a class="npc-row-link" href="toller-vance.html"><span class="npc-row-avatar npc-row-initials" aria-hidden="true">TV</span>Toller Vance</a></td>
+  <td>Security guard, <a href="../../locations/nova-nexus.html" class="entity-link">Nova Nexus</a></td>
+  <td><span class="status-badge status-alive">Alive</span></td>
+  <td>Session 02 - The MacMillian Anomaly</td>
+  <td data-sort="2">Session 02 - The MacMillian Anomaly</td>
+  <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
+</tr>
+<tr data-entity-type="npc" data-entity-name="Vanadís Baumhauer" data-entity-status="alive" data-session="">
+  <td data-sort="vanadís baumhauer"><a class="npc-row-link" href="vanadi-s-baumhauer.html"><span class="npc-row-avatar"><img src="../../images/characters/Vanad%C3%ADs%20Baumhauer.webp" alt="Vanadís Baumhauer" class="portrait"></span>Vanadís Baumhauer</a></td>
   <td></td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Vita Ó Taidhg" data-entity-status="alive" data-session="">
-  <td data-sort="vita ó taidhg"><a class="npc-row-link" href="vita-taidhg.html"><span class="npc-row-avatar"><img src="../../images/characters/Vita%20%C3%93%20Taidhg.webp" alt="Vita Ó Taidhg" class="portrait"></span>Vita Ó Taidhg</a></td>
+<tr data-entity-type="npc" data-entity-name="Vita Ó Taidhg" data-entity-status="alive" data-session="">
+  <td data-sort="vita ó taidhg"><a class="npc-row-link" href="vita-o-taidhg.html"><span class="npc-row-avatar"><img src="../../images/characters/Vita%20%C3%93%20Taidhg.webp" alt="Vita Ó Taidhg" class="portrait"></span>Vita Ó Taidhg</a></td>
   <td>Owner of Docking Ring</td>
   <td><span class="status-badge status-alive">Alive</span></td>
   <td></td>
   <td data-sort="0"></td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
-<tr data-entity-type="npc" data-entity-name="Wilton Agramunt" data-entity-status="alive" data-session="Session 1">
-  <td data-sort="wilton agramunt"><a class="npc-row-link" href="wilton-agramunt.html"><span class="npc-row-avatar"><img src="../../images/characters/Wilton%20Agramunt.webp" alt="Wilton Agramunt" class="portrait"></span>Wilton Agramunt</a></td>
+<tr data-entity-type="npc" data-entity-name="Wilton Agramunt" data-entity-status="missing" data-session="Session 4">
+  <td data-sort="wilton agramunt"><a class="npc-row-link" href="wilton-agramunt.html"><span class="npc-row-avatar"><img src="../../images/characters/Wilton%20Agramunt.webp" alt="Aldous Renn" class="portrait"></span>Wilton Agramunt</a></td>
   <td>Station Manager of MacMillian Station IV</td>
-  <td><span class="status-badge status-alive">Alive</span></td>
+  <td><span class="status-badge status-missing">Missing</span></td>
   <td>Session 01 - The Ragged Edge of Space</td>
-  <td data-sort="1">Session 1</td>
+  <td data-sort="4">Session 4</td>
   <td><span class="sidebar-badge">AUTHORITATIVE</span></td>
 </tr>
 <tr data-entity-type="npc" data-entity-name="Zigurds Sloan" data-entity-status="alive" data-session="">

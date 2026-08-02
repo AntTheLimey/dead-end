@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/themes/scifi.css">
   <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="../../css/overrides.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
         <div class="nav-dropdown">
         <a href="../../campaign/player-characters.html">Player Characters</a>
         <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
         </div>
       </div>
       <div class="nav-group">
@@ -57,6 +59,7 @@
   <ul>
     <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
     <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
   </ul>
   <h3>World</h3>
   <ul>
@@ -75,6 +78,7 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Ronin Sanchez</nav>
+<div id="cr-root" data-character="Ronin Sanchez"></div>
 <div class="hero-cinematic">
   <img class="hero-cinematic-img" src="../../images/characters/Ronin%20Sanchez.webp" alt="Ronin Sanchez">
   <div class="hero-cinematic-overlay">
@@ -88,6 +92,7 @@
   </div>
 </div>
 <div class="pull-quote">Four-armed bio-sculpted bodyguard, Armani swagger, empty pockets, Announces your odds of dying, deadpan, Cannot make himself flatter anyone, Natural pilot</div>
+<div class="gl-status-panel"><div class="gl-vitals"><div class="gl-vital" data-vital="hp"><span class="gl-vital-label">HP</span><button type="button" class="gl-step" data-gl-step="hp" data-delta="-1" aria-label="Decrease HP">−</button><input class="gl-vital-input" data-gl-vital="hp" type="number" inputmode="numeric" step="1" value="10" aria-label="Current HP"><span class="gl-vital-max">/10</span><button type="button" class="gl-step" data-gl-step="hp" data-delta="1" aria-label="Increase HP">+</button><span class="gl-badge gl-badge-reeling" hidden>⚠ REELING</span></div><div class="gl-vital" data-vital="fp"><span class="gl-vital-label">FP</span><button type="button" class="gl-step" data-gl-step="fp" data-delta="-1" aria-label="Decrease FP">−</button><input class="gl-vital-input" data-gl-vital="fp" type="number" inputmode="numeric" step="1" value="11" aria-label="Current FP"><span class="gl-vital-max">/11</span><button type="button" class="gl-step" data-gl-step="fp" data-delta="1" aria-label="Increase FP">+</button><span class="gl-badge gl-badge-tired" hidden>⚠ TIRED</span></div></div><div class="gl-status-effects" hidden><span class="gl-delta" data-gl-delta="move" hidden>Move <span class="gl-delta-before"></span>→<span class="gl-delta-after"></span></span><span class="gl-delta" data-gl-delta="dodge" hidden>Dodge <span class="gl-delta-before"></span>→<span class="gl-delta-after"></span></span><span class="gl-delta" data-gl-delta="st" hidden>ST <span class="gl-delta-before"></span>→<span class="gl-delta-after" data-gl-field="st">10</span></span><span class="gl-status-note" hidden></span></div></div>
 <div class="tab-bar">
   <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
   <button class="pc-tab" data-tab="combat" onclick="switchTab('combat')">Combat</button>
@@ -96,7 +101,7 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<div class="status"><span class="pip">Enc: None (0)</span><span class="condition">Alive; functionally sober before noon, station time.</span><span class="location"><span class="status-label">Location:</span> Thides Station — MacMillian “security,” working as the crew’s gun and pilot.</span><span class="carrying"><span class="status-label">Carrying:</span> Signature Gear loadout (both pistols, knife, the suit).</span></div><div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">10</div><div class="l">ST</div><div class="p">[0]</div></div><div class="a"><div class="v">13</div><div class="l">DX</div><div class="p">[60]</div></div><div class="a"><div class="v">11</div><div class="l">IQ</div><div class="p">[20]</div></div><div class="a"><div class="v">11</div><div class="l">HT</div><div class="p">[10]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">10</div><div class="l">HP</div></div><div class="a"><div class="v">11</div><div class="l">Will</div></div><div class="a"><div class="v">11</div><div class="l">Per</div></div><div class="a"><div class="v">11</div><div class="l">FP</div></div><div class="a"><div class="v">6.00</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v">9 (10 w/ Combat Reflexes)</div><div class="l">Dodge</div></div><div class="a"><div class="v">13</div><div class="l">Fright Check</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 20 lbs</span><span><span class="der-label">Thr</span> 1d−2</span><span><span class="der-label">Sw</span> 1d</span><span><span class="der-label">SM</span> −1</span></div></section>
+<div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">10</div><div class="l">ST</div><div class="p">[0]</div></div><div class="a"><div class="v">13</div><div class="l">DX</div><div class="p">[60]</div></div><div class="a"><div class="v">11</div><div class="l">IQ</div><div class="p">[20]</div></div><div class="a"><div class="v">11</div><div class="l">HT</div><div class="p">[10]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">10</div><div class="l">HP</div></div><div class="a"><div class="v">11</div><div class="l">Will</div></div><div class="a"><div class="v">11</div><div class="l">Per</div></div><div class="a"><div class="v">11</div><div class="l">FP</div></div><div class="a"><div class="v">6.00</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v"><span class="gl-live" data-gl-field="dodge">9</span> (10 w/ Combat Reflexes)</div><div class="l">Dodge</div></div><div class="a"><div class="v">13</div><div class="l">Fright Check</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 20 lbs</span><span><span class="der-label">Thr</span> 1d−2</span><span><span class="der-label">Sw</span> 1d</span><span><span class="der-label">SM</span> −1</span></div></section>
 <section class="blk cat-attr"><h2>Lifting Feats</h2><table class="lift-feats"><thead><tr><th>Feat</th><th class="num">Weight</th></tr></thead><tbody><tr><td>One-Handed Lift</td><td class="num">40 lb</td></tr>
 <tr><td>Two-Handed Lift</td><td class="num">160 lb</td></tr>
 <tr><td>Shove &amp; Knock Over</td><td class="num">240 lb</td></tr>
@@ -109,14 +114,14 @@
 <tr><td class="nm">Build</td><td class="num">Small, quick, four-armed (second pair set below the first)</td></tr>
 <tr><td class="nm">Appearance</td><td class="num">Average — but immaculately dressed</td></tr>
 <tr><td class="nm">Status</td><td class="num">0</td></tr>
-<tr><td class="nm">TL</td><td class="num">11</td></tr>
-<tr><td class="nm">Reaction Modifiers</td><td class="num">−1 from Odious Personal Habit (tactless odds-quoting); −1 from Stubbornness (situational); visible mods draw stares</td></tr></tbody></table></section>
-<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (Brawling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Knife)</span> 10</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 10</span></div></section>
-<section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0 cur"><td>None (0)</td><td class="num">≤20 lbs</td><td class="num">6</td><td class="num">10</td></tr>
-<tr class="e1"><td>Light (1)</td><td class="num">≤40 lbs</td><td class="num">4</td><td class="num">9</td></tr>
-<tr class="e2"><td>Medium (2)</td><td class="num">≤60 lbs</td><td class="num">3</td><td class="num">8</td></tr>
-<tr class="e3"><td>Heavy (3)</td><td class="num">≤120 lbs</td><td class="num">2</td><td class="num">7</td></tr>
-<tr class="e4"><td>X-Heavy (4)</td><td class="num">≤200 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table></section>
+<tr><td class="nm">TL</td><td class="num">11</td></tr></tbody></table></section>
+<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (Brawling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Knife)</span> 10</span><span class="def-chip"><span class="def-chip-label">Dodge</span> <span class="gl-live" data-gl-field="dodge">10</span></span></div></section>
+<section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0" data-level="0"><td>None (0)</td><td class="num">≤20 lbs</td><td class="num">6</td><td class="num">10</td></tr>
+<tr class="e1" data-level="1"><td>Light (1)</td><td class="num">≤40 lbs</td><td class="num">4</td><td class="num">9</td></tr>
+<tr class="e2" data-level="2"><td>Medium (2)</td><td class="num">≤60 lbs</td><td class="num">3</td><td class="num">8</td></tr>
+<tr class="e3" data-level="3"><td>Heavy (3)</td><td class="num">≤120 lbs</td><td class="num">2</td><td class="num">7</td></tr>
+<tr class="e4" data-level="4"><td>X-Heavy (4)</td><td class="num">≤200 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table><div class="gl-readout" hidden><span>Carried: <b id="gl-weight">—</b> lb</span><span>Enc: <b id="gl-level">—</b></span><span>Move: <b id="gl-move" data-gl-field="move">—</b> / 6</span><span>Dodge: <b id="gl-dodge" data-gl-field="dodge">—</b> / 10</span><button type="button" id="gl-reset">Reset</button></div></section>
+<section class="blk cat-social"><h2>Reaction Modifiers</h2><table><tbody><tr><td class="nm">Anyone who notices his deadpan, unasked survival-odds announcements (Odious Personal Habit, B22)</td><td class="num">−1</td></tr></tbody></table></section>
 <section class="blk cat-trait"><h2>Advantages</h2><table><tbody><tr><td class="nm">Extra Arms 2</td><td class="num"><span class="cost">20</span></td></tr>
 <tr><td class="nm">Extra Attack 1</td><td class="num"><span class="cost">25</span></td></tr>
 <tr><td class="nm">3D Spatial Sense</td><td class="num"><span class="cost">10</span></td></tr>
@@ -133,41 +138,41 @@
 <tr><td class="nm">Truthfulness</td><td class="num"><span class="cost">−5</span></td></tr>
 <tr><td class="nm">Odious Personal Habit (announces your odds of dying, deadpan, unasked)</td><td class="num"><span class="cost">−5</span></td></tr>
 <tr><td class="nm">Stubbornness</td><td class="num"><span class="cost">−5</span></td></tr></tbody></table></section>
-<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Acrobatics</td><td class="num">12</td><td class="num rel">DX−1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Area Knowledge (home sprawl)</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Beam Weapons/TL11 (Pistol)</td><td class="num">17</td><td class="num rel">DX+4</td><td class="num"><span class="cost">12</span></td></tr>
-<tr><td class="nm">Body Sense</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">DX+2</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Brawling<div class="subline">Parry: 11</div></td><td class="num">14</td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Carousing</td><td class="num">12</td><td class="num rel">HT+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Computer Operation/TL11</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Cooking</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Detect Lies</td><td class="num">10</td><td class="num rel">Per−1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Fast-Draw (Knife)</td><td class="num">14<sup class="fn">†</sup></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Fast-Draw (Pistol)</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">First Aid/TL11</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Free Fall</td><td class="num">14<sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Gambling</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Gunner/TL11 (Beams)</td><td class="num">13</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Holdout</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Intimidation</td><td class="num">11</td><td class="num rel">Will+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Knife<div class="subline">Parry: 10</div></td><td class="num">13</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Lockpicking/TL11</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Navigation/TL11 (Hyperspace)</td><td class="num">12<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Navigation/TL11 (Space)</td><td class="num">12<sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Observation</td><td class="num">12</td><td class="num rel">Per+1</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Piloting/TL11 (High-Performance Spacecraft)</td><td class="num">15<sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Savoir-Faire (High Society)</td><td class="num">12</td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Scrounging</td><td class="num">11</td><td class="num rel">Per+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Search</td><td class="num">11</td><td class="num rel">Per+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Sex Appeal</td><td class="num">11</td><td class="num rel">HT+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Shadowing</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Sleight of Hand</td><td class="num">12</td><td class="num rel">DX−1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Spacer/TL11</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Stealth</td><td class="num">13</td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Streetwise</td><td class="num">12</td><td class="num rel">IQ+1</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Tactics</td><td class="num">11</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Vacc Suit/TL11</td><td class="num">13</td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Wrestling<div class="subline">Parry: 11</div></td><td class="num">15</td><td class="num rel">DX+2</td><td class="num"><span class="cost">8</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr data-skill-key="Acrobatics"><td class="nm">Acrobatics</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">DX−1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Area Knowledge (home sprawl)"><td class="nm">Area Knowledge (home sprawl)</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Beam Weapons/TL11 (Pistol)"><td class="nm">Beam Weapons/TL11 (Pistol)</td><td class="num"><span class="sk-cur">17</span></td><td class="num rel">DX+4</td><td class="num"><span class="cost">12</span></td></tr>
+<tr data-skill-key="Body Sense"><td class="nm">Body Sense</td><td class="num"><span class="sk-cur">15</span><sup class="fn">†</sup></td><td class="num rel">DX+2</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Brawling"><td class="nm">Brawling<div class="subline">Parry: 11</div></td><td class="num"><span class="sk-cur">14</span></td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Carousing"><td class="nm">Carousing</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">HT+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Computer Operation/TL11"><td class="nm">Computer Operation/TL11</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Cooking"><td class="nm">Cooking</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Detect Lies"><td class="nm">Detect Lies</td><td class="num"><span class="sk-cur">10</span></td><td class="num rel">Per−1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Fast-Draw (Knife)"><td class="nm">Fast-Draw (Knife)</td><td class="num"><span class="sk-cur">14</span><sup class="fn">†</sup></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Fast-Draw (Pistol)"><td class="nm">Fast-Draw (Pistol)</td><td class="num"><span class="sk-cur">15</span><sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="First Aid/TL11"><td class="nm">First Aid/TL11</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Free Fall"><td class="nm">Free Fall</td><td class="num"><span class="sk-cur">14</span><sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Gambling"><td class="nm">Gambling</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Gunner/TL11 (Beams)"><td class="nm">Gunner/TL11 (Beams)</td><td class="num"><span class="sk-cur">13</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Holdout"><td class="nm">Holdout</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Intimidation"><td class="nm">Intimidation</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">Will+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Knife"><td class="nm">Knife<div class="subline">Parry: 10</div></td><td class="num"><span class="sk-cur">13</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Lockpicking/TL11"><td class="nm">Lockpicking/TL11</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Navigation/TL11 (Hyperspace)"><td class="nm">Navigation/TL11 (Hyperspace)</td><td class="num"><span class="sk-cur">12</span><sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Navigation/TL11 (Space)"><td class="nm">Navigation/TL11 (Space)</td><td class="num"><span class="sk-cur">12</span><sup class="fn">†</sup></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Observation"><td class="nm">Observation</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">Per+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Piloting/TL11 (High-Performance Spacecraft)"><td class="nm">Piloting/TL11 (High-Performance Spacecraft)</td><td class="num"><span class="sk-cur">15</span><sup class="fn">†</sup></td><td class="num rel">DX+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Savoir-Faire (High Society)"><td class="nm">Savoir-Faire (High Society)</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Scrounging"><td class="nm">Scrounging</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">Per+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Search"><td class="nm">Search</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">Per+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Sex Appeal"><td class="nm">Sex Appeal</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">HT+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Shadowing"><td class="nm">Shadowing</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Sleight of Hand"><td class="nm">Sleight of Hand</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">DX−1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Spacer/TL11"><td class="nm">Spacer/TL11</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Stealth"><td class="nm">Stealth</td><td class="num"><span class="sk-cur">13</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Streetwise"><td class="nm">Streetwise</td><td class="num"><span class="sk-cur">12</span></td><td class="num rel">IQ+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Tactics"><td class="nm">Tactics</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Vacc Suit/TL11"><td class="nm">Vacc Suit/TL11</td><td class="num"><span class="sk-cur">13</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Wrestling"><td class="nm">Wrestling<div class="subline">Parry: 11</div></td><td class="num"><span class="sk-cur">15</span></td><td class="num rel">DX+2</td><td class="num"><span class="cost">8</span></td></tr></tbody></table></section>
 <section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Attributes</td><td class="num">90</td></tr>
 <tr><td class="nm">Advantages &amp;amp; Perks</td><td class="num">82</td></tr>
 <tr><td class="nm">Disadvantages</td><td class="num">−75</td></tr>
@@ -175,7 +180,8 @@
 <tr><td class="nm">Skills</td><td class="num">83</td></tr>
 <tr class="total"><td class="nm">Total (spent)</td><td class="num">175 / 175</td></tr>
 <tr><td class="nm">Earned XP (Session 1)</td><td class="num">+5</td></tr>
-<tr class="unspent"><td class="nm">Available (unspent)</td><td class="num">5</td></tr></tbody></table></section></div></div>
+<tr><td class="nm">Earned XP (Session 2)</td><td class="num">+5</td></tr>
+<tr class="unspent"><td class="nm">Available (unspent)</td><td class="num">10</td></tr></tbody></table></section></div></div>
 <nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
 <a href="#languages-cultural-familiarities">Languages &amp; Cultural Familiarities</a>
 <a href="#melee-ranged">Melee &amp; Ranged</a>
@@ -317,14 +323,14 @@ mechanically leaner.</p>
 </div>
 <h2>Relationships</h2>
 <ul class="relationship-list">
-<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took MacMillian 'security' — the one payroll that doesn't ask why a four-armed man is broke.</li>
-<li><strong class="rel-label">Employed by</strong> <a href="../../factions/macmillian-mining-and-extraction-corporation.html" class="entity-link">MacMillian Mining and Extraction Corporation</a> &mdash; Nominal 'security'; in practice the crew's second gun and the only one who can fly anything.</li>
+<li><strong class="rel-label">Located at</strong> <a href="../../locations/macmillian-station-iv.html" class="entity-link">Thides Station</a> &mdash; Took MacMillian 'security' — the one payroll that doesn't ask why a four-armed man is broke.</li>
+<li><strong class="rel-label">Serves</strong> <a href="../../factions/macmillian-mining-and-extraction-corporation.html" class="entity-link">MacMillian Mining and Extraction Corporation</a> &mdash; Nominal 'security'; in practice the crew's second gun and the only one who can fly anything.</li>
 <li><strong class="rel-label">Member of</strong> <a href="../../heritages/skin-freaks.html" class="entity-link">Skin Freaks</a> &mdash; Heavily bio-modified — four arms, enhanced eyes. He'd say he's no Skin Freak; the scanners disagree.</li>
 </ul>
+<script type="application/json" id="gurps-live-data">{"buildVersion":"37ddebe55fdf","campaignId":"dead-end","pcSlug":"ronin-sanchez","authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":20,"move":6,"dodge":10},{"name":"Light","num":1,"maxWeight":40,"move":4,"dodge":9},{"name":"Medium","num":2,"maxWeight":60,"move":3,"dodge":8},{"name":"Heavy","num":3,"maxWeight":120,"move":2,"dodge":7},{"name":"X-Heavy","num":4,"maxWeight":200,"move":1,"dodge":6}],"skills":{"Beam Weapons/TL11 (Pistol)":[17,17,17,17,17],"Fast-Draw (Pistol)":[15,15,15,15,15],"Fast-Draw (Knife)":[14,14,14,14,14],"Gunner/TL11 (Beams)":[13,13,13,13,13],"Wrestling":[15,15,15,15,15],"Brawling":[14,14,14,14,14],"Knife":[13,13,13,13,13],"Acrobatics":[12,12,12,12,12],"Stealth":[13,13,13,13,13],"Tactics":[11,11,11,11,11],"Observation":[12,12,12,12,12],"Search":[11,11,11,11,11],"Detect Lies":[10,10,10,10,10],"Shadowing":[11,11,11,11,11],"Intimidation":[11,11,11,11,11],"Holdout":[11,11,11,11,11],"Sleight of Hand":[12,12,12,12,12],"Piloting/TL11 (High-Performance Spacecraft)":[15,15,15,15,15],"Navigation/TL11 (Hyperspace)":[12,12,12,12,12],"Navigation/TL11 (Space)":[12,12,12,12,12],"Free Fall":[14,14,14,14,14],"Body Sense":[15,15,15,15,15],"Vacc Suit/TL11":[13,13,13,13,13],"Spacer/TL11":[11,11,11,11,11],"Streetwise":[12,12,12,12,12],"Carousing":[12,12,12,12,12],"Savoir-Faire (High Society)":[12,12,12,12,12],"Gambling":[11,11,11,11,11],"Sex Appeal":[11,11,11,11,11],"Cooking":[11,11,11,11,11],"Computer Operation/TL11":[11,11,11,11,11],"Lockpicking/TL11":[11,11,11,11,11],"First Aid/TL11":[11,11,11,11,11],"Scrounging":[11,11,11,11,11],"Area Knowledge (home sprawl)":[11,11,11,11,11]},"weapons":{},"items":[{"key":"Matched blaster pistols ×2","weight":3.2,"defaultCarried":true,"table":"main"},{"key":"Shoulder rigs ×2 (concealed)","weight":1,"defaultCarried":true,"table":"main"},{"key":"Large knife","weight":1,"defaultCarried":true,"table":"main"},{"key":"The last bespoke suit (four sleeves)","weight":2,"defaultCarried":true,"table":"main"},{"key":"Cheap cigars &amp; lighter","weight":0,"defaultCarried":true,"table":"main"},{"key":"Small Computer + Datapad (mini-comp / PDA / comm)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Unspent SG budget","weight":0,"defaultCarried":true,"table":"main"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun pistol (TL10)","weight":1.8,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Sonic stun rifle (TL10)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Nanoweave Tactical Vest (TL10)","weight":9,"defaultCarried":false,"table":"loadout:Station Issue"},{"key":"Combat Infantry Helmet (TL11)","weight":5,"defaultCarried":false,"table":"loadout:Station Issue"}],"vitals":{"hp":{"cur":10,"max":10},"fp":{"cur":11,"max":11},"st":10,"basicSpeed":6,"dx":13},"basicSpeed":6,"dx":13}</script>
 </div>
 <div class="tab-panel" id="tab-combat">
-<div class="gurps-combat"><div class="status"><span class="pip">Enc: None (0)</span><span class="condition">Alive; functionally sober before noon, station time.</span><span class="location"><span class="status-label">Location:</span> Thides Station — MacMillian “security,” working as the crew’s gun and pilot.</span><span class="carrying"><span class="status-label">Carrying:</span> Signature Gear loadout (both pistols, knife, the suit).</span></div>
-<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (Brawling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Knife)</span> 10</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 10</span></div></section>
+<div class="gurps-combat"><section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (Brawling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Wrestling)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Knife)</span> 10</span><span class="def-chip"><span class="def-chip-label">Dodge</span> <span class="gl-live" data-gl-field="dodge">10</span></span></div></section>
 <section class="blk cat-chain"><h2>Combat Action Chains</h2><div class="chain-group"><h3>Melee</h3><div class="chain-entry"><div class="chain-name">Two-gun opener</div><div class="chain-steps"><span class="chain-step">Fast-Draw (Pistol) 15 ×2 (free)</span> <span class="chain-arrow">→</span> <span class="chain-step">Extra Attack: two blaster shots at 17 each, or burst (RoF 3) from each fist. Small (SM −1), Dodge 10, and never surprised — the classic Ronin entrance.</span></div></div>
 <div class="chain-entry"><div class="chain-name">The four-armed clinch</div><div class="chain-steps"><span class="chain-step">close</span> <span class="chain-arrow">→</span> <span class="chain-step">Wrestling grapple at 19 (all four arms)</span> <span class="chain-arrow">→</span> <span class="chain-step">foe at −4 DX</span> <span class="chain-arrow">→</span> <span class="chain-step">pin at +3 or choke at ST 14. Upper hands can keep a pistol on the room (Extra Attack: shoot while grappling).</span></div></div></div></section><details class="rules-ref">
 <summary>Rules Reference</summary>
@@ -374,14 +380,18 @@ mechanically leaner.</p>
 </details></div>
 </div>
 <div class="tab-panel" id="tab-equipment">
-<div class="gurps-equipment"><div class="wide cat-table"><h2>Equipment</h2><table class="equip-table"><thead><tr><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th><th>Notes</th></tr></thead><tbody><tr><td class="num">1</td><td>Matched blaster pistols ×2</td><td class="num">$4,400</td><td class="num">3.2 lbs</td><td>3d (5) burn sur; the pair he was issued and never gave back</td></tr>
-<tr><td class="num">1</td><td>Shoulder rigs ×2 (concealed)</td><td class="num">$200</td><td class="num">1 lb</td><td>Holdout 11 — a four-armed man’s tailoring hides a lot</td></tr>
-<tr><td class="num">1</td><td>Large knife</td><td class="num">$40</td><td class="num">1 lb</td><td>Boot sheath</td></tr>
-<tr><td class="num">1</td><td>The last bespoke suit (four sleeves)</td><td class="num">$1,500</td><td class="num">2 lbs</td><td>Immaculate. Non-negotiable.</td></tr>
-<tr><td class="num">1</td><td>Cheap cigars &amp;amp; lighter</td><td class="num">$10</td><td class="num">—</td><td>The good ones are gone</td></tr>
-<tr><td class="num">1</td><td>Small Computer + Datapad (mini-comp / PDA / comm)</td><td class="num">$110 (issued)</td><td class="num">0.55 lb</td><td>MacMillian-issued personal comm — not SG budget. Small Computer (Complexity 4, 10 TB) + Datapad screen &amp;amp; fold/laser keyboard (−2 on complex/lengthy tasks). Free built-in microcommunicator = his comm.</td></tr>
-<tr><td class="num">1</td><td>Electric Stun Wand (TL9)</td><td class="num">$100 (issued)</td><td class="num">1 lb</td><td>MacMillian security issue — not SG budget. sw/thr cr + linked HT-5(2) aff: non-lethal knockdown/paralysis. Shortsword skill (defaults DX-5). B cell, 20 strikes. LC4.</td></tr>
-<tr><td class="num">1</td><td>Unspent SG budget</td><td class="num">≈$31,350</td><td class="num"></td><td>For Sean/Tim — e.g. ballistic-weave suit lining (concealed armor), spare cells, or bank it</td></tr></tbody></table></div></div>
+<div class="gurps-equipment"><div class="wide cat-table"><h2>Equipment</h2><table class="equip-table"><thead><tr><th class="eq-toggle-cell"></th><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th><th>Notes</th></tr></thead><tbody><tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Matched blaster pistols ×2" data-weight="3.2" checked></td><td class="num">1</td><td>Matched blaster pistols ×2</td><td class="num">$4,400</td><td class="num">3.2 lbs</td><td>3d (5) burn sur; the pair he was issued and never gave back</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Shoulder rigs ×2 (concealed)" data-weight="1" checked></td><td class="num">1</td><td>Shoulder rigs ×2 (concealed)</td><td class="num">$200</td><td class="num">1 lb</td><td>Holdout 11 — a four-armed man’s tailoring hides a lot</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Large knife" data-weight="1" checked></td><td class="num">1</td><td>Large knife</td><td class="num">$40</td><td class="num">1 lb</td><td>Boot sheath</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="The last bespoke suit (four sleeves)" data-weight="2" checked></td><td class="num">1</td><td>The last bespoke suit (four sleeves)</td><td class="num">$1,500</td><td class="num">2 lbs</td><td>Immaculate. Non-negotiable.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Cheap cigars &amp;amp; lighter" data-weight="0" checked></td><td class="num">1</td><td>Cheap cigars &amp;amp; lighter</td><td class="num">$10</td><td class="num">—</td><td>The good ones are gone</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Small Computer + Datapad (mini-comp / PDA / comm)" data-weight="0.55" checked></td><td class="num">1</td><td>Small Computer + Datapad (mini-comp / PDA / comm)</td><td class="num">$110 (issued)</td><td class="num">0.55 lb</td><td>MacMillian-issued personal comm — not SG budget. Small Computer (Complexity 4, 10 TB) + Datapad screen &amp;amp; fold/laser keyboard (−2 on complex/lengthy tasks). Free built-in microcommunicator = his comm.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Unspent SG budget" data-weight="0" checked></td><td class="num">1</td><td>Unspent SG budget</td><td class="num">≈$31,350</td><td class="num"></td><td>For Sean/Tim — e.g. ballistic-weave suit lining (concealed armor), spare cells, or bank it</td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Load-Out: Station Issue</h2><table class="equip-table loadout-table"><thead><tr><th class="eq-toggle-cell"></th><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th></tr></thead><tbody><tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Electric Stun Wand (TL9)" data-weight="1"></td><td class="num">1</td><td>Electric Stun Wand (TL9)</td><td class="num">$100</td><td class="num">1 lb</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Sonic stun pistol (TL10)" data-weight="1.8"></td><td class="num">1</td><td>Sonic stun pistol (TL10)</td><td class="num">$650</td><td class="num">1.8 lb</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Sonic stun rifle (TL10)" data-weight="5"></td><td class="num">1</td><td>Sonic stun rifle (TL10)</td><td class="num">$2,000</td><td class="num">5 lb</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Nanoweave Tactical Vest (TL10)" data-weight="9"></td><td class="num">1</td><td>Nanoweave Tactical Vest (TL10)</td><td class="num">$900</td><td class="num">9 lb</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Combat Infantry Helmet (TL11)" data-weight="5"></td><td class="num">1</td><td>Combat Infantry Helmet (TL11)</td><td class="num">$2,000</td><td class="num">5 lb</td></tr></tbody></table></div></div>
 </div>
 <div class="tab-panel" id="tab-story">
   <div class="story-prose">
@@ -392,103 +402,123 @@ mechanically leaner.</p>
 <h2>Connections</h2>
 <div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
   <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="364.87689809467173" y2="99.04957606025827" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="409.15583944254223" y2="150.15019843977365" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="418.7785730257119" y2="217.0777805927942" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="390.689948922511" y2="278.58328807343423" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="333.80790682097154" y2="315.13915683373966" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="266.19209317902846" y2="315.13915683373966" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="209.31005107748902" y2="278.58328807343423" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="181.22142697428808" y2="217.07778059279423" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="190.84416055745777" y2="150.15019843977367" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="235.12310190532833" y2="99.04957606025825" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="364.87689809467173" y1="99.04957606025827" x2="427.27922061357856" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="364.87689809467173" y1="99.04957606025827" x2="480" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="409.15583944254223" y1="150.15019843977365" x2="427.27922061357856" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="418.7785730257119" y1="217.0777805927942" x2="300" y2="380" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="390.689948922511" y1="278.58328807343423" x2="172.72077938642144" y2="327.27922061357856" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="390.689948922511" y1="278.58328807343423" x2="120" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="390.689948922511" y1="278.58328807343423" x2="172.7207793864214" y2="72.72077938642146" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="390.689948922511" y1="278.58328807343423" x2="299.99999999999994" y2="20" stroke="var(--border, #30363d)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="300" y1="200" x2="332.3756125388429" y2="84.44992551826408" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="362.350074004252" y2="97.46967145442137" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="387.7003157133749" y2="118.0936228137615" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="406.546226208285" y2="144.79219547226174" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="417.49009052187876" y2="175.58527843368395" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.7202523028647" y2="208.18908960376052" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="413.07131065425847" y2="240.18555346051835" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="398.03638716125306" y2="269.201638653784" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="375.73055331912633" y2="293.0853548845304" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="347.808130781549" y2="310.06535618065436" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="316.3399978915496" y2="318.8823135243597" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="283.66000210845044" y2="318.8823135243597" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="252.19186921845102" y2="310.06535618065436" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="224.26944668087367" y2="293.0853548845304" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="201.96361283874697" y2="269.2016386537841" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="186.92868934574153" y2="240.18555346051835" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.2797476971353" y2="208.18908960376044" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="182.50990947812124" y2="175.58527843368398" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="193.45377379171495" y2="144.7921954722618" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="212.29968428662514" y2="118.0936228137615" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="237.64992599574796" y2="97.46967145442137" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="267.62438746115697" y2="84.44992551826412" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <a href="ronin-sanchez.html"><g opacity="1">
     <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
     <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
   </g></a>
-  <g opacity="1">
-    <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Station</text>
-  </g>
+  <a href="../../locations/macmillian-station-iv.html"><g opacity="1">
+    <rect x="280" y="60" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
   <a href="../../factions/macmillian-mining-and-extraction-corporation.html"><g opacity="1">
-    <polygon points="382.1974061703605,89.04957606025827 382.1974061703605,109.04957606025827 364.87689809467173,119.04957606025827 347.55639001898294,109.04957606025827 347.55639001898294,89.04957606025827 364.87689809467173,79.04957606025827" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="364.87689809467173" y="134.0495760602583" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
+    <polygon points="349.6961206145317,74.44992551826408 349.6961206145317,94.44992551826408 332.3756125388429,104.44992551826408 315.0551044631541,94.44992551826408 315.0551044631541,74.44992551826408 332.3756125388429,64.44992551826408" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="332.3756125388429" y="119.44992551826408" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian Mi…</text>
   </g></a>
   <a href="../../heritages/skin-freaks.html"><g opacity="1">
-    <circle cx="409.15583944254223" cy="150.15019843977365" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="409.15583944254223" y="185.15019843977365" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Skin Freaks</text>
+    <circle cx="362.350074004252" cy="97.46967145442137" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="362.350074004252" y="132.46967145442136" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Skin Freaks</text>
   </g></a>
   <a href="../../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="1">
-    <circle cx="418.7785730257119" cy="217.0777805927942" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="418.7785730257119" y="252.0777805927942" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+    <circle cx="387.7003157133749" cy="118.0936228137615" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="387.7003157133749" y="153.0936228137615" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../../chronicle/Sessions/Session 02/chapter-01-session-02-wrap-up.html"><g opacity="1">
+    <circle cx="406.546226208285" cy="144.79219547226174" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="406.546226208285" y="179.79219547226174" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../../chronicle/Sessions/Session 03/chapter-01-session-03-wrap-up.html"><g opacity="1">
+    <circle cx="417.49009052187876" cy="175.58527843368395" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="417.49009052187876" y="210.58527843368395" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../npcs/jareth-brand.html"><g opacity="1">
+    <circle cx="419.7202523028647" cy="208.18908960376052" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.7202523028647" y="243.18908960376052" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Jareth Brand</text>
   </g></a>
   <a href="six.html"><g opacity="1">
-    <circle cx="390.689948922511" cy="278.58328807343423" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="390.689948922511" y="313.58328807343423" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
+    <circle cx="413.07131065425847" cy="240.18555346051835" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="413.07131065425847" y="275.18555346051835" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
   </g></a>
   <a href="../../documents/four-arm-gunwork-ronin-sanchez.html"><g opacity="1">
-    <circle cx="333.80790682097154" cy="315.13915683373966" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="333.80790682097154" y="350.13915683373966" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Four-Arm Gunw…</text>
+    <circle cx="398.03638716125306" cy="269.201638653784" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="398.03638716125306" y="304.201638653784" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Four-Arm Gunw…</text>
   </g></a>
   <a href="../../events/the-coordinate-shakedown.html"><g opacity="1">
-    <circle cx="266.19209317902846" cy="315.13915683373966" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="266.19209317902846" y="350.13915683373966" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Coordinat…</text>
+    <circle cx="375.73055331912633" cy="293.0853548845304" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="375.73055331912633" y="328.0853548845304" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Coordinat…</text>
+  </g></a>
+  <a href="../../events/the-kinetic-logistics-compound-raid.html"><g opacity="1">
+    <circle cx="347.808130781549" cy="310.06535618065436" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="347.808130781549" y="345.06535618065436" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Kinetic L…</text>
+  </g></a>
+  <a href="../../events/the-processing-ii-anomaly.html"><g opacity="1">
+    <circle cx="316.3399978915496" cy="318.8823135243597" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="316.3399978915496" y="353.8823135243597" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Processin…</text>
+  </g></a>
+  <a href="../../items/stolen-alien-tech-transport.html"><g opacity="1">
+    <polygon points="283.66000210845044,298.8823135243597 303.66000210845044,318.8823135243597 283.66000210845044,338.8823135243597 263.66000210845044,318.8823135243597" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="283.66000210845044" y="353.8823135243597" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Stolen Alien-…</text>
+  </g></a>
+  <a href="../../locations/docking-bay-36.html"><g opacity="1">
+    <rect x="232.19186921845102" y="290.06535618065436" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="252.19186921845102" y="345.06535618065436" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Bay 36</text>
+  </g></a>
+  <a href="../../locations/escape-shaft-35b.html"><g opacity="1">
+    <rect x="204.26944668087367" y="273.0853548845304" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="224.26944668087367" y="328.0853548845304" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Escape Shaft …</text>
+  </g></a>
+  <a href="../../locations/processing-ii.html"><g opacity="1">
+    <rect x="181.96361283874697" y="249.20163865378407" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="201.96361283874697" y="304.2016386537841" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Processing II</text>
+  </g></a>
+  <a href="../../locations/section-102.html"><g opacity="1">
+    <rect x="166.92868934574153" y="220.18555346051835" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="186.92868934574153" y="275.18555346051835" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Section 102</text>
+  </g></a>
+  <a href="../../locations/section-103.html"><g opacity="1">
+    <rect x="160.2797476971353" y="188.18908960376044" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.2797476971353" y="243.18908960376044" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Section 103</text>
   </g></a>
   <a href="../../campaign/player-characters.html"><g opacity="1">
-    <circle cx="209.31005107748902" cy="278.58328807343423" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="209.31005107748902" y="313.58328807343423" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+    <circle cx="182.50990947812124" cy="175.58527843368398" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="182.50990947812124" y="210.58527843368398" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
   </g></a>
   <a href="../../campaign/timeline.html"><g opacity="1">
-    <circle cx="181.22142697428808" cy="217.07778059279423" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="181.22142697428808" y="252.07778059279423" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+    <circle cx="193.45377379171495" cy="144.7921954722618" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="193.45377379171495" y="179.7921954722618" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
   </g></a>
   <a href="../npcs/leocadia-zavia.html"><g opacity="1">
-    <circle cx="190.84416055745777" cy="150.15019843977367" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="190.84416055745777" y="185.15019843977367" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+    <circle cx="212.29968428662514" cy="118.0936228137615" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="212.29968428662514" y="153.0936228137615" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Leocadia Zavia</text>
+  </g></a>
+  <a href="../../items/type-ii3-a.html"><g opacity="1">
+    <polygon points="237.64992599574796,77.46967145442137 257.64992599574794,97.46967145442137 237.64992599574796,117.46967145442137 217.64992599574796,97.46967145442137" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="237.64992599574796" y="132.46967145442136" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Type II3-A</text>
   </g></a>
   <a href="../../locations/macmillian-station-iv.html"><g opacity="1">
-    <rect x="215.12310190532833" y="79.04957606025825" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="235.12310190532833" y="134.04957606025823" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
-  </g></a>
-  <a href="../../chronicle/chapter-1-the-far-dark.html"><g opacity="0.5">
-    <circle cx="427.27922061357856" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="427.27922061357856" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">The Far Dark</text>
-  </g></a>
-  <a href="../../locations/thides-system.html"><g opacity="0.5">
-    <rect x="466" y="186" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="480" y="227" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Thides System</text>
-  </g></a>
-  <a href="../../heritages/chrome-jockey.html"><g opacity="0.5">
-    <circle cx="427.27922061357856" cy="327.27922061357856" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="427.27922061357856" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Chrome Jockey</text>
-  </g></a>
-  <a href="../../chronicle/session-01-the-ragged-edge-of-space.html"><g opacity="0.5">
-    <circle cx="300" cy="380" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="300" y="407" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Session 01 - …</text>
-  </g></a>
-  <a href="../../locations/federal-republic-of-worlds.html"><g opacity="0.5">
-    <rect x="158.72077938642144" y="313.27922061357856" width="28" height="28" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="172.72077938642144" y="354.27922061357856" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Federal Repub…</text>
-  </g></a>
-  <g opacity="0.5">
-    <circle cx="120" cy="200.00000000000003" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="120" y="227.00000000000003" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
-  </g>
-  <a href="../npcs/clubber.html"><g opacity="0.5">
-    <circle cx="172.7207793864214" cy="72.72077938642146" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="172.7207793864214" y="99.72077938642146" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Clubber</text>
-  </g></a>
-  <a href="rock-lavey.html"><g opacity="0.5">
-    <circle cx="299.99999999999994" cy="20" r="14" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="299.99999999999994" y="47" text-anchor="middle" font-size="9" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+    <rect x="247.62438746115697" y="64.44992551826412" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="267.62438746115697" y="119.44992551826412" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
 </svg></div>
 </div>
@@ -533,6 +563,9 @@ document.addEventListener('click', function(e) {
 <script src="../../js/nav.js"></script>
 <script src="../../js/lightbox.js"></script>
 <script src="../../js/search.js"></script>
+<script src="../../js/change-request.js"></script>
+<script src="../../js/live-state.js"></script>
+<script src="../../js/gurps-live.js"></script>
 <script>
 (function() {
   var btn = document.querySelector('.back-to-top');

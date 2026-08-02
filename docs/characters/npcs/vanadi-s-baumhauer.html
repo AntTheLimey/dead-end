@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanadís Baumhauer — Dead End</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/themes/scifi.css">
+  <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="../../css/overrides.css">
+</head>
+<body>
+
+<header class="top-nav">
+  <a href="../../index.html" class="nav-brand">Dead End</a>
+  <nav class="nav-groups">
+      <div class="nav-group">
+        <a class="nav-group-toggle" href="../../story.html">Story</a>
+        <div class="nav-dropdown">
+        <a href="../../campaign/timeline.html">Events</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Characters</button>
+        <div class="nav-dropdown">
+        <a href="../../campaign/player-characters.html">Player Characters</a>
+        <a href="index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">World</button>
+        <div class="nav-dropdown">
+        <a href="../../world/index.html">World Overview</a>
+        <a href="../../heritages/index.html">Heritages</a>
+        <a href="../../locations/index.html">Locations</a>
+        <a href="../../factions/index.html">Factions &amp; Organizations</a>
+        <a href="../../items/index.html">Items &amp; Artifacts</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-toggle">Reference</button>
+        <div class="nav-dropdown">
+        <a href="../../documents/index.html">Documents</a>
+        <a href="../../campaign/index.html">Campaign</a>
+        </div>
+      </div>
+  </nav>
+  <button class="nav-search-btn" onclick="openSearch()" aria-label="Search">Search <kbd class="search-kbd">⌘K</kbd></button>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('mobile-nav').classList.add('open')" aria-label="Menu">&#9776;</button>
+</header>
+<div id="mobile-nav" class="mobile-nav-overlay">
+  <button class="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open')" aria-label="Close">&times;</button>
+  <h3><a href="../../story.html">Story</a></h3>
+  <ul>
+    <li><a href="../../campaign/timeline.html">Events</a></li>
+  </ul>
+  <h3>Characters</h3>
+  <ul>
+    <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
+    <li><a href="index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
+  </ul>
+  <h3>World</h3>
+  <ul>
+    <li><a href="../../world/index.html">World Overview</a></li>
+    <li><a href="../../heritages/index.html">Heritages</a></li>
+    <li><a href="../../locations/index.html">Locations</a></li>
+    <li><a href="../../factions/index.html">Factions &amp; Organizations</a></li>
+    <li><a href="../../items/index.html">Items &amp; Artifacts</a></li>
+  </ul>
+  <h3>Reference</h3>
+  <ul>
+    <li><a href="../../documents/index.html">Documents</a></li>
+    <li><a href="../../campaign/index.html">Campaign</a></li>
+  </ul>
+</div>
+
+<main class="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">NPCs</a><span class="sep">&rsaquo;</span>Vanadi S Baumhauer</nav>
+<div class="hero-cinematic">
+  <img class="hero-cinematic-img" src="../../images/characters/Vanad%C3%ADs%20Baumhauer.webp" alt="Vanadís Baumhauer">
+  <div class="hero-cinematic-overlay">
+    <h1>Vanadís Baumhauer</h1>
+    <div class="meta"><span><span class="label">Status</span> alive</span></div>
+  </div>
+</div>
+<div class="pull-quote">A resident of Processing I, Vanadís grew up on the station.</div>
+<h2>Overview</h2>
+<p>A resident of Processing I, Vanadís grew up on the station. Her mother long since disappeared, and her father spends most of his time off station working for whoever will take him. In the meantime Vanadís grew up in the underclass of the station, learning tricks and scams to survive. Holger Graeme’s arrested her a few times, but she always has a bit of information to trade, something worth more than the fine or jail time she is facing. Opeyemi’s banned her from his businesses, as well as told his crews to steer clear of her, having his operations effected by her information trades. For the right price, Vanadís can get you any piece of information you need.</p>
+<p>You can usually find her on the Main Line of Processing I, working angles, trading information, and making deals.</p>
+<h2>Motivations &amp; Secrets</h2>
+<h2>Appearances</h2>
+<ul>
+<li><strong>Session 2 ([Session 02 - The MacMillian Anomaly](…/…/chronicle/Sessions/Session 02/session-02-the-macmillian-anomaly.html))</strong> — Named anonymously by <a href="asher-bhattacharya.html">Asher Bhattacharya</a> as an information broker who might know <a href="harsha-trent.html">Harsha Trent</a>’s whereabouts in <a href="../../locations/processing-i.html">Processing I</a>. Not yet contacted by the crew.</li>
+</ul>
+
+</main>
+
+
+
+<button class="back-to-top" onclick="window.scrollTo({top:0})" aria-label="Back to top">&#8593;</button>
+
+<script src="../../js/nav.js"></script>
+<script src="../../js/lightbox.js"></script>
+<script src="../../js/search.js"></script>
+<script>
+(function() {
+  var btn = document.querySelector('.back-to-top');
+  if (btn) window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+})();
+document.querySelectorAll('.nav-group-toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var group = btn.parentElement;
+    var isOpen = group.classList.contains('open');
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+    if (!isOpen) group.classList.add('open');
+  });
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-group')) {
+    document.querySelectorAll('.nav-group').forEach(function(g) { g.classList.remove('open'); });
+  }
+});
+</script>
+
+</body>
+</html>

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/themes/scifi.css">
   <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/overrides.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
         <div class="nav-dropdown">
         <a href="../campaign/player-characters.html">Player Characters</a>
         <a href="../characters/npcs/index.html">NPCs</a>
+        <a href="../creatures/index.html">Creatures</a>
         </div>
       </div>
       <div class="nav-group">
@@ -57,6 +59,7 @@
   <ul>
     <li><a href="../campaign/player-characters.html">Player Characters</a></li>
     <li><a href="../characters/npcs/index.html">NPCs</a></li>
+    <li><a href="../creatures/index.html">Creatures</a></li>
   </ul>
   <h3>World</h3>
   <ul>
@@ -75,12 +78,729 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">&rsaquo;</span>Locations</nav>
+<figure class="section-banner section-banner-inline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="ui-monospace,Menlo,monospace">
+<!-- ============================================================================
+     SECTOR MAP — hand-maintained. Positions are curated (schematic), NOT
+     data-generated, until Tim builds out the Core Worlds + the full gate chain.
 
+     HOW TO EDIT
+       · Each system is one <a><circle .../><text>…</text></a> block below.
+         Move a system: change its circle cx/cy (the sun) AND its drop-line +
+         base-dot x (keep them equal to cx so the drop stays vertical) AND its
+         label x/y. base-dot cy = where it meets the plane.
+       · Plane is centred on the Core at (420,350); rings = distance from Core.
+       · Add a system: copy a <a> block, set cx/cy, add a drop-line + base dot,
+         and (if charted) a jump-lane <line> in the amber group + a label.
+       · After editing: re-render to WebP for the site
+         (open this file in a browser, screenshot at ~2.7x, cwebp → sector-map.webp).
+     Node coords: Core(420,350) Meridian(340,238) Corwin(564,356)
+                  Eris(335,466) Thides(690,414) Void(792,512)
+============================================================================ -->
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="42%" r="80%"><stop offset="0%" stop-color="#0b1224"/><stop offset="55%" stop-color="#060810"/><stop offset="100%" stop-color="#030407"/></radialGradient>
+    <filter id="s-glow" x="-140%" y="-140%" width="380%" height="380%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="lane-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <radialGradient id="core-halo" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#cfe0ff" stop-opacity=".45"/><stop offset="100%" stop-color="#cfe0ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="void" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#000"/><stop offset="55%" stop-color="#0a0612"/><stop offset="100%" stop-color="#1a1230" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="900" height="680" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="34" y="42" fill="#cdd6e6" font-size="15" font-weight="700" font-family="-apple-system,Segoe UI,Roboto,sans-serif">THE FEDERAL REPUBLIC</text>
+  <text x="266" y="42" fill="#8a97ad" font-size="13" font-family="-apple-system,Segoe UI,Roboto,sans-serif">&#183; from the Core Worlds out to the Far Dark</text>
+
+  <!-- reference plane centred on the Core -->
+  <g fill="none" stroke="#3b5c93">
+    <ellipse cx="420" cy="350" rx="85"  ry="34"  opacity=".55"/><ellipse cx="420" cy="350" rx="170" ry="68"  opacity=".46"/>
+    <ellipse cx="420" cy="350" rx="255" ry="102" opacity=".38"/><ellipse cx="420" cy="350" rx="335" ry="134" opacity=".28"/>
+  </g>
+  <g stroke="#3b5c93" opacity=".5"><line x1="72" y1="350" x2="768" y2="350"/><line x1="420" y1="216" x2="420" y2="484"/></g>
+  <g fill="#6f88b6" font-size="11"><text x="774" y="354">0&#176;</text><text x="60" y="354" text-anchor="end">180&#176;</text><text x="420" y="210" text-anchor="middle">90&#176;</text><text x="452" y="500">270&#176;</text></g>
+
+  <!-- faint long-haul lanes coreward (uncharted) -->
+  <g stroke="#5a6a86" fill="none" opacity=".45" stroke-dasharray="2 6"><line x1="462" y1="352" x2="562" y2="357"/><line x1="398" y1="344" x2="348" y2="302"/></g>
+
+  <!-- charted jump-lanes -->
+  <g stroke="#f0a23a" fill="none">
+    <line x1="564" y1="356" x2="335" y2="466" stroke-width="2" filter="url(#lane-glow)" opacity=".35"/><line x1="564" y1="356" x2="335" y2="466" stroke-width="1.4"/>
+    <line x1="564" y1="356" x2="690" y2="414" stroke-width="2" filter="url(#lane-glow)" opacity=".35"/><line x1="564" y1="356" x2="690" y2="414" stroke-width="1.4"/>
+  </g>
+  <text x="446" y="418" fill="#c79654" font-size="10" transform="rotate(26 446 418)">Corwin&#8211;Eris Route</text>
+  <text x="600" y="374" fill="#c79654" font-size="10" transform="rotate(25 600 374)">Corwin&#8211;Thides Route</text>
+
+  <!-- drop-lines + base dots -->
+  <g stroke="#8fa4c8" stroke-dasharray="1.5 3.5" opacity=".8">
+    <line x1="340" y1="238" x2="340" y2="308"/><line x1="564" y1="356" x2="564" y2="394"/><line x1="335" y1="466" x2="335" y2="428"/><line x1="690" y1="414" x2="690" y2="458"/>
+  </g>
+  <g fill="#9fb2d6"><circle cx="340" cy="308" r="2.2"/><circle cx="564" cy="394" r="2.2"/><circle cx="335" cy="428" r="2.2"/><circle cx="690" cy="458" r="2.2"/></g>
+
+  <!-- CORE WORLDS (centre) -->
+  <circle cx="420" cy="350" r="32" fill="url(#core-halo)"/>
+  <g fill="#eaf1ff" filter="url(#s-glow)"><circle cx="420" cy="349" r="4"/><circle cx="410" cy="355" r="2.8"/><circle cx="430" cy="354" r="3"/><circle cx="414" cy="343" r="2.5"/><circle cx="427" cy="344" r="2.6"/><circle cx="420" cy="358" r="2.3"/></g>
+  <text x="420" y="326" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">CORE WORLDS</text>
+  <text x="420" y="312" text-anchor="middle" fill="#93a3c2" font-size="10">the Republic's heart &#183; 9 founding worlds</text>
+
+  <!-- MERIDIAN -->
+  <g stroke="#7fb2d8" fill="none" opacity=".8"><line x1="346" y1="250" x2="392" y2="300" stroke-width="1.5" stroke-dasharray="6 5"/><path d="M386 292l8 10-12-1" fill="#7fb2d8" stroke="none"/></g>
+  <text x="316" y="272" fill="#9cc4de" font-size="9" text-anchor="end">Concord Gate</text>
+  <a href="meridian.html"><circle cx="340" cy="238" r="6.5" fill="#bcd6f0" filter="url(#s-glow)"/><text x="356" y="234" fill="#fff" font-size="14" font-weight="700">Meridian</text><text x="356" y="248" fill="#9aa7bf" font-size="10">frontier world &#183; A-type</text></a>
+
+  <!-- frontier chain -->
+  <a href="corwin-system.html"><circle cx="564" cy="356" r="6" fill="#ffd27a" filter="url(#s-glow)"/><circle cx="574" cy="360" r="4" fill="#ffcf86" filter="url(#s-glow)"/><text x="586" y="350" fill="#fff" font-size="14" font-weight="700">Corwin</text><text x="586" y="364" fill="#9aa7bf" font-size="10">frontier hub &#183; binary</text></a>
+  <a href="eris-system.html"><circle cx="335" cy="466" r="6.5" fill="#fff2c0" filter="url(#s-glow)"/><text x="321" y="484" text-anchor="end" fill="#fff" font-size="14" font-weight="700">Eris</text><text x="321" y="498" text-anchor="end" fill="#9aa7bf" font-size="10">below plane</text></a>
+  <a href="thides-system.html"><circle cx="690" cy="414" r="6.5" fill="#ff8a4a" filter="url(#s-glow)"/><text x="706" y="410" fill="#fff" font-size="14" font-weight="700">Thides</text><text x="706" y="424" fill="#9aa7bf" font-size="10">dead-end &#183; K5</text></a>
+
+  <!-- SARGASSO VOID -->
+  <line x1="690" y1="458" x2="766" y2="506" stroke="#5a6a86" stroke-dasharray="1.5 4" opacity=".7"/>
+  <g transform="translate(792 512)">
+    <circle r="44" fill="url(#void)"/><g fill="none" stroke="#5b4a86" opacity=".5"><ellipse rx="30" ry="12" stroke-dasharray="3 5"/><ellipse rx="20" ry="8" stroke-dasharray="2 5"/></g>
+    <circle r="9" fill="#000" stroke="#3a2f57" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" fill="#b6a9d6" font-size="13" font-weight="700">Sargasso Void</text><text x="0" y="54" text-anchor="middle" fill="#8a7fae" font-size="10">gravitational anomaly</text>
+  </g>
+
+  <!-- scale + legend -->
+  <g stroke="#6f88b6" fill="#8894a8" font-size="10"><line x1="96" y1="612" x2="176" y2="612"/><line x1="96" y1="607" x2="96" y2="617"/><line x1="176" y1="607" x2="176" y2="617"/><text x="136" y="630" text-anchor="middle" stroke="none">&#8776; 5 light-years</text></g>
+  <text x="840" y="624" text-anchor="end" fill="#5f6f8c" font-size="10">schematic &#183; radial distance from the Core; topology exact</text>
+</svg>
+</figure>
 <div class="index-header">
   <h1 class="page-title">Star Charts</h1>
-  <span class="index-count">69 locations</span>
+  <span class="index-count">81 locations</span>
 </div>
-<div class="locations-page"><a class="sector-map" href="sector-map.svg" title="Open the full sector map"><img src="../images/locations/sector-map.webp" loading="lazy" alt="Sector map — the Federal Republic, from the Core Worlds out to the Far Dark"></a><div class="loc-context"><a href="federal-republic-of-worlds.html">Federal Republic of Worlds</a> <span class="crumb-sep">&rsaquo;</span> <a href="sector-7-g.html">Sector 7-G</a></div><div class="loc-sections"><section class="loc-section"><h2 class="loc-region-title"><img class="loc-sys-thumb" src="../images/locations/Thides%20System.webp" alt="" loading="lazy"><a href="thides-system.html">Thides System</a> <span class="loc-type-badge">star system</span></h2><ul class="loc-colflow"><li class="loc-branch"><img class="loc-thumb" src="../images/locations/MacMillian%20Station%20IV.webp" alt="" loading="lazy"><a href="macmillian-station-iv.html">MacMillian Station IV</a> <span class="loc-type-badge">Space Station</span><ul class="loc-sub"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Church%20of%20Saint%20Barbara.webp" alt="" loading="lazy"><a href="church-of-saint-barbara.html">Church of Saint Barbara</a> <span class="loc-type-badge">venue</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Docking%20Ring.webp" alt="" loading="lazy"><a href="docking-ring.html">Docking Ring</a> <span class="loc-type-badge">dock</span></li><li class="loc-branch"><span class="loc-thumb loc-thumb-none"></span><a href="entertainment-district.html">Entertainment District</a> <span class="loc-type-badge">Station District</span><ul class="loc-sub"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Nova%20Nexus.webp" alt="" loading="lazy"><a href="nova-nexus.html">Nova Nexus</a> <span class="loc-type-badge">venue</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Comets%20Tail.webp" alt="" loading="lazy"><a href="the-comets-tail.html">The Comets Tail</a> <span class="loc-type-badge">venue</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Silk%20Abbey.webp" alt="" loading="lazy"><a href="the-silk-abbey.html">The Silk Abbey</a> <span class="loc-type-badge">venue</span></li></ul></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="macmillian-station-security-office.html">MacMillian Station Security Office</a> <span class="loc-type-badge">Station Facility</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Processing%20I.webp" alt="" loading="lazy"><a href="processing-i.html">Processing I</a> <span class="loc-type-badge">processing level</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Stamp%20Supply.webp" alt="" loading="lazy"><a href="stamp-supply.html">Stamp Supply</a> <span class="loc-type-badge">venue</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Main%20Line.webp" alt="" loading="lazy"><a href="the-main-line.html">The Main Line</a> <span class="loc-type-badge">district</span></li></ul></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Beloved%20Valley.webp" alt="" loading="lazy"><a href="the-beloved-valley.html">The Beloved Valley</a> <span class="loc-type-badge">spaceship</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Pinnacle.webp" alt="" loading="lazy"><a href="the-pinnacle.html">The Pinnacle</a> <span class="loc-type-badge">Spaceship</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides.webp" alt="" loading="lazy"><a href="thides.html">Thides</a> <span class="loc-type-badge">star</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20Gate.webp" alt="" loading="lazy"><a href="thides-gate.html">Thides Gate</a> <span class="loc-type-badge">hyperspace gate</span></li><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Thides%20I.webp" alt="" loading="lazy"><a href="thides-i.html">Thides I</a> <span class="loc-type-badge">tidally-locked planet</span><ul class="loc-sub"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/07-Delta%20Station.webp" alt="" loading="lazy"><a href="07-delta-station.html">07-Delta Station</a> <span class="loc-type-badge">space station</span></li></ul></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20II.webp" alt="" loading="lazy"><a href="thides-ii.html">Thides II</a> <span class="loc-type-badge">toxic-atmosphere planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20III.webp" alt="" loading="lazy"><a href="thides-iii.html">Thides III</a> <span class="loc-type-badge">Earth-like planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20IV.webp" alt="" loading="lazy"><a href="thides-iv.html">Thides IV</a> <span class="loc-type-badge">gas giant</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20V.webp" alt="" loading="lazy"><a href="thides-v.html">Thides V</a> <span class="loc-type-badge">icy planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Thides%20VI.webp" alt="" loading="lazy"><a href="thides-vi.html">Thides VI</a> <span class="loc-type-badge">irradiated planet</span></li><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Thidian%20Belt.webp" alt="" loading="lazy"><a href="thidian-belt.html">Thidian Belt</a> <span class="loc-type-badge">asteroid belt</span><ul class="loc-sub"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Garnetts%20Reach.webp" alt="" loading="lazy"><a href="garnetts-reach.html">Garnetts Reach</a> <span class="loc-type-badge">outpost</span></li></ul></li></ul></section><section class="loc-section"><h2 class="loc-region-title"><a href="eris-system.html">Eris System</a> <span class="loc-type-badge">star system</span></h2><ul class="loc-colflow"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20A.webp" alt="" loading="lazy"><a href="eris-a.html">Eris A</a> <span class="loc-type-badge">star</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20Gate%20IV.webp" alt="" loading="lazy"><a href="eris-gate-iv.html">Eris Gate IV</a> <span class="loc-type-badge">hyperspace gate</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20I.webp" alt="" loading="lazy"><a href="eris-i.html">Eris I</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20II.webp" alt="" loading="lazy"><a href="eris-ii.html">Eris II</a> <span class="loc-type-badge">planet</span></li><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Eris%20III.webp" alt="" loading="lazy"><a href="eris-iii.html">Eris III</a> <span class="loc-type-badge">planet</span><ul class="loc-sub"><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Aethel.webp" alt="" loading="lazy"><a href="aethel.html">Aethel</a> <span class="loc-type-badge">City</span><ul class="loc-sub"><li class="loc-branch"><span class="loc-thumb loc-thumb-none"></span><a href="aethel-starport.html">Aethel Starport</a> <span class="loc-type-badge">space station</span><ul class="loc-sub"><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="bamboo-lounge.html">Bamboo Lounge</a> <span class="loc-type-badge">venue</span></li></ul></li></ul></li></ul></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20IV.webp" alt="" loading="lazy"><a href="eris-iv.html">Eris IV</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20V.webp" alt="" loading="lazy"><a href="eris-v.html">Eris V</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20VI.webp" alt="" loading="lazy"><a href="eris-vi.html">Eris VI</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Eris%20VII.webp" alt="" loading="lazy"><a href="eris-vii.html">Eris VII</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Erisian%20Belt.webp" alt="" loading="lazy"><a href="erisian-belt.html">Erisian Belt</a> <span class="loc-type-badge">asteroid belt</span></li></ul></section><section class="loc-section"><h2 class="loc-region-title"><a href="corwin-system.html">Corwin System</a> <span class="loc-type-badge">star system</span></h2><ul class="loc-colflow"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20A.webp" alt="" loading="lazy"><a href="corwin-a.html">Corwin A</a> <span class="loc-type-badge">star</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20B.webp" alt="" loading="lazy"><a href="corwin-b.html">Corwin B</a> <span class="loc-type-badge">star</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20Gate%20II.webp" alt="" loading="lazy"><a href="corwin-gate-ii.html">Corwin Gate II</a> <span class="loc-type-badge">hyperspace gate</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20Gate%20III.webp" alt="" loading="lazy"><a href="corwin-gate-iii.html">Corwin Gate III</a> <span class="loc-type-badge">hyperspace gate</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20I.webp" alt="" loading="lazy"><a href="corwin-i.html">Corwin I</a> <span class="loc-type-badge">planet</span></li><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Corwin%20II.webp" alt="" loading="lazy"><a href="corwin-ii.html">Corwin II</a> <span class="loc-type-badge">planet</span><ul class="loc-sub"><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Pratrock%20Dynamics%20Research%20Facility%2042.webp" alt="" loading="lazy"><a href="pratrock-dynamics-research-facility-42.html">Pratrock Dynamics Research Facility 42</a> <span class="loc-type-badge">research facility</span></li></ul></li><li class="loc-branch"><img class="loc-thumb" src="../images/locations/Corwin%20III.webp" alt="" loading="lazy"><a href="corwin-iii.html">Corwin III</a> <span class="loc-type-badge">planet</span><ul class="loc-sub"><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="corwin-iii-a.html">Corwin III A</a> <span class="loc-type-badge">moon</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="corwin-iii-c.html">Corwin III C</a> <span class="loc-type-badge">moon</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20III%20D.webp" alt="" loading="lazy"><a href="corwin-iii-d.html">Corwin III D</a> <span class="loc-type-badge">moon</span></li></ul></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/Corwin%20IV.webp" alt="" loading="lazy"><a href="corwin-iv.html">Corwin IV</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="corwin-v.html">Corwin V</a> <span class="loc-type-badge">planet</span></li></ul></section><section class="loc-section"><h2 class="loc-region-title"><img class="loc-sys-thumb" src="../images/locations/Meridian.webp" alt="" loading="lazy"><a href="meridian.html">Meridian</a> <span class="loc-type-badge">star system</span></h2><ul class="loc-colflow"><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="concord-station.html">Concord Station</a> <span class="loc-type-badge">space station</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-i.html">Meridian I</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-ii.html">Meridian II</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-iii.html">Meridian III</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-iv.html">Meridian IV</a> <span class="loc-type-badge">planet (habitable — for now)</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-v.html">Meridian V</a> <span class="loc-type-badge">ice giant</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="meridian-vi.html">Meridian VI</a> <span class="loc-type-badge">planet</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Charter%20Gate.webp" alt="" loading="lazy"><a href="the-charter-gate.html">The Charter Gate</a> <span class="loc-type-badge">hyperspace gate</span></li><li class="loc-leaf"><img class="loc-thumb" src="../images/locations/The%20Concord%20Gate.webp" alt="" loading="lazy"><a href="the-concord-gate.html">The Concord Gate</a> <span class="loc-type-badge">hyperspace gate</span></li></ul></section><section class="loc-section"><h2 class="loc-region-title">Deep Space &amp; Routes</h2><ul class="loc-colflow"><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="corwin-eris-route.html">Corwin-Eris Route</a> <span class="loc-type-badge">trade route</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="corwin-thides-route.html">Corwin-Thides Route</a> <span class="loc-type-badge">trade route</span></li><li class="loc-leaf"><span class="loc-thumb loc-thumb-none"></span><a href="sargasso-void.html">Sargasso Void</a> <span class="loc-type-badge">gravitational anomaly</span></li></ul></section></div></div>
+<div class="locations-page locations-grouped">
+  
+  <div class="loc-system-grid"><section class="loc-system">
+  <header class="loc-system-header">
+    <span class="loc-system-thumb loc-system-thumb-empty" aria-hidden="true"></span>
+    <h2 class="loc-system-title"><a href="corwin-system.html">Corwin System</a></h2>
+    <span class="loc-type-badge">star system</span>
+    <span class="loc-system-count">14 locations</span>
+  </header>
+  <p class="loc-context">Federal Republic of Worlds &rsaquo; Sector 7-G</p>
+  <div class="loc-system-body"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20A.webp" alt="Corwin A" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-a.html">Corwin A</a>
+    <span class="loc-type-badge">star</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20B.webp" alt="Corwin B" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-b.html">Corwin B</a>
+    <span class="loc-type-badge">star</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20Gate%20II.webp" alt="Corwin Gate II" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-gate-ii.html">Corwin Gate II</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20Gate%20III.webp" alt="Corwin Gate III" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-gate-iii.html">Corwin Gate III</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20I.webp" alt="Corwin I" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-i.html">Corwin I</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20II.webp" alt="Corwin II" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-ii.html">Corwin II</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Pratrock%20Dynamics%20Research%20Facility%2042.webp" alt="Pratrock Dynamics Research Facility 42" class="portrait"></span>
+    <a class="loc-node-name" href="pratrock-dynamics-research-facility-42.html">Pratrock Dynamics Research Facility 42</a>
+    <span class="loc-type-badge">research facility</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20III.webp" alt="Corwin III" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-iii.html">Corwin III</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="corwin-iii-a.html">Corwin III A</a>
+    <span class="loc-type-badge">moon</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="corwin-iii-c.html">Corwin III C</a>
+    <span class="loc-type-badge">moon</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20III%20D.webp" alt="Corwin III D" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-iii-d.html">Corwin III D</a>
+    <span class="loc-type-badge">moon</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Corwin%20IV.webp" alt="Corwin IV" class="portrait"></span>
+    <a class="loc-node-name" href="corwin-iv.html">Corwin IV</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="corwin-v.html">Corwin V</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div></div>
+</section>
+<section class="loc-system">
+  <header class="loc-system-header">
+    <span class="loc-system-thumb loc-system-thumb-empty" aria-hidden="true"></span>
+    <h2 class="loc-system-title"><a href="eris-system.html">Eris System</a></h2>
+    <span class="loc-type-badge">star system</span>
+    <span class="loc-system-count">14 locations</span>
+  </header>
+  <p class="loc-context">Federal Republic of Worlds &rsaquo; Sector 7-G</p>
+  <div class="loc-system-body"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20A.webp" alt="Eris A" class="portrait"></span>
+    <a class="loc-node-name" href="eris-a.html">Eris A</a>
+    <span class="loc-type-badge">star</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20Gate%20IV.webp" alt="Eris Gate IV" class="portrait"></span>
+    <a class="loc-node-name" href="eris-gate-iv.html">Eris Gate IV</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20I.webp" alt="Eris I" class="portrait"></span>
+    <a class="loc-node-name" href="eris-i.html">Eris I</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20II.webp" alt="Eris II" class="portrait"></span>
+    <a class="loc-node-name" href="eris-ii.html">Eris II</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20III.webp" alt="Eris III" class="portrait"></span>
+    <a class="loc-node-name" href="eris-iii.html">Eris III</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Aethel.webp" alt="Aethel" class="portrait"></span>
+    <a class="loc-node-name" href="aethel.html">Aethel</a>
+    <span class="loc-type-badge">City</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="aethel-starport.html">Aethel Starport</a>
+    <span class="loc-type-badge">space station</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="bamboo-lounge.html">Bamboo Lounge</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div></div>
+</div></div>
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20IV.webp" alt="Eris IV" class="portrait"></span>
+    <a class="loc-node-name" href="eris-iv.html">Eris IV</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20V.webp" alt="Eris V" class="portrait"></span>
+    <a class="loc-node-name" href="eris-v.html">Eris V</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20VI.webp" alt="Eris VI" class="portrait"></span>
+    <a class="loc-node-name" href="eris-vi.html">Eris VI</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Eris%20VII.webp" alt="Eris VII" class="portrait"></span>
+    <a class="loc-node-name" href="eris-vii.html">Eris VII</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Erisian%20Belt.webp" alt="Erisian Belt" class="portrait"></span>
+    <a class="loc-node-name" href="erisian-belt.html">Erisian Belt</a>
+    <span class="loc-type-badge">asteroid belt</span>
+  </div>
+  
+</div></div>
+</section>
+<section class="loc-system">
+  <header class="loc-system-header">
+    <span class="loc-system-thumb"><img src="../images/locations/Meridian.webp" alt="the Concord world" class="portrait"></span>
+    <h2 class="loc-system-title"><a href="meridian-system.html">Meridian System</a></h2>
+    <span class="loc-type-badge">star system</span>
+    <span class="loc-system-count">11 locations</span>
+  </header>
+  <p class="loc-context">Federal Republic of Worlds</p>
+  <div class="loc-system-body"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="concord-station.html">Concord Station</a>
+    <span class="loc-type-badge">space station</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian.html">Meridian</a>
+    <span class="loc-type-badge">star</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian-i.html">Meridian I</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian-ii.html">Meridian II</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian-iii.html">Meridian III</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Meridian.webp" alt="Ionera" class="portrait"></span>
+    <a class="loc-node-name" href="meridian-iv.html">Meridian IV</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian-v.html">Meridian V</a>
+    <span class="loc-type-badge">ice giant</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="meridian-vi.html">Meridian VI</a>
+    <span class="loc-type-badge">planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Charter%20Gate.webp" alt="The Charter Gate" class="portrait"></span>
+    <a class="loc-node-name" href="the-charter-gate.html">The Charter Gate</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Concord%20Gate.webp" alt="The Concord Gate" class="portrait"></span>
+    <a class="loc-node-name" href="the-concord-gate.html">The Concord Gate</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div></div>
+</section>
+<section class="loc-system">
+  <header class="loc-system-header">
+    <span class="loc-system-thumb"><img src="../images/locations/Thides%20System.webp" alt="Thides" class="portrait"></span>
+    <h2 class="loc-system-title"><a href="thides-system.html">Thides System</a></h2>
+    <span class="loc-type-badge">star system</span>
+    <span class="loc-system-count">37 locations</span>
+  </header>
+  <p class="loc-context">Federal Republic of Worlds &rsaquo; Sector 7-G</p>
+  <div class="loc-system-body"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/MacMillian%20Station%20IV.webp" alt="Thides Station" class="portrait"></span>
+    <a class="loc-node-name" href="macmillian-station-iv.html">MacMillian Station IV</a>
+    <span class="loc-type-badge">Space Station</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Church%20of%20Saint%20Barbara.webp" alt="Church of Saint Barbara" class="portrait"></span>
+    <a class="loc-node-name" href="church-of-saint-barbara.html">Church of Saint Barbara</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="docking-bay-36.html">Docking Bay 36</a>
+    <span class="loc-type-badge">Docking bay / hangar</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Docking%20Ring.webp" alt="Docking Ring" class="portrait"></span>
+    <a class="loc-node-name" href="docking-ring.html">Docking Ring</a>
+    <span class="loc-type-badge">dock</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="entertainment-district.html">Entertainment District</a>
+    <span class="loc-type-badge">Station District</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Nova%20Nexus.webp" alt="Nova Nexus" class="portrait"></span>
+    <a class="loc-node-name" href="nova-nexus.html">Nova Nexus</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Comets%20Tail.webp" alt="The Comets Tail" class="portrait"></span>
+    <a class="loc-node-name" href="the-comets-tail.html">The Comets Tail</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Silk%20Abbey.webp" alt="The Silk Abbey" class="portrait"></span>
+    <a class="loc-node-name" href="the-silk-abbey.html">The Silk Abbey</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="macmillian-station-security-office.html">MacMillian Station Security Office</a>
+    <span class="loc-type-badge">Station Facility</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="marshals-office.html">Marshal's Office</a>
+    <span class="loc-type-badge">Station Facility</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Processing%20I.webp" alt="Processing I" class="portrait"></span>
+    <a class="loc-node-name" href="processing-i.html">Processing I</a>
+    <span class="loc-type-badge">processing level</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="escape-shaft-35b.html">Escape Shaft 35B</a>
+    <span class="loc-type-badge">restricted catwalk</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="section-102.html">Section 102</a>
+    <span class="loc-type-badge">territory</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="section-103.html">Section 103</a>
+    <span class="loc-type-badge">territory</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="processing-ii.html">Processing II</a>
+    <span class="loc-type-badge">processing level</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="royale-hotel.html">Royale Hotel</a>
+    <span class="loc-type-badge">hotel</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="shipping-and-receiving-sector.html">Shipping and Receiving Sector</a>
+    <span class="loc-type-badge">Station District</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Stamp%20Supply.webp" alt="Stamp Supply" class="portrait"></span>
+    <a class="loc-node-name" href="stamp-supply.html">Stamp Supply</a>
+    <span class="loc-type-badge">venue</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Main%20Line.webp" alt="The Main Line" class="portrait"></span>
+    <a class="loc-node-name" href="the-main-line.html">The Main Line</a>
+    <span class="loc-type-badge">district</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="station-45.html">Station 45</a>
+    <span class="loc-type-badge">territory</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="thides-cast-studio.html">Thides Cast Studio</a>
+    <span class="loc-type-badge">residence</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Beloved%20Valley.webp" alt="The Beloved Valley" class="portrait"></span>
+    <a class="loc-node-name" href="the-beloved-valley.html">The Beloved Valley</a>
+    <span class="loc-type-badge">spaceship</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/The%20Pinnacle.webp" alt="The Pinnacle" class="portrait"></span>
+    <a class="loc-node-name" href="the-pinnacle.html">The Pinnacle</a>
+    <span class="loc-type-badge">Spaceship</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides.webp" alt="Thides" class="portrait"></span>
+    <a class="loc-node-name" href="thides.html">Thides</a>
+    <span class="loc-type-badge">star</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20Gate.webp" alt="Thides Gate" class="portrait"></span>
+    <a class="loc-node-name" href="thides-gate.html">Thides Gate</a>
+    <span class="loc-type-badge">hyperspace gate</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20I.webp" alt="Thides 1" class="portrait"></span>
+    <a class="loc-node-name" href="thides-i.html">Thides I</a>
+    <span class="loc-type-badge">tidally-locked planet</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/07-Delta%20Station.webp" alt="07-Delta Station" class="portrait"></span>
+    <a class="loc-node-name" href="07-delta-station.html">07-Delta Station</a>
+    <span class="loc-type-badge">space station</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20II.webp" alt="Thides 2" class="portrait"></span>
+    <a class="loc-node-name" href="thides-ii.html">Thides II</a>
+    <span class="loc-type-badge">toxic-atmosphere planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20III.webp" alt="Thides 3" class="portrait"></span>
+    <a class="loc-node-name" href="thides-iii.html">Thides III</a>
+    <span class="loc-type-badge">Earth-like planet</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="kinetic-logistics-compound.html">Kinetic Logistics Compound</a>
+    <span class="loc-type-badge">Illegal ground compound</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="relay-station-11.html">Relay Station 11</a>
+    <span class="loc-type-badge">Communications relay platform</span>
+  </div>
+  
+</div></div>
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20IV.webp" alt="Thides 4" class="portrait"></span>
+    <a class="loc-node-name" href="thides-iv.html">Thides IV</a>
+    <span class="loc-type-badge">gas giant</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20V.webp" alt="Thides 5" class="portrait"></span>
+    <a class="loc-node-name" href="thides-v.html">Thides V</a>
+    <span class="loc-type-badge">icy planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thides%20VI.webp" alt="Thides 6" class="portrait"></span>
+    <a class="loc-node-name" href="thides-vi.html">Thides VI</a>
+    <span class="loc-type-badge">irradiated planet</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Thidian%20Belt.webp" alt="Thidian Belt" class="portrait"></span>
+    <a class="loc-node-name" href="thidian-belt.html">Thidian Belt</a>
+    <span class="loc-type-badge">asteroid belt</span>
+  </div>
+  <div class="loc-node-children"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb"><img src="../images/locations/Garnetts%20Reach.webp" alt="Garnetts Reach" class="portrait"></span>
+    <a class="loc-node-name" href="garnetts-reach.html">Garnetts Reach</a>
+    <span class="loc-type-badge">outpost</span>
+  </div>
+  
+</div></div>
+</div></div>
+</section>
+<section class="loc-system loc-system-ungrouped">
+  <header class="loc-system-header">
+    <span class="loc-system-thumb loc-system-thumb-empty" aria-hidden="true"></span>
+    <h2 class="loc-system-title">Deep Space &amp; Routes</h2>
+    <span class="loc-system-count">3 entries</span>
+  </header>
+  <div class="loc-system-body"><div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="corwin-eris-route.html">Corwin-Eris Route</a>
+    <span class="loc-type-badge">trade route</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="corwin-thides-route.html">Corwin-Thides Route</a>
+    <span class="loc-type-badge">trade route</span>
+  </div>
+  
+</div>
+<div class="loc-node">
+  <div class="loc-node-row">
+    <span class="loc-node-thumb loc-node-thumb-empty" aria-hidden="true"></span>
+    <a class="loc-node-name" href="sargasso-void.html">Sargasso Void</a>
+    <span class="loc-type-badge">gravitational anomaly</span>
+  </div>
+  
+</div></div>
+</section></div>
+</div>
 </main>
 
 

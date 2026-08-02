@@ -1,0 +1,10 @@
+# Cloudflare Pages config. Lets `wrangler pages deploy` bundle the functions/
+# directory and bind the KV namespace the change-request inbox uses.
+name = "dead-end"
+pages_build_output_dir = "docs"
+compatibility_date = "2024-11-01"
+
+# The inbox queue. Namespace created via `wrangler kv namespace create INBOX`.
+[[kv_namespaces]]
+binding = "INBOX"
+id = "41b551190da341e5bf8228bbb1089f70"

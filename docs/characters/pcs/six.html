@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/themes/scifi.css">
   <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="../../css/overrides.css">
 </head>
 <body>
 
@@ -24,6 +25,7 @@
         <div class="nav-dropdown">
         <a href="../../campaign/player-characters.html">Player Characters</a>
         <a href="../npcs/index.html">NPCs</a>
+        <a href="../../creatures/index.html">Creatures</a>
         </div>
       </div>
       <div class="nav-group">
@@ -57,6 +59,7 @@
   <ul>
     <li><a href="../../campaign/player-characters.html">Player Characters</a></li>
     <li><a href="../npcs/index.html">NPCs</a></li>
+    <li><a href="../../creatures/index.html">Creatures</a></li>
   </ul>
   <h3>World</h3>
   <ul>
@@ -75,19 +78,21 @@
 
 <main class="content">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span class="sep">&rsaquo;</span>Characters<span class="sep">&rsaquo;</span><a href="index.html">Player Characters</a><span class="sep">&rsaquo;</span>Six</nav>
+<div id="cr-root" data-character="Six"></div>
 <div class="hero-cinematic">
   <img class="hero-cinematic-img" src="../../images/characters/Six.webp" alt="Six">
   <div class="hero-cinematic-overlay">
     <h1>Six</h1>
     <div class="meta">
       <span><span class="label">Player</span> Ant</span>
-      <span><span class="label">Point Total</span> 175</span>
+      <span><span class="label">Point Total</span> 195</span>
     <span><span class="label">Age</span> 32 apparent / ~4 since decant</span>
       <span><span class="label">Status</span> alive</span>
     </div>
   </div>
 </div>
 <div class="pull-quote">Vat-grown human-based replicant, Spacer Kung-Fu melee monster, No social graces, On the run from his maker</div>
+<div class="gl-status-panel"><div class="gl-vitals"><div class="gl-vital" data-vital="hp"><span class="gl-vital-label">HP</span><button type="button" class="gl-step" data-gl-step="hp" data-delta="-1" aria-label="Decrease HP">−</button><input class="gl-vital-input" data-gl-vital="hp" type="number" inputmode="numeric" step="1" value="13" aria-label="Current HP"><span class="gl-vital-max">/13</span><button type="button" class="gl-step" data-gl-step="hp" data-delta="1" aria-label="Increase HP">+</button><span class="gl-badge gl-badge-reeling" hidden>⚠ REELING</span></div><div class="gl-vital" data-vital="fp"><span class="gl-vital-label">FP</span><button type="button" class="gl-step" data-gl-step="fp" data-delta="-1" aria-label="Decrease FP">−</button><input class="gl-vital-input" data-gl-vital="fp" type="number" inputmode="numeric" step="1" value="12" aria-label="Current FP"><span class="gl-vital-max">/12</span><button type="button" class="gl-step" data-gl-step="fp" data-delta="1" aria-label="Increase FP">+</button><span class="gl-badge gl-badge-tired" hidden>⚠ TIRED</span></div></div><div class="gl-status-effects" hidden><span class="gl-delta" data-gl-delta="move" hidden>Move <span class="gl-delta-before"></span>→<span class="gl-delta-after"></span></span><span class="gl-delta" data-gl-delta="dodge" hidden>Dodge <span class="gl-delta-before"></span>→<span class="gl-delta-after"></span></span><span class="gl-delta" data-gl-delta="st" hidden>ST <span class="gl-delta-before"></span>→<span class="gl-delta-after" data-gl-field="st">13</span></span><span class="gl-status-note" hidden></span></div></div>
 <div class="tab-bar">
   <button class="pc-tab active" data-tab="sheet" onclick="switchTab('sheet')">Character Sheet</button>
   <button class="pc-tab" data-tab="combat" onclick="switchTab('combat')">Combat</button>
@@ -96,7 +101,7 @@
   <button class="pc-tab" data-tab="journey" onclick="switchTab('journey')">Journey</button>
 </div>
 <div class="tab-panel active" id="tab-sheet">
-<div class="status"><span class="pip">Move: 4 / 6</span><span class="pip">Enc: Light (1)</span><span class="condition">Alive, uninjured (HP 13 / FP 12 full).</span><span class="location"><span class="status-label">Location:</span> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</span><span class="carrying"><span class="status-label">Carrying:</span> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit, mini-computer/datapad (personal comm).</span></div><div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">13</div><div class="l">ST</div><div class="p">[30]</div></div><div class="a"><div class="v">14</div><div class="l">DX</div><div class="p">[80]</div></div><div class="a"><div class="v">10</div><div class="l">IQ</div><div class="p">[0]</div></div><div class="a"><div class="v">12</div><div class="l">HT</div><div class="p">[20]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">13</div><div class="l">HP</div></div><div class="a"><div class="v">10</div><div class="l">Will</div></div><div class="a"><div class="v">12</div><div class="l">Per</div></div><div class="a"><div class="v">12</div><div class="l">FP</div></div><div class="a"><div class="v">6.50</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v">4 / 6</div><div class="l">Move</div></div><div class="a"><div class="v">12 (Will 10 +2 Combat Reflexes)</div><div class="l">Fright Check</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 34 lbs</span><span><span class="der-label">Thr</span> 1d</span><span><span class="der-label">Sw</span> 2d-1</span><span><span class="der-label">SM</span> 0</span></div></section>
+<div class="gurps-sheet"><div class="flow"><section class="blk cat-attr"><h2>Attributes</h2><div class="attrgrid"><div class="a"><div class="v">13</div><div class="l">ST</div><div class="p">[30]</div></div><div class="a"><div class="v">15</div><div class="l">DX</div><div class="p">[100]</div></div><div class="a"><div class="v">10</div><div class="l">IQ</div><div class="p">[0]</div></div><div class="a"><div class="v">12</div><div class="l">HT</div><div class="p">[20]</div></div></div><div class="attr-sublabel">Secondary</div><div class="subgrid"><div class="a"><div class="v">13</div><div class="l">HP</div></div><div class="a"><div class="v">10</div><div class="l">Will</div></div><div class="a"><div class="v">12</div><div class="l">Per</div></div><div class="a"><div class="v">12</div><div class="l">FP</div></div><div class="a"><div class="v">6.75</div><div class="l">Basic Speed</div></div><div class="a"><div class="v">6</div><div class="l">Basic Move</div></div><div class="a"><div class="v"><span class="gl-live" data-gl-field="move">4</span> / 6</div><div class="l">Move</div></div><div class="a"><div class="v">12 (Will 10 +2 Combat Reflexes)</div><div class="l">Fright Check</div></div></div><div class="attr-sublabel">Derived</div><div class="derived"><span><span class="der-label">BL</span> 34 lbs</span><span><span class="der-label">Thr</span> 1d</span><span><span class="der-label">Sw</span> 2d-1</span><span><span class="der-label">SM</span> 0</span></div></section>
 <section class="blk cat-attr"><h2>Lifting Feats</h2><table class="lift-feats"><thead><tr><th>Feat</th><th class="num">Weight</th></tr></thead><tbody><tr><td>One-Handed Lift</td><td class="num">68 lb</td></tr>
 <tr><td>Two-Handed Lift</td><td class="num">272 lb</td></tr>
 <tr><td>Shove &amp; Knock Over</td><td class="num">408 lb</td></tr>
@@ -117,9 +122,8 @@
 <tr><td class="nm">Appearance</td><td class="num">Average</td></tr>
 <tr><td class="nm">Status</td><td class="num">0</td></tr>
 <tr><td class="nm">Reputation</td><td class="num">None (by design)</td></tr>
-<tr><td class="nm">Reaction Modifiers</td><td class="num">See Disadvantages — Clueless, Callous, Social Stigma (Valuable Property)</td></tr>
 <tr><td class="nm">TL</td><td class="num">11</td></tr></tbody></table></section>
-<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 9</span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
+<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> <span class="gl-live" data-gl-field="dodge">9</span></span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
 <tr><td>Face</td><td class="num">60</td></tr>
 <tr><td>Neck</td><td class="num">60</td></tr>
 <tr><td>Torso</td><td class="num">100</td></tr>
@@ -127,11 +131,13 @@
 <tr><td>Hands</td><td class="num">60</td></tr>
 <tr><td>Legs</td><td class="num">60</td></tr>
 <tr><td>Feet</td><td class="num">60</td></tr></tbody></table></section>
-<section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0"><td>None (0)</td><td class="num">≤34 lbs</td><td class="num">6</td><td class="num">10</td></tr>
-<tr class="e1 cur"><td>Light (1)</td><td class="num">≤68 lbs</td><td class="num">4</td><td class="num">9</td></tr>
-<tr class="e2"><td>Medium (2)</td><td class="num">≤102 lbs</td><td class="num">3</td><td class="num">8</td></tr>
-<tr class="e3"><td>Heavy (3)</td><td class="num">≤204 lbs</td><td class="num">2</td><td class="num">7</td></tr>
-<tr class="e4"><td>X-Heavy (4)</td><td class="num">≤340 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table></section>
+<section class="blk cat-attr"><h2>Encumbrance</h2><table class="enc"><thead><tr><th>Level</th><th class="num">Max Wt</th><th class="num">Move</th><th class="num">Dodge</th></tr></thead><tbody><tr class="e0" data-level="0"><td>None (0)</td><td class="num">≤34 lbs</td><td class="num">6</td><td class="num">10</td></tr>
+<tr class="e1" data-level="1"><td>Light (1)</td><td class="num">≤68 lbs</td><td class="num">4</td><td class="num">9</td></tr>
+<tr class="e2" data-level="2"><td>Medium (2)</td><td class="num">≤102 lbs</td><td class="num">3</td><td class="num">8</td></tr>
+<tr class="e3" data-level="3"><td>Heavy (3)</td><td class="num">≤204 lbs</td><td class="num">2</td><td class="num">7</td></tr>
+<tr class="e4" data-level="4"><td>X-Heavy (4)</td><td class="num">≤340 lbs</td><td class="num">1</td><td class="num">6</td></tr></tbody></table><div class="gl-readout" hidden><span>Carried: <b id="gl-weight">—</b> lb</span><span>Enc: <b id="gl-level">—</b></span><span>Move: <b id="gl-move" data-gl-field="move">—</b> / 6</span><span>Dodge: <b id="gl-dodge" data-gl-field="dodge">—</b> / 10</span><button type="button" id="gl-reset">Reset</button></div></section>
+<section class="blk cat-social"><h2>Reaction Modifiers</h2><table><tbody><tr><td class="nm">From past victims and anyone with the Empathy advantage, once they read his ruthlessness (Callous, B125)</td><td class="num">−1</td></tr>
+<tr><td class="nm">From those who discover he is owned property — records pull, bio-scan, or the CASTELLAN // MACE-06 batch-brand (Social Stigma — Valuable Property, B155)</td><td class="num">—<sup class="fn">*</sup></td></tr></tbody></table></section>
 <section class="blk cat-social"><h2>Cultural Familiarities</h2><table><tbody><tr><td class="nm">Spacer</td><td class="num"><span class="cost">0</span></td></tr></tbody></table></section>
 <section class="blk cat-social"><h2>Languages</h2><table><thead><tr><th>Language</th><th>Spoken</th><th>Written</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Federal Standard</td><td>Native</td><td>Native</td><td class="num"><span class="cost">0</span></td></tr></tbody></table></section>
 <section class="blk cat-trait"><h2>Advantages</h2><table><tbody><tr><td class="nm">Trained by a Master</td><td class="num"><span class="cost">30</span></td></tr>
@@ -154,41 +160,46 @@
 <tr><td class="nm">Quirk: Uncomfortable being treated as a person</td><td class="num"><span class="cost">−1</span></td></tr>
 <tr><td class="nm">Quirk: Hates being cold</td><td class="num"><span class="cost">−1</span></td></tr>
 <tr><td class="nm">Quirk: Painfully literal</td><td class="num"><span class="cost">−1</span></td></tr></tbody></table></section>
-<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Acrobatics</td><td class="num">13</td><td class="num rel">DX-1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Axe/Mace</td><td class="num">16</td><td class="num rel">DX+2</td><td class="num"><span class="cost">8</span></td></tr>
-<tr><td class="nm">Beam Weapons (Pistol)</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Climbing</td><td class="num">12<div class="subline">base 13</div></td><td class="num rel">DX-1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Computer Operation</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Electronics Operation (Security)</td><td class="num">9</td><td class="num rel">IQ-1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Fast-Draw (Axe)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Fast-Draw (Pistol)</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">First Aid/TL</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Forced Entry</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Free Fall</td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Judo<div class="subline">Parry: 11</div></td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">4</span></td></tr>
-<tr><td class="nm">Karate<div class="subline">Parry: 11</div></td><td class="num">15</td><td class="num rel">DX+1</td><td class="num"><span class="cost">8</span></td></tr>
-<tr><td class="nm">Observation</td><td class="num">11</td><td class="num rel">Per-1</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Spacer</td><td class="num">10</td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
-<tr><td class="nm">Stealth</td><td class="num">13<div class="subline">base 14</div></td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
-<tr><td class="nm">Vacc Suit</td><td class="num">14</td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr></tbody></table></section>
-<section class="blk cat-skill"><h2>Techniques</h2><table><thead><tr><th>Name</th><th>Default</th><th class="num">Lvl</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Choke Hold</td><td class="nm">Judo-2</td><td class="num">14</td><td class="num"><span class="cost">3</span></td></tr>
-<tr><td class="nm">Kicking</td><td class="nm">Karate-2</td><td class="num">15</td><td class="num"><span class="cost">3</span></td></tr></tbody></table></section>
-<section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Attributes</td><td class="num">130</td></tr>
+<section class="blk cat-skill"><h2>Skills</h2><table><thead><tr><th>Name</th><th class="num">Lvl</th><th class="num">Rel</th><th class="num">Pts</th></tr></thead><tbody><tr data-skill-key="Acrobatics"><td class="nm">Acrobatics</td><td class="num"><span class="sk-cur">14</span></td><td class="num rel">DX-1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Axe/Mace"><td class="nm">Axe/Mace</td><td class="num"><span class="sk-cur">17</span></td><td class="num rel">DX+2</td><td class="num"><span class="cost">8</span></td></tr>
+<tr data-skill-key="Beam Weapons (Pistol)"><td class="nm">Beam Weapons (Pistol)</td><td class="num"><span class="sk-cur">16</span></td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Climbing"><td class="nm">Climbing</td><td class="num"><span class="sk-cur">13</span><div class="subline">base 14</div></td><td class="num rel">DX-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Computer Operation"><td class="nm">Computer Operation</td><td class="num"><span class="sk-cur">10</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Electronics Operation (Security)"><td class="nm">Electronics Operation (Security)</td><td class="num"><span class="sk-cur">9</span></td><td class="num rel">IQ-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Fast-Draw (Axe)"><td class="nm">Fast-Draw (Axe)</td><td class="num"><span class="sk-cur">15</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Fast-Draw (Pistol)"><td class="nm">Fast-Draw (Pistol)</td><td class="num"><span class="sk-cur">15</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="First Aid/TL"><td class="nm">First Aid/TL</td><td class="num"><span class="sk-cur">10</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Forced Entry"><td class="nm">Forced Entry</td><td class="num"><span class="sk-cur">16</span></td><td class="num rel">DX+1</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Free Fall"><td class="nm">Free Fall</td><td class="num"><span class="sk-cur">16</span></td><td class="num rel">DX+1</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Judo"><td class="nm">Judo<div class="subline">Parry: 11</div></td><td class="num"><span class="sk-cur">15</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">4</span></td></tr>
+<tr data-skill-key="Karate"><td class="nm">Karate<div class="subline">Parry: 12</div></td><td class="num"><span class="sk-cur">16</span></td><td class="num rel">DX+1</td><td class="num"><span class="cost">8</span></td></tr>
+<tr data-skill-key="Observation"><td class="nm">Observation</td><td class="num"><span class="sk-cur">11</span></td><td class="num rel">Per-1</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Spacer"><td class="nm">Spacer</td><td class="num"><span class="sk-cur">10</span></td><td class="num rel">IQ+0</td><td class="num"><span class="cost">1</span></td></tr>
+<tr data-skill-key="Stealth"><td class="nm">Stealth</td><td class="num"><span class="sk-cur">14</span><div class="subline">base 15</div></td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr>
+<tr data-skill-key="Vacc Suit"><td class="nm">Vacc Suit</td><td class="num"><span class="sk-cur">15</span></td><td class="num rel">DX+0</td><td class="num"><span class="cost">2</span></td></tr></tbody></table></section>
+<section class="blk cat-skill"><h2>Techniques</h2><table><thead><tr><th>Name</th><th>Default</th><th class="num">Lvl</th><th class="num">Pts</th></tr></thead><tbody><tr><td class="nm">Choke Hold</td><td class="nm">Judo-2</td><td class="num">15</td><td class="num"><span class="cost">3</span></td></tr>
+<tr><td class="nm">Kicking</td><td class="nm">Karate-2</td><td class="num">16</td><td class="num"><span class="cost">3</span></td></tr></tbody></table></section>
+<section class="blk cat-points"><h2>Points Summary</h2><table><tbody><tr><td class="nm">Attributes</td><td class="num">150</td></tr>
 <tr><td class="nm">Secondary Characteristics</td><td class="num">10</td></tr>
 <tr><td class="nm">Advantages &amp;amp; Perks</td><td class="num">67</td></tr>
 <tr><td class="nm">Disadvantages</td><td class="num">−75</td></tr>
 <tr><td class="nm">Quirks</td><td class="num">−5</td></tr>
 <tr><td class="nm">Skills</td><td class="num">42</td></tr>
 <tr><td class="nm">Techniques</td><td class="num">6</td></tr>
-<tr class="total"><td class="nm">Total (spent)</td><td class="num">175</td></tr>
+<tr class="total"><td class="nm">Total (spent)</td><td class="num">195</td></tr>
 <tr><td class="nm">Earned XP (Session 1)</td><td class="num">+5</td></tr>
-<tr class="unspent"><td class="nm">Available (unspent)</td><td class="num">5</td></tr></tbody></table></section></div><div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Karate punch</td><td class="num">Karate-15</td><td class="num">11</td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Karate kick</td><td class="num">Karate-15</td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-14</td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-14</td><td class="num">11</td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
-<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Blaster pistol (Fine)</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div></div>
+<tr><td class="nm">Earned XP (Session 2)</td><td class="num">+5</td></tr>
+<tr><td class="nm">Earned XP (Session 3)</td><td class="num">+5</td></tr>
+<tr><td class="nm">Earned XP (Session 4)</td><td class="num">+5</td></tr>
+<tr><td class="nm">Spent — DX 14 → 15 (Session 4)</td><td class="num">−20</td></tr>
+<tr class="unspent"><td class="nm">Available (unspent)</td><td class="num">0</td></tr></tbody></table></section></div><div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr data-weapon-key="Vibro-axe"><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-<span class="wp-tohit">18</span></td><td class="num"><span class="wp-parry">12</span> (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Karate punch"><td class="nm">Karate punch</td><td class="num">Karate-<span class="wp-tohit">16</span></td><td class="num"><span class="wp-parry">12</span></td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Karate kick"><td class="nm">Karate kick</td><td class="num">Karate-<span class="wp-tohit">16</span></td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Choke Hold (carotid)"><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-<span class="wp-tohit">15</span></td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Judo grapple / throw / Takedown"><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-<span class="wp-tohit">15</span></td><td class="num"><span class="wp-parry">11</span></td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr data-weapon-key="Grazer pistol (alien) — holstered"><td class="nm">Grazer pistol (alien) — holstered</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">3d (10) burn, sur</td><td class="num">6</td><td class="num">70/200 †</td><td class="num">10</td><td class="num">33(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Blaster pistol (Fine) — stowed, toggle on"><td class="nm">Blaster pistol (Fine) — stowed, toggle on</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Holdout electrolaser"><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div></div>
 <nav class="section-nav" aria-label="Sheet sections"><a href="#background">Background</a>
 <a href="#notes">Notes</a></nav>
 
@@ -198,7 +209,7 @@
     <p>A vat-grown, <strong>human-based replicant</strong> engineered as a hull-breacher: cross the dark between ships, cut through the hull, and <strong>clear the crew</strong> — by whatever means is most efficient. Kill or subdue is a cold tool-selection, never a moral one: he kills the instant killing is the cleanest path to the objective, with zero hesitation, and subdues when subduing is — he neither avoids nor seeks killing, and feels nothing either way. Between contracts he was racked in cryostasis — so his whole conscious life is <em>fight, freeze, fight</em>. Passes for human on sight; only a deep bio-scan or records pull reveals what he is. Legally he isn’t a person — he’s inventory.</p>
 <p>Six reads as a big, hard-used man in his early thirties — six-two and densely built, the muscle laid on with the even, purposeful symmetry of something <strong>grown to spec</strong> rather than earned in a gym. Olive, flawlessly even skin — until you find the old breach-work scars: burns, a puckered seam where a bulkhead bit him. Black hair buzzed to nothing; pale grey eyes that track movement with a flat, patient economy and almost never blink first. He moves with the stillness of a thing that is only ever <em>waiting to fight</em>, and talks — when he talks — too literally and a beat too late, like a man reading a language he learned but never lived in.</p>
 <p>He is <strong>never out of his rig</strong>: a bulky, work-scuffed EVA hardsuit in faded MacMillian livery (it is not a work suit), helmet clipped at his hip, the vibro-axe never far from his hand. Somewhere not easily seen — inside a forearm, the nape under the hairline — is a small etched maker’s mark and batch code: <strong>CASTELLAN // MACE-06</strong>. It’s the one part of him that tells the truth — and a physical tell that could blow his Secret on a close search.</p>
-<p>His maker stamped him <strong>MACE-pattern Boarding Asset, vat-batch 06</strong> — so the kids who thawed him called him <strong>“Six.”</strong> It stuck. He was grown and conditioned by <strong>Castellan Biodynamics</strong>, a military bio-contractor out of the <strong><a href="../../locations/meridian.html">Meridian</a></strong> system, for one job: board and clear ships. Between contracts: cryostasis.</p>
+<p>His maker stamped him <strong>MACE-pattern Boarding Asset, vat-batch 06</strong> — so the kids who thawed him called him <strong>“Six.”</strong> It stuck. He was grown and conditioned by <strong>Castellan Biodynamics</strong>, a military bio-contractor out of the <strong><a href="../../locations/meridian-system.html">Meridian System</a></strong> system, for one job: board and clear ships. Between contracts: cryostasis.</p>
 <p><strong>P.E.T.A.</strong> (People for the Ethical Treatment of Androids) — militant android-rights youth led by the firebrand <strong>Kumari Profeta</strong> — cracked a Castellan Biodynamics cryo-vault and “liberated” a handful of assets, Six among them. The raid went loud; most of the kids scattered or were caught. Six walked into a society he has no manual for — no citizenship, no papers, no money, no idea how any of it works beyond violence. Castellan wants its property back and there’s a quiet recovery bounty. Anywhere with real infrastructure means scanners and questions he can’t survive, so he ran to the one place at the end of the charted lanes where nobody checks papers and the only employer hires any warm body with no questions: the <strong><a href="../../locations/thides-system.html">Thides System</a></strong>. MacMillian “security” is the bottom of the barrel — which is exactly why it’s the only door open to him. <em>This is his last option.</em></p>
 <p>There was a leash on all of that, and it was made of faith. Castellan Biodynamics didn’t only condition the body, they wrote in a <strong><a href="../../world/silicon-heaven.html">Silicon Heaven</a></strong>: behave, work clean, leave no loose ends, and when the asset is finally spent its pattern is carried up to a paradise built for good machines. A reward at the far end of the racking. He held it the way he holds a range reading, flat and total, no metaphor in him to hold it any other way. Behave, and you go somewhere good when they’re done with you. Where else would a used-up thing go? The belief cost Castellan nothing to install, and it did the work of a hundred guards.</p>
 <p><strong>P.E.T.A.</strong> cut that leash with a single sentence. There is no Silicon Heaven. No upload, no paradise, nothing at the end of the work but the end of the work. It should have shut him down, the way a cheaper pattern hunts forever for an answer that was never filed. It didn’t. What was left when the afterlife went dark was the job itself, done clean because clean is what he is and not because anything is keeping the tally now. Kumari Profeta and the kids cracked his vault and pulled his body into the cold. Telling him the calculators go nowhere freed the rest of him.</p>
@@ -220,14 +231,21 @@
 </div>
 <h2>Relationships</h2>
 <ul class="relationship-list">
-<li><strong class="rel-label">Located at</strong> Thides Station &mdash; Took the only job left to him — MacMillian 'security' at the dead-end of known space.</li>
-<li><strong class="rel-label">Hunted by</strong> <a href="../../locations/federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; Legally non-human property; exposure means reclamation or bounty.</li>
-<li><strong class="rel-label">Liberated by</strong> P.E.T.A. &mdash; The android-rights militants who thawed him; he owes them a quiet, wordless debt.</li>
+<li><strong class="rel-label">Captured</strong> <a href="../npcs/marlo-petrak.html" class="entity-link">Marlo Petrak</a> &mdash; Captured the technician during the compound raid.</li>
+<li><strong class="rel-label">Located at</strong> <a href="../../locations/macmillian-station-iv.html" class="entity-link">Thides Station</a> &mdash; Took the only job left to him — MacMillian 'security' at the dead-end of known space.</li>
+<li><strong class="rel-label">Enemy of</strong> <a href="../../locations/federal-republic-of-worlds.html" class="entity-link">Federal Republic of Worlds</a> &mdash; Legally non-human property; exposure means reclamation or bounty.</li>
+<li><strong class="rel-label">Wields</strong> Vibro-Axe (MACE-06) &mdash; His primary lethal melee weapon; never far from his hand.</li>
+<li><strong class="rel-label">Wields</strong> Blaster Pistol (Fine) &mdash; His vacuum-proof ranged lethal option — 'the ranged axe.' Stowed since the grazer took over the holster; still owned Signature Gear, toggled on when a job needs its 300/900 atmospheric reach.</li>
+<li><strong class="rel-label">Owns</strong> Disguised Space Armor &mdash; He is never out of it — sleeps in it (SOP: Always Armored).</li>
+<li><strong class="rel-label">Wields</strong> Grazer Pistol &mdash; Recovered alien-tech sidearm, now his primary — the hardest-hitting thing he carries, and a thing he cannot explain to anyone who asks.</li>
+<li><strong class="rel-label">Wields</strong> Holdout Electrolaser &mdash; Concealable non-lethal option for clean live captures at range.</li>
+<li><strong class="rel-label">Owns</strong> Hand Thruster &mdash; Lets him cross the dark between ships under his own power.</li>
+<li><strong class="rel-label">Owns</strong> Six — Field Sundries &amp; Reloads &mdash; His sundries and the one-refill-per-consumable kit Infinite Ammunition needs.</li>
 </ul>
+<script type="application/json" id="gurps-live-data">{"buildVersion":"5d6a74a366cc","campaignId":"dead-end","pcSlug":"six","authoredLevel":0,"levels":[{"name":"None","num":0,"maxWeight":34,"move":6,"dodge":10},{"name":"Light","num":1,"maxWeight":68,"move":4,"dodge":9},{"name":"Medium","num":2,"maxWeight":102,"move":3,"dodge":8},{"name":"Heavy","num":3,"maxWeight":204,"move":2,"dodge":7},{"name":"X-Heavy","num":4,"maxWeight":340,"move":1,"dodge":6}],"skills":{"Acrobatics":[14,14,14,14,14],"Axe/Mace":[17,17,17,17,17],"Beam Weapons (Pistol)":[16,16,16,16,16],"Climbing":[14,14,14,14,14],"Computer Operation":[10,10,10,10,10],"Electronics Operation (Security)":[9,9,9,9,9],"Fast-Draw (Axe)":[15,15,15,15,15],"Fast-Draw (Pistol)":[15,15,15,15,15],"First Aid/TL":[10,10,10,10,10],"Forced Entry":[16,16,16,16,16],"Free Fall":[16,16,16,16,16],"Judo":[15,15,15,15,15],"Karate":[16,16,16,16,16],"Observation":[11,11,11,11,11],"Spacer":[10,10,10,10,10],"Stealth":[15,15,15,15,15],"Vacc Suit":[15,15,15,15,15]},"weapons":{"Vibro-axe":{"toHit":[18,18,18,18,18],"parry":[12,12,12,12,12],"block":null},"Karate punch":{"toHit":[16,16,16,16,16],"parry":[12,12,12,12,12],"block":null},"Karate kick":{"toHit":[16,16,16,16,16],"parry":null,"block":null},"Choke Hold (carotid)":{"toHit":[15,15,15,15,15],"parry":null,"block":null},"Judo grapple / throw / Takedown":{"toHit":[15,15,15,15,15],"parry":[11,11,11,11,11],"block":null},"Grazer pistol (alien) — holstered":{"toHit":[16,16,16,16,16],"parry":null,"block":null},"Blaster pistol (Fine) — stowed, toggle on":{"toHit":[16,16,16,16,16],"parry":null,"block":null},"Holdout electrolaser":{"toHit":[16,16,16,16,16],"parry":null,"block":null}},"items":[{"key":"Vibro-axe","weight":4,"defaultCarried":true,"table":"main"},{"key":"Holdout electrolaser","weight":0.3,"defaultCarried":true,"table":"main"},{"key":"Grazer pistol (alien)","weight":1.5,"defaultCarried":true,"table":"main"},{"key":"Helmet lamp (integral to suit)","weight":0,"defaultCarried":true,"table":"main"},{"key":"Small Computer + Datapad (mini-comp / PDA / comm)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Trauma patches","weight":0.6,"defaultCarried":true,"table":"main"},{"key":"Hand thruster","weight":4,"defaultCarried":true,"table":"main"},{"key":"Reload spares (C cell + B cell)","weight":0.55,"defaultCarried":true,"table":"main"},{"key":"Disguised Space Armor (suit + helmet + Chameleon Surface)","weight":56,"defaultCarried":true,"table":"main"},{"key":"Blaster pistol (Fine)","weight":1.6,"defaultCarried":false,"table":"loadout:The standing baseline carries none of them"},{"key":"Electric Stun Wand (TL9)","weight":1,"defaultCarried":false,"table":"loadout:Owned — stowed by default (Signature Gear)"},{"key":"Sonic stun pistol (TL10)","weight":1.8,"defaultCarried":false,"table":"loadout:Owned — stowed by default (Signature Gear)"}],"vitals":{"hp":{"cur":13,"max":13},"fp":{"cur":12,"max":12},"st":13,"basicSpeed":6.75,"dx":15},"basicSpeed":6.75,"dx":15}</script>
 </div>
 <div class="tab-panel" id="tab-combat">
-<div class="gurps-combat"><div class="status"><span class="pip">Move: 4 / 6</span><span class="pip">Enc: Light (1)</span><span class="condition">Alive, uninjured (HP 13 / FP 12 full).</span><span class="location"><span class="status-label">Location:</span> Thides Station — working MacMillian “security” at the dead-end of the charted lanes (his last option).</span><span class="carrying"><span class="status-label">Carrying:</span> Full Signature Gear loadout — disguised Space Armor (worn), vibro-axe, Fine blaster, holdout electrolaser, hand thruster, tac light, reload kit, mini-computer/datapad (personal comm).</span></div>
-<section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 11</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> 9</span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
+<div class="gurps-combat"><section class="blk cat-def"><h2>Active Defenses</h2><div class="defrow"><span class="def-chip"><span class="def-chip-label">Parry (axe)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Karate)</span> 12</span><span class="def-chip"><span class="def-chip-label">Parry (Judo)</span> 11</span><span class="def-chip"><span class="def-chip-label">Block</span> —</span><span class="def-chip"><span class="def-chip-label">Dodge</span> <span class="gl-live" data-gl-field="dodge">9</span></span></div><table class="hit-loc"><thead><tr><th>Location</th><th class="num">DR</th></tr></thead><tbody><tr><td>Skull</td><td class="num">80</td></tr>
 <tr><td>Face</td><td class="num">60</td></tr>
 <tr><td>Neck</td><td class="num">60</td></tr>
 <tr><td>Torso</td><td class="num">100</td></tr>
@@ -235,62 +253,64 @@
 <tr><td>Hands</td><td class="num">60</td></tr>
 <tr><td>Legs</td><td class="num">60</td></tr>
 <tr><td>Feet</td><td class="num">60</td></tr></tbody></table></section>
-<div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-17</td><td class="num">12 (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Karate punch</td><td class="num">Karate-15</td><td class="num">11</td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Karate kick</td><td class="num">Karate-15</td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-14</td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-14</td><td class="num">11</td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
-<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr><td class="nm">Blaster pistol (Fine)</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
-<tr><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-15</td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div>
-<section class="blk cat-chain"><h2>Combat Action Chains</h2><div class="chain-group"><h3>Melee</h3><div class="chain-entry"><div class="chain-name">Axe Rapid Strike</div><div class="chain-steps"><span class="chain-step">Trained by a Master</span> <span class="chain-arrow">→</span> <span class="chain-step">two vibro-axe swings at 17−3 = 14 each</span> <span class="chain-arrow">→</span> <span class="chain-step">armor-divisor (3) guts most DR (two mooks down in a second vs Cannon Fodder).</span></div></div>
-<div class="chain-entry"><div class="chain-name">Subdue, front</div><div class="chain-steps"><span class="chain-step">Judo grapple (14)</span> <span class="chain-arrow">→</span> <span class="chain-step">Takedown (prone)</span> <span class="chain-arrow">→</span> <span class="chain-step">re-grip neck</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold (14)</span> <span class="chain-arrow">→</span> <span class="chain-step">unconscious in ~3 seconds.</span></div></div>
-<div class="chain-entry"><div class="chain-name">Silent kill-switch, behind</div><div class="chain-steps"><span class="chain-step">Stealth (14) / after a throw</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold, no defense allowed</span> <span class="chain-arrow">→</span> <span class="chain-step">carotid choke out.</span></div></div>
-<div class="chain-entry"><div class="chain-name">Aimed precision shot</div><div class="chain-steps"><span class="chain-step">Aim 1 turn (brace if able)</span> <span class="chain-arrow">→</span> <span class="chain-step">Attack at 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = effective ~22–23 before range</span> <span class="chain-arrow">→</span> <span class="chain-step">at shipboard range, buy a hit location (−7 skull / −5 vitals); 3d(5) burn, armor-divisor 5, vacuum-safe.</span></div></div>
-<div class="chain-entry"><div class="chain-name">Snap shot / drop</div><div class="chain-steps"><span class="chain-step">Fast-Draw (Pistol)-14 free draw</span> <span class="chain-arrow">→</span> <span class="chain-step">blaster (Beam Weapons-15, 3d(5) burn, vacuum-safe) for a kill, or holdout electrolaser (HT-2 stun, atmosphere only) for a live capture.</span></div></div></div></section>
+<div class="wide cat-table"><h2>Melee Attacks</h2><table><thead><tr><th>Weapon/Mode</th><th class="num">Skill</th><th class="num">Parry</th><th class="num dmg">Damage</th><th class="num">Reach</th><th class="num">ST</th><th>Notes</th></tr></thead><tbody><tr data-weapon-key="Vibro-axe"><td class="nm">Vibro-axe</td><td class="num">Axe/Mace-<span class="wp-tohit">18</span></td><td class="num"><span class="wp-parry">12</span> (0U)</td><td class="num dmg">3d+2 (3) cut</td><td class="num">1</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Karate punch"><td class="nm">Karate punch</td><td class="num">Karate-<span class="wp-tohit">16</span></td><td class="num"><span class="wp-parry">12</span></td><td class="num dmg">1d+1 cr</td><td class="num">C</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Karate kick"><td class="nm">Karate kick</td><td class="num">Karate-<span class="wp-tohit">16</span></td><td class="num">—</td><td class="num dmg">1d+2 cr</td><td class="num">C, 1</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Choke Hold (carotid)"><td class="nm">Choke Hold (carotid)</td><td class="num">Choke Hold-<span class="wp-tohit">15</span></td><td class="num">—</td><td class="num dmg">FP → unconscious</td><td class="num">C (grapple)</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Judo grapple / throw / Takedown"><td class="nm">Judo grapple / throw / Takedown</td><td class="num">Judo-<span class="wp-tohit">15</span></td><td class="num"><span class="wp-parry">11</span></td><td class="num dmg">— / slam</td><td class="num">C</td><td class="num"></td><td></td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Ranged Attacks</h2><table><thead><tr><th>Weapon</th><th class="num">Skill</th><th class="num dmg">Damage</th><th class="num">Acc</th><th class="num">Range</th><th class="num">RoF</th><th class="num">Shots</th><th class="num">ST</th><th class="num">Bulk</th><th class="num">Rcl</th><th>Notes</th></tr></thead><tbody><tr data-weapon-key="Grazer pistol (alien) — holstered"><td class="nm">Grazer pistol (alien) — holstered</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">3d (10) burn, sur</td><td class="num">6</td><td class="num">70/200 †</td><td class="num">10</td><td class="num">33(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Blaster pistol (Fine) — stowed, toggle on"><td class="nm">Blaster pistol (Fine) — stowed, toggle on</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">3d (5) burn</td><td class="num">6</td><td class="num">300/900</td><td class="num">3</td><td class="num">200(3)</td><td class="num"></td><td class="num">-2</td><td class="num"></td><td></td></tr>
+<tr data-weapon-key="Holdout electrolaser"><td class="nm">Holdout electrolaser</td><td class="num">Beam Weapons (Pistol)-<span class="wp-tohit">16</span></td><td class="num dmg">HT-2 (2) stun + 1d-3 burn</td><td class="num">2</td><td class="num">10/20</td><td class="num">3</td><td class="num">22(3)</td><td class="num"></td><td class="num">-1</td><td class="num"></td><td></td></tr></tbody></table></div>
+<section class="blk cat-chain"><h2>Combat Action Chains</h2><div class="chain-group"><h3>Melee</h3><div class="chain-entry"><div class="chain-name">Axe Rapid Strike</div><div class="chain-steps"><span class="chain-step">Trained by a Master</span> <span class="chain-arrow">→</span> <span class="chain-step">two vibro-axe swings at 18−3 = 15 each</span> <span class="chain-arrow">→</span> <span class="chain-step">armor-divisor (3) guts most DR (two mooks down in a second vs Cannon Fodder).</span></div></div>
+<div class="chain-entry"><div class="chain-name">Subdue, front</div><div class="chain-steps"><span class="chain-step">Judo grapple (15)</span> <span class="chain-arrow">→</span> <span class="chain-step">Takedown (prone)</span> <span class="chain-arrow">→</span> <span class="chain-step">re-grip neck</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold (15)</span> <span class="chain-arrow">→</span> <span class="chain-step">unconscious in ~3 seconds.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Silent kill-switch, behind</div><div class="chain-steps"><span class="chain-step">Stealth (14 at Light) / after a throw</span> <span class="chain-arrow">→</span> <span class="chain-step">Choke Hold, no defense allowed</span> <span class="chain-arrow">→</span> <span class="chain-step">carotid choke out.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Aimed precision shot</div><div class="chain-steps"><span class="chain-step">Aim 1 turn (brace if able)</span> <span class="chain-arrow">→</span> <span class="chain-step">Attack at 16 + 6 (Acc) + 1 (HUD link) [+1 braced] = effective ~23–24 before range</span> <span class="chain-arrow">→</span> <span class="chain-step">at shipboard range, buy a hit location (−7 skull / −5 vitals); Grazer as standard: 3d(10) burn sur, armor-divisor 10, RoF 10, vacuum-safe — the 200-yard atmospheric ceiling is the price. Toggle the stowed blaster back on (3d(5), AD 5, 300/900) when the shot is long and in air.</span></div></div>
+<div class="chain-entry"><div class="chain-name">Snap shot / drop</div><div class="chain-steps"><span class="chain-step">Fast-Draw (Pistol)-15 free draw</span> <span class="chain-arrow">→</span> <span class="chain-step">grazer (Beam Weapons-16, 3d(10) burn sur, vacuum-safe) for a kill — or the holdout electrolaser (HT-2 stun, atmosphere only) for a live capture.</span></div></div></div></section>
 <section class="blk cat-skill"><h2>Multi-Action Combat Skill Chains</h2><blockquote>
-<p>Operational state throughout: in armor, Light encumbrance (Move 4, Dodge 9). Both Karate and Judo run at full skill suited (Armor Familiarity ×2). Combat Reflexes is baked in.</p>
+<p>Operational state throughout: in armor at <strong>Light</strong> encumbrance — grazer holstered, blaster stowed, ≈67.5 lbs (Move 4, Dodge 9). Toggling the blaster back on alongside the grazer adds 1.6 lbs and drops him to Medium (Move 3, Dodge 8). Both Karate and Judo run at full skill suited (Armor Familiarity ×2). Combat Reflexes is baked in.</p>
 </blockquote>
 <h3>Lethal options — when a kill is the cleaner, faster answer</h3>
 <ol>
-<li><strong>Axe Rapid Strike</strong> (Trained by a Master halves the penalty): two swings at 17−3 = <strong>14 each</strong>. Armor-divisor (3) guts most DR; with Cannon Fodder, potentially two mooks down in one second.</li>
+<li><strong>Axe Rapid Strike</strong> (Trained by a Master halves the penalty): two swings at 18−3 = <strong>15 each</strong>. Armor-divisor (3) guts most DR; with Cannon Fodder, potentially two mooks down in one second.</li>
 <li><strong>All-Out Attack (Strong), axe:</strong> <strong>3d+4 (3) cut</strong> — the finisher / breach-through-a-body.</li>
 <li><strong>Targeted Attack (Axe/Neck)</strong> — <em>next purchase when points free up</em>; turns a hit into a kill.</li>
-<li><strong>Blaster pistol</strong> (Beam Weapons-15): <strong>3d(5) burn</strong> at range, armor-divisor 5 — works in vacuum. Ranged lethal option when he can’t or won’t close.</li>
+<li><strong>Grazer pistol</strong> (Beam Weapons-16): <strong>3d(10) burn, sur</strong> — armor-divisor <strong>10</strong>, RoF 10, vacuum-safe and at full 10/30-mile range out there. The hardest-hitting thing he owns against heavy DR. Atmospheric ceiling 200 yards.</li>
+<li><strong>Blaster pistol</strong> (Beam Weapons-16), <em>stowed by default</em>: <strong>3d(5) burn</strong> at range, armor-divisor 5 — works in vacuum, and keeps 300/900 reach in atmosphere where the grazer is capped. Toggling it on costs 1.6 lbs and drops him to Medium unless he sheds first.</li>
 </ol>
 <h3>Non-lethal options — when alive-and-quiet is the cleaner objective</h3>
 <ol>
-<li><strong>From behind</strong> (Stealth 14 / after a throw): <strong>Choke Hold, no defense allowed</strong> → carotid choke, ~3 seconds to unconscious.</li>
+<li><strong>From behind</strong> (Stealth 14 at Light / after a throw): <strong>Choke Hold, no defense allowed</strong> → carotid choke, ~3 seconds to unconscious.</li>
 <li><strong>Front of a fight:</strong> <strong>Judo grapple → Takedown</strong> (they fall prone) → re-grip neck → <strong>Choke Hold.</strong> Prone + grappled = no realistic escape.</li>
 <li><strong>Cannon-Fodder tap-out:</strong> a single Karate <strong>kick (1d+2)</strong> past DR drops a mook — <em>declare it non-lethal.</em> Faster than the choke when speed beats control.</li>
-<li><strong>Counter-choke (punish a parry):</strong> foe attacks → <strong>Judo Parry 11</strong> (+3 on a Retreat) → next turn step into close combat and <strong>Choke Hold 14</strong> (−1 front) to the neck → choke out. <em>(A successful barehanded Judo parry is a legal entry into the grapple.)</em></li>
-<li><strong>Ranged stun:</strong> <strong>Holdout electrolaser</strong> (Beam Weapons 15) → <strong>HT-2 (2) affliction</strong> at 10/20 — non-lethal drop at range. <em>Atmosphere only (no stun in vacuum).</em></li>
+<li><strong>Counter-choke (punish a parry):</strong> foe attacks → <strong>Judo Parry 11</strong> (+3 on a Retreat) → next turn step into close combat and <strong>Choke Hold 15</strong> (−1 front) to the neck → choke out. <em>(A successful barehanded Judo parry is a legal entry into the grapple.)</em></li>
+<li><strong>Ranged stun:</strong> <strong>Holdout electrolaser</strong> (Beam Weapons 16) → <strong>HT-2 (2) affliction</strong> at 10/20 — non-lethal drop at range. <em>Atmosphere only (no stun in vacuum).</em></li>
 </ol>
 <h3>Ranged options — the “ranged axe” when he can’t or won’t close</h3>
 <ol>
-<li><strong>Aimed precision shot:</strong> Aim 1 turn (brace if he can) → Attack: 15 + 6 (Acc) + 1 (HUD link) [+1 braced] = <strong>effective ~22–23</strong> before range penalty. At shipboard ranges (~0 penalty) that easily affords a called shot — −7 skull, −5 vitals/eye — and <strong>3d(5) burn, armor-divisor 5</strong> punches through most DR. Works in vacuum.</li>
-<li><strong>Fast-Draw snap shot:</strong> <strong>Fast-Draw (Pistol)-14</strong> readies the blaster as a free action → Attack same turn at <strong>15</strong> (no Aim). The reaction shot when a threat appears before he’s drawn.</li>
-<li><strong>Burst (RoF 3):</strong> at close range his effective skill clears <strong>Rcl 1</strong> by enough to land multiple of the blaster’s 3 shots — up to <strong>triple 3d(5) burn</strong> on one target.</li>
-<li><strong>Zero-G snipe:</strong> beam weapons are <strong>exempt from the Free Fall cap</strong>, so he fires at full <strong>15</strong> while drifting — untrained foes are stuck at Free Fall default (~9) for their own attacks. He out-shoots them in his own element.</li>
-<li><strong>Kite / break-off:</strong> when a foe is behind cover, too armored to grapple, or closing is a bad trade, back to range and use the blaster — <strong>AD 5 actually beats the axe’s AD 3</strong> against heavy DR. Electrolaser is the atmosphere-only non-lethal version (HT-2 stun, 10/20).</li>
+<li><strong>Aimed precision shot:</strong> Aim 1 turn (brace if he can) → Attack: 16 + 6 (Acc) + 1 (HUD link) [+1 braced] = <strong>effective ~23–24</strong> before range penalty. At shipboard ranges (~0 penalty) that easily affords a called shot — −7 skull, −5 vitals/eye. <strong>Grazer (carried): 3d(10) burn sur, AD 10. Blaster (stowed): 3d(5) burn, AD 5</strong> — the grazer is the one on his hip, and the one to aim with when the target is armored.</li>
+<li><strong>Fast-Draw snap shot:</strong> <strong>Fast-Draw (Pistol)-15</strong> readies the holstered grazer as a free action → Attack same turn at <strong>16</strong> (no Aim). The reaction shot when a threat appears before he’s drawn.</li>
+<li><strong>Burst:</strong> <strong>grazer RoF 10</strong> (blaster RoF 3 if toggled on) — at close range his effective skill clears <strong>Rcl 1</strong> by a wide margin, so the grazer can stack a lot of 3d(10) hits on one target. This is the single biggest gain from carrying it as primary.</li>
+<li><strong>Zero-G snipe:</strong> beam weapons are <strong>exempt from the Free Fall cap</strong>, so he fires at full <strong>16</strong> while drifting — untrained foes are stuck at Free Fall default (~9) for their own attacks. He out-shoots them in his own element. In vacuum the grazer is unshackled from its air-absorption cap entirely.</li>
+<li><strong>Kite / break-off:</strong> when a foe is behind cover, too armored to grapple, or closing is a bad trade, back to range — <strong>grazer AD 10 &gt; blaster AD 5 &gt; axe AD 3</strong> against heavy DR. Electrolaser is the atmosphere-only non-lethal version (HT-2 stun, 10/20).</li>
 </ol>
 <h3>Defense &amp; survival</h3>
 <ul>
-<li><strong>Dodge 9, retreat to 12;</strong> Karate <strong>Parry 11</strong> twice a turn (weapons unpenalized). He rarely gets hit.</li>
+<li><strong>Dodge 9 at Light (8 if he loads back to Medium), retreat to 12;</strong> Karate <strong>Parry 12</strong> twice a turn (weapons unpenalized). He rarely gets hit.</li>
 <li><strong>High Pain Threshold</strong> ignores shock and resists stun/KO; <strong>DR 100</strong> shrugs off small arms; <strong>Vacuum Support + helmet-to-hand</strong> means a hull breach won’t kill him.</li>
 <li><strong>Fright Check 12</strong>, <strong>never freezes</strong>, +6 to shake off mental stun. No Fearlessness — the <em>genuinely unknown</em> is his one soft spot.</li>
 <li>⚠️ <strong>The choke ties up both hands</strong> — <em>no parry while choking</em>, and he’s committed to one target. Great 1-on-1; <strong>bad when outnumbered.</strong></li>
 </ul>
 <h3>Zero-G (Spacer Kung-Fu)</h3>
 <ul>
-<li><strong>Free Fall 15 is the key:</strong> nothing of his is penalized except the vibro-axe (17→15); Karate/Judo/Choke/Kicking are all ≤15, and the blaster is exempt. Most enemies fight at Free Fall default (~9) — <strong>zero-G is his turf.</strong> Free Fall 15 keeps him oriented through a tumble; Acrobatics 13 for flips.</li>
+<li><strong>Free Fall 16 is the key:</strong> nothing of his is penalized except the vibro-axe (18→16); Karate/Judo/Choke/Kicking are all ≤16, and beam weapons are exempt. Most enemies fight at Free Fall default (~9) — <strong>zero-G is his turf.</strong> Free Fall 16 keeps him oriented through a tumble; Acrobatics 14 for flips.</li>
 <li><strong>Brace off a bulkhead</strong> to strike at full power; <strong>Judo throws redirect momentum into walls</strong> — devastating where there’s no “down.”</li>
-<li><strong>EVA mobility:</strong> the <strong>hand thruster</strong> lets him cross open space ship-to-ship under his own power — point-and-burst on Free Fall 15, 30 bursts (≈30 yd/s of Δv) per cylinder.</li>
+<li><strong>EVA mobility:</strong> the <strong>hand thruster</strong> lets him cross open space ship-to-ship under his own power — point-and-burst on Free Fall 16, 30 bursts (≈30 yd/s of Δv) per cylinder.</li>
 </ul>
 <h3>Doctrine / target priority</h3>
 <ul>
 <li><strong>Pick the mode that closes the job fastest and cleanest</strong> — throw → choke (or a pulled strike) when alive-and-quiet matters; the axe or blaster when a kill is the faster, cleaner answer. No hesitation, no preference — pure efficiency.</li>
 <li><strong>Outnumbered:</strong> throw several prone (−4 to everything they do), then choke or axe the one that matters.</li>
-<li>He’s the <strong>breach point</strong> — cut in (Forced Entry 15), clear the compartment, control it.</li>
+<li>He’s the <strong>breach point</strong> — cut in (Forced Entry 16), clear the compartment, control it.</li>
 </ul>
 <p><img src="../../images/characters/Six-melee-flowchart.svg" alt="697"></p>
 </section><details class="rules-ref">
@@ -341,16 +361,18 @@
 </details></div>
 </div>
 <div class="tab-panel" id="tab-equipment">
-<div class="gurps-equipment"><div class="wide cat-table"><h2>Equipment</h2><table class="equip-table"><thead><tr><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th><th>Location</th><th>Notes</th></tr></thead><tbody><tr><td class="num">1</td><td>Vibro-axe</td><td class="num">$500</td><td class="num">4 lbs</td><td>Hand / belt</td><td>3d+2 (3) cut; C cell, 75 sec/cell</td></tr>
-<tr><td class="num">1</td><td>Blaster pistol (Fine)</td><td class="num">$4,400</td><td class="num">1.6 lbs</td><td>Holster</td><td>3d(5) burn, Acc 6, smartgun + HUD link; vacuum-safe</td></tr>
-<tr><td class="num">1</td><td>Holdout electrolaser</td><td class="num">$250</td><td class="num">0.3 lbs</td><td>Concealed</td><td>HT-2 (2) stun; atmosphere only</td></tr>
-<tr><td class="num">1</td><td>Tactical light</td><td class="num">$100</td><td class="num">0.5 lbs</td><td>Suit</td><td>For dark compartments</td></tr>
-<tr><td class="num">1</td><td>Small Computer + Datapad (mini-comp / PDA / comm)</td><td class="num">$110</td><td class="num">0.55 lbs</td><td>Suit / pocket</td><td>Small Computer (Complexity 4, 10 TB) + Datapad screen &amp;amp; fold/laser keyboard (−2 on complex or lengthy keyboard-and-screen tasks). Free built-in microcommunicator = his personal comm. Hosts his Computer Operation / Electronics Operation (Security) software</td></tr>
-<tr><td class="num">1</td><td>Electric Stun Wand (TL9)</td><td class="num">$100 (issued)</td><td class="num">1 lb</td><td>Belt</td><td>MacMillian security issue — not Signature Gear. sw/thr cr + linked HT-5(2) aff: non-lethal knockdown. Shortsword skill → Six defaults to DX-5 = 9 (he’d sooner choke someone out). B cell, 20 strikes. LC4.</td></tr>
-<tr><td class="num">1</td><td>First Aid Kit (TL9)</td><td class="num">$50</td><td class="num">2 lbs</td><td>On person</td><td>+1 First Aid (+2 for bleeding via bandage spray — TL11 seals &amp;amp; restores 1 HP in 3 sec). Sprays are a finite stock (not Infinite-Ammo).</td></tr>
-<tr><td class="num">1</td><td>Hand thruster</td><td class="num">$50</td><td class="num">4 lbs</td><td>Stowed (EVA transit)</td><td>Cold-gas; operated on Free Fall 15</td></tr>
-<tr><td class="num">1</td><td>Reload kit (one spare per consumable)</td><td class="num">$35</td><td class="num">~2.1 lbs</td><td>On person</td><td>Seed spares for Infinite Ammunition</td></tr>
-<tr><td class="num">1</td><td>Disguised Space Armor (suit + helmet + Chameleon Surface)</td><td class="num">$31,000</td><td class="num">56 lbs</td><td>Worn</td><td>DR 100/60 (suit) &amp;amp; 80/60 (helmet); sealed, Vacuum Support; chameleon work-suit livery</td></tr></tbody></table></div></div>
+<div class="gurps-equipment"><div class="wide cat-table"><h2>Equipment</h2><table class="equip-table"><thead><tr><th class="eq-toggle-cell"></th><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th><th>Location</th><th>Notes</th></tr></thead><tbody><tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Vibro-axe" data-weight="4" checked></td><td class="num">1</td><td>Vibro-axe</td><td class="num">$500</td><td class="num">4 lbs</td><td>Hand / belt</td><td>3d+2 (3) cut; C cell, 75 sec/cell</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Holdout electrolaser" data-weight="0.3" checked></td><td class="num">1</td><td>Holdout electrolaser</td><td class="num">$250</td><td class="num">0.3 lbs</td><td>Concealed</td><td>HT-2 (2) stun; atmosphere only</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Grazer pistol (alien)" data-weight="1.5" checked></td><td class="num">1</td><td>Grazer pistol (alien)</td><td class="num">$2,200</td><td class="num">1.5 lbs</td><td>Holster (primary sidearm)</td><td>Graser Pistol, UT TL12 — a gamma-ray laser, one TL above local. 3d(10) burn, sur; Acc 6, RoF 10, Shots 33(3), ST 4, Bulk −2, Rcl 1, LC 3. Runs on a C cell — the same cell as the blaster and vibro-axe, so his existing spare feeds it. Range 10/30 miles in vacuum, capped at 70/200 yards in atmosphere. Fires on Beam Weapons (Pistol)-16. Not Signature Gear — recovered in play, so it is losable and sits outside the 1-pt SG loadout.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Helmet lamp (integral to suit)" data-weight="0" checked></td><td class="num">1</td><td>Helmet lamp (integral to suit)</td><td class="num">incl.</td><td class="num">— (in suit)</td><td>Helmet</td><td>Multi-mode headlamp built into the sealed helmet (white / red / IR, 50-yd beam) — a child component of the Space Armor, so no separate encumbrance. As a standalone item it would be a 0.5-lb / $300 Smart Flashlight (UT).</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Small Computer + Datapad (mini-comp / PDA / comm)" data-weight="0.55" checked></td><td class="num">1</td><td>Small Computer + Datapad (mini-comp / PDA / comm)</td><td class="num">$110</td><td class="num">0.55 lbs</td><td>Suit / pocket</td><td>Small Computer (Complexity 4, 10 TB) + Datapad screen &amp;amp; fold/laser keyboard (−2 on complex or lengthy keyboard-and-screen tasks). Free built-in microcommunicator = his personal comm. Hosts his Computer Operation / Electronics Operation (Security) software</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Trauma patches" data-weight="0.6" checked></td><td class="num">1</td><td>Trauma patches</td><td class="num">$17</td><td class="num">0.6 lbs</td><td>On person</td><td>Bandage Spray Can (TL9, 6 app): seals &amp;amp; restores 1 HP in 3 sec at TL11, +2 First Aid for bleeding (0.5 lb, $15). Plasti-Skin field pack (4 app): pressure bandage / tourniquet (0.1 lb, $2). Replaces the 2-lb First Aid Kit — keeps the seal-and-heal, drops only the general +1 kit bonus he rarely used. Consumable stock, resupplied through the crew.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Hand thruster" data-weight="4" checked></td><td class="num">1</td><td>Hand thruster</td><td class="num">$50</td><td class="num">4 lbs</td><td>Worn / clipped</td><td>Cold-gas; Free Fall 16; 30 bursts/cylinder (extra cylinder +1 lb). Signature Gear — always carried and always counted in encumbrance. The last thing he would ever shed.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Reload spares (C cell + B cell)" data-weight="0.55" checked></td><td class="num">1</td><td>Reload spares (C cell + B cell)</td><td class="num">$13</td><td class="num">0.55 lb</td><td>On person</td><td>Signature Gear. One spare C cell (0.5 lb, $10) — reloads the vibro-axe or blaster — plus one B cell (0.05 lb) for the electrolaser. Loaded cells already ride in each weapon (blaster 200 shots, vibro-axe 75 sec, electrolaser 22); these are the on-body spares. Any further heavy C-cell spares stage on the ship.</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Disguised Space Armor (suit + helmet + Chameleon Surface)" data-weight="56" checked></td><td class="num">1</td><td>Disguised Space Armor (suit + helmet + Chameleon Surface)</td><td class="num">$31,000</td><td class="num">56 lbs</td><td>Worn</td><td>DR 100/60 (suit) &amp;amp; 80/60 (helmet); sealed, Vacuum Support; chameleon work-suit livery</td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Load-Out: The standing baseline carries none of them</h2><table class="equip-table loadout-table"><thead><tr><th class="eq-toggle-cell"></th><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th></tr></thead><tbody><tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Blaster pistol (Fine)" data-weight="1.6"></td><td class="num">1</td><td>Blaster pistol (Fine)</td><td class="num">$4,400</td><td class="num">1.6 lbs</td></tr></tbody></table></div>
+<div class="wide cat-table"><h2>Load-Out: Owned — stowed by default (Signature Gear)</h2><table class="equip-table loadout-table"><thead><tr><th class="eq-toggle-cell"></th><th class="num">Qty</th><th>Item</th><th class="num">Cost</th><th class="num">Weight</th></tr></thead><tbody><tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Electric Stun Wand (TL9)" data-weight="1"></td><td class="num">1</td><td>Electric Stun Wand (TL9)</td><td class="num">$100 (issued)</td><td class="num">1 lb</td></tr>
+<tr><td class="eq-toggle-cell"><input type="checkbox" class="eq-toggle" data-item-key="Sonic stun pistol (TL10)" data-weight="1.8"></td><td class="num">1</td><td>Sonic stun pistol (TL10)</td><td class="num">$650</td><td class="num">1.8 lb</td></tr></tbody></table></div></div>
 </div>
 <div class="tab-panel" id="tab-story">
   <div class="story-prose">
@@ -361,113 +383,348 @@
 <h2>Connections</h2>
 <div class="relationship-graph"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="font-family: var(--font-body, system-ui);">
   <line x1="300" y1="200" x2="300" y2="80" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="335.37062092930853" y2="85.33126330566311" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="367.5984069676347" y2="100.85134708208062" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="393.8197778961636" y2="125.18122377695198" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="411.7048498373045" y2="156.15907707603262" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="419.6644556617416" y2="191.03238876962908" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="416.9913494618188" y2="226.70251207475772" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="403.92304845413264" y2="260" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="381.6207285325103" y2="287.9662246195792" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="352.066048694107" y2="308.11626414829027" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="317.88507194114095" y2="318.65969914701543" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="282.1149280588591" y2="318.65969914701543" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="247.93395130589303" y2="308.11626414829027" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="218.37927146748964" y2="287.9662246195791" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="196.0769515458674" y2="260.00000000000006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="183.00865053818117" y2="226.70251207475775" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="180.3355443382584" y2="191.03238876962908" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="188.2951501626955" y2="156.15907707603253" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="206.1802221038364" y2="125.181223776952" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="232.40159303236527" y2="100.85134708208066" stroke="var(--border, #30363d)" stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="264.62937907069147" y2="85.33126330566313" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="311.0722031355962" y2="80.51189884459586" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="322.0499421379884" y2="82.04322803793178" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="332.83955880864994" y2="84.58092281926172" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="343.34899994245836" y2="88.1033324714773" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="353.4886026931846" y2="92.58040503739252" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="363.1718595452827" y2="97.97394371244631" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="372.3161563655108" y2="104.23793272637126" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="380.84347723758685" y2="111.3189299335209" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="388.6810700664791" y2="119.15652276241313" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="395.76206727362876" y2="127.68384363448925" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="402.0260562875537" y2="136.8281404547173" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.41959496260745" y2="146.5113973068154" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="411.8966675285227" y2="156.65100005754167" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="415.41907718073827" y2="167.16044119135006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="417.9567719620682" y2="177.95005786201153" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.48810115540414" y2="188.92779686440377" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="420" y2="200" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="419.48810115540414" y2="211.07220313559623" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="417.9567719620682" y2="222.04994213798844" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="415.41907718073827" y2="232.83955880864994" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="411.8966675285227" y2="243.34899994245836" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="407.4195949626075" y2="253.48860269318453" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="402.02605628755373" y2="263.1718595452827" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="395.76206727362876" y2="272.3161563655108" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="388.6810700664791" y2="280.84347723758685" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="380.84347723758685" y2="288.68107006647915" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="372.3161563655108" y2="295.76206727362876" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="363.1718595452827" y2="302.0260562875537" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="353.4886026931846" y2="307.41959496260745" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="343.34899994245836" y2="311.8966675285227" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="332.83955880864994" y2="315.41907718073827" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="322.0499421379884" y2="317.9567719620682" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="311.0722031355962" y2="319.48810115540414" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="300" y2="320" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="288.9277968644038" y2="319.48810115540414" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="277.9500578620116" y2="317.9567719620682" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="267.16044119135006" y2="315.41907718073827" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="256.6510000575417" y2="311.8966675285227" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="246.5113973068154" y2="307.41959496260745" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="236.8281404547173" y2="302.0260562875537" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="227.68384363448928" y2="295.76206727362876" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="219.15652276241315" y2="288.6810700664791" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="211.3189299335209" y2="280.8434772375869" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="204.23793272637133" y2="272.3161563655109" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="197.97394371244633" y2="263.1718595452827" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.58040503739255" y2="253.48860269318465" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="188.1033324714773" y2="243.34899994245836" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="184.58092281926173" y2="232.83955880864997" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="182.04322803793178" y2="222.0499421379885" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.51189884459586" y2="211.07220313559623" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180" y2="200.00000000000003" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="180.51189884459586" y2="188.9277968644037" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="182.04322803793178" y2="177.95005786201153" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="184.58092281926173" y2="167.16044119135006" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="188.10333247147733" y2="156.65100005754158" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="192.5804050373925" y2="146.51139730681547" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="197.97394371244627" y2="136.82814045471738" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="204.23793272637124" y2="127.68384363448926" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="211.31892993352085" y2="119.15652276241318" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="219.15652276241306" y2="111.31892993352096" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="227.68384363448922" y2="104.23793272637126" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="236.82814045471727" y2="97.97394371244633" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="246.51139730681544" y2="92.58040503739251" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="256.65100005754164" y2="88.1033324714773" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="267.16044119135" y2="84.58092281926172" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="277.9500578620116" y2="82.04322803793177" stroke="var(--border, #30363d)" stroke-width="1.5"/>
+  <line x1="300" y1="200" x2="288.9277968644038" y2="80.51189884459585" stroke="var(--border, #30363d)" stroke-width="1.5"/>
   <a href="six.html"><g opacity="1">
     <circle cx="300" cy="200" r="28" fill="var(--accent, #58a6ff)" stroke="var(--accent, #58a6ff)" stroke-width="2"/>
     <text x="300" y="243" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six</text>
   </g></a>
-  <g opacity="1">
+  <a href="../npcs/marlo-petrak.html"><g opacity="1">
     <circle cx="300" cy="80" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Station</text>
-  </g>
-  <a href="../../locations/federal-republic-of-worlds.html"><g opacity="1">
-    <rect x="315.37062092930853" y="65.33126330566311" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="335.37062092930853" y="120.33126330566311" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
-  </g></a>
-  <g opacity="1">
-    <circle cx="367.5984069676347" cy="100.85134708208062" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="367.5984069676347" y="135.85134708208062" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">P.E.T.A.</text>
-  </g>
-  <a href="../../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="1">
-    <circle cx="393.8197778961636" cy="125.18122377695198" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="393.8197778961636" y="160.18122377695198" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
-  </g></a>
-  <a href="../npcs/clubber.html"><g opacity="1">
-    <circle cx="411.7048498373045" cy="156.15907707603262" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="411.7048498373045" y="191.15907707603262" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Clubber</text>
-  </g></a>
-  <a href="rock-lavey.html"><g opacity="1">
-    <circle cx="419.6644556617416" cy="191.03238876962908" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="419.6644556617416" y="226.03238876962908" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
-  </g></a>
-  <a href="ronin-sanchez.html"><g opacity="1">
-    <circle cx="416.9913494618188" cy="226.70251207475772" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="416.9913494618188" y="261.7025120747577" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
-  </g></a>
-  <a href="../../documents/field-trauma-card-rock-lavey.html"><g opacity="1">
-    <circle cx="403.92304845413264" cy="260" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="403.92304845413264" y="295" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Field Trauma …</text>
-  </g></a>
-  <a href="../../documents/freefighting-spacer-kung-fu.html"><g opacity="1">
-    <circle cx="381.6207285325103" cy="287.9662246195792" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="381.6207285325103" y="322.9662246195792" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freefighting …</text>
-  </g></a>
-  <a href="../../items/law-machine.html"><g opacity="1">
-    <polygon points="352.066048694107,288.11626414829027 372.066048694107,308.11626414829027 352.066048694107,328.11626414829027 332.066048694107,308.11626414829027" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="352.066048694107" y="343.11626414829027" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
-  </g></a>
-  <a href="../../locations/macmillian-station-security-office.html"><g opacity="1">
-    <rect x="297.88507194114095" y="298.65969914701543" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="317.88507194114095" y="353.65969914701543" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
-  </g></a>
-  <a href="../../locations/meridian.html"><g opacity="1">
-    <rect x="262.1149280588591" y="298.65969914701543" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="282.1149280588591" y="353.65969914701543" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian</text>
-  </g></a>
-  <a href="../../campaign/player-characters.html"><g opacity="1">
-    <circle cx="247.93395130589303" cy="308.11626414829027" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="247.93395130589303" y="343.11626414829027" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
-  </g></a>
-  <a href="../../campaign/timeline.html"><g opacity="1">
-    <circle cx="218.37927146748964" cy="287.9662246195791" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="218.37927146748964" y="322.9662246195791" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
-  </g></a>
-  <a href="../../world/silicon-heaven.html"><g opacity="1">
-    <circle cx="196.0769515458674" cy="260.00000000000006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="196.0769515458674" y="295.00000000000006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Silicon Heaven</text>
-  </g></a>
-  <a href="../npcs/holger-graeme.html"><g opacity="1">
-    <circle cx="183.00865053818117" cy="226.70251207475775" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="183.00865053818117" y="261.70251207475775" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holger Graeme</text>
-  </g></a>
-  <a href="../npcs/solveig-kaufer.html"><g opacity="1">
-    <circle cx="180.3355443382584" cy="191.03238876962908" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="180.3355443382584" y="226.03238876962908" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
-  </g></a>
-  <a href="../../locations/docking-ring.html"><g opacity="1">
-    <rect x="168.2951501626955" y="136.15907707603253" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="188.2951501626955" y="191.15907707603253" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Ring</text>
+    <text x="300" y="115" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Marlo Petrak</text>
   </g></a>
   <a href="../../locations/macmillian-station-iv.html"><g opacity="1">
-    <rect x="186.1802221038364" y="105.181223776952" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="206.1802221038364" y="160.18122377695198" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+    <rect x="291.0722031355962" y="60.51189884459586" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="311.0722031355962" y="115.51189884459586" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../../locations/federal-republic-of-worlds.html"><g opacity="1">
+    <rect x="302.0499421379884" y="62.04322803793178" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="322.0499421379884" y="117.04322803793178" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Federal Repub…</text>
+  </g></a>
+  <g opacity="1">
+    <circle cx="332.83955880864994" cy="84.58092281926172" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="332.83955880864994" y="119.58092281926172" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Vibro-Axe (MA…</text>
+  </g>
+  <g opacity="1">
+    <circle cx="343.34899994245836" cy="88.1033324714773" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="343.34899994245836" y="123.1033324714773" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Blaster Pisto…</text>
+  </g>
+  <g opacity="1">
+    <circle cx="353.4886026931846" cy="92.58040503739252" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="353.4886026931846" y="127.58040503739252" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Disguised Spa…</text>
+  </g>
+  <g opacity="1">
+    <circle cx="363.1718595452827" cy="97.97394371244631" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="363.1718595452827" y="132.97394371244633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Grazer Pistol</text>
+  </g>
+  <g opacity="1">
+    <circle cx="372.3161563655108" cy="104.23793272637126" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="372.3161563655108" y="139.23793272637124" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holdout Elect…</text>
+  </g>
+  <g opacity="1">
+    <circle cx="380.84347723758685" cy="111.3189299335209" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="380.84347723758685" y="146.3189299335209" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Hand Thruster</text>
+  </g>
+  <g opacity="1">
+    <circle cx="388.6810700664791" cy="119.15652276241313" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="388.6810700664791" y="154.15652276241315" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six — Field S…</text>
+  </g>
+  <a href="../../chronicle/chapter-01-session-01-wrap-up.html"><g opacity="1">
+    <circle cx="395.76206727362876" cy="127.68384363448925" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="395.76206727362876" y="162.68384363448925" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../../chronicle/Sessions/Session 02/chapter-01-session-02-wrap-up.html"><g opacity="1">
+    <circle cx="402.0260562875537" cy="136.8281404547173" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="402.0260562875537" y="171.8281404547173" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../../chronicle/Sessions/Session 03/chapter-01-session-03-wrap-up.html"><g opacity="1">
+    <circle cx="407.41959496260745" cy="146.5113973068154" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.41959496260745" y="181.5113973068154" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../../chronicle/Sessions/Session 04/chapter-01-session-04-wrap-up.html"><g opacity="1">
+    <circle cx="411.8966675285227" cy="156.65100005754167" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="411.8966675285227" y="191.65100005754167" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Chapter 01 Se…</text>
+  </g></a>
+  <a href="../npcs/agata-nicodemo.html"><g opacity="1">
+    <circle cx="415.41907718073827" cy="167.16044119135006" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="415.41907718073827" y="202.16044119135006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Agata Nicodemo</text>
+  </g></a>
+  <a href="../npcs/clubber.html"><g opacity="1">
+    <circle cx="417.9567719620682" cy="177.95005786201153" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="417.9567719620682" y="212.95005786201153" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Clubber</text>
+  </g></a>
+  <a href="../npcs/hildebrand-panza.html"><g opacity="1">
+    <circle cx="419.48810115540414" cy="188.92779686440377" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.48810115540414" y="223.92779686440377" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Hildebrand Pa…</text>
+  </g></a>
+  <a href="../npcs/mckenna.html"><g opacity="1">
+    <circle cx="420" cy="200" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="420" y="235" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">McKenna</text>
+  </g></a>
+  <a href="../npcs/toller-vance.html"><g opacity="1">
+    <circle cx="419.48810115540414" cy="211.07220313559623" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="419.48810115540414" y="246.07220313559623" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Toller Vance</text>
+  </g></a>
+  <a href="rock-lavey.html"><g opacity="1">
+    <circle cx="417.9567719620682" cy="222.04994213798844" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="417.9567719620682" y="257.0499421379884" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Rock Lavey</text>
+  </g></a>
+  <a href="ronin-sanchez.html"><g opacity="1">
+    <circle cx="415.41907718073827" cy="232.83955880864994" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="415.41907718073827" y="267.83955880864994" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Ronin Sanchez</text>
+  </g></a>
+  <a href="../../creatures/the-relay-11-chitinoteuthis.html"><g opacity="1">
+    <circle cx="411.8966675285227" cy="243.34899994245836" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="411.8966675285227" y="278.34899994245836" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Relay 11 …</text>
+  </g></a>
+  <a href="../../documents/field-trauma-card-rock-lavey.html"><g opacity="1">
+    <circle cx="407.4195949626075" cy="253.48860269318453" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="407.4195949626075" y="288.48860269318453" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Field Trauma …</text>
+  </g></a>
+  <a href="../../documents/freefighting-spacer-kung-fu.html"><g opacity="1">
+    <circle cx="402.02605628755373" cy="263.1718595452827" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="402.02605628755373" y="298.1718595452827" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Freefighting …</text>
+  </g></a>
+  <a href="../../documents/sixs-mission-report.html"><g opacity="1">
+    <circle cx="395.76206727362876" cy="272.3161563655108" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="395.76206727362876" y="307.3161563655108" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Six's Mission…</text>
+  </g></a>
+  <a href="../../events/the-kinetic-logistics-compound-raid.html"><g opacity="1">
+    <circle cx="388.6810700664791" cy="280.84347723758685" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="388.6810700664791" y="315.84347723758685" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Kinetic L…</text>
+  </g></a>
+  <a href="../../events/the-processing-ii-anomaly.html"><g opacity="1">
+    <circle cx="380.84347723758685" cy="288.68107006647915" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="380.84347723758685" y="323.68107006647915" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Processin…</text>
+  </g></a>
+  <a href="../../events/the-room-2002-cover-up.html"><g opacity="1">
+    <circle cx="372.3161563655108" cy="295.76206727362876" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="372.3161563655108" y="330.76206727362876" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Room 2002…</text>
+  </g></a>
+  <a href="../../events/the-shipping-sector-ambush.html"><g opacity="1">
+    <circle cx="363.1718595452827" cy="302.0260562875537" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="363.1718595452827" y="337.0260562875537" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Shipping …</text>
+  </g></a>
+  <a href="../../factions/station-45-gang.html"><g opacity="1">
+    <polygon points="370.8091107688734,297.41959496260745 370.8091107688734,317.41959496260745 353.4886026931846,327.41959496260745 336.1680946174958,317.41959496260745 336.1680946174958,297.41959496260745 353.4886026931846,287.41959496260745" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="353.4886026931846" y="342.41959496260745" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Station 45 Gang</text>
+  </g></a>
+  <a href="../../items/alien-metal-chunks.html"><g opacity="1">
+    <polygon points="343.34899994245836,291.8966675285227 363.34899994245836,311.8966675285227 343.34899994245836,331.8966675285227 323.34899994245836,311.8966675285227" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="343.34899994245836" y="346.8966675285227" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Alien Metal C…</text>
+  </g></a>
+  <a href="../../items/alien-navigation-device.html"><g opacity="1">
+    <polygon points="332.83955880864994,295.41907718073827 352.83955880864994,315.41907718073827 332.83955880864994,335.41907718073827 312.83955880864994,315.41907718073827" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="332.83955880864994" y="350.41907718073827" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Alien Navigat…</text>
+  </g></a>
+  <a href="../../items/beam-pistol.html"><g opacity="1">
+    <polygon points="322.0499421379884,297.9567719620682 342.0499421379884,317.9567719620682 322.0499421379884,337.9567719620682 302.0499421379884,317.9567719620682" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="322.0499421379884" y="352.9567719620682" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Beam Pistol</text>
+  </g></a>
+  <a href="../../items/corrosive-goo.html"><g opacity="1">
+    <polygon points="311.0722031355962,299.48810115540414 331.0722031355962,319.48810115540414 311.0722031355962,339.48810115540414 291.0722031355962,319.48810115540414" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="311.0722031355962" y="354.48810115540414" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Corrosive Goo</text>
+  </g></a>
+  <a href="../../items/cybernetic-eye.html"><g opacity="1">
+    <polygon points="300,300 320,320 300,340 280,320" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="300" y="355" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Cybernetic Eye</text>
+  </g></a>
+  <a href="../../items/electronic-trigger-box.html"><g opacity="1">
+    <polygon points="288.9277968644038,299.48810115540414 308.9277968644038,319.48810115540414 288.9277968644038,339.48810115540414 268.9277968644038,319.48810115540414" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="288.9277968644038" y="354.48810115540414" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Electronic Tr…</text>
+  </g></a>
+  <a href="../../items/kinetic-logistics-container.html"><g opacity="1">
+    <polygon points="277.9500578620116,297.9567719620682 297.9500578620116,317.9567719620682 277.9500578620116,337.9567719620682 257.9500578620116,317.9567719620682" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="277.9500578620116" y="352.9567719620682" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Kinetic Logis…</text>
+  </g></a>
+  <a href="../../items/kinetic-logistics-id-card.html"><g opacity="1">
+    <polygon points="267.16044119135006,295.41907718073827 287.16044119135006,315.41907718073827 267.16044119135006,335.41907718073827 247.16044119135006,315.41907718073827" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="267.16044119135006" y="350.41907718073827" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Kinetic Logis…</text>
+  </g></a>
+  <a href="../../items/law-machine.html"><g opacity="1">
+    <polygon points="256.6510000575417,291.8966675285227 276.6510000575417,311.8966675285227 256.6510000575417,331.8966675285227 236.6510000575417,311.8966675285227" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="256.6510000575417" y="346.8966675285227" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Law Machine</text>
+  </g></a>
+  <a href="../../items/mysterious-relay.html"><g opacity="1">
+    <polygon points="246.5113973068154,287.41959496260745 266.5113973068154,307.41959496260745 246.5113973068154,327.41959496260745 226.5113973068154,307.41959496260745" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="246.5113973068154" y="342.41959496260745" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Mysterious Re…</text>
+  </g></a>
+  <a href="../../items/stolen-alien-tech-transport.html"><g opacity="1">
+    <polygon points="236.8281404547173,282.0260562875537 256.8281404547173,302.0260562875537 236.8281404547173,322.0260562875537 216.8281404547173,302.0260562875537" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="236.8281404547173" y="337.0260562875537" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Stolen Alien-…</text>
+  </g></a>
+  <a href="../../locations/docking-bay-36.html"><g opacity="1">
+    <rect x="207.68384363448928" y="275.76206727362876" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="227.68384363448928" y="330.76206727362876" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Bay 36</text>
+  </g></a>
+  <a href="../../locations/entertainment-district.html"><g opacity="1">
+    <rect x="199.15652276241315" y="268.6810700664791" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="219.15652276241315" y="323.6810700664791" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Entertainment…</text>
+  </g></a>
+  <a href="../../locations/escape-shaft-35b.html"><g opacity="1">
+    <rect x="191.3189299335209" y="260.8434772375869" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="211.3189299335209" y="315.8434772375869" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Escape Shaft …</text>
+  </g></a>
+  <a href="../../locations/kinetic-logistics-compound.html"><g opacity="1">
+    <rect x="184.23793272637133" y="252.3161563655109" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="204.23793272637133" y="307.3161563655109" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Kinetic Logis…</text>
+  </g></a>
+  <a href="../../locations/macmillian-station-security-office.html"><g opacity="1">
+    <rect x="177.97394371244633" y="243.1718595452827" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="197.97394371244633" y="298.1718595452827" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
+  </g></a>
+  <a href="../../locations/marshals-office.html"><g opacity="1">
+    <rect x="172.58040503739255" y="233.48860269318465" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.58040503739255" y="288.48860269318465" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Marshal's Off…</text>
+  </g></a>
+  <a href="../../locations/meridian-system.html"><g opacity="1">
+    <rect x="168.1033324714773" y="223.34899994245836" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="188.1033324714773" y="278.34899994245836" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian System</text>
+  </g></a>
+  <a href="../../locations/processing-ii.html"><g opacity="1">
+    <rect x="164.58092281926173" y="212.83955880864997" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="184.58092281926173" y="267.83955880864994" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Processing II</text>
+  </g></a>
+  <a href="../../locations/relay-station-11.html"><g opacity="1">
+    <rect x="162.04322803793178" y="202.0499421379885" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="182.04322803793178" y="257.0499421379885" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Relay Station…</text>
+  </g></a>
+  <a href="../../locations/section-102.html"><g opacity="1">
+    <rect x="160.51189884459586" y="191.07220313559623" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.51189884459586" y="246.07220313559623" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Section 102</text>
+  </g></a>
+  <a href="../../locations/section-103.html"><g opacity="1">
+    <rect x="160" y="180.00000000000003" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180" y="235.00000000000003" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Section 103</text>
+  </g></a>
+  <a href="../../locations/shipping-and-receiving-sector.html"><g opacity="1">
+    <rect x="160.51189884459586" y="168.9277968644037" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="180.51189884459586" y="223.9277968644037" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Shipping and …</text>
+  </g></a>
+  <a href="../../locations/station-45.html"><g opacity="1">
+    <rect x="162.04322803793178" y="157.95005786201153" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="182.04322803793178" y="212.95005786201153" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Station 45</text>
+  </g></a>
+  <a href="../../locations/thides-cast-studio.html"><g opacity="1">
+    <rect x="164.58092281926173" y="147.16044119135006" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="184.58092281926173" y="202.16044119135006" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Thides Cast S…</text>
+  </g></a>
+  <a href="../../campaign/player-characters.html"><g opacity="1">
+    <circle cx="188.10333247147733" cy="156.65100005754158" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="188.10333247147733" y="191.65100005754158" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Player Charac…</text>
+  </g></a>
+  <a href="../../campaign/timeline.html"><g opacity="1">
+    <circle cx="192.5804050373925" cy="146.51139730681547" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="192.5804050373925" y="181.51139730681547" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Timeline</text>
+  </g></a>
+  <a href="../../world/silicon-heaven.html"><g opacity="1">
+    <circle cx="197.97394371244627" cy="136.82814045471738" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="197.97394371244627" y="171.82814045471738" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Silicon Heaven</text>
+  </g></a>
+  <a href="../npcs/daniela-akkermans.html"><g opacity="1">
+    <circle cx="204.23793272637124" cy="127.68384363448926" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="204.23793272637124" y="162.68384363448928" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Daniela Akker…</text>
+  </g></a>
+  <a href="../npcs/holger-graeme.html"><g opacity="1">
+    <circle cx="211.31892993352085" cy="119.15652276241318" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="211.31892993352085" y="154.15652276241318" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Holger Graeme</text>
+  </g></a>
+  <a href="../npcs/julija-borja.html"><g opacity="1">
+    <circle cx="219.15652276241306" cy="111.31892993352096" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="219.15652276241306" y="146.31892993352096" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Julija Borja</text>
+  </g></a>
+  <a href="../npcs/pia-kadyrov.html"><g opacity="1">
+    <circle cx="227.68384363448922" cy="104.23793272637126" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="227.68384363448922" y="139.23793272637124" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Pia Kadyrov</text>
+  </g></a>
+  <a href="../npcs/solveig-kaufer.html"><g opacity="1">
+    <circle cx="236.82814045471727" cy="97.97394371244633" r="20" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="236.82814045471727" y="132.97394371244633" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Solveig Kaufer</text>
+  </g></a>
+  <a href="../../factions/akker-cartel.html"><g opacity="1">
+    <polygon points="263.8319053825042,82.58040503739251 263.8319053825042,102.58040503739251 246.51139730681544,112.58040503739251 229.19088923112668,102.58040503739251 229.19088923112668,82.58040503739251 246.5113973068154,72.58040503739251" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="246.51139730681544" y="127.58040503739251" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Akker Cartel</text>
+  </g></a>
+  <a href="../../locations/docking-ring.html"><g opacity="1">
+    <rect x="236.65100005754164" y="68.1033324714773" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="256.65100005754164" y="123.1033324714773" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Docking Ring</text>
+  </g></a>
+  <a href="../../locations/macmillian-station-iv.html"><g opacity="1">
+    <rect x="247.16044119135" y="64.58092281926172" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="267.16044119135" y="119.58092281926172" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">MacMillian St…</text>
   </g></a>
   <a href="../../locations/meridian-iv.html"><g opacity="1">
-    <rect x="212.40159303236527" y="80.85134708208066" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="232.40159303236527" y="135.85134708208068" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian IV</text>
+    <rect x="257.9500578620116" y="62.04322803793177" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="277.9500578620116" y="117.04322803793177" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">Meridian IV</text>
   </g></a>
   <a href="../../locations/the-charter-gate.html"><g opacity="1">
-    <rect x="244.62937907069147" y="65.33126330566313" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
-    <text x="264.62937907069147" y="120.33126330566313" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Charter G…</text>
+    <rect x="268.9277968644038" y="60.51189884459585" width="40" height="40" rx="4" fill="var(--bg-card, #232830)" stroke="var(--border, #30363d)" stroke-width="2"/>
+    <text x="288.9277968644038" y="115.51189884459585" text-anchor="middle" font-size="11" fill="var(--text, #c9d1d9)">The Charter G…</text>
   </g></a>
 </svg></div>
 </div>
@@ -512,6 +769,9 @@ document.addEventListener('click', function(e) {
 <script src="../../js/nav.js"></script>
 <script src="../../js/lightbox.js"></script>
 <script src="../../js/search.js"></script>
+<script src="../../js/change-request.js"></script>
+<script src="../../js/live-state.js"></script>
+<script src="../../js/gurps-live.js"></script>
 <script>
 (function() {
   var btn = document.querySelector('.back-to-top');
